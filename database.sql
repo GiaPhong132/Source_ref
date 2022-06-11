@@ -1,6 +1,6 @@
-DROP database IF EXISTS web;
-CREATE DATABASE web;
-USE web;
+DROP database IF EXISTS webb;
+CREATE DATABASE webb;
+USE webb;
 
 
 CREATE TABLE `PRODUCT` (
@@ -71,7 +71,7 @@ CREATE TABLE `COMPANY` (
 );
 
 
--- Example data 
+-- Example data
 INSERT INTO `ADMIN` (username, password) VALUES ('admin', '');
 INSERT INTO `ADMIN` (username, password) VALUES ('username', '');
 
@@ -86,7 +86,7 @@ INSERT INTO `PRODUCT` (name, price, description, content)
 VALUES ('Chè Huế', 25000, 'Chè rất ngon', 'Đây là một món chè đến từ Huế');
 
 INSERT INTO `NEWS` (status, date, title, description, content)
-VALUES (1, '2021-11-11', 'Ca nhiễm tăng, TP.HCM kiểm soát di biến động dân cư ra sao?', 
+VALUES (1, '2021-11-11', 'Ca nhiễm tăng, TP.HCM kiểm soát di biến động dân cư ra sao?',
 'TTO - TP.HCM không lập lại các chốt kiểm soát để kiểm tra di biến động dân cư như trước đây. Tuy vậy người dân từ các tỉnh thành đến TP.HCM sẽ phải đăng ký tạm trú tạm vắng để địa phương có biện pháp kiểm soát.',
 'UBND TP.HCM yêu cầu tăng cường kiểm soát chặt chẽ di biến động dân cư. Các địa phương phải nắm chắc tình hình người dân khi ra, vào địa bàn, người có nguy cơ đang lưu trú, làm việc tại các địa phương, doanh nghiệp như lái xe, phụ xe liên tỉnh, người làm việc ngoài tỉnh về địa phương lưu trú… Từ đó sẽ chủ động các biện pháp quản lý phù hợp.
 Tuy nhiên trước chủ trương này của thành phố, nhiều người dân bày tỏ sự băn khoăn, không biết liệu thành phố có lập lại các chốt kiểm soát và cần phải chuẩn bị những thủ tục gì khi đến TP.HCM.
@@ -95,7 +95,7 @@ Theo thượng tá Hà, biến động dân cư được hiểu là sự thay đ
 Hiện nay Công an TP.HCM đang thực hiện các công tác quản lý di biến động dân cư như: đăng ký thường trú, tạm trú, rà soát hộ khẩu, những ai có mặt thực tế ở địa phương. Công an TP cũng đang rà soát, đối sánh các dữ liệu dân cư, cấp mã số định danh cá nhân.
 Bên cạnh đó ngành công an cũng đang kiểm tra diện thường trú, tạm trú, những người đang lưu trú ở khách sạn, nhà nghỉ... khai báo để quản lý chặt chẽ và thực hiện các chính sách an sinh xã hội.');
 INSERT INTO `NEWS` (status, date, title, description, content)
-VALUES (1, '2021-11-11', '50% ca tử vong ở TP.HCM chưa tiêm vắc xin, thành phố đang "đánh chặn" số ca chuyển nặng', 
+VALUES (1, '2021-11-11', '50% ca tử vong ở TP.HCM chưa tiêm vắc xin, thành phố đang "đánh chặn" số ca chuyển nặng',
 'TTO - Với việc ban hành hướng dẫn gói chăm sóc sức khỏe cho F0 cách ly tại nhà phiên bản 1.6, ngành y tế TP.HCM cho thấy quyết tâm tập trung "đánh chặn từ xa" bằng việc kiểm soát F0 cách ly tại cộng đồng không để trở nặng.',
 'Không phải F0 nào cũng cách ly tại nhà
 Theo thống kê, trong tổng số ca F0 hiện tại có khoảng 70% trường hợp có triệu chứng nhẹ, hoặc không có triệu chứng đang được cách ly chăm sóc tại nhà hoặc khu cách ly tập trung. Làm gì để giảm số ca mắc chuyển nặng? Hướng dẫn mới nhất từ TP.HCM được "chi tiết hóa" từ phân loại người F0 nào được cách ly ở nhà; chăm sóc ra sao; nên và không nên làm gì; dấu hiệu cần báo ngay cho y tế và kê đơn, cấp cứu F0 tại nhà...

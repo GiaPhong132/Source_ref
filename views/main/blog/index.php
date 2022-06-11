@@ -1,28 +1,27 @@
 <?php
-  include_once('views/main/navbar.php');
+include_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
 ?>
-  <!-- ======= Breadcrumbs ======= -->
-  <section id="breadcrumbs" class="breadcrumbs">
+<!-- ======= Breadcrumbs ======= -->
+<section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
 
-      <div class="d-flex justify-content-between align-items-center">
-        <h1 style="color: white;"><strong>TIN TỨC</strong></h1>
-        <ol>
-          <li><a href="index.php?page=main&controller=layouts&action=index">Trang chủ</a></li>
-          <li><a href="index.php?page=main&controller=blog&action=index">Tin tức</a></li>
-        </ol>
-      </div>
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 style="color: white;"><strong>TIN TỨC</strong></h1>
+            <ol>
+                <li><a href="index.php?page=main&controller=layouts&action=index">Trang chủ</a></li>
+                <li><a href="index.php?page=main&controller=blog&action=index">Tin tức</a></li>
+            </ol>
+        </div>
 
     </div>
-  </section><!-- End Breadcrumbs -->
+</section><!-- End Breadcrumbs -->
 
-  <main id="main">
+<main id="main">
     <!-- Modal here -->
     <!-- Modal 1-->
     <?php
-    foreach ($recent as $news)
-    {
-      echo '
+    foreach ($recent as $news) {
+        echo '
       <div class="modal fade" id="modal-' . $news->id . '" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-scrollable modal-xl">
           <div class="modal-content">
@@ -30,41 +29,40 @@
               <!-- ======= Blog Single Section ======= -->
               <section id="blog" class="blog">
                 <div class="container" data-aos="fade-up">
-  
+
                   <div class="row">
-  
+
                     <div class="col-lg-12 entries">
-  
+
                         <!-- Blog entry -->
                         <article class="entry entry-single">
-  
+
                           <h2 class="entry-title">
                             ' . $news->title . '
                           </h2>
-  
+
                           <div class="entry-meta">
                             <ul>
                               <li class="d-flex align-items-center"><i class="bi bi-clock"></i><time>' . date("F j, Y, g:i a", strtotime($news->date)) . '</time></li>
                               <li class="d-flex align-items-center"><i class="bi bi-chat-dots"></i>' . count($news->comments) . ' Comments</li>
                             </ul>
                           </div>
-  
+
                           <div class="entry-content">
                             <p>
                               ' . $news->content . '
                             </p>
                           </div>
-  
+
                         </article><!-- End blog entry -->
-                      
-  
+
+
                         <div class="blog-comments">
-  
+
                           <h4 class="comments-count">' . count($news->comments) . ' Comments</h4>';
-                        
-                          foreach ($news->comments as $comment)
-                          {
-                            echo '
+
+        foreach ($news->comments as $comment) {
+            echo '
                             <div id="comment-' . $comment->id . '" class="comment">
                               <div class="d-flex">
                                 <div>
@@ -76,10 +74,9 @@
                                 </div>
                               </div>
                             </div>';
-                              
-                            foreach ($comment->replies as $reply)
-                            {
-                              echo '
+
+            foreach ($comment->replies as $reply) {
+                echo '
                               <div id="comment-' . $comment->id . '-reply-' . $reply->id . '" class="comment comment-reply">
                                 <div class="d-flex">
                                   <div>
@@ -89,11 +86,11 @@
                                     </p>
                                   </div>
                                 </div>
-  
+
                               </div><!-- End comment reply #1-->
                             ';
-                            }
-                            echo '
+            }
+            echo '
                             <div class="row">
                             <div class="col-lg-1"></div>
                             <div class="reply-form col-lg-11">
@@ -102,13 +99,13 @@
                                   <textarea name="comment" class="form-control" placeholder="Viết bình luận tại đây"></textarea>
                                 </div>
                               </div>
-                              <button class="btn btn-primary btn-reply" data-news=' . $news->id . ' data-parent=' . $comment->id .' data-user="' . @$_SESSION["guest"] . '">Gửi bình luận</button>
+                              <button class="btn btn-primary btn-reply" data-news=' . $news->id . ' data-parent=' . $comment->id . ' data-user="' . @$_SESSION["guest"] . '">Gửi bình luận</button>
                             </form>
                           </div></div>';
-                          }
-                            
-  
-                          echo '
+        }
+
+
+        echo '
                           <div class="reply-form">
                             <h4>Bình luận</h4>
                               <div class="row">
@@ -119,13 +116,13 @@
                               <button class="btn btn-primary btn-comment" data-news=' . $news->id . ' data-parent="" data-user="' . @$_SESSION["guest"] . '">Gửi bình luận</button>
                             </form>
                           </div>
-  
+
                         </div><!-- End blog comments -->
                     </div><!-- End blog entries list -->
-                    
-  
+
+
                   </div>
-  
+
                 </div>
               </section><!-- End Blog Single Section -->
             </div>
@@ -136,10 +133,9 @@
         </div>
       </div>
       ';
-      }
-    foreach ($newses as $news)
-    {
-    echo '
+    }
+    foreach ($newses as $news) {
+        echo '
     <div class="modal fade" id="modal-' . $news->id . '" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
       <div class="modal-dialog modal-dialog-scrollable modal-xl">
         <div class="modal-content">
@@ -173,15 +169,14 @@
                         </div>
 
                       </article><!-- End blog entry -->
-                    
+
 
                       <div class="blog-comments">
 
                         <h4 class="comments-count">' . count($news->comments) . ' Comments</h4>';
-                      
-                        foreach ($news->comments as $comment)
-                        {
-                          echo '
+
+        foreach ($news->comments as $comment) {
+            echo '
                           <div id="comment-' . $comment->id . '" class="comment">
                             <div class="d-flex">
                               <div>
@@ -193,10 +188,9 @@
                               </div>
                             </div>
                           </div>';
-                            
-                          foreach ($comment->replies as $reply)
-                          {
-                            echo '
+
+            foreach ($comment->replies as $reply) {
+                echo '
                             <div id="comment-' . $comment->id . '-reply-' . $reply->id . '" class="comment comment-reply">
                               <div class="d-flex">
                                 <div>
@@ -209,8 +203,8 @@
 
                             </div><!-- End comment reply #1-->
                           ';
-                          }
-                          echo '
+            }
+            echo '
                           <div class="row">
                           <div class="col-lg-1"></div>
                           <div class="reply-form col-lg-11">
@@ -219,13 +213,13 @@
                                 <textarea name="comment" class="form-control" placeholder="Viết bình luận tại đây"></textarea>
                               </div>
                             </div>
-                            <button class="btn btn-primary btn-reply" data-news=' . $news->id . ' data-parent=' . $comment->id .' data-user="' . $_SESSION["guest"] . '">Gửi bình luận</button>
+                            <button class="btn btn-primary btn-reply" data-news=' . $news->id . ' data-parent=' . $comment->id . ' data-user="' . $_SESSION["guest"] . '">Gửi bình luận</button>
                           </form>
                         </div></div>';
-                        }
-                          
+        }
 
-                        echo '
+
+        echo '
                         <div class="reply-form">
                           <h4>Bình luận</h4>
                             <div class="row">
@@ -239,7 +233,7 @@
 
                       </div><!-- End blog comments -->
                   </div><!-- End blog entries list -->
-                  
+
 
                 </div>
 
@@ -258,17 +252,17 @@
 
     <!-- ======= Blog Section ======= -->
     <section id="blog" class="blog">
-      <div class="container" data-aos="fade-up">
+        <div class="container" data-aos="fade-up">
 
-        <div class="row">
+            <div class="row">
 
-          <div class="col-lg-8 entries">
-            <!-- Entry -->
+                <div class="col-lg-8 entries">
+                    <!-- Entry -->
 
-            <?php
+                    <?php
 
-              foreach ($newses as $news) {
-                echo '
+                    foreach ($newses as $news) {
+                        echo '
                   <article class="entry">
 
                     <h2 class="entry-title" data-bs-toggle="modal" data-bs-target="#modal-' . $news->id . '">
@@ -295,56 +289,55 @@
                     </div>
                   </article><!-- End blog entry -->
                 ';
-              }
-            ?>
+                    }
+                    ?>
 
 
 
 
-            <div class="blog-pagination">
-              <ul class="justify-content-center">
-                <li><a href="index.php?page=main&controller=blog&action=index&pg=1">1</a></li>
-                <li><a href="index.php?page=main&controller=blog&action=index&pg=2">2</a></li>
-                <li><a href="index.php?page=main&controller=blog&action=index&pg=3">3</a></li>
-              </ul>
-            </div>
+                    <div class="blog-pagination">
+                        <ul class="justify-content-center">
+                            <li><a href="index.php?page=main&controller=blog&action=index&pg=1">1</a></li>
+                            <li><a href="index.php?page=main&controller=blog&action=index&pg=2">2</a></li>
+                            <li><a href="index.php?page=main&controller=blog&action=index&pg=3">3</a></li>
+                        </ul>
+                    </div>
 
 
-          </div>
-          <div class="col-lg-4">
+                </div>
+                <div class="col-lg-4">
 
-            <div class="sidebar">
+                    <div class="sidebar">
 
-              <h3 class="sidebar-title">Bài viết gần đây</h3>
-              <div class="sidebar-item recent-posts">
-              <?php
-                foreach ($recent as $news)
-                {
-                  echo '
+                        <h3 class="sidebar-title">Bài viết gần đây</h3>
+                        <div class="sidebar-item recent-posts">
+                            <?php
+                            foreach ($recent as $news) {
+                                echo '
                   <div class="post-item clearfix">
                     <h4><a href="blog-single.html" data-bs-toggle="modal" data-bs-target="#modal-' . $news->id . '" id=more' . $news->id . '>' . $news->title . '</a></h4>
                     <time>' . date("F j, Y, g:i a", strtotime($news->date)) . '</time>
                   </div>
                   ';
-                }
-              ?>
+                            }
+                            ?>
 
-              </div><!-- End sidebar recent posts-->
+                        </div><!-- End sidebar recent posts-->
 
-            </div><!-- End sidebar -->
+                    </div><!-- End sidebar -->
 
-          </div><!-- End blog sidebar -->
+                </div><!-- End blog sidebar -->
+
+            </div>
 
         </div>
-
-      </div>
     </section><!-- End Blog Section -->
 
-  </main><!-- End #main -->
+</main><!-- End #main -->
 <?php
-include_once('views/main/footer.php');
+include_once('/xampp/htdocs/Source_Ref/views/main/footer.php');
 ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="public/plugins/jquery/jquery.min.js"></script>
-<script src="public/js/blog/index.js"></script>
+<script src="/source_ref/public/plugins/jquery/jquery.min.js"></script>
+<script src="/source_ref/public/js/blog/index.js"></script>
