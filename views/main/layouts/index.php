@@ -336,5 +336,5 @@ require_once '/xampp/htdocs/Source_Ref/views/main/navbar.php';
 </main><!-- End #main -->
 
 <?php
-require_once '/xampp/htdocs/Source_Ref/views/main/footer.php';
+require_once '/xampp/htdocs/Source_Ref/views/main/layout_Phong/footer.php';
 ?>
