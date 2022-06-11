@@ -24,10 +24,10 @@ if (isset($_SESSION['guest'])) {
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
-    <link href="/MVC_Phong/public/css/layout/navbar.css" rel="stylesheet">
-    <link href="/MVC_Phong/public/css/layout/footer.css" rel="stylesheet">
-    <link href="/MVC_Phong/public/css/layout/hero.css" rel="stylesheet">
-    <link href="/MVC_Phong/public/css/layout/main.css" rel="stylesheet">
+    <link href="/SOURCE_REF/public2/css/layout/navbar.css" rel="stylesheet">
+    <link href="/SOURCE_REF/public2/css/layout/footer.css" rel="stylesheet">
+    <link href="/SOURCE_REF/public2/css/layout/hero.css" rel="stylesheet">
+    <link href="/SOURCE_REF/public2/css/layout/main.css" rel="stylesheet">
     <!-- icon -->
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <!-- ajax -->

@@ -1,6 +1,6 @@
 <?php include_once("../layout_Phong/header.php"); ?>
 
-<?php include_once("../layout_Phong/navbar.php"); ?>
+<?php include_once("../navbar.php"); ?>
 
 <section id="hero">
 
@@ -43,4 +43,4 @@
 
 <?php include_once("../layout_Phong/main.php"); ?>
 
-<?php include_once("../layout_Phong/footer.php"); ?>
+<?php include_once("../footer.php"); ?>
