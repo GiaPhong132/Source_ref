@@ -43,7 +43,7 @@
 
                 <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
 
-                    <span class="login100-form-title p-b-30">
+                    <span class="login100-form-title p-b-20">
                         <strong>Register</strong>
                     </span>
 
@@ -113,15 +113,16 @@
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <div class="wrap-login100-form-btn">
+                        <!-- <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
                             <button class="login100-form-btn">
-                                <!-- <input class="login100-form-btn" type="submit" value="Sign up"> -->
-
                                 <strong style="color: white;">Sign up</strong>
-
                             </button>
-                        </div>
+                        </div> -->
+
+                        <input class="login100-form-btn" type="submit" value="Sign up">
+
+
                     </div>
 
                     <div class="txt1 text-center p-t-54 p-b-20">
