@@ -33,7 +33,7 @@
 
 
 <body>
-    <?php include_once("../layouts/home/navbar.php");
+    <?php require_once("../navbar.php");
     ?>
     <div class="limiter">
         <div class="container-login100" style="background-image: url('/Source_ref/public2/images/tech-blocks.jpeg');">
