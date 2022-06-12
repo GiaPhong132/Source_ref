@@ -1,10 +1,11 @@
-<?php include_once("./header.php");?>
+<?php require_once("header.php"); ?>
 
-<?php include_once("../navbar.php");?>
-<?php include_once("./hero.php");?>
+<?php require_once("../navbar.php"); ?>
 
-<?php include_once("./wedo.php");?>
+<?php require_once("index.php"); ?>
 
-<?php include_once("./main.php");?>
+<?php require_once("main.php"); ?>
 
-<?php include_once("../footer.php");?>
+<?php require_once("wedo.php"); ?>
+
+<?php require_once("../footer.php"); ?>
