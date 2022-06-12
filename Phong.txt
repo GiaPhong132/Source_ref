@@ -4,4 +4,6 @@ git commit -m "...."
 
 git push origin main
 
-git  remote remove origin
+git pull origin main
+
+git remote remove origin
