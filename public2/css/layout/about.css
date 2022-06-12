@@ -1,0 +1,50 @@
+#about-us{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40vh;
+    flex-direction: column;
+} 
+.au-container{
+  display: flex;
+  padding: 20px 0 20px 0;
+}
+.au-container > div{
+  margin: auto;  
+}
+
+.au-container  li{
+  color: black;
+}
+.about-us .content h2 {
+  font-weight: 700;
+  font-size: 42px;
+  line-height: 60px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.about-us .content h3 {
+  font-weight: 500;
+  line-height: 32px;
+  font-size: 24px;
+}
+.about-us .content ul {
+  list-style: none;
+  padding: 0;
+}
+.about-us .content ul li {
+  padding: 10px 0 0 28px;
+  position: relative;
+}
+.about-us .content ul i {
+  left: 0;
+  top: 7px;
+  position: absolute;
+  font-size: 20px;
+  color: #1bbd36;
+}
+.about-us .content p:last-child {
+  margin-bottom: 0;
+}
+
+
