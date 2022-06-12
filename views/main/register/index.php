@@ -35,7 +35,7 @@
 <body>
 
     <div class="limiter">
-        <div class="container-login100" style="background-image: url('/Source_ref/public2/images/bg-01.jpg');">
+        <div class="container-login100" style="background-image: url('/Source_ref/public2/images/tech-blocks.jpeg');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
                 <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
@@ -77,14 +77,14 @@
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <span class="label-input100">Password</span>
                         <input class="input100" type="password" name="password" placeholder="Type your password">
-                        <span style="color: rgb(0, 0, 0);" class="focus-input100" data-symbol="&#9919;"></span>
+                        <span style="color: rgb(0, 0, 0);" class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
 
                     <!--Remember to Check password with retype password is match with password -->
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <span class="label-input100">Retype-Password</span>
                         <input class="input100" type="password" name="retype_password" placeholder="Retype your password">
-                        <span class="focus-input100" data-symbol="&#9919;"></span>
+                        <span class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
 
                     <div class="form-check" style="padding-left: 0;">
