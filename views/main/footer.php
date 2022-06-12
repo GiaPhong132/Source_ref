@@ -1,7 +1,7 @@
- <!-- ======= Footer ======= -->
- <footer class="footer">
-  <div class="footer__addr">
-    <h1 class="footer__logo">
+  <!-- ======= Footer ======= -->
+  <footer class="footer">
+    <div class="footer__addr">
+      <h1 class="footer__logo">
       <img src="/MVC_Phong/public/images/hcmut.png" alt="logo">
       BKaV</h1>
       <h2>Contact</h2>
@@ -82,3 +82,4 @@
 </body>
 
 </html>
+

@@ -1,74 +1,8 @@
-<section id="about-us" >
-    <div class="about-us" data-aos="zoom-in"></div>
-      <div class="section-title">
-          <h2>Về chúng tôi</h2>
-      </div>
-      <div class="row content">
-          <div class="col-lg-6" data-aos="fade-right">
-            <h2>Kiến tạo công nghệ và Phát triển con người. Vì một cuộc sống tốt đẹp hơn</h2>
-          </div>
-          <div class="col-lg-6 pt-4 pt-lg-0" data-aos="fade-left">
-            <p>
-              Thế mạnh của chính là con người và văn hóa doanh nghiệp. Dựa vào kim chỉ nam là 3 giá trị cốt lõi, các thành viên ở VNGREEN luôn có tinh thần cống hiến vì sự phát triển chung của VNGREEN và cộng đồng. Giá trị cốt lõi mà VNGREEN hướng tới là:
-            </p>
-            <ul>
-              <li><i class="ri-check-double-line"></i> Đón Nhận Thách Thức</li>
-              <li><i class="ri-check-double-line"></i> Phát triển đối tác</li>
-              <li><i class="ri-check-double-line"></i> Giữ gìn Chính trực</li>
-            </ul>
-            <p class="fst-italic">
-              Logo với hình dáng cách điệu một ngọn lửa đang cháy, logo VNG biểu trưng cho 3 giá trị quan trọng của công ty: nhiệt huyết, cầu tiến và năng động.
-              Hình dáng vươn lên thể hiện sức trẻ và tinh thần dấn thân.
-            </p>
-          </div>
-        </div>
-
-</section>
-
-<section id="clients" class="clients">
-  <!-- use slick sáng làm--> 
-    <div class="clients-container" data-aos="fade-in">
-      <div class="section-title">
-          <h2>Các công ty đồng hành & tin tưởng</h2>
-      </div>
-      <div class="row center clients-wrap  ">
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-          <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Web_MVC_Phong/public/images/clients/facebook.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-          <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Web_MVC_Phong/public/images/clients/google.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Web_MVC_Phong/public/images/clients/cj.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Web_MVC_Phong/public/images/clients/vtv.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Web_MVC_Phong/public/images/clients/marter_card.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Web_MVC_Phong/public/images/clients/hsbc.png">
-          </div>
-        </div>
-</section>
-
-<section id="services" class="services">
-    <div class="container" data-aos="fade-up">
+<section id="services" class="services section-bg">
+      <div class="container" data-aos="fade-up">
         <div class="section-title">
           <h2>Sản phẩm</h2>
-          <p>Các lĩnh vực hoạt động của BKaV tập trung vào 4 nhóm sản phẩm chủ lực, mang đến cho người dùng những trải nghiệm phong phú và đơn giản hơn.</p>
+          <p>Các lĩnh vực hoạt động của VNGREEN tập trung vào 4 nhóm sản phẩm chủ lực, mang đến cho người dùng những trải nghiệm phong phú và đơn giản hơn.</p>
         </div>
         <div class="row">
           <div class="col-lg-2 col-md-0"></div>
@@ -127,8 +61,7 @@
             </div>
           </div>
           <div class="col-lg-2 col-md-0"></div>
-        
-    </div>
+        </div>
 
-  </section>
-
+      </div>
+    </section>
