@@ -30,9 +30,13 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/util.css">
     <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/layout/navbar.css">
+
 </head>
 
 <body>
+    <?php require_once("../navbar.php"); ?>
+
 
     <div class="limiter">
         <div class="container-login100" style="background-image: url('/Source_ref/public2/images/tech-blocks.jpeg');">
@@ -40,7 +44,7 @@
 
                 <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
 
-                    <span class="login100-form-title p-b-49">
+                    <span class="login100-form-title p-b-30">
                         <strong>Register</strong>
                     </span>
 
