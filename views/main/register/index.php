@@ -107,7 +107,7 @@
                     </div>
 
                     <div class="text-right p-t-8 p-b-31">
-                        <a href="#">
+                        <a href="#" style="color: grey;">
                             Forgot password?
                         </a>
                     </div>
@@ -126,7 +126,7 @@
 
                     <div class="txt1 text-center p-t-54 p-b-20">
                         <span>
-                            <a href="#"><u>Sign In</u></a>
+                            <a href="#" style="color: grey;">Sign In</a>
                         </span>
                     </div>
                 </form>
