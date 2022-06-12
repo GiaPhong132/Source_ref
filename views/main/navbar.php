@@ -1,7 +1,6 @@
-
     <nav>
         <ul class="menu">
-            <li class="logo"><a href="/Source_ref">BKBLUE</a></li>
+            <li class="logo"><a href="/Source_ref">BK<span>BLUE</span></a></li>
             <li class="item"><a href="">Trang Chủ</a></li>
             <li class="item"><a href="/Source_ref/views/main/about">Chúng Tôi</a></li>
             <li class="item"><a href="/Source_ref/views/main/services">Sản Phẩm</a></li>

@@ -9,9 +9,9 @@
             Bkav là Tập đoàn công nghệ hoạt động trong các lĩnh vực an ninh mạng, phần mềm, chính phủ điện tử, nhà sản xuất smartphone, thiết bị điện tử thông minh, Smart City và AI camera. Bkav là 1 trong 10 thương hiệu Nổi tiếng nhất Việt Nam do Hội Sở hữu trí tuệ Việt Nam bình chọn...   
           </p>
             <ul>
-              <li>Đón Nhận Thách Thức</li>
-              <li> Phát triển đối tác</li>
-              <li> Giữ gìn Chính trực</li>
+              <li style="color: black">Đón Nhận Thách Thức</li>
+              <li style="color: black"> Phát triển đối tác</li>
+              <li style="color: black"> Giữ gìn Chính trực</li>
             </ul>
             <p class="">
             Bkav là doanh nghiệp đầu tiên của Việt Nam lọt vào Danh sách các công ty hấp dẫn (Cool Vendors) tại các thị trường mới nổi trên toàn cầu do Gartner, hãng tư vấn CNTT hàng đầu thế giới công bố.
