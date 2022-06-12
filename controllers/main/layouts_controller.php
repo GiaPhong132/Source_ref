@@ -1,5 +1,5 @@
 <?php
-require_once('controllers/main/base_controller.php');
+require_once('base_controller.php');
 
 class LayoutsController extends BaseController
 {
