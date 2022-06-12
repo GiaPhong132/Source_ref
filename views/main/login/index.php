@@ -2,107 +2,113 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Login V4</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" href="/MVC_PHONG/public/images/icons/favicon.ico" />
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/MVC_PHONG/public/vendor/bootstrap/css/bootstrap.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/MVC_PHONG/public/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/MVC_PHONG/public/fonts/iconic/css/material-design-iconic-font.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/MVC_PHONG/public/vendor/animate/animate.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/MVC_PHONG/public/vendor/css-hamburgers/hamburgers.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/MVC_PHONG/public/vendor/animsition/css/animsition.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/MVC_PHONG/public/vendor/select2/select2.min.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/MVC_PHONG/public/vendor/daterangepicker/daterangepicker.css">
+    <!--===============================================================================================-->
+    <link rel="stylesheet" type="text/css" href="/MVC_PHONG/public/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/MVC_PHONG/public/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/layout/navbar.css">
+    <!--===============================================================================================-->
 
-    <title>VNGREEN - Build technology and grow people</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
-
-    <!-- Favicons -->
-    <link href="/SOURCE_REF/public/uploads/favicon.png" rel="icon">
-
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-
-    <!-- Vendor CSS Files -->
-
-    <link href="/SOURCE_REF/public/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="/SOURCE_REF/public/assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="/SOURCE_REF/public/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/SOURCE_REF/public/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="/SOURCE_REF/public/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="/SOURCE_REF/public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="/SOURCE_REF/public/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="/SOURCE_REF/public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <link href="/SOURCE_REF/public/assets/css/style.css" rel="stylesheet">
-    <link href="/SOURCE_REF/public/assets/css/main.css" rel="stylesheet">
-    <link href="/SOURCE_REF/public/assets/css/util.css" rel="stylesheet">
 </head>
 
-<body style="background-color: #666666;">
-    <div class="limiter">
-        <div class="container-login100">
-            <div class="wrap-login100">
 
-                <form class="login100-form validate-form" method="POST">
-                    <span class="login100-form-title p-b-20">
-                        <strong>ĐĂNG NHẬP</strong>
+<body>
+    <?php include_once("../layouts/home/navbar.php"); 
+    ?>
+    <div class="limiter">
+        <div class="container-login100" style="background-image: url('/MVC_PHONG/public/images/bg-01.jpg');">
+            <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
+                <form class="login100-form validate-form">
+                    <span class="login100-form-title p-b-49">
+                        Login
                     </span>
 
-
-                    <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                        <input class="input100" type="text" name="username">
-                        <span class="focus-input100"></span>
-                        <span class="label-input100">Email</span>
+                    <div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
+                        <span class="label-input100">Username</span>
+                        <input class="input100" type="text" name="username" placeholder="Type your username">
+                        <span class="focus-input100" data-symbol="&#xf206;"></span>
                     </div>
-
 
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
-                        <input class="input100" type="password" name="password">
-                        <span class="focus-input100"></span>
                         <span class="label-input100">Password</span>
+                        <input class="input100" type="password" name="pass" placeholder="Type your password">
+                        <span class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
-                    <?php
 
-                    if (isset($err)) {
-                        echo '<p class="login-box-msg" style="color: red">' . $err . '</p>';
-                        unset($err);
-                    }
-                    ?>
-                    <div class="flex-sb-m w-full p-t-3 p-b-32">
-
-                        <div>
-                            <a href="index.php?page=main&controller=layouts&action=index" class="txt1">
-                                Trở về trang chủ!
-                            </a>
-                        </div>
+                    <div class="text-right p-t-8 p-b-31">
+                        <a href="#">
+                            Forgot password?
+                        </a>
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <button class="login100-form-btn" name="submit-btn">
-                            Đăng nhập
-                        </button>
+                        <div class="wrap-login100-form-btn">
+                            <div class="login100-form-bgbtn"></div>
+                            <button class="login100-form-btn">
+                                Sign in
+                            </button>
+                        </div>
                     </div>
-                </form>
 
-                <div class="login100-more" style="background-image: url('/SOURCE_REF/public/assets/img/slide/VNG\ Campus\ 31.jpg');">
-                </div>
+                    <div class="txt1 text-center p-t-54 p-b-20">
+                        <span>
+                            <a href="#"><u>Sign Up</u></a>
+                        </span>
+                    </div>
+                    <!--
+                    <div class="flex-col-c p-t-155">
+                        <span class="txt1 p-b-17">
+                            Or Sign Up Using
+                        </span>
+
+                        <a href="#" class="txt2">
+                            Sign Up
+                        </a>
+                    </div> -->
+                </form>
             </div>
         </div>
     </div>
 
 
+    <div id="dropDownSelect1"></div>
 
-
-
     <!--===============================================================================================-->
-    <script src="vendor/jquery/jquery-3.2.1.min.js"></script>
+    <script src="/MVC_PHONG/public/vendor/jquery/jquery-3.2.1.min.js"></script>
     <!--===============================================================================================-->
-    <script src="vendor/animsition/js/animsition.min.js"></script>
+    <script src="/MVC_PHONG/public/vendor/animsition/js/animsition.min.js"></script>
     <!--===============================================================================================-->
-    <script src="vendor/bootstrap/js/popper.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/MVC_PHONG/public/vendor/bootstrap/js/popper.js"></script>
+    <script src="/MVC_PHONG/public/vendor/bootstrap/js/bootstrap.min.js"></script>
     <!--===============================================================================================-->
-    <script src="vendor/select2/select2.min.js"></script>
+    <script src="/MVC_PHONG/public/vendor/select2/select2.min.js"></script>
     <!--===============================================================================================-->
-    <script src="vendor/daterangepicker/moment.min.js"></script>
-    <script src="vendor/daterangepicker/daterangepicker.js"></script>
+    <script src="/MVC_PHONG/public/vendor/daterangepicker/moment.min.js"></script>
+    <script src="/MVC_PHONG/public/vendor/daterangepicker/daterangepicker.js"></script>
     <!--===============================================================================================-->
-    <script src="vendor/countdowntime/countdowntime.js"></script>
+    <script src="/MVC_PHONG/public/vendor/countdowntime/countdowntime.js"></script>
     <!--===============================================================================================-->
-    <script src="js/main.js"></script>
+    <script src="/MVC_PHONG/public/js/main.js"></script>
 
 </body>
 

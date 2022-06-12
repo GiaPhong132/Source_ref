@@ -1,6 +1,5 @@
-<?php
-require_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
-?>
+<?php include_once("views/main/header.php");?>
+<?php include_once("home/navbar.php");?>
 <main id="main">
     <!-- Modal -->
     <?php
@@ -68,6 +67,4 @@ require_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
 
 </main><!-- End #main -->
 
-<?php
-include_once('/xampp/htdocs/Source_Ref/views/main/footer.php');
-?>
+<?php include_once("views/main/footer.php");?>
