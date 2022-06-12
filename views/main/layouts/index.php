@@ -1,4 +1,4 @@
-<?php require_once("../header.php"); ?>
+<?php require_once("views/main/header.php"); ?>
 
 <?php require_once("home/navbar.php"); ?>
 
@@ -8,4 +8,4 @@
 <?php require_once("home/clients.php"); ?>
 <?php require_once("home/services.php"); ?>
 
-<?php require_once("../footer.php"); ?>
+<?php require_once("views/main/footer.php"); ?>
