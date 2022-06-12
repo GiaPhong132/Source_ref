@@ -3,7 +3,8 @@
     height:  90vh;
     background-image: url(../../images/bg-banner-1.jpg);
     overflow: hidden;
-    position: relative;
+    position: absolute;
+    z-index: -2;
 }
 
 .slider_item-box{
