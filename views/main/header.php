@@ -1,14 +1,14 @@
 <?php
-  session_start();
-  if (isset($_SESSION['guest']))
-  {
+session_start();
+if (isset($_SESSION['guest'])) {
     require_once('models/user.php');
     $data = User::get($_SESSION['guest']);
-  }
-  
+}
+
 ?>
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -52,4 +52,5 @@
     </script>
 
 </head>
+
 <body>
