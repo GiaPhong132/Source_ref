@@ -30,12 +30,10 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/util.css">
     <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/layout/navbar.css">
 
 </head>
 
 <body>
-    <?php require_once("../navbar.php"); ?>
 
     <div class="limiter">
         <div class="container-login100" style="background-image: url('/Source_ref/public2/images/tech-blocks.jpeg');">
@@ -130,6 +128,7 @@
                             <a href="#" style="color: grey;">Sign In</a>
                         </span>
                     </div>
+
                 </form>
 
                 <div class="login100-more" style="background-image: url('/Source_ref/public2/assets/img/slide/VNG Campus 31.jpg');">
