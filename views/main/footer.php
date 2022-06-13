@@ -104,20 +104,20 @@
       <div class="col-lg-2 col-md-6 footer-links">
         <h4>Link liên kết</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="https://www.facebook.com/VNGCorporation.Page/">Facebook</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="https://www.youtube.com/channel/UCk2jT9v-BOmjbPZ08LUbTVA">Youtube</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="https://www.facebook.com/LifeAtVNG/">Life at VNG</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="https://www.facebook.com/groups/VNGRunClub/">VNG Run Club</a></li>
+          <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Facebook</a></li>
+          <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Youtube</a></li>
+          <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Life at VNG</a></li>
+          <li><i class="fa-solid fa-chevrons-right"></i> <a href="">VNG Run Club</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-6 footer-links">
         <h4>Trung tâm hỗ trợ</h4>
         <ul>
-          <li><i class="bx bx-chevron-right"></i> <a href="https://hotro.zing.vn/">Hỗ trợ tài khoản Games</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="https://zalo.me/lienhe.html">Hỗ trợ tài khoản Zalo</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="https://www.vngcloud.vn/web/guest/trang-chu">Hỗ trợ dịch vụ Clouds</a></li>
-          <li><i class="bx bx-chevron-right"></i> <a href="https://zalopay.vn/trung-tam-ho-tro">Hỗ trợ dịch vụ ZaloPay</a></li>
+          <li><i class="fa-solid fa-chevrons-right"> </i><a href="">Hỗ trợ tài khoản Games</a></li>
+          <li><i class="fa-solid fa-chevrons-right"> </i><a href="">Hỗ trợ tài khoản Zalo</a></li>
+          <li><i class="fa-solid fa-chevrons-right"></i><a href="">Hỗ trợ dịch vụ Clouds</a></li>
+          <li></li><i class="fa-solid fa-chevrons-right"></i><a href="">Hỗ trợ dịch vụ ZaloPay</a></li>
         </ul>
       </div>
 
@@ -144,13 +144,14 @@
     </div>
   </div>
   <div class="social-links text-center text-md-right pt-3 pt-md-0">
-    <a href="https://www.facebook.com/VNGCorporation.Page/" class="facebook"><i class="bx bxl-facebook"></i></a>
-    <a href="https://www.youtube.com/channel/UCk2jT9v-BOmjbPZ08LUbTVA" class="youtube"><i class="bx bxl-youtube"></i></a>
+    <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
+    <a href="" class="youtube"><i class="fa-brands fa-youtube"></i></a>
   </div>
 </div>
-</footer><!-- End Footer -->
- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> 
+<a href="#" class="back-to-top d-flex align-items-end justify-content-end"><i class="fa-regular fa-arrow-up"></i>abs</a> 
 
+</footer><!-- End Footer -->
+ 
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
      AOS.init();
