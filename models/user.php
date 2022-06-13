@@ -35,7 +35,7 @@ class User
             FROM user;"
         );
         $users = [];
-        foreach($req->fetch_all(MYSQLI_ASSOC) as $user) {
+        foreach ($req->fetch_all(MYSQLI_ASSOC) as $user) {
             $users[] = new User(
                 $user['email'],
                 $user['profile_photo'],
@@ -57,7 +57,7 @@ class User
         $db = DB::getInstance();
         $req = $db->query(
             "
-            SELECT email, profile_photo, fname, lname, gender, age, phone, createAt, updateAt 
+            SELECT email, profile_photo, fname, lname, gender, age, phone, createAt, updateAt
             FROM user
             WHERE email = '$email'
             ;"
@@ -82,11 +82,17 @@ class User
     {
         $password = password_hash($password, PASSWORD_DEFAULT);
         $db = DB::getInstance();
+
+
         $req = $db->query(
             "
-            INSERT INTO user (email, profile_photo, fname, lname, gender, age, phone, createAt, updateAt, password)
+            INSERT INTO USER (email, profile_photo, fname, lname, gender, age, phone, createAt, updateAt, password)
             VALUES ('$email', '$profile_photo', '$fname', '$lname', $gender, $age, '$phone', NOW(), NOW(), '$password')
-            ;");
+            ;"
+        );
+
+
+
         return $req;
     }
 
@@ -128,7 +134,8 @@ class User
             $req = $db->query(
                 "UPDATE user
                 SET password = '$password', updateAt = NOW()
-                WHERE email = '$email';");
+                WHERE email = '$email';"
+            );
             return $req;
         } else {
             return false;
@@ -142,9 +149,8 @@ class User
         $req = $db->query(
             "UPDATE user
             SET password = '$password', updateAt = NOW()
-            WHERE email = '$email';");
+            WHERE email = '$email';"
+        );
         return $req;
     }
 }
-
-?>

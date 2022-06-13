@@ -30,12 +30,10 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/util.css">
     <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/main.css">
-    <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/layout/navbar.css">
 
 </head>
 
 <body>
-    <?php require_once("../navbar.php"); ?>
 
     <div class="limiter">
         <div class="container-login100" style="background-image: url('/Source_ref/public2/images/tech-blocks.jpeg');">
@@ -44,7 +42,7 @@
                 <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
 
                     <span class="login100-form-title p-b-20">
-                        <strong>Register</strong>
+                        <strong>REGISTER</strong>
                     </span>
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Email is required">
@@ -130,6 +128,7 @@
                             <a href="#" style="color: grey;">Sign In</a>
                         </span>
                     </div>
+
                 </form>
 
                 <div class="login100-more" style="background-image: url('/Source_ref/public2/assets/img/slide/VNG Campus 31.jpg');">
