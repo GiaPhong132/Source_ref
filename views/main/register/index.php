@@ -122,15 +122,15 @@
                         </div>
                     </div>
 
-
+                    <div class="txt1 text-center p-t-54 p-b-20">
+                        <span>
+                            <a href="#" style="color: grey;">Sign In</a>
+                        </span>
+                    </div>
 
             </div>
 
-            <div class="txt1 text-center p-t-54 p-b-20">
-                <span>
-                    <a href="#" style="color: grey;">Sign In</a>
-                </span>
-            </div>
+
 
             </form>
 

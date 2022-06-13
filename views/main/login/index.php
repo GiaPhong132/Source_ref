@@ -69,13 +69,16 @@
                             </button>
                         </div>
                     </div>
+
+                    <div class="flex-col-c p-t-70">
+                        <span class="txt1 p-b-0">
+                            <a href="#" style="color: grey;">Sign Up</a>
+                        </span>
+                    </div>
+
             </div>
 
-            <div class="flex-col-c p-t-70">
-                <span class="txt1 p-b-0">
-                    <a href="#" style="color: grey;">Sign Up</a>
-                </span>
-            </div>
+
 
             </form>
         </div>
