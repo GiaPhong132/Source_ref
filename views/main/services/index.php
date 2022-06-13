@@ -8,7 +8,6 @@
         <div class="card2">
             <div class="imgBx">
                 <img src="/Source_ref/public2/images/clion.png" alt="clion">
-                <img src="/Source_ref/public2/images/clion.png" alt="clion">
                 <h2> C++ IDE</h2>
                 <p><b>Description:</b> One of the highest performing C++ IDEs in the world</p>
             </div>
@@ -43,7 +42,6 @@
         <div class="card2">
             <div class="imgBx">
                 <img src="/source_ref/public2/images/visual.png" alt="visual" />
-                <img src="/Source_ref/public2/images/visual.png" alt="visual" />
                 <h2> Visual Studio Code</h2>
                 <p><b>Description:</b> A source code editor can run many programing language in one place.</p>
             </div>
@@ -61,7 +59,6 @@
         <div class="card2">
             <div class="imgBx">
                 <img src="/source_ref/public2/images/visual2.png" alt="visual2" />
-                <img src="/Source_ref/public2/images/visual2.png" alt="visual2" />
                 <h2> Visual Studio 2022</h2>
                 <p><b>Description:</b> A good tool to learn C++</p>
             </div>
@@ -81,7 +78,6 @@
         <div class="card2">
             <div class="imgBx">
                 <img src="/source_ref/public2/images/vim.png" alt="vim" />
-                <img src="/Source_ref/public2/images/vim.png" alt="vim" />
                 <h2>Vim Text Editor</h2>
                 <p><b>Description:</b> A free and open-source, screen-based text editor program</p>
             </div>
@@ -99,7 +95,6 @@
         <div class="card2">
             <div class="imgBx">
                 <img src="/source_ref/public2/images/python.png" alt="python" />
-                <img src="/Source_ref/public2/images/python.png" alt="python" />
                 <h2> Python IDE</h2>
                 <p><b>Description:</b> A IDE providing a wide range of essential tools for Python developers.</p>
             </div>
@@ -118,7 +113,6 @@
         <div class="card2">
             <div class="imgBx">
                 <img src="/source_ref/public2/images/eclipse.png" alt="eclipse" />
-                <img src="/Source_ref/public2/images/eclipse.png" alt="eclipse" />
                 <h2> Eclipse</h2>
                 <p><b>Description:</b> A great IDE for Java programing </p>
             </div>
@@ -136,7 +130,6 @@
         <div class="card2">
             <div class="imgBx">
                 <img src="/source_ref/public2/images/jupyter.png" alt="jupyter" />
-                <img src="/Source_ref/public2/images/jupyter.png" alt="jupyter" />
                 <h2> Jupyter Notebook</h2>
                 <p><b>Description:</b> A great tools for Data Analysis</p>
             </div>
