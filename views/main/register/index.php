@@ -44,7 +44,7 @@
                 <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
 
                     <span class="login100-form-title p-b-20">
-                        <strong>Register</strong>
+                        <strong>REGISTER</strong>
                     </span>
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Email is required">
