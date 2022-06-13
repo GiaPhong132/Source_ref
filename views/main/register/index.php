@@ -37,14 +37,13 @@
 <body>
     <?php require_once("../navbar.php"); ?>
 
-
     <div class="limiter">
         <div class="container-login100" style="background-image: url('/Source_ref/public2/images/tech-blocks.jpeg');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
                 <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
 
-                    <span class="login100-form-title p-b-30">
+                    <span class="login100-form-title p-b-20">
                         <strong>Register</strong>
                     </span>
 
@@ -108,23 +107,27 @@
                     </div>
 
                     <div class="text-right p-t-8 p-b-31">
-                        <a href="#">
+                        <a href="#" style="color: grey;">
                             Forgot password?
                         </a>
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <div class="wrap-login100-form-btn">
+                        <!-- <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
                             <button class="login100-form-btn">
                                 <strong style="color: white;">Sign up</strong>
                             </button>
-                        </div>
+                        </div> -->
+
+                        <input class="login100-form-btn" type="submit" value="Sign up">
+
+
                     </div>
 
                     <div class="txt1 text-center p-t-54 p-b-20">
                         <span>
-                            <a href="#"><u>Sign In</u></a>
+                            <a href="#" style="color: grey;">Sign In</a>
                         </span>
                     </div>
                 </form>
