@@ -1,5 +1,5 @@
 <?php
-require_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
+require_once("/xampp/htdocs/Source_Ref/views/main/navbar.php");
 ?>
 <!-- ======= Breadcrumbs ======= -->
 <!-- <section id="breadcrumbs" class="breadcrumbs">
@@ -62,11 +62,10 @@ require_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
     </section><!-- End Our Team Section -->
 
     <!-- ======= Our Clients Section ======= -->
-    <?php require_once("clients.php");
-    ?>
+    <?php require_once("clients.php"); ?>
     <!-- End Our Clients Section -->
 
 </main><!-- End #main -->
 <?php
-include_once('/xampp/htdocs/Source_Ref/views/main/footer.php');
+require_once('/xampp/htdocs/Source_Ref/views/main/footer.php');
 ?>
