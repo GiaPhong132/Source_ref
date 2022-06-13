@@ -7,7 +7,7 @@
     <div class="container-ser">
         <div class="card2">
             <div class="imgBx">
-                <img src="/source_ref/public2/images/clion.png" alt="clion">
+                <img src="/Source_ref/public2/images/clion.png" alt="clion">
                 <img src="/Source_ref/public2/images/clion.png" alt="clion">
                 <h2> C++ IDE</h2>
                 <p><b>Description:</b> One of the highest performing C++ IDEs in the world</p>
@@ -42,10 +42,8 @@
         </div>
         <div class="card2">
             <div class="imgBx">
-                <<<<<<< HEAD <img src="/source_ref/public2/images/visual.png" alt="visual" />
-                =======
+                <img src="/source_ref/public2/images/visual.png" alt="visual" />
                 <img src="/Source_ref/public2/images/visual.png" alt="visual" />
-                >>>>>>> 2493991bc01cf16a619d83c442cc70803aace705
                 <h2> Visual Studio Code</h2>
                 <p><b>Description:</b> A source code editor can run many programing language in one place.</p>
             </div>
@@ -62,10 +60,8 @@
         </div>
         <div class="card2">
             <div class="imgBx">
-                <<<<<<< HEAD <img src="/source_ref/public2/images/visual2.png" alt="visual2" />
-                =======
+                <img src="/source_ref/public2/images/visual2.png" alt="visual2" />
                 <img src="/Source_ref/public2/images/visual2.png" alt="visual2" />
-                >>>>>>> 2493991bc01cf16a619d83c442cc70803aace705
                 <h2> Visual Studio 2022</h2>
                 <p><b>Description:</b> A good tool to learn C++</p>
             </div>
@@ -84,10 +80,8 @@
     <div class="container-ser">
         <div class="card2">
             <div class="imgBx">
-                <<<<<<< HEAD <img src="/source_ref/public2/images/vim.png" alt="vim" />
-                =======
+                <img src="/source_ref/public2/images/vim.png" alt="vim" />
                 <img src="/Source_ref/public2/images/vim.png" alt="vim" />
-                >>>>>>> 2493991bc01cf16a619d83c442cc70803aace705
                 <h2>Vim Text Editor</h2>
                 <p><b>Description:</b> A free and open-source, screen-based text editor program</p>
             </div>
@@ -104,10 +98,8 @@
         </div>
         <div class="card2">
             <div class="imgBx">
-                <<<<<<< HEAD <img src="/source_ref/public2/images/python.png" alt="python" />
-                =======
+                <img src="/source_ref/public2/images/python.png" alt="python" />
                 <img src="/Source_ref/public2/images/python.png" alt="python" />
-                >>>>>>> 2493991bc01cf16a619d83c442cc70803aace705
                 <h2> Python IDE</h2>
                 <p><b>Description:</b> A IDE providing a wide range of essential tools for Python developers.</p>
             </div>
@@ -125,10 +117,8 @@
 
         <div class="card2">
             <div class="imgBx">
-                <<<<<<< HEAD <img src="/source_ref/public2/images/eclipse.png" alt="eclipse" />
-                =======
+                <img src="/source_ref/public2/images/eclipse.png" alt="eclipse" />
                 <img src="/Source_ref/public2/images/eclipse.png" alt="eclipse" />
-                >>>>>>> 2493991bc01cf16a619d83c442cc70803aace705
                 <h2> Eclipse</h2>
                 <p><b>Description:</b> A great IDE for Java programing </p>
             </div>
@@ -145,10 +135,8 @@
         </div>
         <div class="card2">
             <div class="imgBx">
-                <<<<<<< HEAD <img src="/source_ref/public2/images/jupyter.png" alt="jupyter" />
-                =======
+                <img src="/source_ref/public2/images/jupyter.png" alt="jupyter" />
                 <img src="/Source_ref/public2/images/jupyter.png" alt="jupyter" />
-                >>>>>>> 2493991bc01cf16a619d83c442cc70803aace705
                 <h2> Jupyter Notebook</h2>
                 <p><b>Description:</b> A great tools for Data Analysis</p>
             </div>
