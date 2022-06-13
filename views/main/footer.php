@@ -148,10 +148,10 @@
     <a href="" class="youtube"><i class="fa-brands fa-youtube"></i></a>
   </div>
 </div>
-<a href="#" class="back-to-top d-flex align-items-end justify-content-end"><i class="fa-regular fa-arrow-up"></i>abs</a> 
 
 </footer><!-- End Footer -->
- 
+<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
      AOS.init();
@@ -161,5 +161,7 @@
  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
  <script type="text/javascript" src="/Web_MVC_Phong/public/js/slick.js"></script>
-
+ <script type="text/javascript" src="/Web_MVC_Phong/public2/js/main.js"></script>
  </body>
+
+ </html>

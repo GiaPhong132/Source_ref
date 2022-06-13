@@ -1,25 +1,14 @@
 #about-us{
-<<<<<<< HEAD
-    display: grid;
-=======
-
     display: flex;
->>>>>>> e999600c9fb8372c762eaa487ade019bf1b01b28
     justify-content: center;
     align-items: center;
-    height: 40vh;
     flex-direction: column;
+    z-index: -10;
+    padding: 30px 0 30px 0;
 } 
-.au-container{
-  display: flex;
-  padding: 20px 0 20px 0;
-}
-.au-container > div{
-  margin: auto;  
-}
 
-.au-container  li{
-  color: black;
+.about-us p{
+  padding-top: 20px;
 }
 .about-us .content h2 {
   font-weight: 700;

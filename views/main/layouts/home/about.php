@@ -13,7 +13,7 @@
               <li style="color: black"> Phát triển đối tác</li>
               <li style="color: black"> Giữ gìn Chính trực</li>
             </ul>
-            <p class="">
+            <p>
             Bkav là doanh nghiệp đầu tiên của Việt Nam lọt vào Danh sách các công ty hấp dẫn (Cool Vendors) tại các thị trường mới nổi trên toàn cầu do Gartner, hãng tư vấn CNTT hàng đầu thế giới công bố.
           </p>
           </div>

@@ -19,9 +19,9 @@
                         Marketers/advertisers usually focus their efforts on the
                         people responsible for making the purchase.
                       </p>
-                        <div>
-                        <button class="button-effect">Get Started</button>
-                        </div>
+                       
+                       <a href="#" class="btn-effect" style="--clr:#1e9bff;"><span>Get Started</span><i></i></a>
+                        
                     </div>
                     <div class="slider_item-imgbox">
                       <img src="" alt="" />

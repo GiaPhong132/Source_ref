@@ -35,6 +35,8 @@ if (isset($_SESSION['guest'])) {
     <link href="/Source_ref/public2/css/layout/wedo.css" rel="stylesheet">
     <link href="/Source_ref/public2/css/layout/responsive.css" rel="stylesheet">
     <link href="/Source_ref/public2/css/layout/services.css" rel="stylesheet">
+    <link href="/Source_ref/public2/css/layout/info.css" rel="stylesheet">
+    
     <!-- icon -->
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />

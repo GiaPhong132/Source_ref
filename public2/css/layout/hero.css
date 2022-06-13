@@ -1,10 +1,9 @@
  #hero{
     width: 100%;
-    height:  90vh;
+    height: 100%;
     background-image: url(../../images/bg-banner-1.jpg);
     overflow: hidden;
     position: relative;
-    z-index: -100;
 }
 
 .slider_item-box{
@@ -17,80 +16,73 @@
    font-size: 35px;
 }
 
-.button-effect {
-    min-width: 200px;
-    min-height: 80px;
-    font-family: 'Nunito', sans-serif;
-    font-size: 22px;
-    text-transform: uppercase;
-    letter-spacing: 1.3px;
-    font-weight: 700;
-    color: #313133;
-    background: #4FD1C5;
-    background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);
-    border: none;
-    border-radius: 1000px;
-    box-shadow: 12px 12px 24px rgba(79,209,197,.64);
-    transition: all 0.3s ease-in-out 0s;
-    cursor: pointer;
-    outline: none;
-    position: relative;
-    }
-  
-button.button-effect::before {
+.btn-effect{
+  position: relative;
+  background: #444;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1em;
+  padding: 10px 30px;
+  transition: 0.5s;
+}
+.btn-effect:hover{
+  letter-spacing: 0.25em;
+  background: var(--clr);
+  color: var(--clr);
+  box-shadow: 0 0 35px var(--clr);
+  text-decoration: none;
+}
+.btn-effect::before{
   content: '';
-    border-radius: 1000px;
-    min-width: calc(300px + 12px);
-    min-height: calc(60px + 12px);
-    border: 6px solid #00FFCB;
-    box-shadow: 0 0 60px rgba(0,255,203,.64);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    opacity: 0;
-    transition: all .3s ease-in-out 0s;
-  }
-  
-  .button.button-effect, .button-effect:focus {
-    color: #313133;
-    transform: translateY(-6px);
-  }
-  
-  button-.button-effect::before, button-.button-effect::before {
-    opacity: 1;
-  }
-  
-  button.button-effect::after {
-    content: '';
-    width: 30px; height: 30px;
-    border-radius: 100%;
-    border: 6px solid #00FFCB;
-    position: absolute;
-    z-index: -1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    animation: ring 1.5s infinite;
-  }
-  
-  button.button-effect:hover::after, button.button-effect:focus::after {
-    animation: none;
-    display: none;
-  }
-  
-  @keyframes ring {
-    0% {
-      width: 10px;
-      height: 10px;
-      opacity: 1;
-    }
-    100% {
-      width: 200px;
-      height: 200px;
-      opacity: 0;
-    }
-  } 
+  position: absolute;
+  inset: 2px;
+  background:#292727;
+}
+.btn-effect span{
+  position: relative;
+  z-index: 1;
+}
+.btn-effect a i{
+  position: absolute;
+  inset: 0;
+  display: block;
+}
+.btn-effect a i::before{
+  content: '';
+  position: absolute;
+  top: -3.5px;
+  left: 80%;
+  width: 40px;
+  height: 20px;
+  border: 2px solid var(--clr);
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.btn-effect a:hover i::before{
+  width: 20px;
+  left: 20%;
+}
+
+.btn-effect a i::after{
+  content:" ";
+  position: absolute;
+  bottom: -3.5px;
+  left: 20%;
+  width: 10px;
+  height: 5px;
+  border: 2px solid #fff;
+  background: #27282c;
+  transform: translateX(-50%);
+  transition: 0.5s;
+}
+.btn-effect a:hover i::after{
+  width: 20px;
+  left: 80%;
+}
+
+
 
   .slider_section {
     padding-top: 75px;
@@ -135,14 +127,7 @@ button.button-effect::before {
     margin: 40px 0 45px 0;
   }
   
-  .slider_item-detail a {
-    display: inline-block;
-    background-color: #fddd33;
-    color: #fff;
-    font-size: 15px;
-    border-radius: 10px;
-    padding: 10px 40px;
-  }
+
   
   .slider_item-imgbox {
     margin-top: 45px;
