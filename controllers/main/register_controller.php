@@ -23,12 +23,13 @@ class RegisterController extends BaseController
         $phone = $_POST['phone_number'];
         $email = $_POST['email'];
         $password = $_POST['password'];
-
-        echo $fname . $lname . $age . $gender . $phone . $email . $password;
-
-        User::insert($email, 'public/img/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
-
-        header('Location: index.php?page=main&controller=layouts&action=index');
+        $retype_pass = $_POST['retype_password'];
+        if ($password != $retype_pass) {
+            header('Location: index.php?page=main&controller=register&action=index');
+        } else {
+            User::insert($email, 'public/img/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
+            header('Location: index.php?page=main&controller=layouts&action=index');
+        }
     }
 
     public function editInfo()

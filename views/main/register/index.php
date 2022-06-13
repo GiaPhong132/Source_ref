@@ -42,7 +42,7 @@
                 <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
 
                     <span class="login100-form-title p-b-20">
-                        <strong>REGISTER</strong>
+                        <strong>Sign Up</strong>
                     </span>
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Email is required">
@@ -111,14 +111,13 @@
                     </div>
 
                     <div class="container-login100-form-btn">
-                        <!-- <div class="wrap-login100-form-btn">
+                        <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
                             <button class="login100-form-btn">
-                                <strong style="color: white;">Sign up</strong>
+                                <input style="background-color:transparent" class="login100-form-btn" class="login100-form-btn" type="submit" value="Sign up">
                             </button>
-                        </div> -->
+                        </div>
 
-                        <input class="login100-form-btn" type="submit" value="Sign up">
 
 
                     </div>

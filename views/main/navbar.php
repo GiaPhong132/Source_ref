@@ -61,7 +61,7 @@ if (isset($_SESSION['guest'])) {
             <li class="item"><a href="/Source_ref">Trang Chủ</a></li>
             <li class="item"><a href="/Source_ref/views/main/about">Chúng Tôi</a></li>
             <li class="item"><a href="/Source_ref/views/main/services">Sản Phẩm</a></li>
-            <li class="item button"><a href="/Source_ref/views/main/login">Đăng Nhập</a></li>
+            <li class="item button"><a href="index.php?page=main&controller=login&action=index">Đăng Nhập</a></li>
             <li class="item button secondary"><a href="index.php?page=main&controller=register&action=index">Đăng Ký</a></li>
             <li class="toggle"><span class="bars"></span></li>
         </ul>
