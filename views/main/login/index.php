@@ -40,7 +40,7 @@
                 <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
 
                     <span class="login100-form-title p-b-49">
-                        Login
+                        Sign In
                     </span>
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
@@ -65,20 +65,21 @@
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
                             <button class="login100-form-btn">
-                                Login
+                                <input style="background-color:transparent" class="login100-form-btn" class="login100-form-btn" type="submit" value="Sign in">
                             </button>
                         </div>
                     </div>
-
-                    <div class="flex-col-c p-t-70">
-                        <span class="txt1 p-b-0">
-                            <a href="#" style="color: grey;">Sign Up</a>
-                        </span>
-                    </div>
-
-                </form>
             </div>
+
+            <div class="flex-col-c p-t-70">
+                <span class="txt1 p-b-0">
+                    <a href="#" style="color: grey;">Sign Up</a>
+                </span>
+            </div>
+
+            </form>
         </div>
+    </div>
     </div>
 
 
