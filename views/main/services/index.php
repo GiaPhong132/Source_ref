@@ -1,70 +1,149 @@
-<?php include_once("views/main/header.php");?>
-<?php include_once("home/navbar.php");?>
-<main id="main">
-    <!-- Modal -->
-    <?php
-    foreach ($products as $product) {
-        echo
-        '<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog modal-dialog-scrollable">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">' . $product->name . '</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+<?php require_once("/xampp/htdocs/Source_ref/views/main/navbar.php");?>
+<div>
+      <div class="temp"></div>
+      <div class="ourproduct">
+        <h1>PRODUCTS FROM  BK AO VAI</h1>
+      </div>
+       <div class = "container-ser">
+          <div class = "card2">
+            <div class = "imgBx">
+              <img src ="/source_ref/public2/images/clion.png" alt ="clion">
+              <h2> C++ IDE</h2>
+              <p><b>Description:</b> One of the highest performing C++ IDEs in the world</p>
+            </div>
+            <div class = "content2">
+              <div class = "version">
+                <h3>Version:</h3>
+                  <span><a href="#"> 1.0 </a></span>
+                  <span><a href="#"> 2.0 </a></span>
+                  <span><a href="#"> 3.0 </a></span>
+                  <span><a href="#"> 4.0 </a></span>
               </div>
-              <div class="modal-body">
-                  <img src="' . $product->img . '" class="card-img-top" alt="...">
-                  <h6 class="card-text"><strong>' . $product->description . '</strong></h6>
-                  <p><strong>Giá thành: ' . $product->price . '</strong></p>
-                  <p>' . $product->content . '</p>
-                </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Đóng</button>
-              </div>
+              <div class ="read2"><a href ="#">Read More</a></div>
             </div>
           </div>
-        </div>';
-    }
-    ?>
-
-    <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
-        <div class="container">
-
-            <div class="d-flex justify-content-between align-items-center">
-                <h1 style="color: white;"><strong>SẢN PHẨM</strong></h1>
-                <ol>
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li>Sản phẩm</li>
-                </ol>
+          <div class = "card2">
+            <div class = "imgBx">
+              <img src ="/source_ref/public2/images/phpstorm.png" alt ="phpstorm"/>
+              <h2> PHP Storm</h2>
+              <p><b>Description:</b> One of the suitable IDEs for those who are new to web programming</p>
             </div>
-
-        </div>
-    </section><!-- End Breadcrumbs -->
-    <!-- ======= Services Section ======= -->
-    <section id="services" class="services section-bg">
-        <div class="container" data-aos="fade-up">
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-
-                <?php
-                foreach ($products as $product) {
-                    echo
-                    '<!-- Card 1 -->
-              <div class="col" data-aos="zoom-in" data-aos-delay="100" data-bs-toggle="modal" data-bs-target="#exampleModal">
-                <div class="card h-100">
-                  <img src="' . $product->img . '" class="card-img-top" alt="...">
-                  <div class="card-body">
-                    <h5 class="card-title">' . $product->name . '</h5>
-                    <p class="card-text">' . $product->description . '</p>
-                  </div>
-                </div>
-              </div>';
-                }
-                ?>
-
+            <div class = "content2">
+              <div class = "version">
+                <h3>Version:</h3>
+                  <span><a href="#"> 1.0 </a></span>
+                  <span><a href="#"> 2.0 </a></span>
+                  <span><a href="#"> 3.0 </a></span>
+                  <span><a href="#"> 4.0 </a></span>
+              </div>
+              <div class ="read2"><a href = "#">Read More</a></div>
             </div>
+          </div>
+          <div class = "card2">
+            <div class = "imgBx">
+              <img src = "/source_ref/public2/images/visual.png" alt ="visual"/>
+              <h2> Visual Studio Code</h2>
+              <p><b>Description:</b> A source code editor can run many programing language in one place.</p>
+            </div>
+            <div class = "content2">
+              <div class = "version">
+                <h3>Version:</h3>
+                  <span><a href="#"> 1.0 </a></span>
+                  <span><a href="#"> 2.0 </a></span>
+                  <span><a href="#"> 3.0 </a></span>
+                  <span><a href="#"> 4.0 </a></span>
+              </div>
+              <div class ="read2"><a href = "#">Read More</a></div>
+            </div>
+          </div>
+          <div class = "card2">
+            <div class = "imgBx">
+              <img src = "/source_ref/public2/images/visual2.png" alt ="visual2"/>
+              <h2> Visual Studio 2022</h2>
+              <p><b>Description:</b> A good tool to learn C++</p>
+            </div>
+            <div class = "content2">
+              <div class = "version">
+                <h3>Version:</h3>
+                  <span><a href="#"> 1.0 </a></span>
+                  <span><a href="#"> 2.0 </a></span>
+                  <span><a href="#"> 3.0 </a></span>
+                  <span><a href="#"> 4.0 </a></span>
+              </div>
+              <div class ="read2"><a href = "#">Read More</a></div>
+          </div>
+          </div>
+      </div>
+      <div class = "container-ser">
+      <div class = "card2">
+            <div class = "imgBx">
+              <img src = "/source_ref/public2/images/vim.png" alt ="vim"/>
+              <h2>Vim Text Editor</h2>
+              <p><b>Description:</b> A free and open-source, screen-based text editor program</p>
+            </div>
+            <div class = "content2">
+              <div class = "version">
+                <h3>Version:</h3>
+                  <span><a href="#"> 1.0 </a></span>
+                  <span><a href="#"> 2.0 </a></span>
+                  <span><a href="#"> 3.0 </a></span>
+                  <span><a href="#"> 4.0 </a></span>
+              </div>
+              <div class ="read2"><a href = "#">Read More</a></div>
+          </div>
+          </div>
+          <div class = "card2">
+            <div class = "imgBx">
+              <img src ="/source_ref/public2/images/python.png" alt ="python"/>
+              <h2> Python IDE</h2>
+              <p><b>Description:</b> A IDE providing a wide range of essential tools for Python developers.</p>
+            </div>
+            <div class = "content2">
+              <div class = "version">
+                <h3>Version:</h3>
+                  <span><a href="#"> 1.0 </a></span>
+                  <span><a href="#"> 2.0 </a></span>
+                  <span><a href="#"> 3.0 </a></span>
+                  <span><a href="#"> 4.0 </a></span>
+              </div>
+              <div class ="read2"><a href = "#">Read More</a></div>
+            </div>
+          </div>
+          
+          <div class = "card2">
+            <div class = "imgBx">
+              <img src ="/source_ref/public2/images/eclipse.png" alt ="eclipse"/>
+              <h2> Eclipse</h2>
+              <p><b>Description:</b> A great IDE for Java programing </p>
+            </div>
+            <div class = "content2">
+              <div class = "version">
+                <h3>Version:</h3>
+                  <span><a href="#"> 1.0 </a></span>
+                  <span><a href="#"> 2.0 </a></span>
+                  <span><a href="#"> 3.0 </a></span>
+                  <span><a href="#"> 4.0 </a></span>
+              </div>
+              <div class ="read2"><a href = "#">Read More</a></div>
+            </div>
+          </div>
+          <div class = "card2">
+            <div class = "imgBx">
+              <img src ="/source_ref/public2/images/jupyter.png" alt ="jupyter"/>
+              <h2> Jupyter Notebook</h2>
+              <p><b>Description:</b> A great tools for Data Analysis</p>
+            </div>
+            <div class = "content2">
+              <div class = "version">
+                <h3>Version:</h3>
+                  <span><a href="#"> 1.0 </a></span>
+                  <span><a href="#"> 2.0 </a></span>
+                  <span><a href="#"> 3.0 </a></span>
+                  <span><a href="#"> 4.0 </a></span>
+              </div>
+              <div class ="read2"><a href = "#">Read More</a></div>
+            </div>
+          </div>
         </div>
-
-</main><!-- End #main -->
-
-<?php include_once("views/main/footer.php");?>
+    </div>
+<?php include_once("/xampp/htdocs/Source_ref/views/main/footer.php");?>

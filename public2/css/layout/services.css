@@ -1,0 +1,148 @@
+.ourproduct
+{
+    width: 100%;
+    text-align: center;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00E5FF;
+    color: white;
+    margin-bottom: 60px;
+}
+.temp
+{
+    margin-top: -5px;
+    display: flex;
+    height: 8px;
+    background-color: #2979FF;
+}
+.line
+{
+    height: 1px;
+    background-color: #2979FF;
+}
+
+.back
+{
+    background-color: #fff;
+}
+.container-ser
+{
+    position: relative;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container-ser .card2
+{
+    position: relative;
+    width: 22%;
+    height: 400px;
+    margin:  1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*theo chiều dọc*/
+    background-color: rgba(255, 255, 255, 0.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(15px);
+}
+.container-ser .card2 .imgBx
+{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px;
+    transition: 0.5s ease-in-out;
+}
+.container-ser .card2:hover .imgBx
+{
+    transform: translateY(-100px);
+}
+.container-ser .card2 .imgBx img
+{
+    max-width: 100%;
+    margin: 0 0 20px;
+    transition: 0.5 ease-in-out;
+}/*
+.nameproduct{
+    color: #2979FF;
+    font-size: 40px;
+}*/
+.container-ser .card2 .imgBx h2
+{
+    color: #2979FF;
+    font-size: 21px;
+}
+.container-ser .card2 .content2
+{
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+.container-ser .card2:hover .content2
+{
+    opacity: 1;
+    visibility: visible;
+}
+.container-ser .card2 .content2 .version
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+}
+.container-ser .card2 .content2 .version h3
+{
+    font-weight: 600;
+    font-size: 14px;
+    text-transform:uppercase;
+    letter-spacing:  2px;
+    margin-right: 10px;
+}
+.container-ser .card2 .content2 .version span
+{
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height:  24px;
+    display: inline-block;
+    color: #111;
+    background: #00E5FF;
+    border-radius: 4px;
+    font-size: 14px;
+    margin: 0 5px;
+    font-weight:  500;
+    transition: 0.5s;
+    cursor:  pointer;
+}
+.container-ser .card2 .content2 .version span:hover
+{
+    background: #9bdc28;
+}
+ .read2
+{
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background:#00E5FF;
+    border-radius: 40px;
+    font-weight:  600;
+    letter-spacing: 1px;
+    color: #111;
+    text-decoration: none;
+    text-transform: uppercase;
+
+}

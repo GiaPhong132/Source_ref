@@ -1,5 +1,10 @@
 #about-us{
+<<<<<<< HEAD
     display: grid;
+=======
+
+    display: flex;
+>>>>>>> e999600c9fb8372c762eaa487ade019bf1b01b28
     justify-content: center;
     align-items: center;
     height: 40vh;
