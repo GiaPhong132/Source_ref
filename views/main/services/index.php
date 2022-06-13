@@ -7,12 +7,10 @@
     <div class="container-ser">
         <div class="card2">
             <div class="imgBx">
-                <<<<<<< HEAD <img src="/source_ref/public2/images/clion.png" alt="clion">
-                    =======
-                    <img src="/Source_ref/public2/images/clion.png" alt="clion">
-                    >>>>>>> 2493991bc01cf16a619d83c442cc70803aace705
-                    <h2> C++ IDE</h2>
-                    <p><b>Description:</b> One of the highest performing C++ IDEs in the world</p>
+                <img src="/source_ref/public2/images/clion.png" alt="clion">
+                <img src="/Source_ref/public2/images/clion.png" alt="clion">
+                <h2> C++ IDE</h2>
+                <p><b>Description:</b> One of the highest performing C++ IDEs in the world</p>
             </div>
             <div class="content2">
                 <div class="version">
