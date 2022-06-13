@@ -69,10 +69,15 @@
     max-width: 100%;
     margin: 0 0 20px;
     transition: 0.5 ease-in-out;
-}
+}/*
+.nameproduct{
+    color: #2979FF;
+    font-size: 40px;
+}*/
 .container-ser .card2 .imgBx h2
 {
     color: #2979FF;
+    font-size: 21px;
 }
 .container-ser .card2 .content2
 {
