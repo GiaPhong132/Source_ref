@@ -43,12 +43,13 @@
   border-radius: 10%;
   overflow: hidden;
   background: #ececec;
-  height: 100px;
+  height: 200px;
 }
 .clients .client-logo img {
   transition: all 0.4s ease-in-out;
-  height: 100px;
-  filter: grayscale(50%);
+  height: 90%;
+  filter: grayscale(20%);
+
 }
 .clients .client-logo:hover img {
   filter: none;

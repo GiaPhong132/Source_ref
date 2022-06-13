@@ -183,19 +183,19 @@ button.button-effect::before {
   
   .slider_section .carousel-control-prev {
     left: 2%;
-    background-image: url(../../images/icons/left-black-arrow.png);
+    background-image: url(../../../public2/images/left-black-arrow.png);
   }
   
   .slider_section .carousel-control-next {
     right: 2%;
-    background-image: url(../../images/icons/right-black-arrow.png);
+    background-image: url(../../../public2/images/right-black-arrow.png);
   }
   
   .slider_section .carousel-control-prev:hover {
-    background-image: url(../../images/icons/prev.png);
+    background-image: url(../../../public2/images/prev.png);
   }
   
   .slider_section .carousel-control-next:hover {
-    background-image: url(../../images/icons/next.png);
+    background-image: url(../../../public2/images/next.png);
   }
   
