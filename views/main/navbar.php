@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['guest'])) {
-    require_once('models/user.php');
+    require_once('/xampp/htdocs/Source_ref/models/user.php');
     $data = User::get($_SESSION['guest']);
 }
 ?>
@@ -61,7 +61,7 @@ if (isset($_SESSION['guest'])) {
         <ul class="menu">
             <li class="logo"><a href="/Source_ref">BK<span>BLUE</span></a></li>
             <li class="item"><a href="/Source_ref">Trang Chủ</a></li>
-            <li class="item"><a href="/Source_ref/views/main/about">Chúng Tôi</a></li>
+            <li class="item"><a href="index.php?page=main&controller=about&action=index">Chúng Tôi</a></li>
             <li class="item"><a href="/Source_ref/views/main/services">Sản Phẩm</a></li>
             <li class="item button"><a href="index.php?page=main&controller=login&action=index">Đăng Nhập</a></li>
             <li class="item button secondary"><a href="index.php?page=main&controller=register&action=index">Đăng Ký</a></li>

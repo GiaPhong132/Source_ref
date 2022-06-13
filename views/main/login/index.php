@@ -37,21 +37,21 @@
         <div class="container-login100" style="background-image: url('/Source_ref/public2/images/tech-blocks.jpeg');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
-                <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
+                <form method="POST" class="login100-form validate-form">
 
                     <span class="login100-form-title p-b-49">
                         Sign In
                     </span>
 
-                    <div class="wrap-input100 validate-input m-b-23" data-validate="Username is reauired">
-                        <span class="label-input100">Username</span>
-                        <input class="input100" type="text" name="username" placeholder="Type your username">
+                    <div class="wrap-input100 validate-input m-b-23" data-validate="Email is required">
+                        <span class="label-input100">Email</span>
+                        <input class="input100" type="text" name="email" placeholder="Type your email">
                         <span class="focus-input100" data-symbol="&#xf206;"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <span class="label-input100">Password</span>
-                        <input class="input100" type="password" name="pass" placeholder="Type your password">
+                        <input class="input100" type="password" name="password" placeholder="Type your password">
                         <span class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
 
@@ -64,18 +64,21 @@
                     <div class="container-login100-form-btn">
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
-                            <button class="login100-form-btn">
-                                <input style="background-color:transparent" class="login100-form-btn" class="login100-form-btn" type="submit" value="Sign in">
+                            <button class="login100-form-btn" name="submit-btn">
+                                <strong>sign in</strong>
                             </button>
                         </div>
                     </div>
+
+                    <div class="flex-col-c p-t-70">
+                        <span class="txt1 p-b-0">
+                            <a href="#" style="color: grey;">Sign Up</a>
+                        </span>
+                    </div>
+
             </div>
 
-            <div class="flex-col-c p-t-70">
-                <span class="txt1 p-b-0">
-                    <a href="#" style="color: grey;">Sign Up</a>
-                </span>
-            </div>
+
 
             </form>
         </div>
