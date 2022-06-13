@@ -2,7 +2,7 @@
 include_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
 ?>
 <!-- ======= Breadcrumbs ======= -->
-<section id="breadcrumbs" class="breadcrumbs">
+<!-- <section id="breadcrumbs" class="breadcrumbs">
     <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
@@ -14,10 +14,10 @@ include_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
         </div>
 
     </div>
-</section><!-- End Breadcrumbs -->
+</section>End Breadcrumbs -->
 <main id="main">
     <!-- ======= About Us Section ======= -->
-    <section id="about-us" class="about-us">
+    <!-- <section id="about-us" class="about-us">
         <div class="container" data-aos="fade-up">
 
             <div class="row content">
@@ -42,10 +42,10 @@ include_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
             </div>
 
         </div>
-    </section><!-- End About Us Section -->
+    </section>End About Us Section -->
 
     <!-- ======= Our Team Section ======= -->
-    <section id="team" class="team section-bg">
+    <!-- <section id="team" class="team section-bg">
         <div class="container">
 
             <div class="section-title" data-aos="fade-up">
@@ -130,7 +130,8 @@ include_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
             </div>
 
         </div>
-    </section><!-- End Our Team Section -->
+    </section> -->
+    <!-- End Our Team Section -->
 
     <!-- ======= Developing Section ======= -->
     <section id="team" class="team section-bg">
@@ -139,7 +140,10 @@ include_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
                 <h2>Hình thành <span><strong>và phát triển</strong></span></h2>
                 <p>Thành lập từ năm 2004 đến nay, VNGREEN đã trải qua 14 năm phát triển và mở rộng để trở thành một trong những công ty Internet & Công nghệ hàng đầu Việt Nam và Đông Nam Á, với hơn 3200 thành viên.</p>
             </div>
-            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel" data-aos="fade-up">
+            <div id="carouselExampleControls"
+            class="carousel slide"
+            data-ride="carousel"
+             data-aos="fade-up">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="5000">
                         <img src="/source_ref/public/assets/img/history/1.png" class="d-block w-100" alt="...">
@@ -171,68 +175,9 @@ include_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
     </section><!-- End Our Team Section -->
 
     <!-- ======= Our Clients Section ======= -->
-    <section id="clients" class="clients">
-        <div class="container" data-aos="fade-up">
-
-            <div class="section-title">
-                <h2>Đối tác</h2>
-                <p>Danh sách đối tác ngày càng dài thêm là minh chứng cho mối quan hệ hợp tác hiệu quả giữa VNGREEN cùng các đối tác tại Việt Nam và nhiều quốc gia trên thế giới. VNG tự hào được kể tên các thương hiệu nổi tiếng mà VNGREEN đã và đang hợp tác.</p>
-            </div>
-
-            <div class="row no-gutters clients-wrap clearfix" data-aos="fade-up">
-
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="client-logo">
-                        <img src="/source_ref/public/assets/img/clients/cj.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="client-logo">
-                        <img src="/source_ref/public/assets/img/clients/facebook.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="client-logo">
-                        <img src="/source_ref/public/assets/img/clients/google.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="client-logo">
-                        <img src="/source_ref/public/assets/img/clients/hsbc.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="client-logo">
-                        <img src="/source_ref/public/assets/img/clients/marter_card.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="client-logo">
-                        <img src="/source_ref/public/assets/img/clients/netease.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="client-logo">
-                        <img src="/source_ref/public/assets/img/clients/vtv.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-4 col-6">
-                    <div class="client-logo">
-                        <img src="/source_ref/public/assets/img/clients/waltdisney.png" class="img-fluid" alt="">
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-    </section><!-- End Our Clients Section -->
+    <?php require_once("clients.php"); 
+    ?>
+    <!-- End Our Clients Section -->
 
 </main><!-- End #main -->
 <?php
