@@ -37,7 +37,7 @@
         <div class="container-login100" style="background-image: url('/Source_ref/public2/images/tech-blocks.jpeg');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
-                <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
+                <form method="POST" class="login100-form validate-form">
 
                     <span class="login100-form-title p-b-49">
                         Sign In
@@ -65,7 +65,10 @@
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
                             <button class="login100-form-btn">
-                                <input style="background-color:transparent" class="login100-form-btn" class="login100-form-btn" type="submit" value="Sign in">
+                                <span>
+                                    <strong>sign in</strong>
+                                </span>
+
                             </button>
                         </div>
                     </div>

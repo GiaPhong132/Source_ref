@@ -114,27 +114,31 @@
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
                             <button class="login100-form-btn">
-                                <input style="background-color:transparent" class="login100-form-btn" class="login100-form-btn" type="submit" value="Sign up">
+                                <span>
+                                    <strong>sign up</strong>
+                                </span>
+
                             </button>
                         </div>
-
-
-
                     </div>
 
-                    <div class="txt1 text-center p-t-54 p-b-20">
-                        <span>
-                            <a href="#" style="color: grey;">Sign In</a>
-                        </span>
-                    </div>
 
-                </form>
 
-                <div class="login100-more" style="background-image: url('/Source_ref/public2/assets/img/slide/VNG Campus 31.jpg');">
-                </div>
             </div>
 
+            <div class="txt1 text-center p-t-54 p-b-20">
+                <span>
+                    <a href="#" style="color: grey;">Sign In</a>
+                </span>
+            </div>
+
+            </form>
+
+            <div class="login100-more" style="background-image: url('/Source_ref/public2/assets/img/slide/VNG Campus 31.jpg');">
+            </div>
         </div>
+
+    </div>
     </div>
 
 </body>
