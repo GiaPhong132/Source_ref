@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['guest'])) {
-    require_once('models/user.php');
+    require_once('/xampp/htdocs/Source_ref/models/user.php');
     $data = User::get($_SESSION['guest']);
 }
 ?>
