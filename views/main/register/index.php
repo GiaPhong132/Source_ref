@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<?php error_reporting(E_ALL ^ E_WARNING);  ?>
 <head>
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
@@ -30,11 +30,13 @@
     <!--===============================================================================================-->
     <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/util.css">
     <link rel="stylesheet" type="text/css" href="/Source_ref/public2/css/main.css">
-
+    
 </head>
 
 <body>
-
+<script>
+        
+    </script>
     <div class="limiter">
         <div class="container-login100" style="background-image: url('/Source_ref/public2/images/tech-blocks.jpeg');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
@@ -77,14 +79,18 @@
 
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <span class="label-input100">Password</span>
-                        <input class="input100" type="password" name="password" placeholder="Type your password">
+                        <span id='msg1' style="color:red">
+                        
+                    </span>
+                        <input onkeyup='check();' class="input100" type="password" id="password" placeholder="Type your password">
                         <span style="color: rgb(0, 0, 0);" class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
 
                     <!--Remember to Check password with retype password is match with password -->
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
-                        <span class="label-input100">Retype-Password</span>
-                        <input class="input100" type="password" name="retype_password" placeholder="Retype your password">
+                        <span class="label-input100">Retype Password</span>
+                        <span id='message'></span>
+                        <input onkeyup='check();' class="input100" type="password" id="retype_password" placeholder="Retype your password">
                         <span class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
 
@@ -113,34 +119,43 @@
                     <div class="container-login100-form-btn">
                         <div class="wrap-login100-form-btn">
                             <div class="login100-form-bgbtn"></div>
-                            <button class="login100-form-btn">
-                                <span>
-                                    <strong>sign up</strong>
-                                </span>
-
+                            <button class="login100-form-btn" >
+                                <input style="background-color:transparent"  class="login100-form-btn" type="submit" value="Sign up">
                             </button>
                         </div>
+
+
+
                     </div>
 
                     <div class="txt1 text-center p-t-54 p-b-20">
                         <span>
-                            <a href="#" style="color: grey;">Sign In</a>
+                            <a href="index.php?page=main&controller=login&action=index" style="color: grey;">Sign In</a>
                         </span>
                     </div>
 
+                </form>
+
+                <div class="login100-more" style="background-image: url('/Source_ref/public2/assets/img/slide/VNG Campus 31.jpg');">
+                </div>
             </div>
 
-
-
-            </form>
-
-            <div class="login100-more" style="background-image: url('/Source_ref/public2/assets/img/slide/VNG Campus 31.jpg');">
-            </div>
         </div>
-
-    </div>
     </div>
 
+    <script>
+        var check = function() {
+        if (document.getElementById('password').value ==
+            document.getElementById('retype_password').value) {
+            document.getElementById('message').style.color = 'green';
+            document.getElementById('message').innerHTML = 'matching';
+        } else {
+            document.getElementById('message').style.color = 'red';
+            document.getElementById('message').innerHTML = 'not matching';
+        }
+        }
+    </script>
+    
 </body>
 
 </html>
