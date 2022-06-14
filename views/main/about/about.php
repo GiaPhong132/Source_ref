@@ -1,3 +1,20 @@
+  <!-- Banner Start -->
+<div class="banner " data-aos="fade-in">
+            <div class="container">
+                <div class="section-title text-center">
+                    
+                    <h2>Get A <span>Special</span> Price</h2>
+                </div>
+                <div class="container banner-text">
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec pretium mi. Curabitur facilisis ornare velit non vulputate. Aliquam metus tortor, auctor id gravida condimentum, viverra quis sem. Curabitur non nisl nec nisi scelerisque maximus. 
+                    </p>
+                    <a class="btn">Pricing Plan</a>
+                </div>
+            </div>
+            <div class="typed-text">Web Designer, Web Developer, Front End Developer, Apps Designer, Apps Developer</div>
+        </div>
+        <!-- Banner End -->
 <section id="about-us" class="about-us">
     
       <div class="row">
@@ -16,7 +33,7 @@
             <p class="">
             Bkav là doanh nghiệp đầu tiên của Việt Nam lọt vào Danh sách các công ty hấp dẫn (Cool Vendors) tại các thị trường mới nổi trên toàn cầu do Gartner, hãng tư vấn CNTT hàng đầu thế giới công bố.
           </p>
+        
           </div>
-     
-
+          
 </section>
