@@ -34,9 +34,6 @@
 </head>
 
 <body>
-<script>
-        
-    </script>
     <div class="limiter">
         <div class="container-login100" style="background-image: url('/Source_ref/public2/images/tech-blocks.jpeg');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
@@ -148,10 +145,10 @@
         if (document.getElementById('password').value ==
             document.getElementById('retype_password').value) {
             document.getElementById('message').style.color = 'green';
-            document.getElementById('message').innerHTML = 'matching';
+            document.getElementById('message').innerHTML = 'Matching';
         } else {
             document.getElementById('message').style.color = 'red';
-            document.getElementById('message').innerHTML = 'not matching';
+            document.getElementById('message').innerHTML = 'Not matching';
         }
         }
     </script>
