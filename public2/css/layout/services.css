@@ -8,7 +8,11 @@
     align-items: center;
     background-color: #00E5FF;
     color: white;
-    margin-bottom: 60px;
+    margin-bottom: 10px;
+    z-index: -9;
+}
+.ourproduct h1{
+    z-index: -9;
 }
 .temp
 {
@@ -16,11 +20,13 @@
     display: flex;
     height: 8px;
     background-color: #2979FF;
+    z-index: -9;
 }
 .line
 {
     height: 1px;
     background-color: #2979FF;
+    z-index: -9;
 }
 
 .back
@@ -30,7 +36,7 @@
 .container-ser
 {
     position: relative;
-    z-index: 10;
+    z-index: -9;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,13 +45,14 @@
 .container-ser .card2
 {
     position: relative;
-    width: 22%;
     height: 400px;
-    margin:  1%;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column; /*theo chiều dọc*/
+    flex-direction: column;
     background-color: rgba(255, 255, 255, 0.05);
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(15px);
@@ -69,16 +76,13 @@
     max-width: 100%;
     margin: 0 0 20px;
     transition: 0.5 ease-in-out;
-}/*
-.nameproduct{
-    color: #2979FF;
-    font-size: 40px;
-}*/
+}
 .container-ser .card2 .imgBx h2
 {
     color: #2979FF;
     font-size: 21px;
 }
+
 .container-ser .card2 .content2
 {
     position: absolute;
@@ -109,7 +113,7 @@
     font-size: 14px;
     text-transform:uppercase;
     letter-spacing:  2px;
-    margin-right: 10px;
+    margin-right: 0px;
 }
 .container-ser .card2 .content2 .version span
 {
@@ -127,11 +131,14 @@
     transition: 0.5s;
     cursor:  pointer;
 }
+.container-ser .card2 .content2 .version span a{
+    text-decoration: none;
+}
 .container-ser .card2 .content2 .version span:hover
 {
     background: #9bdc28;
 }
- .read2
+.container-ser .card2 .content2 .read2
 {
     position: relative;
     top: 10px;
@@ -144,5 +151,53 @@
     color: #111;
     text-decoration: none;
     text-transform: uppercase;
+}
+.container-ser .card2 .content2 .read2 a{
+    text-decoration: none;
+}
+
+
+/*********************************************/
+/*****************Tablet Menu*****************/
+/*********************************************/
+@media  screen and (min-width: 500px){
+    .ourproduct{
+        margin-bottom: 10px;
+    }
+    .container-ser .card2{
+        width: 40%;
+        margin: 30px 2%;
+    }
+
+}
+
+
+
+
+/*********************************************/
+/***************Desktop1 Menu*****************/
+/*********************************************/
+@media  screen and (min-width: 800px){
+    .ourproduct{
+        margin-bottom: 10px;
+    }
+    .container-ser .card2{
+        width: 30%;
+        margin: 20px 1%;
+    }
+}
+
+
+/*********************************************/
+/****************Desktop2 Menu****************/
+/*********************************************/
+@media  screen and (min-width: 1200px) {
+    .ourproduct{
+        margin-bottom: 60px;
+    }
+    .container-ser .card2{
+        width: 22%;
+        margin: 1%;
+    }
 
 }

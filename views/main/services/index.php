@@ -1,13 +1,13 @@
 <?php require_once("/xampp/htdocs/Source_ref/views/main/navbar.php"); ?>
 <div>
-    <div class="temp"></div>
+<div class="temp"></div>
     <div class="ourproduct">
-        <h1>PRODUCTS FROM BK AO VAI</h1>
+        <h1>PRODUCTS FROM BKBLUE</h1>
     </div>
     <div class="container-ser">
         <div class="card2">
             <div class="imgBx">
-                <img src="/Source_ref/public2/images/clion.png" alt="clion">
+                <img src="/source_ref/public2/images/clion.png" alt="clion">
                 <h2> C++ IDE</h2>
                 <p><b>Description:</b> One of the highest performing C++ IDEs in the world</p>
             </div>
@@ -24,7 +24,7 @@
         </div>
         <div class="card2">
             <div class="imgBx">
-                <img src="/Source_ref/public2/images/phpstorm.png" alt="phpstorm" />
+                <img src="/source_ref/public2/images/phpstorm.png" alt="phpstorm" />
                 <h2> PHP Storm</h2>
                 <p><b>Description:</b> One of the suitable IDEs for those who are new to web programming</p>
             </div>
@@ -73,8 +73,6 @@
                 <div class="read2"><a href="#">Read More</a></div>
             </div>
         </div>
-    </div>
-    <div class="container-ser">
         <div class="card2">
             <div class="imgBx">
                 <img src="/source_ref/public2/images/vim.png" alt="vim" />

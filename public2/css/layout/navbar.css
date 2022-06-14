@@ -35,7 +35,9 @@ nav a:hover{
   padding-right: 20px;
   border-bottom: 1px #444 solid;
 }
-/*Mobile Menu*/
+/*********************************************/
+/*****************Mobile Menu*****************/
+/*********************************************/
 .menu{
   display: flex;
   flex-wrap: wrap;
@@ -97,7 +99,9 @@ nav a:hover{
   background: teal;
   border: 1px solid #006d6d;
 }
-/*Tablet Menu*/
+/*********************************************/
+/*****************Tabler Menu*****************/
+/*********************************************/
 @media all and (min-width: 468px) {
   .menu{
       justify-content: center;
@@ -150,7 +154,9 @@ nav a:hover{
       border: 1px solid #006d6d;
   }
 }
-/* Desktop*/
+/*********************************************/
+/*****************Desktop Menu****************/
+/*********************************************/
 @media  all and (min-width: 1000px) {
   .menu .item{
       display: block;
