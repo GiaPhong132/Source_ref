@@ -61,6 +61,7 @@ nav a:hover{
   display: block;
   background-color: #000;
   width: 100%;
+  z-index: 99;
 }
 .menu .toggle{
   cursor: pointer;

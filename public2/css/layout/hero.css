@@ -4,6 +4,7 @@
     background-image: url(../../images/bg-banner-1.jpg);
     overflow: hidden;
     position: relative;
+    z-index: -10;
 }
 
 .slider_item-box{
