@@ -1,19 +1,8 @@
-<<<<<<< HEAD
-/*=== MEDIA QUERY ===*/
 @import url("https://fonts.googleapis.com/css?family=Lora:400,400i|Open+Sans:300,400,600,700,800");
 body {
     font-family: "Open Sans", sans-serif;
     -webkit-font-smoothing: antialiased;
-=======
- #hero{
-    width: 100%;
-    height: 100%;
-    background-image: url(../../images/bg-banner-1.jpg);
-    overflow: hidden;
-    position: relative;
->>>>>>> b3676475cf9fc90e1ee1fbfd1272ac6605b23f1f
 }
-
 h1, h2, h3, h4, h5, h6 {
     font-family: "Open Sans", sans-serif;
     color: #000;
