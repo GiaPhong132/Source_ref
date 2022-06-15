@@ -92,9 +92,7 @@
         <div class="col-md-1">
             <div> hello</div>
         </div>   
-        <div class="col-md-1">
-            <div> hello</div>
-        </div>                                   
+                             
         </div>    
     </div>
     </section>
