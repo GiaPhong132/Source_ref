@@ -79,7 +79,7 @@ main > section {
 }
 
 .bg-img-1 {
-    background-image: url(/source_ref/public2/images/banner.jpg);
+    background-image: url("/Source_code/public2/images/banner.jpg");
 }
 
 

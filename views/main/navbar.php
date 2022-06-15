@@ -60,7 +60,7 @@ if (isset($_SESSION['guest'])) {
     <!-- <link href="/Source_code/public2/css/layout/responsive.css" rel="stylesheet"> -->
     <!-- <link href="/Source_code/public2/css/layout/services.css" rel="stylesheet">
     <link href="/Source_code/public2/css/layout/info.css" rel="stylesheet">-->
-    <link href="/Source_code/public2/css/layout/timeline.css" rel="stylesheet">
+    <!-- <link href="/Source_code/public2/css/layout/timeline.css" rel="stylesheet"> -->
 
 
 </head>
