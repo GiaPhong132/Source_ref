@@ -1,147 +1,200 @@
 <?php require_once("/xampp/htdocs/Source_ref/views/main/navbar.php"); ?>
 <div>
-<div class="temp"></div>
-    <div class="ourproduct">
-        <h1>PRODUCTS FROM BKBLUE</h1>
-    </div>
-    <div class="container-ser">
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/clion.png" alt="clion">
-                <h2> C++ IDE</h2>
-                <p><b>Description:</b> One of the highest performing C++ IDEs in the world</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/phpstorm.png" alt="phpstorm" />
-                <h2> PHP Storm</h2>
-                <p><b>Description:</b> One of the suitable IDEs for those who are new to web programming</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/visual.png" alt="visual" />
-                <h2> Visual Studio Code</h2>
-                <p><b>Description:</b> A source code editor can run many programing language in one place.</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/visual2.png" alt="visual2" />
-                <h2> Visual Studio 2022</h2>
-                <p><b>Description:</b> A good tool to learn C++</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/vim.png" alt="vim" />
-                <h2>Vim Text Editor</h2>
-                <p><b>Description:</b> A free and open-source, screen-based text editor program</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/python.png" alt="python" />
-                <h2> Python IDE</h2>
-                <p><b>Description:</b> A IDE providing a wide range of essential tools for Python developers.</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
+<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
+    <section class="section products">
+        <div class="container d-flex justify-content-center mt-50 mb-50">
+        <div class="col-md-12">
+            <div class="card card-body">
+                            <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                                <div class="mr-2 mb-3 mb-lg-0">
+                                        <img src="https://i.imgur.com/5Aqgz7o.jpg" width="150" height="150" alt="">  
+                                </div>
 
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/eclipse.png" alt="eclipse" />
-                <h2> Eclipse</h2>
-                <p><b>Description:</b> A great IDE for Java programing </p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/jupyter.png" alt="jupyter" />
-                <h2> Jupyter Notebook</h2>
-                <p><b>Description:</b> A great tools for Data Analysis</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
+                                <div class="media-body">
+                                    <h6 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Apple iPhone XR (Red, 128 GB)</a>
+                                    </h6>
+
+                                    <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Phones</a></li>
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Mobiles</a></li>
+                                    </ul>
+
+                                    <p class="mb-3">128 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 7MP Front Camera A12 Bionic Chip Processor | Gorilla Glass with high quality display </p>
+
+                                    <ul class="list-inline list-inline-dotted mb-0">
+                                        <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
+                                        <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                    <h3 class="mb-0 font-weight-semibold">$459.99</h3>
+
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+
+                                    </div>
+
+                                    <div class="text-muted">1985 reviews</div>
+
+                                    <button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    <div class="card card-body mt-3">
+                            <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                                <div class="mr-2 mb-3 mb-lg-0">
+                                    
+                                        <img src="https://i.imgur.com/Aj0L4Wa.jpg" width="150" height="150" alt="">
+                                   
+                                </div>
+
+                                <div class="media-body">
+                                    <h6 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Apple iPhone XS Max (Gold, 64 GB)</a>
+                                    </h6>
+
+                                    <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Phones</a></li>
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Mobiles</a></li>
+                                    </ul>
+
+                                    <p class="mb-3">256 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 15MP Front Camera A12 Bionic Chip Processor | Gorilla Glass with high quality display </p>
+
+                                    <ul class="list-inline list-inline-dotted mb-0">
+                                        <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile junction</a></li>
+                                        <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                    <h3 class="mb-0 font-weight-semibold">$612.99</h3>
+
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+
+                                    </div>
+
+                                    <div class="text-muted">2349 reviews</div>
+
+                                    <button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>    
+
+
+
+
+
+                        <div class="card card-body mt-3">
+                            <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                                <div class="mr-2 mb-3 mb-lg-0">
+                                    
+                                        <img src="https://i.imgur.com/5Aqgz7o.jpg" width="150" height="150" alt="">
+                                   
+                                </div>
+
+                                <div class="media-body">
+                                    <h6 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Apple iPhone XR (Red, 128 GB)</a>
+                                    </h6>
+
+                                    <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Phones</a></li>
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Mobiles</a></li>
+                                    </ul>
+
+                                    <p class="mb-3">128 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 7MP Front Camera A12 Bionic Chip Processor | Gorilla Glass with high quality display </p>
+
+                                    <ul class="list-inline list-inline-dotted mb-0">
+                                        <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile point</a></li>
+                                        <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                    <h3 class="mb-0 font-weight-semibold">$459.99</h3>
+
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+
+                                    </div>
+
+                                    <div class="text-muted">1985 reviews</div>
+
+                                    <button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                         <div class="card card-body mt-3">
+                            <div class="media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row">
+                                <div class="mr-2 mb-3 mb-lg-0">
+                                    
+                                        <img src="https://i.imgur.com/Aj0L4Wa.jpg" width="150" height="150" alt="">
+                                   
+                                </div>
+
+                                <div class="media-body">
+                                    <h6 class="media-title font-weight-semibold">
+                                        <a href="#" data-abc="true">Apple iPhone XS Max (Gold, 64 GB)</a>
+                                    </h6>
+
+                                    <ul class="list-inline list-inline-dotted mb-3 mb-lg-2">
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Phones</a></li>
+                                        <li class="list-inline-item"><a href="#" class="text-muted" data-abc="true">Mobiles</a></li>
+                                    </ul>
+
+                                    <p class="mb-3">256 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 15MP Front Camera A12 Bionic Chip Processor | Gorilla Glass with high quality display </p>
+
+                                    <ul class="list-inline list-inline-dotted mb-0">
+                                        <li class="list-inline-item">All items from <a href="#" data-abc="true">Mobile junction</a></li>
+                                        <li class="list-inline-item">Add to <a href="#" data-abc="true">wishlist</a></li>
+                                    </ul>
+                                </div>
+
+                                <div class="mt-3 mt-lg-0 ml-lg-3 text-center">
+                                    <h3 class="mb-0 font-weight-semibold">$612.99</h3>
+
+                                    <div>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+                                        <i class="fa fa-star"></i>
+
+                                    </div>
+
+                                    <div class="text-muted">2349 reviews</div>
+
+                                    <button type="button" class="btn btn-warning mt-4 text-white"><i class="icon-cart-add mr-2"></i> Add to cart</button>
+                                </div>
+                            </div>
+                        </div> 
+                        
+
+
+                             
+        </div>  
+        
+        <div class="col-md-1">
+            <div> hello</div>
+        </div>                   
+        </div>    
     </div>
-</div>
+    </section>
+</body>
 <?php include_once("/xampp/htdocs/Source_ref/views/main/footer.php"); ?>
