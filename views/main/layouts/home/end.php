@@ -2,9 +2,8 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-12">
-				<h2>It's time to change your mind</h2>
-				<p>Download over 2 million humans .Get <a href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a> free forever!
-					<br>We say you won’t look back.</p>
+                <h2>Improve Your IDE Improve Your Life</h2>
+				<p>More than 200 million users have used the software personally developed by BKBLUE</p>
 				<ul class="list-inline">
 					<li class="list-inline-item">
 						<a href="" class="btn btn-rounded-icon">
