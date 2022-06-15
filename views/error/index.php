@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="/source_ref/public/js/error/index.css">
+    <link rel="stylesheet" href="/Source_code/public/js/error/index.css">
 </head>
 
 <body>
@@ -50,7 +50,7 @@
             <div class="astronaut__head-visor-flare2"></div>
         </div>
     </div>
-    <script type="text/javascript" src="/source_ref/public/js/error/index.js"></script> >
+    <script type="text/javascript" src="/Source_code/public/js/error/index.js"></script> >
 </body>
 
 </html>

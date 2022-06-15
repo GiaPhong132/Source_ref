@@ -1,5 +1,5 @@
 <?php
-include_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
+include_once('/xampp/htdocs/Source_code/views/main/navbar.php');
 ?>
 <!-- ======= Breadcrumbs ======= -->
 <section id="breadcrumbs" class="breadcrumbs">
@@ -335,9 +335,9 @@ include_once('/xampp/htdocs/Source_Ref/views/main/navbar.php');
 
 </main><!-- End #main -->
 <?php
-include_once('/xampp/htdocs/Source_Ref/views/main/footer.php');
+include_once('/xampp/htdocs/Source_code/views/main/footer.php');
 ?>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script src="/source_ref/public/plugins/jquery/jquery.min.js"></script>
-<script src="/source_ref/public/js/blog/index.js"></script>
+<script src="/Source_code/public/plugins/jquery/jquery.min.js"></script>
+<script src="/Source_code/public/js/blog/index.js"></script>

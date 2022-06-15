@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (isset($_SESSION['guest'])) {
-    require_once('/xampp/htdocs/Source_ref/models/user.php');
+    require_once('/xampp/htdocs/Source_code/models/user.php');
     $data = User::get($_SESSION['guest']);
 }
 ?>
@@ -26,17 +26,17 @@ if (isset($_SESSION['guest'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <link href="/Source_ref/public2/css/layout/navbar.css" rel="stylesheet">
+    <link href="/Source_code/public2/css/layout/navbar.css" rel="stylesheet">
 
-    <link href="/Source_ref/public2/css/layout/footer.css" rel="stylesheet">
-    <link href="/Source_ref/public2/css/layout/hero.css" rel="stylesheet">
-    <link href="/Source_ref/public2/css/layout/main.css" rel="stylesheet">
-    <link href="/Source_ref/public2/css/layout/about.css" rel="stylesheet">
-    <link href="/Source_ref/public2/css/layout/wedo.css" rel="stylesheet">
-    <link href="/Source_ref/public2/css/layout/responsive.css" rel="stylesheet">
-    <link href="/Source_ref/public2/css/layout/services.css" rel="stylesheet">
-    <link href="/Source_ref/public2/css/layout/info.css" rel="stylesheet">
-    
+    <link href="/Source_code/public2/css/layout/footer.css" rel="stylesheet">
+    <link href="/Source_code/public2/css/layout/hero.css" rel="stylesheet">
+    <link href="/Source_code/public2/css/layout/main.css" rel="stylesheet">
+    <link href="/Source_code/public2/css/layout/about.css" rel="stylesheet">
+    <link href="/Source_code/public2/css/layout/wedo.css" rel="stylesheet">
+    <link href="/Source_code/public2/css/layout/responsive.css" rel="stylesheet">
+    <link href="/Source_code/public2/css/layout/services.css" rel="stylesheet">
+    <link href="/Source_code/public2/css/layout/info.css" rel="stylesheet">
+
     <!-- icon -->
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -59,10 +59,10 @@ if (isset($_SESSION['guest'])) {
 <body>
     <nav>
         <ul class="menu">
-            <li class="logo"><a href="/Source_ref">BK<span>BLUE</span></a></li>
-            <li class="item"><a href="/Source_ref">Trang Chủ</a></li>
+            <li class="logo"><a href="/Source_code">BK<span>BLUE</span></a></li>
+            <li class="item"><a href="/Source_code">Trang Chủ</a></li>
             <li class="item"><a href="index.php?page=main&controller=about&action=index">Chúng Tôi</a></li>
-            <li class="item"><a href="/Source_ref/views/main/services">Sản Phẩm</a></li>
+            <li class="item"><a href="/Source_code/views/main/services">Sản Phẩm</a></li>
             <li class="item button"><a href="index.php?page=main&controller=login&action=index">Đăng Nhập</a></li>
             <li class="item button secondary"><a href="index.php?page=main&controller=register&action=index">Đăng Ký</a></li>
             <li class="toggle"><span class="bars"></span></li>

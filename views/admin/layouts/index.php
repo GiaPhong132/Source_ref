@@ -5,13 +5,13 @@ if (isset($_SESSION["user"])) {
 }
 ?>
 <?php
-require_once('/xampp/htdocs/Source_Ref/views/admin/header.php'); ?>
+require_once('/xampp/htdocs/Source_code/views/admin/header.php'); ?>
 
 <!-- Add CSS -->
 
 
 <?php
-require_once('/xampp/htdocs/Source_Ref/views/admin/content_layouts.php'); ?>
+require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
 
 <!-- Content Wrapper. Contains page content -->
@@ -62,7 +62,7 @@ require_once('/xampp/htdocs/Source_Ref/views/admin/content_layouts.php'); ?>
                     <div class="row">
                         <div class="col-md-12 col-lg-6 col-xl-4">
                             <div class="card mb-2 bg-gradient-dark">
-                                <img class="card-img-top" src="/source_ref/public/img/layouts/Homepage_1.jpg" alt="Dist Photo 1">
+                                <img class="card-img-top" src="/Source_code/public/img/layouts/Homepage_1.jpg" alt="Dist Photo 1">
                                 <div class="card-img-overlay d-flex flex-column justify-content-end">
                                     <h5 class="card-title text-primary text-white">Chào mừng đến với VNGREEN</h5>
                                     <p class="card-text text-white pb-2 pt-1">Thành lập ngày 9/9/2004, VNGREEN hiện là công ty Internet và công nghệ hàng đầu, kỳ lân công nghệ 1 tỷ USD + duy nhất của Việt Nam.</p>
@@ -72,7 +72,7 @@ require_once('/xampp/htdocs/Source_Ref/views/admin/content_layouts.php'); ?>
 
                         <div class="col-md-12 col-lg-6 col-xl-4">
                             <div class="card mb-2 bg-gradient-dark">
-                                <img class="card-img-top" src="/source_ref/public/img/layouts/Homepage_2.jpg" alt="Dist Photo 1">
+                                <img class="card-img-top" src="/Source_code/public/img/layouts/Homepage_2.jpg" alt="Dist Photo 1">
                                 <div class="card-img-overlay d-flex flex-column justify-content-end">
                                     <h5 class="card-title text-primary text-white">Thành công với VNGREEN</h5>
                                     <p class="card-text text-white pb-2 pt-1">Có hơn 80 triệu người dùng tại 193 quốc gia với 15 ngôn ngữ.</p>
@@ -82,7 +82,7 @@ require_once('/xampp/htdocs/Source_Ref/views/admin/content_layouts.php'); ?>
 
                         <div class="col-md-12 col-lg-6 col-xl-4">
                             <div class="card mb-2 bg-gradient-dark">
-                                <img class="card-img-top" src="/source_ref/public/img/layouts/Homepage_3.jpg" alt="Dist Photo 1">
+                                <img class="card-img-top" src="/Source_code/public/img/layouts/Homepage_3.jpg" alt="Dist Photo 1">
                                 <div class="card-img-overlay d-flex flex-column justify-content-end">
                                     <h5 class="card-title text-primary text-white">Đồng hành cùng VNGREEN</h5>
                                     <p class="card-text text-white pb-2 pt-1">Chúng tôi luôn chào đón các ứng viên hoài bão, mong muốn dấn thân vào lĩnh vực Internet, yêu thích làm việc trong một môi trường năng động, trẻ trung và đầy thử thách.</p>
@@ -97,7 +97,7 @@ require_once('/xampp/htdocs/Source_Ref/views/admin/content_layouts.php'); ?>
     <!-- /.content -->
 </div>
 <?php
-require_once('/xampp/htdocs/Source_Ref/views/admin/footer.php'); ?>
+require_once('/xampp/htdocs/Source_code/views/admin/footer.php'); ?>
 
 
 <!-- Add Javascripts -->
