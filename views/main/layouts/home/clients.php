@@ -19,7 +19,7 @@
 					</p>
 					<ul class="list-inline meta">
 						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
+							<img src="/source_ref/public2/images/testimonial/feature-testimonial-thumb.jpg" alt="">
 						</li>
 						<li class="list-inline-item">Jonathon Andrew , Themefisher.com</li>
 					</ul>

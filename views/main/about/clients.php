@@ -9,16 +9,16 @@
 				<h3>Featured In</h3>
 				<div class="client-slider owl-carousel owl-theme">
 					<div class="item">
-						<img src="images/clients/business-finder.png" alt="business-finder">
+						<img src="/Source_ref/public2/images/clients/business-finder.png" alt="business-finder">
 					</div>
 					<div class="item">
-						<img src="images/clients/forbes.png" alt="forbes">
+						<img src="/Source_ref/public2/images/clients/forbes.png" alt="forbes">
 					</div>
 					<div class="item">
-						<img src="images/clients/venture-beat.png" alt="venture-beat">
+						<img src="/Source_ref/public2/images/clients/venture-beat.png" alt="venture-beat">
 					</div>
 					<div class="item">
-						<img src="images/clients/tech-crunch-new.png" alt="TechCrunch">
+						<img src="/Source_ref/public2/images/clients/tech-crunch-new.png" alt="TechCrunch">
 					</div>
 				</div>
 			</div>
