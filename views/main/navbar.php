@@ -54,7 +54,7 @@ if (isset($_SESSION['guest'])) {
     <!-- <link href="/Source_ref/public2/css/layout/responsive.css" rel="stylesheet"> -->
     <link href="/Source_ref/public2/css/layout/services.css" rel="stylesheet">
     <link href="/Source_ref/public2/css/layout/info.css" rel="stylesheet">
-    <link href="/Source_ref/public2/css/layout/timeline.css" rel="stylesheet"> -->
+    <link href="/Source_ref/public2/css/layout/timeline.css" rel="stylesheet"> 
  
     <!-- icon -->
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
@@ -93,20 +93,22 @@ if (isset($_SESSION['guest'])) {
 		<form class="navbar-form form-inline">
 			<div class="input-group search-box">
 				<input type="text" id="search" class="form-control" placeholder="Search ">
-				<span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+				<span class="input-group-addon"><i class="fa-solid fa-magnifying-glass"></i></span>
 			</div>
 		</form>
 		<div class="navbar-nav ml-auto">
-			<a href="#" class="nav-item nav-link notifications"><i class="fa fa-bell-o"></i><span class="badge">1</span></a>
-			<a href="#" class="nav-item nav-link messages"><i class="fa fa-envelope-o"></i><span class="badge">10</span></a></a>
+			<a href="#" class="nav-item nav-link notifications"><i class="fa-solid fa-bell"></i><span class="badge">1</span></a>
+			<a href="#" class="nav-item nav-link messages"><i class="fa-solid fa-message"></i><span class="badge">10</span></a></a>
 			<div class="nav-item dropdown">
 				<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/source_ref/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Gia Phong <b class="caret"></b></a>
 				<div class="dropdown-menu">
-					<a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></a>
-					<a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></a>
+					<a href="#" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a>
+					<a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
 					<a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a>
 					<div class="dropdown-divider"></div>
-					<a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></a>
+					<a href="#" class="dropdown-item"><i class="fa-solid fa-arrow-right-from-bracket"></i>
+
+Logout</a></a>
 				</div>
 			</div>
 		</div>
