@@ -132,26 +132,25 @@
   color: #fff;
   text-decoration: none;
 }
-.to-top{
-  background-color: whiteSmoke;
-  left: 0;
-  height: 40px;
-  width: 40px;
+
+ .back-to-top {
+  position: fixed;
+  display: none;
+  width: 44px;
+  height: 44px;
+  padding: 8px 0;
+  text-align: center;
+  line-height: 1;
+  font-size: 22px;
+  right: 25px;
+  bottom: 15px;
+  z-index: 9;
 }
-.scrollToTop{
-  width:100px; 
-  height:130px;
-  padding:10px; 
-  text-align:center; 
-  background-color: whiteSmoke;
-  font-weight: bold;
-  color: #444;
-  text-decoration: none;
-  position:fixed;
-  bottom:75px;
-  right:40px;
-  display:none;
+
+ .back-to-top i {
+  color: #ffffff;
 }
-.scrollToTop:hover{
-  text-decoration:underline;
+
+ .back-to-top:hover i {
+  color: #414141;
 }
