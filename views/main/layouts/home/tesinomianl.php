@@ -20,13 +20,10 @@
 						<div class="block shadow">
 							<!-- Speech -->
 							<p>
-								Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.
-								Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor
-								sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
-								pretium ut lacinia in, elementum id enim.
+								
 							</p>
 							<!-- Name and Company -->
-							<cite>Abraham Linkon , Themefisher.com</cite>
+							<cite>Bùi Đoàn Gia Phong, CEO Meta</cite>
 						</div>
 					</div>
 					<!-- Testimonial 01 -->
@@ -34,13 +31,10 @@
 						<div class="block shadow">
 							<!-- Speech -->
 							<p>
-								Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.
-								Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor
-								sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
-								pretium ut lacinia in, elementum id enim.
+								
 							</p>
 							<!-- Name and Company -->
-							<cite>Abraham Linkon , Themefisher.com</cite>
+							<cite>Lâm Nhật Tân, CEO Google</cite>
 						</div>
 					</div>
 					<!-- Testimonial 01 -->
@@ -48,13 +42,10 @@
 						<div class="block shadow">
 							<!-- Speech -->
 							<p>
-								Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Donec sollicitudin molestie malesuada.
-								Donec sollicitudin molestie malesuada. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor
-								sit amet, consectetur adipiscing elit. Pellentesque in ipsum id orci porta dapibus. Quisque velit nisi,
-								pretium ut lacinia in, elementum id enim.
+								
 							</p>
 							<!-- Name and Company -->
-							<cite>Abraham Linkon , Themefisher.com</cite>
+							<cite>Bùi Khánh Vĩnh, BK Student</cite>
 						</div>
 					</div>
 				</div>
