@@ -8,8 +8,8 @@
 
 						<div class="slide-caption">
                             <div class="caption-content">
-                                <h2 class="animated fadeInDown">BLUE Onepage HTML5 Template</h2>
-                                <span class="animated fadeInDown">Clean and Professional one page Template</span>
+                                <h2 class="animated fadeInDown">PRODUCTS FROM BKBLUE</h2>
+                                <span class="animated fadeInDown">Beautiful and Powerful environment developmentgit</span>
                             </div>
                         </div>
 						
