@@ -50,6 +50,9 @@ if (isset($_SESSION['guest'])) {
     <link href="/Source_ref/public2/css/layout/hero.css" rel="stylesheet">
     <link href="/Source_ref/views/main/about/css/style.css" rel="stylesheet">
     <link href="/Source_ref/public2/css/layout/product.css" rel="stylesheet">
+    <!-- <link href="/Source_ref/views/main/about/css/style.css" rel="stylesheet"> -->
+    <link href="/Source_ref/public2/css/layout/timeline.css" rel="stylesheet">
+    <!-- <link href="/Source_ref/public2/css/layout/stlye.css" rel="stylesheet"> -->
     <!-- <link href="/Source_ref/public2/css/layout/main.css" rel="stylesheet"> -->
     <!-- <link href="/Source_ref/public2/css/layout/about.css" rel="stylesheet">  -->
     <!--
