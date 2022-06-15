@@ -101,6 +101,3 @@ if (isset($_SESSION['guest'])) {
         </div>
     </nav>
 
-</body>
-
-</html>

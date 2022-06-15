@@ -1,22 +1,20 @@
 <?php require_once("views/main/navbar.php"); ?>
 
-<body class="body-wrapper" data-spy="scroll" data-target=".privacy-nav">
-
     <!--================================
 	=            Page Title            =
 	=================================-->
-    <section class="section page-title" data-aos="zoom-in" data-aos-duration="1000">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-14 m-auto">
-                    <!-- Page Title -->
-                    <h1>Về chúng tôi</h1>
-                    <!-- Page Description -->
-                    <p>BKBlue là Tập đoàn công nghệ hoạt động trong các lĩnh vực an ninh mạng, phần mềm, chính phủ điện tử, nhà sản xuất smartphone, thiết bị điện tử thông minh, Smart City và AI camera. Bkav là 1 trong 10 thương hiệu Nổi tiếng nhất Việt Nam do Hội Sở hữu trí tuệ Việt Nam bình chọn, nằm trong Top 10 Dịch vụ hoàn hảo do Hội Tiêu chuẩn Bảo vệ Người tiêu dùng Việt Nam bình chọn.
+<section class="section page-title" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-14 m-auto">
+                <!-- Page Title -->
+                <h1>Về chúng tôi</h1>
+                <!-- Page Description -->
+                <p>BKBlue là Tập đoàn công nghệ hoạt động trong các lĩnh vực an ninh mạng, phần mềm, chính phủ điện tử, nhà sản xuất smartphone, thiết bị điện tử thông minh, Smart City và AI camera. Bkav là 1 trong 10 thương hiệu Nổi tiếng nhất Việt Nam do Hội Sở hữu trí tuệ Việt Nam bình chọn, nằm trong Top 10 Dịch vụ hoàn hảo do Hội Tiêu chuẩn Bảo vệ Người tiêu dùng Việt Nam bình chọn.
                 </div>
             </div>
         </div>
-    </section>
+</section>
     <!--====  End of Page Title ====-->
 
     <!--===============================
@@ -58,33 +56,9 @@
     <!--====  End of Our Story  ====-->
 
     <!--=======Developing Section=======-->
-    <section id="team" class="team section-bg">
-        <div class="container">
-            <div class="section-title" data-aos="fade-up">
-                <h2>Hình thành <span><strong>và phát triển</strong></span></h2>
-                <p>Thành lập từ năm 2004 đến nay, VNGREEN đã trải qua 14 năm phát triển và mở rộng để trở thành một trong những công ty Internet & Công nghệ hàng đầu Việt Nam và Đông Nam Á, với hơn 3200 thành viên.</p>
-            </div>
-            <div id="carouselExampleControls" class="carousel slide" data-ride="carousel" data-aos="fade-up">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="5000">
-                        <img src="/Source_code/public/assets/img/history/1.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                        <img src="/Source_code/public/assets/img/history/2.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                        <img src="/Source_code/public/assets/img/history/3.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                        <img src="/Source_code/public/assets/img/history/5.png" class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                        <img src="/Source_code/public/assets/img/history/6.png" class="d-block w-100" alt="...">
-                        =======
-                        <!--================================
-	=            Behind Story          =
-	=================================-->
-                        <section class="section">
+ 
+	
+    <section class="section">
                             <div class="container">
                                 <div class="row">
                                     <div class="col-12" data-aos="fade-up" data-aos-duration="4000">
@@ -96,15 +70,15 @@
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                        <!--====  End of Behind Story  ====-->
+    </section>
+<!--====  End of Behind Story  ====-->
 
-                        <!--==================================
+         <!--==================================
 	=            Team            =
 	===================================-->
-                        <section class="founders section pt-0">
-                            <div class="section-title mb-0">
-                                <h2>Featured Member</h2>
+ <section class="founders section pt-0">
+                        <div class="section-title mb-0">
+                               <h2> Member</h2>
                             </div>
                             <div class="container">
                                 <div class="row">
@@ -112,7 +86,6 @@
                                         <div class="our-team">
                                             <div class="pic">
                                                 <img src="/Source_code/public2/images/hcmut.png">
-                                                >>>>>>> 9d0417c949c7ef598d40f6ed36767d2393f15818
                                             </div>
                                             <h3 class="title">Phong</h3>
                                             <span class="post">Back-end </span>
@@ -167,21 +140,19 @@
                                 </div>
                         </section>
 
-                        <<<<<<< HEAD <!--=======Our Clients Section=======-->
-                            <?php require_once("clients.php"); ?>
+ <?php require_once("timeline.php"); ?>
+                  <!--=======Our Clients Section=======-->
+
                             <!-- End Our Clients Section -->
 
-                            </main><!-- End #main -->
-                            <?php
-                            require_once('/xampp/htdocs/Source_code/views/main/footer.php');
-                            ?>
-                            =======
+                            <!-- End #main -->
+      
                             <!--====  End of  Team  ====-->
 
                             <!--===============================
 	=           Facts          =
 	================================-->
-                            <section class="company-fun-facts section">
+    <section class="company-fun-facts section">
                                 <div class="container">
                                     <div class="row">
                                         <div class="section-title col-12 text-center">
@@ -223,13 +194,13 @@
                                         </div>
                                     </div>
                                 </div>
-                            </section>
+    </section>
 
                             <!--====  End of  Facts  ====-->
 
-                            <?php require_once("timeline.php"); ?>
+                          
 
-                            <?php require_once("clients.php"); ?>
+<?php require_once("clients.php"); ?>
 
 
                             <!--==============================
@@ -306,4 +277,5 @@
                             </section>
 
                             <!--====  End of Section comment  ====-->
-                            <?php require_once("/xampp/htdocs/Source_code/views/main/footer.php"); ?>
+
+<?php require_once("/xampp/htdocs/Source_code/views/main/footer.php"); ?>
