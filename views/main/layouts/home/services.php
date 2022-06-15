@@ -3,9 +3,8 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="section-title">
-					<h2>An Interface For Lifestyle</h2>
-					<p><a href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a> makes
-						it easy to stay on top of your Life Style. No late tasks. No gimmicks.</p>
+					<h2>An Interface Of Our IDE</h2>
+					<p>Industry-standard adapter for connecting IDE devices and enabling them to communicate.</p>
 				</div>
 			</div>
 		</div>
@@ -25,9 +24,9 @@
 								<!-- Icon -->
 								<i class="ti-bookmark"></i>
 								<!-- Heading -->
-								<h3>Easy Prototyping</h3>
+								<h3>Easy Debugging</h3>
 								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
+								<p>Easily perform actions to debug a program for begginer. </p>
 							</div>
 						</div>
 						<div class="col-md-6 col-xs-12">
@@ -36,9 +35,9 @@
 								<!-- Icon -->
 								<i class="ti-pulse"></i>
 								<!-- Heading -->
-								<h3>Sensor Bridge</h3>
+								<h3>Highlight Code</h3>
 								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
+								<p>Help programers clearly distinguish the data types in the program</p>
 							</div>
 						</div>
 						<div class="col-md-6 col-xs-12">
@@ -47,9 +46,9 @@
 								<!-- Icon -->
 								<i class="ti-bar-chart"></i>
 								<!-- Heading -->
-								<h3>Strategist</h3>
+								<h3>Safe refactoring</h3>
 								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
+								<p>Rename symbols; inline a function, variable, or macro; and extract functions, variables, parameters.</p>
 							</div>
 						</div>
 						<div class="col-md-6 col-xs-12">
@@ -58,9 +57,9 @@
 								<!-- Icon -->
 								<i class="ti-panel"></i>
 								<!-- Heading -->
-								<h3>Art Direction</h3>
+								<h3>Quick Documentation</h3>
 								<!-- Description -->
-								<p>Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Curabitur aliquet quam id dui</p>
+								<p>Inspect the code under the caret to learn: function signature details, review comments, and more.</p>
 							</div>
 						</div>
 					</div>

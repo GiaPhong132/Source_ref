@@ -10,8 +10,7 @@
 			<div class="col-lg-6 mr-auto align-self-center">
 				<div class="feature-content">
 					<!-- Feature Title -->
-					<h2>Increase your productivity with <a
-							href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a></h2>
+					<h2>PHP STORM (A BEST PLACE FOR WEB PROGRAMMING)</h2>
 					<!-- Feature Description -->
 					<p class="desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
 						labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
@@ -20,15 +19,9 @@
 				<!-- Testimonial Quote -->
 				<div class="testimonial">
 					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one
-						place."
+                    "If you are developing in PHP and are not using PhpStorm, you are working too hard."
 					</p>
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Jonathon Andrew , Themefisher.com</li>
-					</ul>
+					<div>Bùi Đoàn Gia Phong, CEO Meta</div>
 				</div>
 			</div>
 		</div>

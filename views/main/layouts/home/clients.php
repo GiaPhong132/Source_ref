@@ -4,25 +4,17 @@
 			<div class="col-lg-6 ml-auto align-self-center">
 				<div class="feature-content">
 					<!-- Feature Title -->
-					<h2>Increase your productivity with <a
-							href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a></h2>
+					<h2>JUPYTER NOTEBOOK (GREAT TOOL FOR DATA ANALYSIS)</h2>
 					<!-- Feature Description -->
-					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
-						ea commodo consequat.</p>
+					<p>The Jupyter Notebook is an open source web application that you can use to create and share documents that contain live code, equations, visualizations, and text. Jupyter Notebook is maintained by the people at Project Jupyter.</p>
 				</div>
 				<!-- Testimonial Quote -->
 				<div class="testimonial">
 					<p>
-						"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one
-						place."
+            
+          "@jupyternotebook I'm hooked mate. I've been so productive lately it's silly. Keep up the great work."
 					</p>
-					<ul class="list-inline meta">
-						<li class="list-inline-item">
-							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
-						</li>
-						<li class="list-inline-item">Jonathon Andrew , Themefisher.com</li>
-					</ul>
+          <div>Lâm Nhật Tân, CEO GOOGLE</div>
 				</div>
 			</div>
 			<div class="col-lg-6 mr-auto justify-content-center">
