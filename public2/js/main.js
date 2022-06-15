@@ -75,18 +75,7 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
-    
-
-    // if ($('.banner ').length > 0) {
-    //     var typed_strings = $('.banner .typed-text').text();
-    //     var typed = new Typed('.banner ', {
-    //         strings: typed_strings.split(', '),
-    //         typeSpeed: 100,
-    //         backSpeed: 20,
-    //         smartBackspace: false,
-    //         loop: true
-    //     });
-    // }
+   
     
     
     

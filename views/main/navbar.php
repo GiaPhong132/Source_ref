@@ -27,11 +27,11 @@ if (isset($_SESSION['guest'])) {
     <script src="https://code.iconify.design/2/2.2.1/iconify.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    Bootstrap -->
+    <!-- Bootstrap -->
     <link href="/Source_ref/public2/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
     <!-- themify icon -->
     <link rel="stylesheet" href="/Source_ref/public2/plugins/themify-icons/themify-icons.css">
@@ -84,8 +84,6 @@ if (isset($_SESSION['guest'])) {
 			</div>
 		</form>
 		<div class="navbar-nav ml-auto">
-			<a href="#" class="nav-item nav-link notifications"><i class="fa-solid fa-bell"></i><span class="badge">1</span></a>
-			<a href="#" class="nav-item nav-link messages"><i class="fa-solid fa-message"></i><span class="badge">10</span></a></a>
 			<div class="nav-item dropdown">
 				<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/source_ref/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Gia Phong <b class="caret"></b></a>
 				<div class="dropdown-menu">
@@ -94,8 +92,7 @@ if (isset($_SESSION['guest'])) {
 					<a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a>
 					<div class="dropdown-divider"></div>
 					<a href="#" class="dropdown-item"><i class="fa-solid fa-arrow-right-from-bracket"></i>
-
-Logout</a></a>
+                    Logout</a></a>
 				</div>
 			</div>
 		</div>
