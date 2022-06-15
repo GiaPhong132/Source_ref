@@ -21,7 +21,7 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
-                <h1 class="text-white font-weight-bold mb-4">Beautiful And Powful Evironment Development</h1>
+                <h1 class="text-white font-weight-bold mb-4">Beautiful And Powerful Environment Development</h1>
                 <p class="text-white mb-5">A wide range of tools and integrations for any team</p>
                 <a href="#" class="btn btn-main">get started</a>
             </div>
