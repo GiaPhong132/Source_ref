@@ -60,6 +60,8 @@
             loop: true,
             autoplay: true,
             margin: 50,
+            autoplayHoverPause: true,
+            autoplayTimeout:1200,
             responsive: {
                 0: {
                     items: 1,
@@ -78,23 +80,7 @@
                 }
             }
         });
-        // -----------------------------
-        //  Video Replace
-        // -----------------------------
-        $('.video-box i').click(function () {
-            var video = '<iframe allowfullscreen src="' + $(this).attr('data-video') + '"></iframe>';
-            $(this).replaceWith(video);
-        });
-        // -----------------------------
-        //  Count Down JS
-        // -----------------------------
-        $('#simple-timer').syotimer({
-            year: 2022,
-            month: 9,
-            day: 1,
-            hour: 0,
-            minute: 0
-        });
+       
 
         // ----------------------------
         // AOS

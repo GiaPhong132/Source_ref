@@ -37,6 +37,63 @@ cite {
     font-style: normal;
 }
 
+.page-title{
+    background-color: #36669d;
+background-image: linear-gradient(315deg, #36669d 0%, #d3d3d3 74%);
+
+}
+.page-title h1 {
+    text-align: left;
+    color: #fff;
+    font-size: 60px;
+    font-weight: 600;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+.page-title p{
+    font-size: 20px;
+    padding: 10px 10px;
+    color: black;
+}
+
+.section{
+    padding-bottom: 30px;
+    background-color: #36669d;
+background-image: linear-gradient(315deg, #36669d 0%, #d3d3d3 74%);
+
+}
+
+.section-title {
+  text-align: center;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+.section-title h2 {
+ padding-top: 30px;
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  position: relative;
+}
+.section-title h2::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 50px;
+  height: 3px;
+  background: #002D62;
+  bottom: 0;
+  left: calc(50% - 25px);
+}
+
+.section-title p{
+    text-align: justify;
+    color: black;
+}
+
 .lora {
     font-family: "Lora", serif;
     font-style: italic;
@@ -151,24 +208,6 @@ a:focus, a:hover {
     background-position: bottom;
 }
 
-.section {
-    padding: 100px 0;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 80px;
-}
-
-.section-title h2 {
-    font-size: 35px;
-    margin-bottom: 13px;
-}
-
-.section-title p {
-    width: 50%;
-    margin: 0 auto;
-}
 
 @media (max-width: 480px) {
     .section-title p {
@@ -176,57 +215,8 @@ a:focus, a:hover {
     }
 }
 
-.page-title {
-    text-align: center;
-}
 
-.video {
-    position: relative;
-}
 
-.video:before {
-    border-radius: 3px;
-}
-
-.video img {
-    width: 100%;
-    border-radius: 8px;
-}
-
-.video .video-button {
-    position: absolute;
-    left: 0;
-    top: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100%;
-}
-
-.video .video-box a {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.video .video-box a i {
-    height: 125px;
-    width: 125px;
-    font-size: 40px;
-    background: #2e7eed;
-    border-radius: 100%;
-    color: #fff;
-    line-height: 125px;
-    text-align: center;
-}
-
-.video .video-box a iframe {
-    width: 100%;
-    height: 100%;
-}
 
 .form-control.main {
     background: #fff;
@@ -1222,31 +1212,79 @@ a:focus, a:hover {
     height: 5px;
 }
 
-.founder {
-    margin-bottom: 30px;
+.our-team{
+    padding: 20px 15px 30px;
+    background: transparent;
+    border-radius: 15px;
+    text-align: center;
+    border:1px solid #1DBF73;
 }
-
-.founder img {
-    border-radius: 5px;
+.our-team:hover{
+    transition: .5s;
+     box-shadow: 0px 1px 5px 0px #d1d1d1;
+}
+.our-team .pic{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border:1px solid #1DBF73;
+    padding: 5px;
     margin-bottom: 25px;
+    transition: all 0.5s ease 0s;
+   border-radius: 50%;
 }
-
-.founder h2 {
-    font-size: 30px;
+.our-team:hover .pic{
+    background: #1DBF73;
+    border-radius: 50%;
+}
+.pic img{
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+.our-team .title{
+    display: block;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+    text-transform: uppercase;
+    margin: 0 0 7px 0;
+}
+.our-team .post{
+    display: block;
+    font-size: 15px;
+    color: black;
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+.our-team .social{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.our-team .social li{
+    display: inline-block;
+    margin-right: 5px;
+}
+.our-team .social li a{
+    display: block;
+    width: 30px;
+    height: 30px;
     line-height: 30px;
+    border-radius: 50%;
+    font-size: 15px;
+    color: #1DBF73;
+    border: 1px solid #1DBF73;
+    transition: all 0.5s ease 0s;
 }
-
-.founder cite {
-    font-size: 14px;
-    font-style: normal;
+.our-team:hover .social li a{
+    background: #1DBF73;
+    color: #fff;
 }
-
-.founder p {
-    margin-top: 10px;
-    font-size: 14px;
-    margin-bottom: 20px;
+@media only screen and (max-width: 990px){
+    .our-team{ margin-bottom: 30px; }
 }
-
 .team-sm {
     margin-bottom: 30px;
 }
@@ -1607,11 +1645,16 @@ a:focus, a:hover {
 
 .investors .block .image {
     margin-bottom: 20px;
+    height: 300px;
+    background: #fff;
+    align-items: center;
 }
 
 .investors .block .image img {
-    width: 100%;
+    /* height: 80%; */
+    width: 80%;
     border-radius: 8px;
+
 }
 
 .investors .block h3 {
@@ -1620,7 +1663,8 @@ a:focus, a:hover {
 }
 
 .investors .block p {
-    font-size: 14px;
+    font-size: 18px;
+    color: black;
 }
 
 .hover-zoom {

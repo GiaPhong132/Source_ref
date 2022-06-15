@@ -4,7 +4,7 @@
                     <h2>Working Experience</h2>
                 </header>
                 <div class="timeline">
-                    <div class="timeline-item left wow slideInLeft" data-aos="fade-right">
+                    <div class="timeline-item left " data-aos="fade-right">
                         <div class="timeline-text">
                             <div class="timeline-date">2010 - 2012</div>
                             <h2>Web Developer</h2>
@@ -14,7 +14,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="timeline-item right wow slideInRight"  data-aos="fade-left">
+                    <div class="timeline-item right "  data-aos="fade-left">
                         <div class="timeline-text">
                             <div class="timeline-date">2012 - 2018</div>
                             <h2>Web Developer</h2>
@@ -24,7 +24,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="timeline-item left wow slideInLeft" data-aos="fade-right">
+                    <div class="timeline-item left " data-aos="fade-right">
                         <div class="timeline-text">
                             <div class="timeline-date">2018 - 2019</div>
                             <h2>Web Developer</h2>
@@ -34,7 +34,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="timeline-item right wow slideInRight"  data-aos="fade-left">
+                    <div class="timeline-item right "  data-aos="fade-left">
                         <div class="timeline-text">
                             <div class="timeline-date">2019 - 2020</div>
                             <h2>Web Developer</h2>

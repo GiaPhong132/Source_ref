@@ -2,23 +2,38 @@
 =            Client Slider              =
 ======================================-->
 
-<section class="section clients bg-gray">
+<section class="section clients bg-gray" data-aos="fade-in">
 	<div class="container">
 		<div class="row">
 			<div class="col-10 m-auto text-center">
-				<h3>Featured In</h3>
+				<div class="section-title"><h2>Các đơn vị đồng hành</h2></div>
 				<div class="client-slider owl-carousel owl-theme">
 					<div class="item">
-						<img src="/Source_ref/public2/images/clients/business-finder.png" alt="business-finder">
+						<img src="/Source_ref/public2/images/clients/google.png" alt="logo">
 					</div>
 					<div class="item">
-						<img src="/Source_ref/public2/images/clients/forbes.png" alt="forbes">
+						<img src="/Source_ref/public2/images/clients/tencent-logo.png" alt="logo">
 					</div>
 					<div class="item">
-						<img src="/Source_ref/public2/images/clients/venture-beat.png" alt="venture-beat">
+						<img src="/Source_ref/public2/images/clients/meta-inc.png" alt="logo">
 					</div>
 					<div class="item">
-						<img src="/Source_ref/public2/images/clients/tech-crunch-new.png" alt="TechCrunch">
+						<img src="/Source_ref/public2/images/clients/master_card.png" alt="logo">
+					</div>
+					<div class="item">
+						<img src="/Source_ref/public2/images/clients/kms.png" alt="logo">
+					</div>
+					<div class="item">
+						<img src="/Source_ref/public2/images/clients/vietinbank-logo.png" alt="logo">
+					</div>
+					<div class="item">
+						<img src="/Source_ref/public2/images/clients/vtv.png" alt="logo">
+					</div>
+					<div class="item">
+						<img src="/Source_ref/public2/images/clients/intel.png" alt="logo">
+					</div>
+					<div class="item">
+						<img src="/Source_ref/public2/images/clients/twitter.png" alt="logo">
 					</div>
 				</div>
 			</div>

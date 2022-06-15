@@ -48,8 +48,9 @@ if (isset($_SESSION['guest'])) {
     <link href="/Source_ref/public2/css/layout/navbar.css" rel="stylesheet">
     <link href="/Source_ref/public2/css/layout/footer.css" rel="stylesheet">
     <link href="/Source_ref/public2/css/layout/hero.css" rel="stylesheet">
-    <link href="/Source_ref/views/main/about/css/style.css" rel="stylesheet">
-    
+    <!-- <link href="/Source_ref/views/main/about/css/style.css" rel="stylesheet"> -->
+    <link href="/Source_ref/public2/css/layout/timeline.css" rel="stylesheet">
+    <link href="/Source_ref/public2/css/layout/stlye.css" rel="stylesheet">
     <!-- <link href="/Source_ref/public2/css/layout/main.css" rel="stylesheet"> -->
     <!-- <link href="/Source_ref/public2/css/layout/about.css" rel="stylesheet">  -->
     <!--
@@ -57,7 +58,7 @@ if (isset($_SESSION['guest'])) {
     <!-- <link href="/Source_ref/public2/css/layout/responsive.css" rel="stylesheet"> -->
     <!-- <link href="/Source_ref/public2/css/layout/services.css" rel="stylesheet">
     <link href="/Source_ref/public2/css/layout/info.css" rel="stylesheet">
-    <link href="/Source_ref/public2/css/layout/timeline.css" rel="stylesheet">  -->
+      -->
  
    
 </head>
