@@ -55,6 +55,14 @@
                         <span class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
 
+                    <?php
+
+                    if (isset($err)) {
+                        echo '<p class="login-box-msg" style="color: red">' . $err . '</p>';
+                        unset($err);
+                    }
+                    ?>
+
                     <div class="text-right -t-8 p-b-31">
                         <a href="#" style="color:grey">
                             Forgot password?
