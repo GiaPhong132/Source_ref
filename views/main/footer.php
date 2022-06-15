@@ -8,37 +8,34 @@
       <div class="col-lg-3 col-md-6 footer-contact">
         <h3>Trụ sở chính</h3>
         <p>
-          Z06 đường số 13 <br>
-          Phường Tân Thuận Đông, Quận 7<br>
+          Số 8 đường số 4 <br>
+          Phường 2, Quận 1<br>
           TP. Hồ Chí Minh, Việt Nam <br><br>
-          <strong>Điện thoại:</strong> 090 918 34 46<br>
-          <strong>Email:</strong> start@vng.com.vn<br>
+          <strong>Điện thoại:</strong> 012 345 6789<br>
+          <strong>Email:</strong> IDEdevelopment@bkblue.com.vn<br>
         </p>
       </div>
 
       <div class="col-lg-2 col-md-6 footer-links">
-        <h4>Link liên kết</h4>
+        <h4>Các liên kết khác</h4>
         <ul>
           <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Facebook</a></li>
           <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Youtube</a></li>
-          <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Life at VNG</a></li>
-          <li><i class="fa-solid fa-chevrons-right"></i> <a href="">VNG Run Club</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-6 footer-links">
-        <h4>Trung tâm hỗ trợ</h4>
+        <h4>JOIN US</h4>
         <ul>
-          <li><i class="fa-solid fa-chevrons-right"> </i><a href="">Hỗ trợ tài khoản Games</a></li>
-          <li><i class="fa-solid fa-chevrons-right"> </i><a href="">Hỗ trợ tài khoản Zalo</a></li>
-          <li><i class="fa-solid fa-chevrons-right"></i><a href="">Hỗ trợ dịch vụ Clouds</a></li>
-          <li></li><i class="fa-solid fa-chevrons-right"></i><a href="">Hỗ trợ dịch vụ ZaloPay</a></li>
+          <li><i class="fa-solid fa-chevrons-right"> </i><a href="index.php?page=main&controller=login&action=index">Sign In</a></li>
+          <li><i class="fa-solid fa-chevrons-right"> </i><a href="index.php?page=main&controller=register&action=index">Sign Up</a></li>
+          <li><i class="fa-solid fa-chevrons-right"></i><a href="#">Profile</a></li>
         </ul>
       </div>
 
       <div class="col-lg-4 col-md-6 footer-newsletter">
         <h4>Đăng ký nhận tin tức mới nhất</h4>
-        <p>Những thông tin và tin tức mới nhất về VNGreen sẽ được gửi đến bạn qua email bạn điền dưới đây</p>
+        <p>Những thông tin và tin tức mới nhất về BKBLUE sẽ được gửi đến bạn qua email bạn điền dưới đây</p>
         <form action="" method="post">
           <input type="email" name="email"><input type="submit" value="Đăng ký">
         </form>
