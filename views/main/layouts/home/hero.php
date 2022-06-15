@@ -24,7 +24,7 @@
 			<div class="col-md-6 order-2 order-md-1 text-center text-md-left">
 				<h1 class="text-white font-weight-bold mb-4">Beautiful And Powful Evironment Development</h1>
 				<p class="text-white mb-5">A wide range of tools and integrations for any team</p>
-				<a href="#" class="btn btn-main">get started</a>
+				<a href="#" class="btn btn-main">Get Started</a>
 			</div>
 			<div class="col-md-6 text-center order-1 order-md-2">
 				<img class="img-fluid" src="/source_ref/public2/images/visual.png" alt="screenshot">

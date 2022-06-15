@@ -295,15 +295,7 @@
                 </div>
             </div>  
                
-<<<<<<< HEAD
-        </div>    
-        <div class="col-md-1">
-            <div> hello</div>
-        </div>   
-                             
-=======
         </div>                                     
->>>>>>> bd0c681e4445ba9c0ce406a6176244c7d09a44a2
         </div>    
     </div>
     </section>

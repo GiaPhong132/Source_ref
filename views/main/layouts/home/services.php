@@ -4,11 +4,11 @@
 			<div class="col-lg-12">
 				<div class="section-title">
 					<h2>An Interface Of Our IDE</h2>
-					<p>Industry-standard adapter for connecting IDE devices and enabling them to communicate.</p>
+					<p style="text-align:center;">Industry-standard adapter for connecting IDE devices and enabling them to communicate.</p>
 				</div>
 			</div>
 		</div>
-		<div class="row no-gutters">
+		<div class="row ">
 			<div class="col-lg-6 align-self-center">
 				<!-- Feature Image -->
 				<div class="service-thumb left" data-aos="fade-right">
