@@ -28,23 +28,21 @@ if (isset($_SESSION['guest'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap -->
-  <link href="/Source_ref/public2/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
-  <!-- themify icon -->
-  <link rel="stylesheet" href="/Source_ref/public2/plugins/themify-icons/themify-icons.css">
-  <!-- Owl Carousel -->
-  <link href="/Source_ref/public2/plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
-  <!-- Owl Carousel Theme -->
-  <link href="/Source_ref/public2/plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
-  <!-- Fancy Box -->
-  <link href="/Source_ref/public2/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
-  <!-- AOS -->
-  <link rel="stylesheet" href="/Source_ref/public2/plugins/aos/aos.css">
+    <link href="/Source_ref/public2/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- themify icon -->
+    <link rel="stylesheet" href="/Source_ref/public2/plugins/themify-icons/themify-icons.css">
+    <!-- Owl Carousel -->
+    <link href="/Source_ref/public2/plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
+    <!-- Owl Carousel Theme -->
+    <link href="/Source_ref/public2/plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
+    <!-- Fancy Box -->
+    <link href="/Source_ref/public2/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <!-- AOS -->
+    <link rel="stylesheet" href="/Source_ref/public2/plugins/aos/aos.css">
 
-  <!-- CUSTOM CSS -->
-  <link href="css/style.css" rel="stylesheet">
+    <!-- CUSTOM CSS
+    <link href="css/style.css" rel="stylesheet"> -->
 
-  <!-- FAVICON -->
-    <link href="images/favicon.png" rel="shortcut icon">
     <link href="/Source_ref/public2/css/layout/navbar.css" rel="stylesheet">
     <link href="/Source_ref/public2/css/layout/footer.css" rel="stylesheet">
     <link href="/Source_ref/public2/css/layout/hero.css" rel="stylesheet">
