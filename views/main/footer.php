@@ -1,89 +1,4 @@
- <!-- ======= Footer =======
- <footer class="footer">
-     <div class="footer__addr">
-         <h1 class="footer__logo">
-             <img src="/MVC_Phong/public/images/hcmut.png" alt="logo">
-             BKaV
-         </h1>
-         <h2>Contact</h2>
-         <address>Điện thoại: (84-24) 3763 2552, Email: Bkav@bkav.com.vn</address>
-         <address>Tòa nhà HH1 - Khu đô thị Yên Hòa - Phường Yên Hòa - Cầu Giấy - Hà Nội<br>
-             <p>Giấy chứng nhận ĐKKD số 0101360697 do Sở Kế hoạch và đầu tư Thành Phố Hà Nội cấp lần đầu ngày 17/04/2003</p>
-             <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
-         </address>
-     </div>
 
-     <ul class="footer__nav">
-         <li class="nav__item">
-             <h2 class="nav__title">Chính sách</h2>
-             <ul class="nav__ul">
-                 <li>
-                     <a href="#">Điều khoản bảo mật</a>
-                 </li>
-
-                 <li>
-                     <a href="#">Điều khoản sử dụng</a>
-                 </li>
-
-                 <li>
-                     <a href="#">Liên hệ</a>
-                 </li>
-             </ul>
-         </li>
-
-         <li class="nav__item ">
-             <h2 class="nav__title">Hỗ trợ</h2>
-
-             <ul class="nav__ul ">
-                 <li>
-                     <a href="#">Hỗ trợ tài khoản</a>
-                 </li>
-
-                 <li>
-                     <a href="#">Hỗ trợ ứng dụng</a>
-                 </li>
-             </ul>
-         </li>
-
-         <li class="nav__item">
-             <h2 class="nav__title">Liên kết</h2>
-
-             <ul class="nav__ul">
-                 <li>
-                     <a href="#">Facebook</a>
-                 </li>
-
-                 <li>
-                     <a href="#">Youtube</a>
-                 </li>
-
-                 <li>
-                     <a href="#">Instagram</a>
-                 </li>
-             </ul>
-         </li>
-     </ul>
-
-     <div class="legal">
-         <p>&copy; 1995 - 2022 Bkav Corporation. All Rights Reserved </p><br>
-         <p>Designed by BKaV</p>
-     </div>
- </footer>End Footer -->
-
- <!-- <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a> 
-
- <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
- <script>
-     AOS.init();
- </script>
-
- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script type="text/javascript" src="/Web_MVC_Phong/public/js/slick.js"></script>
-
- </body>
--->
 <footer id="footer">
 
 <div class="footer-top">
@@ -93,37 +8,34 @@
       <div class="col-lg-3 col-md-6 footer-contact">
         <h3>Trụ sở chính</h3>
         <p>
-          Z06 đường số 13 <br>
-          Phường Tân Thuận Đông, Quận 7<br>
+          Số 8 đường số 4 <br>
+          Phường 2, Quận 1<br>
           TP. Hồ Chí Minh, Việt Nam <br><br>
-          <strong>Điện thoại:</strong> 090 918 34 46<br>
-          <strong>Email:</strong> start@vng.com.vn<br>
+          <strong>Điện thoại:</strong> 012 345 6789<br>
+          <strong>Email:</strong> IDEdevelopment@bkblue.com.vn<br>
         </p>
       </div>
 
       <div class="col-lg-2 col-md-6 footer-links">
-        <h4>Link liên kết</h4>
+        <h4>Các liên kết khác</h4>
         <ul>
           <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Facebook</a></li>
           <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Youtube</a></li>
-          <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Life at VNG</a></li>
-          <li><i class="fa-solid fa-chevrons-right"></i> <a href="">VNG Run Club</a></li>
         </ul>
       </div>
 
       <div class="col-lg-3 col-md-6 footer-links">
-        <h4>Trung tâm hỗ trợ</h4>
+        <h4>JOIN US</h4>
         <ul>
-          <li><i class="fa-solid fa-chevrons-right"> </i><a href="">Hỗ trợ tài khoản Games</a></li>
-          <li><i class="fa-solid fa-chevrons-right"> </i><a href="">Hỗ trợ tài khoản Zalo</a></li>
-          <li><i class="fa-solid fa-chevrons-right"></i><a href="">Hỗ trợ dịch vụ Clouds</a></li>
-          <li></li><i class="fa-solid fa-chevrons-right"></i><a href="">Hỗ trợ dịch vụ ZaloPay</a></li>
+          <li><i class="fa-solid fa-chevrons-right"> </i><a href="index.php?page=main&controller=login&action=index">Sign In</a></li>
+          <li><i class="fa-solid fa-chevrons-right"> </i><a href="index.php?page=main&controller=register&action=index">Sign Up</a></li>
+          <li><i class="fa-solid fa-chevrons-right"></i><a href="#">Profile</a></li>
         </ul>
       </div>
 
       <div class="col-lg-4 col-md-6 footer-newsletter">
         <h4>Đăng ký nhận tin tức mới nhất</h4>
-        <p>Những thông tin và tin tức mới nhất về VNGreen sẽ được gửi đến bạn qua email bạn điền dưới đây</p>
+        <p>Những thông tin và tin tức mới nhất về BKBLUE sẽ được gửi đến bạn qua email bạn điền dưới đây</p>
         <form action="" method="post">
           <input type="email" name="email"><input type="submit" value="Đăng ký">
         </form>
@@ -148,20 +60,43 @@
     <a href="" class="youtube"><i class="fa-brands fa-youtube"></i></a>
   </div>
 </div>
+ <!-- Back to top button -->
+ <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+         
 
 </footer><!-- End Footer -->
-<a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
+   
+ 
  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
  <script>
      AOS.init();
  </script>
-
+ <script src="/Source_ref/public2/plugins/bootstrap/bootstrap.min.js"></script>
  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
- <script type="text/javascript" src="/Web_MVC_Phong/public/js/slick.js"></script>
- <script type="text/javascript" src="/Web_MVC_Phong/public2/js/main.js"></script>
- </body>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js" integrity="sha512-k2GFCTbp9rQU412BStrcD/rlwv1PYec9SNrkbQlo6RZCf75l6KcC3UwDY8H5n5hl4v77IDtIPwOk9Dqjs/mMBQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js" integrity="sha512-BdHyGtczsUoFcEma+MfXc71KJLv/cd+sUsUaYYf2mXpfG/PtBjNXsPo78+rxWjscxUYN2Qr2+DbeGGiJx81ifg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+ <script src="/Source_ref/public2/plugins/owl-carousel/owl.carousel.min.js"></script>
+ <script type="text/javascript" src="/Source_ref/public2/js/slick.js"></script>
+ <script type="text/javascript" src="/Source_ref/public2/js/main.js"></script>
+ <script type="text/javascript" src="/Source_ref/public2/js/custom.js"></script>
+
+ <!-- JAVASCRIPTS -->
+  <!-- <script src="plugins/jquery/jquery.js"></script>
+  <script src="plugins/popper/popper.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
+  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
+  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="plugins/aos/aos.js"></script>
+
+  
+  <script src="js/custom.js"></script> -->
+
+
+</body>
 
  </html>

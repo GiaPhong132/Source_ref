@@ -1,184 +1,131 @@
-nav{
-  font-family: sans-serif;
-  background-color: #000;
-  height: 100px;
-  z-index: 99;
-}
-nav ul{
-  list-style: none;
-}
-nav ul,li,a{
-  color: white;
-  text-decoration: none;
-}
-nav a:hover{
-  text-decoration: none;
-}
-.menu{
-  padding: 5px 0px;
-}
-.menu li{
-  font-size: 16px;
-  padding: 15px 5px;
-}
-.menu li a{
-  display: block;
-}
-.menu .logo a{
-  padding-left: 20px;
-  font-size: 30px;
-}
-.menu .logo a span{
-  color: deepskyblue;
-}
-.menu .item.button.secondary{
-  padding-right: 20px;
-  border-bottom: 1px #444 solid;
-}
-/*********************************************/
-/*****************Mobile Menu*****************/
-/*********************************************/
-.menu{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu .toggle{
-  padding-right: 5px;
-  order: 1;
-}
-.menu .item.button{
-  order: 2;
-}
-.menu .item{
-  width: 100%;
-  text-align: center;
-  order: 3;
-  display: none;
-}
-.menu .item.active{
-  display: block;
-  background-color: #000;
-  width: 100%;
-  z-index: 99;
-}
-.menu .toggle{
-  cursor: pointer;
-
-}
-.menu .toggle .bars{
-  background: #999;
-  display: inline-block;
-  height: 2px;
-  position: relative;
-  width: 18px;
-
-}
-.menu .toggle .bars::before,.bars::after{
-  background: #999;
-  content: "";
-  display: inline-block;
-  height: 2px;
-  position: absolute;
-  width: 18px;
-}
-.menu .toggle .bars::before{
-  top: 5px
-}
-.menu .toggle .bars::after{
-  top: -5px
-}
-.menu .item a{
-  text-decoration: none;
-  padding: 7px 15px;
-  background: #000;
-  border: 1px solid #000;
-  border-radius: 50em;
-}
-.menu .item a:hover{
-  background: teal;
-  border: 1px solid #006d6d;
-}
-/*********************************************/
-/*****************Tabler Menu*****************/
-/*********************************************/
-@media all and (min-width: 468px) {
-  .menu{
-      justify-content: center;
+*{
+    padding: 0;
+    margin: 0;
   }
-  .menu .logo{
-      flex: 1;
+  body {
+    background: #eeeeee;
   }
-  .menu .item.button{
-      width: auto;
-      order: 1;
-      display: block;
+  .form-inline {
+    display: inline-block;
   }
-  .menu .toggle{
-    padding-right: 5px;
-      order: 2;
+  .navbar-header.col {
+    padding: 0 !important;
   }
-  .menu .item.button.secondary{
-      border: 0;
+  .navbar {
+    background: #fff;
+    padding-left: 16px;
+    padding-right: 16px;
+    border-bottom: 1px solid #d6d6d6;
+    box-shadow: 0 0 4px rgba(0,0,0,.1);
   }
-  .menu .item.button a{
-      text-decoration: none;
-      padding: 7px 15px;
-      background: teal;
-      border: 1px solid #006d6d;
-      border-radius: 50em;
-
+  .nav-link img {
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    margin: -8px 0;
+    float: left;
+    margin-right: 10px;
   }
-  .menu .item.button.secondary a{
-      background: transparent;
+  .navbar .navbar-brand {
+    color: #555;
+    padding-left: 0;
+    padding-right: 50px;
+    font-family: 'Merienda One', sans-serif;
   }
-  .menu .item.button a:hover{
-      transition: all 0.25s;
+  .navbar .navbar-brand i {
+    font-size: 20px;
+    margin-right: 5px;
   }
-  .menu .item.button:not(.secondary) a:hover{
-      background: #006d6d;
-      border-color: #005959;
+  .search-box {
+    position: relative;
   }
-  .menu .item.button.secondary a:hover{
-      color: teal;
+  .search-box input {
+    box-shadow: none;
+    padding-right: 35px;
+    border-radius: 3px !important;
   }
-  .menu .item:not(.button) a{
-      text-decoration: none;
-      padding: 7px 15px;
-      background: #000;
-      border: 1px solid #000;
-      border-radius: 50em;
+  .search-box .input-group-addon {
+    min-width: 35px;
+    border: none;
+    background: transparent;
+    position: absolute;
+    right: 0;
+    z-index: 9;
+    padding: 7px;
+    height: 100%;
   }
-  .menu .item:not(.button) a:hover{
-      background: teal;
-      border: 1px solid #006d6d;
+  .search-box i {
+    color: #a0a5b1;
+    font-size: 19px;
   }
-}
-/*********************************************/
-/*****************Desktop Menu****************/
-/*********************************************/
-@media  all and (min-width: 1000px) {
-  .menu .item{
-      display: block;
-      width: auto;
+  .navbar .nav-item i {
+    font-size: 18px;
   }
-  .toggle{
-      display: none;
+  .navbar .dropdown-item i {
+    font-size: 16px;
+    min-width: 22px;
   }
-  .menu .logo{
-      order: 0;
+  .navbar .nav-item.open > a {
+    background: none !important;
   }
-  .menu .item{
-      order: 1;
+  .navbar .dropdown-menu {
+    border-radius: 1px;
+    border-color: #e5e5e5;
+    box-shadow: 0 2px 8px rgba(0,0,0,.05);
   }
-  .menu .item.button{
-      order: 2;
+  .navbar .dropdown-menu a {
+    color: #777;
+    padding: 8px 20px;
+    line-height: normal;
   }
-  .menu li{
-      padding: 15px 10px;
+  .navbar .dropdown-menu a:hover, .navbar .dropdown-menu a:active {
+    color: #333;
   }
-  .menu li.button{
-      padding-right: 0;
+  .navbar .dropdown-item .material-icons {
+    font-size: 21px;
+    line-height: 16px;
+    vertical-align: middle;
+    margin-top: -2px;
   }
-}
+  .navbar .badge {
+    color: #fff;
+    background: #f44336;
+    font-size: 11px;
+    border-radius: 20px;
+    position: absolute;
+    min-width: 10px;
+    padding: 4px 6px 0;
+    min-height: 18px;
+    top: 5px;
+  }
+  .navbar a.notifications, .navbar a.messages {
+    position: relative;
+    margin-right: 10px;
+  }
+  .navbar a.messages {
+    margin-right: 20px;
+  }
+  .navbar a.notifications .badge {
+    margin-left: -8px;
+  }
+  .navbar a.messages .badge {
+    margin-left: -4px;
+  }
+  .navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
+    background: transparent !important;
+  }
+  @media (min-width: 1200px){
+    .form-inline .input-group {
+        width: 300px;
+        margin-left: 30px;
+    }
+  }
+  @media (max-width: 1199px){
+    .form-inline {
+        display: block;
+        margin-bottom: 10px;
+    }
+    .input-group {
+        width: 100%;
+    }
+  }

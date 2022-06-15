@@ -2,7 +2,7 @@
 (function ($) {
     "use strict";
 
-
+  
      /*==================================================================
     [ Focus input ]*/
     $('.input100').each(function(){
@@ -16,7 +16,17 @@
         })    
     })
   
-  
+    $(window).scroll(function () {
+        if ($(this).scrollTop() > 200) {
+            $('.back-to-top').fadeIn('slow');
+        } else {
+            $('.back-to-top').fadeOut('slow');
+        }
+    });
+    $('.back-to-top').click(function () {
+        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        return false;
+    });
     /*==================================================================
     [ Validate ]*/
     var input = $('.validate-input .input100');
@@ -65,34 +75,9 @@
 
         $(thisAlert).removeClass('alert-validate');
     }
+   
     
     
-
+    
 })(jQuery);
 
-$(document).ready(function(){
-    
-    //Check to see if the window is top if not then display button
-    $(window).scroll(function(){
-        if ($(this).scrollTop() > 100) {
-            $('.scrollToTop').fadeIn();
-        } else {
-            $('.scrollToTop').fadeOut();
-        }
-    });
-    
-    //Click event to scroll to top
-    $('.scrollToTop').click(function(){
-        $('html, body').animate({scrollTop : 0},800);
-        return false;
-    });
-    
-});
-
-//read-more button
- let more = document.querySelectorAll('.more');
- for(let i=0;i<more.length;i++){
-    more[i].addEventListener('click', function(){
-        more[i].parentNode.classList.toggle('active')
-    })
- };
