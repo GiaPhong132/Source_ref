@@ -1,64 +1,36 @@
-
-<section id="clients" class="clients">
-  <!-- use slick sáng làm--> 
-    <div class="clients-container" data-aos="fade-in" data-aos-duration="500" data-aos-offset="0" >
-      <div class="section-title">
-          <h2>Các công ty đồng hành & tin tưởng</h2>
-      </div>
-      <div class="row center clients-wrap  ">
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-          <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Source_ref/public2/images/clients/google.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-          <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Source_ref/public2/images/clients/meta-inc.png">
-          </div>
-        </div>
-       
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Source_ref/public2/images/clients/tencent-logo.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Source_ref/public2/images/clients/vtv.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Source_ref/public2/images/clients/bmw.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-          <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Source_ref/public2/images/clients/vietinbank-logo.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-          <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Source_ref/public2/images/clients/master_card.png">
-          </div>
-        </div>
-       
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Source_ref/public2/images/clients/intel.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Source_ref/public2/images/clients/twitter.png">
-          </div>
-        </div>
-        <div class="col-md-12 col-sm-12 col-xs-12 ">
-        <div class="client-logo">
-           <img alt="logo-company" class="img-fluid" src="/Source_ref/public2/images/clients/kms.png">
-          </div>
-        </div>
-        
+<section class="feature section pt-0">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-6 ml-auto align-self-center">
+				<div class="feature-content">
+					<!-- Feature Title -->
+					<h2>Increase your productivity with <a
+							href="https://themefisher.com/products/small-apps-free-app-landing-page-template/">Small Apps</a></h2>
+					<!-- Feature Description -->
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+						dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+						ea commodo consequat.</p>
+				</div>
+				<!-- Testimonial Quote -->
+				<div class="testimonial">
+					<p>
+						"InVision is a window into everything that's being designed at Twitter. It gets all of our best work in one
+						place."
+					</p>
+					<ul class="list-inline meta">
+						<li class="list-inline-item">
+							<img src="images/testimonial/feature-testimonial-thumb.jpg" alt="">
+						</li>
+						<li class="list-inline-item">Jonathon Andrew , Themefisher.com</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-6 mr-auto justify-content-center">
+				<!-- Feature mockup -->
+				<div class="image-content" data-aos="fade-left">
+					<img class="img-fluid" src="/source_ref/public2/images/jupyter.png" alt="ipad">
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
-
-
