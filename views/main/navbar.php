@@ -43,32 +43,46 @@ if (isset($_SESSION['guest'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- ajax -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-        $(function() {
-            $(".toggle").on("click", function() {
-                if ($(".item").hasClass("active")) {
-                    $(".item").removeClass("active");
-                } else {
-                    $(".item").addClass("active");
-                }
-            })
-
-        })
-    </script>
+    
 </head>
 
 <body>
-    <nav>
-        <ul class="menu">
-            <li class="logo"><a href="/Source_ref">BK<span>BLUE</span></a></li>
-            <li class="item"><a href="/Source_ref">Trang Chủ</a></li>
-            <li class="item"><a href="index.php?page=main&controller=about&action=index">Chúng Tôi</a></li>
-            <li class="item"><a href="/Source_ref/views/main/services">Sản Phẩm</a></li>
-            <li class="item button"><a href="index.php?page=main&controller=login&action=index">Đăng Nhập</a></li>
-            <li class="item button secondary"><a href="index.php?page=main&controller=register&action=index">Đăng Ký</a></li>
-            <li class="toggle"><span class="bars"></span></li>
-        </ul>
-    </nav>
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
+	<a href="#" class="navbar-brand"><i class="fa fa-cube"></i>BK<b style="color:deepskyblue">BLUE</b></a>
+	<button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<!-- Collection of nav links, forms, and other content for toggling -->
+	<div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
+		<div class="navbar-nav">
+			<a href="/Source_ref" class="nav-item nav-link active">Home</a>
+			<a href="index.php?page=main&controller=about&action=index" class="nav-item nav-link">About</a>
+			<a href="/Source_ref/views/main/services" class="nav-item nav-link">Product</a>
+			<a href="index.php?page=main&controller=login&action=index" class="nav-item nav-link">Sign In</a>
+            <a href="index.php?page=main&controller=register&action=index" class="nav-item nav-link">Sign Up</a>
+		</div>
+		<form class="navbar-form form-inline">
+			<div class="input-group search-box">
+				<input type="text" id="search" class="form-control" placeholder="Search ">
+				<span class="input-group-addon"><i class="material-icons">&#xE8B6;</i></span>
+			</div>
+		</form>
+		<div class="navbar-nav ml-auto">
+			<a href="#" class="nav-item nav-link notifications"><i class="fa fa-bell-o"></i><span class="badge">1</span></a>
+			<a href="#" class="nav-item nav-link messages"><i class="fa fa-envelope-o"></i><span class="badge">10</span></a></a>
+			<div class="nav-item dropdown">
+				<a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/source_ref/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Gia Phong <b class="caret"></b></a>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a></a>
+					<a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a></a>
+					<a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a>
+					<div class="dropdown-divider"></div>
+					<a href="#" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a></a>
+				</div>
+			</div>
+		</div>
+	</div>
+</nav>
 
 </body>
 
