@@ -44,20 +44,14 @@
         </div>
     </div>
 
-    <div class="container d-md-flex py-4">
+<div class="container d-md-flex py-4">
 
-        <div class="me-md-auto text-center text-md-start">
-            <div class="copyright">
-                &copy; Copyright <strong><span>VNGREEN</span></strong>. All Rights Reserved
-            </div>
-            <div class="credits">
-                Designed by <a href="index.php?page=admin&controller=layouts&action=index">VNGREEN</a>
-            </div>
-        </div>
-        <div class="social-links text-center text-md-right pt-3 pt-md-0">
-            <a href="" class="facebook"><i class="fa-brands fa-facebook-f"></i></a>
-            <a href="" class="youtube"><i class="fa-brands fa-youtube"></i></a>
-        </div>
+  <div class="me-md-auto text-center text-md-start">
+    <div class="copyright">
+      &copy; Copyright <strong><span>BKBLUE</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      Designed by <a href="index.php?page=admin&controller=layouts&action=index">BKBLUE</a>
     </div>
     <!-- Back to top button -->
     <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
