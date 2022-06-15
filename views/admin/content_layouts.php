@@ -33,7 +33,7 @@
         <aside class="main-sidebar sidebar-dark-primary elevation-4">
             <!-- Brand Logo-->
             <a class="brand-link" href="index.php">
-                <img class="brand-image img-circle elevation-3" src="/source_ref/public/dist/img/logo-CSE.png" alt="CSE Logo" style="opacity: .8">
+                <img class="brand-image img-circle elevation-3" src="/Source_code/public/dist/img/logo-CSE.png" alt="CSE Logo" style="opacity: .8">
                 <span class="brand-text font-weight-light">HCMUT CSE</span>
             </a>
             <!-- Sidebar-->
@@ -41,7 +41,7 @@
                 <!-- Sidebar user (optional)-->
                 <div class="user-panel mt-3 pb-3 mb-3 d-flex">
                     <div class="image">
-                        <img class="img-circle elevation-2" src="/source_ref/public/dist/img/logo-library.png" alt="Library logo">
+                        <img class="img-circle elevation-2" src="/Source_code/public/dist/img/logo-library.png" alt="Library logo">
                     </div>
                     <div class="info">
                         <a class="d-block" href="index.php">Web Company</a>

@@ -5,13 +5,13 @@ if (isset($_SESSION["user"])) {
 }
 ?>
 <?php
-require_once('/xampp/htdocs/Source_Ref/views/admin/header.php'); ?>
+require_once('/xampp/htdocs/Source_code/views/admin/header.php'); ?>
 
 <!-- Add CSS -->
 
 
 <?php
-require_once('/xampp/htdocs/Source_Ref/views/admin/content_layouts.php'); ?>
+require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
 
 <!-- Code -->
@@ -158,10 +158,10 @@ require_once('/xampp/htdocs/Source_Ref/views/admin/content_layouts.php'); ?>
 
 
 <?php
-require_once('/xampp/htdocs/Source_Ref/views/admin/footer.php'); ?>
+require_once('/xampp/htdocs/Source_code/views/admin/footer.php'); ?>
 
 <!-- Add Javascripts -->
-<script src="/source_ref/public/js/admin/index.js"></script>
+<script src="/Source_code/public/js/admin/index.js"></script>
 </body>
 
 </html>
