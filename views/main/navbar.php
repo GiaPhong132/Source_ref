@@ -74,9 +74,9 @@ if (isset($_SESSION['guest'])) {
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
             <div class="navbar-nav">
-                <a href="/Source_code" class="nav-item nav-link active">Home</a>
+                <a href="index.php?page=main&controller=layouts&action=index" class="nav-item nav-link active">Home</a>
                 <a href="index.php?page=main&controller=about&action=index" class="nav-item nav-link">About</a>
-                <a href="/Source_code/views/main/services" class="nav-item nav-link">Product</a>
+                <a href="index.php?page=main&controller=services&action=index" class="nav-item nav-link">Product</a>
                 <a href="index.php?page=main&controller=login&action=index" class="nav-item nav-link">Sign In</a>
                 <a href="index.php?page=main&controller=register&action=index" class="nav-item nav-link">Sign Up</a>
             </div>
