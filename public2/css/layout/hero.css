@@ -44,7 +44,8 @@ background-image: linear-gradient(315deg, #36669d 0%, #d3d3d3 74%);
 }
 .page-title h1 {
     text-align: left;
-    color: #fff;
+    color:  #2b4162;
+ 
     font-size: 60px;
     font-weight: 600;
     padding-top: 30px;
@@ -1217,7 +1218,7 @@ a:focus, a:hover {
     background: transparent;
     border-radius: 15px;
     text-align: center;
-    border:1px solid #1DBF73;
+    border:1px solid #002D62;
 }
 .our-team:hover{
     transition: .5s;
@@ -1228,14 +1229,14 @@ a:focus, a:hover {
     width: 100%;
     height: 100%;
     background: transparent;
-    border:1px solid #1DBF73;
+    border:1px solid #002D62;
     padding: 5px;
     margin-bottom: 25px;
     transition: all 0.5s ease 0s;
    border-radius: 50%;
 }
 .our-team:hover .pic{
-    background: #1DBF73;
+    background: #002D62;
     border-radius: 50%;
 }
 .pic img{
@@ -1274,12 +1275,12 @@ a:focus, a:hover {
     line-height: 30px;
     border-radius: 50%;
     font-size: 15px;
-    color: #1DBF73;
-    border: 1px solid #1DBF73;
+    color: #002D62;
+    border: 1px solid #002D62;
     transition: all 0.5s ease 0s;
 }
 .our-team:hover .social li a{
-    background: #1DBF73;
+    background: #002D62;
     color: #fff;
 }
 @media only screen and (max-width: 990px){

@@ -1,4 +1,4 @@
-<div class="experience" id="experience">
+<div class="section experience" id="experience">
             <div class="container">
                 <header class="section-title text-center" data-aos="fade-in">
                     <h2>Working Experience</h2>
@@ -6,9 +6,9 @@
                 <div class="timeline">
                     <div class="timeline-item left " data-aos="fade-right">
                         <div class="timeline-text">
-                            <div class="timeline-date">2010 - 2012</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
+                            
+                            <h2>2002 - 2007</h2>
+                            <h4>Thành lập</h4>
                             <p>
                                 Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
                             </p>
@@ -16,9 +16,9 @@
                     </div>
                     <div class="timeline-item right "  data-aos="fade-left">
                         <div class="timeline-text">
-                            <div class="timeline-date">2012 - 2018</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
+                            
+                            <h2>2007 - 2012</h2>
+                            <h4>Phát triển</h4>
                             <p>
                                 Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
                             </p>
@@ -26,9 +26,9 @@
                     </div>
                     <div class="timeline-item left " data-aos="fade-right">
                         <div class="timeline-text">
-                            <div class="timeline-date">2018 - 2019</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
+                           
+                            <h2>2012 - 2017</h2>
+                            <h4>Lên doanh thu </h4>
                             <p>
                                 Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
                             </p>
@@ -36,9 +36,9 @@
                     </div>
                     <div class="timeline-item right "  data-aos="fade-left">
                         <div class="timeline-text">
-                            <div class="timeline-date">2019 - 2020</div>
-                            <h2>Web Developer</h2>
-                            <h4>Soft Agency, San Francisco, CA</h4>
+                           
+                            <h2>2017- now</h2>
+                            <h4>Ổn định, phát triển nhiều mảng</h4>
                             <p>
                                 Lorem ipsum dolor sit amet elit. Aliquam odio dolor, id luctus erat sagittis non. Ut blandit semper pretium.
                             </p>

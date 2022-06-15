@@ -64,9 +64,10 @@
 				<div class="row"  >
 					<div class="col-12"  data-aos="fade-up" data-aos-duration="4000">
 						<div class="section-title mb-0" >
-							<h2>Why we created Small Apps</a></h2>
-							<p>Nulla quis lorem ut libero malesuada feugiat. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Nulla quis lorem ut libero malesuada feugiat. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Proin eget tortor risus. Proin eget tortor risus. Proin eget tortor risus. Nulla quis lorem ut libero malesuada feugiat. Vestibulum ac diam sit amet quam vehicula elementum sed sit amet dui. Vivamus suscipit tortor eget felis porttitor volutpat.</p>
-						</div>
+							<h2>Tiên Phong</a></h2>
+							<p style="text-align: center">Bkav là công ty đầu tiên trên thế giới công bố phát hiện lỗ hổng nghiêm trọng trên Google Chrome chỉ vài ngày sau khi trình duyệt này ra mắt (9/2008). Hiện, Google Chrome là trình duyệt web được sử dụng phổ biến nhất trên thế giới.
+								</p>	
+							</div>
 					</div>
 				</div>
 			</div>
@@ -88,7 +89,7 @@
 							<img src="/Source_ref/public2/images/hcmut.png">
                     </div>
                     <h3 class="title">Phong</h3>
-                    <span class="post">Web Developer</span>
+                    <span class="post">Back-end </span>
                     <ul class="social">
                         <li><a href="#" class="fa-brands fa-facebook"></a></li>
                         <li><a href="#" class="fa-brands fa-twitter"></a></li>
@@ -102,7 +103,7 @@
                         <img src="/Source_ref/public2/images/hcmut.png">
                     </div>
                     <h3 class="title">Tân</h3>
-                    <span class="post">Web Designer</span>
+                    <span class="post">Front-end</span>
                     <ul class="social">
 						<li><a href="#" class="fa-brands fa-facebook"></a></li>
                         <li><a href="#" class="fa-brands fa-twitter"></a></li>
@@ -116,7 +117,7 @@
                         <img src="/Source_ref/public2/images/hcmut.png">
                     </div>
                     <h3 class="title">Vĩnh</h3>
-                    <span class="post">Full Stack</span>
+                    <span class="post">Front-end </span>
                     <ul class="social">
 						<li><a href="#" class="fa-brands fa-facebook"></a></li>
                         <li><a href="#" class="fa-brands fa-twitter"></a></li>
@@ -129,7 +130,7 @@
                         <img src="/Source_ref/public2/images/hcmut.png">
                     </div>
                     <h3 class="title">Huy</h3>
-                    <span class="post">Graphic Designer</span>
+                    <span class="post">Back-end</span>
                     <ul class="social">
 					<li><a href="#" class="fa-brands fa-facebook"></a></li>
                         <li><a href="#" class="fa-brands fa-twitter"></a></li>

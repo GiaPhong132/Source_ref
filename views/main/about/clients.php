@@ -2,7 +2,7 @@
 =            Client Slider              =
 ======================================-->
 
-<section class="section clients bg-gray" data-aos="fade-in">
+<section class="section clients " data-aos="fade-in">
 	<div class="container">
 		<div class="row">
 			<div class="col-10 m-auto text-center">
