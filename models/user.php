@@ -80,6 +80,7 @@ class User
 
     static function insert($email, $profile_photo, $fname, $lname, $gender, $age, $phone, $password)
     {
+        $password = password_hash($password, PASSWORD_DEFAULT);
         $db = DB::getInstance();
 
 
@@ -119,7 +120,7 @@ class User
     {
         $db = DB::getInstance();
         $req = $db->query("SELECT * FROM user WHERE email = '$email'");
-        if ($password == $req->fetch_assoc()['password'])
+        if (@password_verify($password, $req->fetch_assoc()['password']))
             return true;
         else
             return false;
