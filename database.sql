@@ -99,10 +99,7 @@ VALUES ('admin@hcmut.edu.vn', 'Nguyen Van', 'A', 1, 15, '0123456789', '');
 INSERT INTO `USER` (email, fname, lname, gender, age, phone, password)
 VALUES ('user@hcmut.edu.vn', 'Nguyen Van', 'B', 0, 30, '0123456789', '');
 
-INSERT INTO `PRODUCT` (name, price, description, content)
-VALUES ('Chè thập cẩm', 25000, 'Chè rất ngon', 'Đây là một món chè tươi ngon bổ dưỡng');
-INSERT INTO `PRODUCT` (name, price, description, content)
-VALUES ('Chè Huế', 25000, 'Chè rất ngon', 'Đây là một món chè đến từ Huế');
+
 
 INSERT INTO `NEWS` (status, date, title, description, content)
 VALUES (1, '2021-11-11', 'Ca nhiễm tăng, TP.HCM kiểm soát di biến động dân cư ra sao?',
