@@ -132,6 +132,12 @@
                         </span>
                     </div>
 
+                    <div class="flex-col-c p-t-20">
+                        <span class="txt1 p-b-0">
+                            <a href="index.php?page=main&controller=layouts&action=index" style="color: grey;">Return Home</a>
+                        </span>
+                    </div>
+
                 </form>
 
                 <div class="login100-more" style="background-image: url('/Source_code/public2/assets/img/slide/VNG Campus 31.jpg');">
