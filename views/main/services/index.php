@@ -1,149 +1,65 @@
-<?php require_once("/xampp/htdocs/Source_ref/views/main/navbar.php"); ?>
-<div>
-    <div class="temp"></div>
-    <div class="ourproduct">
-        <h1>PRODUCTS FROM BK AO VAI</h1>
-    </div>
-    <div class="container-ser">
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/Source_ref/public2/images/clion.png" alt="clion">
-                <h2> C++ IDE</h2>
-                <p><b>Description:</b> One of the highest performing C++ IDEs in the world</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/Source_ref/public2/images/phpstorm.png" alt="phpstorm" />
-                <h2> PHP Storm</h2>
-                <p><b>Description:</b> One of the suitable IDEs for those who are new to web programming</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/visual.png" alt="visual" />
-                <h2> Visual Studio Code</h2>
-                <p><b>Description:</b> A source code editor can run many programing language in one place.</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/visual2.png" alt="visual2" />
-                <h2> Visual Studio 2022</h2>
-                <p><b>Description:</b> A good tool to learn C++</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
-    </div>
-    <div class="container-ser">
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/vim.png" alt="vim" />
-                <h2>Vim Text Editor</h2>
-                <p><b>Description:</b> A free and open-source, screen-based text editor program</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/python.png" alt="python" />
-                <h2> Python IDE</h2>
-                <p><b>Description:</b> A IDE providing a wide range of essential tools for Python developers.</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
-                </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
-        </div>
+<?php require_once("/xampp/htdocs/Source_code/views/main/navbar.php"); ?>
+   
 
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/eclipse.png" alt="eclipse" />
-                <h2> Eclipse</h2>
-                <p><b>Description:</b> A great IDE for Java programing </p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
+<section id="home-slider">
+    <div id="slider" class="sl-slider-wrapper">
+
+        <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+
+            <div class="bg-img bg-img-1"></div>
+
+            <div class="slide-caption">
+                <div class="caption-content">
+                    <h2 class="animated fadeInDown">IMPROVE YOUR POWER</h2>
+                    <span class="animated fadeInDown">Beautiful and Powerful environment developmentgit</span>
                 </div>
-                <div class="read2"><a href="#">Read More</a></div>
             </div>
+
         </div>
-        <div class="card2">
-            <div class="imgBx">
-                <img src="/source_ref/public2/images/jupyter.png" alt="jupyter" />
-                <h2> Jupyter Notebook</h2>
-                <p><b>Description:</b> A great tools for Data Analysis</p>
-            </div>
-            <div class="content2">
-                <div class="version">
-                    <h3>Version:</h3>
-                    <span><a href="#"> 1.0 </a></span>
-                    <span><a href="#"> 2.0 </a></span>
-                    <span><a href="#"> 3.0 </a></span>
-                    <span><a href="#"> 4.0 </a></span>
+    </div><!-- /slider-wrapper -->
+
+</section>
+
+<section class="section products">
+    <div class="section-title">
+        <h2>PRODUCTS FROM BKBLUE</h2>
+    </>
+    <div class='container d-flex justify-content-center mt-50 mb-50'>
+            <div class='col-md-12'>
+    <?php 
+        foreach($products as $row ) {
+        echo"
+        <div class='card card-body'>
+            <div class='media align-items-center align-items-lg-start text-center text-lg-left flex-column flex-lg-row'>
+                    <div class='mr-2 mb-3 mb-lg-0'>
+                        <img src='/Source_code/public2/images/"  .$row->img ."'width='150' height='150'>
+                    </div>
+                    <div class='media-body'>
+                            <h6 class='media-title font-weight-semibold'>
+                                <a href='#' data-abc='true'>" . $row->name . "</a>
+                            </h6>
+                            <p class='mb-3'>" .$row->description . "</p>
+                    </div>
+                    <div class='mt-3 mt-lg-0 ml-lg-3 text-center'>
+                            <h3 class='mb-0 font-weight-semibold'>$" .$row->price ."/year</h3>
+                            <div>" ;
+        for($i = 0; $i < $row->rating; $i++){
+            echo " <i class='fa fa-star'></i>" ;
+        }        
+        echo" 
+                            </div>
+                            <div class='text-muted'>" . $row->reviews ." reviews</div>
+                            <button type='button' class='btn btn-warning mt-4 text-white'><i class='icon-cart-add mr-2'></i> Download Now</button>
+                        </div>
                 </div>
-                <div class="read2"><a href="#">Read More</a></div>
-            </div>
         </div>
-    </div>
+        ";
+        }
+    ?>
+        </div>
+    </div> 
 </div>
-<?php include_once("/xampp/htdocs/Source_ref/views/main/footer.php"); ?>
+
+
+
+<?php include_once("/xampp/htdocs/Source_code/views/main/footer.php"); ?>

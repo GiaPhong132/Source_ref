@@ -6,17 +6,19 @@ class Product
     public $name;
     public $price;
     public $description;
-    public $content;
+    public $reviews;
     public $img;
+    public $rating;
 
-    public function __construct($id, $name, $price, $description, $content, $img)
+    public function __construct($id, $name, $price, $description, $reviews, $img,  $rating)
     {
         $this->id = $id;
         $this->name = $name;
         $this->price = $price;
         $this->description = $description;
-        $this->content = $content;
+        $this->reviews = $reviews;
         $this->img = $img;
+        $this->rating = $rating;
     }
 
     static function getAll()
@@ -31,8 +33,9 @@ class Product
                 $product['name'],
                 $product['price'],
                 $product['description'],
-                $product['content'],
-                $product['img']
+                $product['reviews'],
+                $product['img'],
+                $product['rating']
             );
         }
         return $products;
@@ -48,18 +51,19 @@ class Product
             $result['name'],
             $result['price'],
             $result['description'],
-            $result['content'],
-            $result['img']
+            $result['reviews'],
+            $result['img'],
+            $result['rating']
         );
         return $product;
     }
 
-    static function insert($name, $price, $description, $content, $img)
+    static function insert($name, $price, $description, $reviews, $img, $rating)
     {
         $db = DB::getInstance();
         $req = $db->query(
-            "INSERT INTO product (name, price, description, content, img)
-            VALUES ('$name', $price, '$description', '$content', '$img');");
+            "INSERT INTO product (name, price, description, reviews, img, rating)
+            VALUES ('$name', $price, '$description', '$reviews', '$img', '$rating');");
         return $req;
     }
 
@@ -70,13 +74,13 @@ class Product
         return $req;
     }
 
-    static function update($id, $name, $price, $description, $content, $img)
+    static function update($id, $name, $price, $description, $reviews, $img, $rating)
     {
         $db = DB::getInstance();
         $req = $db->query(
             "
                 UPDATE product
-                SET name = '$name', price = $price, description = '$description', content = '$content', img = '$img'
+                SET name = '$name', price = $price, description = '$description', reviews = '$reviews', img = '$img' , rating = '$rating',
                 WHERE id = $id
             ;");
     }
