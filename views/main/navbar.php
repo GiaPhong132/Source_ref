@@ -80,7 +80,7 @@ if (isset($_SESSION['guest'])) {
                 <a href="index.php?page=main&controller=services&action=index" class="nav-item nav-link">Product</a>
 
                 <?php
-                if (!isset($_SESSION['guest']))
+                if (!isset($_SESSION['guest']) && !isset($_SESSION['user']))
                     echo '
                     <a href="index.php?page=main&controller=login&action=index" class="nav-item nav-link">Sign In</a>
                     <a href="index.php?page=main&controller=register&action=index" class="nav-item nav-link">Sign Up</a>
@@ -100,12 +100,41 @@ if (isset($_SESSION['guest'])) {
             <div class="navbar-nav ml-auto">
 
                 <?php
-                if (isset($_SESSION['guest']))
-                    echo '
-                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> ' . $data->lname . '<b class="caret"></b></a><div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a><a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a><div class="dropdown-divider"></div><a href="index.php?page=main&controller=login&action=logout" class="dropdown-item"><class="fa-solid fa-arrow-right-from-bracket"></class=>Logout</a></a></div>
-                    ';
+                if (isset($_SESSION['guest'])) {
+                    echo
+                    // '
+                    // <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> ' . $data->lname . '<b class="caret"></b></a><div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a><a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a><div class="dropdown-divider"></div><a href="index.php?page=main&controller=login&action=logout" class="dropdown-item"><class="fa-solid fa-arrow-right-from-bracket"></class=>Logout</a></a></div>
+                    // ';
+                    '
+                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> ' . $data->lname . '<b class="caret"></b></a>
+                    <div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
+                        ';
+                } else if (isset($_SESSION['user'])) {
+                    echo  '
+                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Admin<b class="caret"></b></a><div class="dropdown-menu"></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
+                        ';
+                }
                 ?>
 
+                <?php
+                if (isset($_SESSION['user']))
+                    echo '
+                                <a href="index.php?page=admin&controller=layouts&action=index" class="dropdown-item"><i class="fa fa-sliders"></i> Admin</a>
+                                ';
+
+                ?>
+
+                <?php
+                if (isset($_SESSION['guest'])) {
+                    echo '
+                    <div class="dropdown-divider"></div><a href="index.php?page=main&controller=login&action=logout" class="dropdown-item"><class="fa-solid fa-arrow-right-from-bracket"></class=>Logout</a></a></div>
+                    ';
+                } else if (isset($_SESSION['user'])) {
+                    echo '
+                    <div class="dropdown-divider"></div><a href="index.php?page=main&controller=login&action=logout" class="dropdown-item"><class="fa-solid fa-arrow-right-from-bracket"></class=>Logout</a></a></div>
+                    ';
+                }
+                ?>
             </div>
 
         </div>
@@ -115,17 +144,5 @@ if (isset($_SESSION['guest'])) {
 
 
 
-
-
-        <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> ' . $data->lname . '<b class="caret"></b></a>
-            <div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
-                <a href="#" class="dropdown-item"><i class="fa fa-sliders">
-                    </i> Admin</a>
-                </a>
-                <div class="dropdown-divider"></div><a href="index.php?page=main&controller=login&action=logout" class="dropdown-item">
-                    <class="fa-solid fa-arrow-right-from-bracket">
-                        </class=>Logout
-                </a></a>
-            </div>
 
     </nav>

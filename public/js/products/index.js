@@ -20,7 +20,8 @@ $("#form-add-student").submit(function (e) {
   var name = $("#form-add-student input[name='name']").val();
   var price = $("#form-add-student input[name='price']").val();
   var description = $("#form-add-student textarea[name='description']").val();
-  var content = $("#form-add-student textarea[name='content']").val();
+  var reviews = $("#form-add-student textarea[name='reviews']").val();
+  var rating = $("#form-add-student input[name='rating']").val();
 
   var url = $("#fileToUpload").val();
   var length = url.length;

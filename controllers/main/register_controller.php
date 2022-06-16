@@ -1,6 +1,6 @@
 <?php
-require_once('controllers/main/base_controller.php');
-require_once('models/user.php');
+require_once('/xampp/htdocs/Source_code/controllers/main/base_controller.php');
+require_once('/xampp/htdocs/Source_code/models/user.php');
 
 class RegisterController extends BaseController
 {
@@ -29,6 +29,7 @@ class RegisterController extends BaseController
         } else {
             session_start();
             $_SESSION['guest'] = $email;
+
             User::insert($email, 'public/img/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
             header('Location: index.php?page=main&controller=layouts&action=index');
         }
@@ -40,10 +41,10 @@ class RegisterController extends BaseController
         $email = $_SESSION['guest'];
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
-        $gender = $_POST['gender'];
-        $age = $_POST['age'];
         $phone = $_POST['phone'];
         $urlcurrent = $_POST['img'];
+        $gender = $_POST['gender'];
+        $age = $_POST['age'];
         // Photo
         $target_dir = "public/img/user/";
         $path = $_FILES['fileToUpload']['name'];

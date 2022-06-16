@@ -3,35 +3,16 @@ CREATE DATABASE webb;
 USE webb;
 
 
---
--- Table structure for table `product`
---
-
-CREATE TABLE `product` (
-  `id` int(11) NOT NULL,
-  `price` float DEFAULT NULL,
-  `name` varchar(255) DEFAULT NULL,
+CREATE TABLE `PRODUCT` (
+  `id` int AUTO_INCREMENT,
+  `price` int  DEFAULT NULL,
+  `name` varchar(255)  DEFAULT NULL,
   `description` varchar(1000) DEFAULT NULL,
-  `reviews` varchar(10000) DEFAULT NULL,
-  `img` varchar(255) DEFAULT NULL,
-  `rating` int(6) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+  `content` varchar(10000)  DEFAULT NULL,
+  `img` varchar(255)  DEFAULT NULL,
+  primary key (id)
+);
 
---
--- Dumping data for table `product`
---
-
-INSERT INTO `product` (`id`, `price`, `name`, `description`, `reviews`, `img`, `rating`) VALUES
-(1, 20, 'CLion (C++ IDE 128 GB)', 'CLion is a smart IDE for developing in C or C++ on Windows, Linux, and macOS.\r\n                            It\'s packed with an in-depth code analyzer, a range of code generation options,\r\n                            and the ability to navigate to anywhere in your code in one click. CLion understands\r\n                            modern C++ standards and provides preprocessor support. It also integrates with GDB/LLDB\r\n                            and a set of unit testing frameworks.', '1985', 'clion.png', 5),
-(2, 14.99, 'PHP STORM', 'PhpStorm is an Integrated Development Environment for PHP developers built on top of the IntelliJ IDEA platform. JetBrains PhpStorm is an innovative and cross-platform IDE that become popular over the last couple of year. It is perfect for working with Drupal, Symfony, Laravel, WordPress, Zend Framework, Joomla, CakePHP, and other frameworks. ', '1985', 'phpstorm.png', 5),
-(3, 29.99, 'Visual Studio Code (128 GB)', 'Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).', '1985', 'visual.png', 5),
-(4, 14.99, 'Visual Studio 2022 ', 'Visual Studio 2022 is the best Visual Studio ever. Our first 64-bit IDE makes it easier to work with even bigger projects and more complex workloads. The stuff you do every day—like typing code and switching branches—feels more fluid more responsive. ', '2000', 'visual2.png', 4),
-(5, 21.99, 'Vim (IDE 128 GB) ', 'Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as \"vi\" with most UNIX systems and with Apple OS X. Vim is rock stable and is continuously being developed to become even better. ', '1500', 'vim.png', 4),
-(6, 29.99, 'Python Compiler', 'This IDE is the most popular IDE used for Python scripting language. It offers some of the best features to its users and developers in the following aspects − Code completion and inspection, Advanced debugging, Support for web programming and frameworks such as Django and Flask.', '3999', 'python.png', 5),
-(7, 19.99, 'Eclipse (Java IDE)', 'Eclipse is an integrated development environment (IDE) for Java and other programming languages like C, C++, PHP, and Ruby etc. Development environment provided by Eclipse includes the Eclipse Java development tools (JDT) for Java, Eclipse CDT for C/C++, and Eclipse PDT for PHP, among others.', '1999', 'eclipse.png', 5),
-(8, 25.99, 'Jupyter Notebook', 'The Jupyter Notebook is an open source web application that you can use to create and share documents that contain live code, equations, visualizations, and text. Jupyter Notebook is maintained by the people at Project Jupyter.', '2988', 'jupyter.png', 5);
-
--- --------------------------------------------------------
 CREATE TABLE `NEWS` (
   `id` int AUTO_INCREMENT,
   `status` boolean DEFAULT NULL,
@@ -72,13 +53,6 @@ CREATE TABLE `COMMENT` (
 ALTER TABLE `COMMENT`
 ADD foreign key (parent) references COMMENT(id) ON DELETE CASCADE ON UPDATE CASCADE;
 
-CREATE TABLE `ADMIN` (
-  `username` varchar(255),
-  `password` varchar(255) DEFAULT NULL,
-  `createAt` datetime DEFAULT NULL,
-  `updateAt` datetime DEFAULT NULL,
-  primary key (username)
-);
 
 CREATE TABLE `COMPANY` (
   `id` int AUTO_INCREMENT,
@@ -90,16 +64,19 @@ CREATE TABLE `COMPANY` (
 );
 
 
--- Example data
-INSERT INTO `ADMIN` (username, password) VALUES ('admin', '');
-INSERT INTO `ADMIN` (username, password) VALUES ('username', '');
-
 INSERT INTO `USER` (email, fname, lname, gender, age, phone, password)
-VALUES ('admin@hcmut.edu.vn', 'Nguyen Van', 'A', 1, 15, '0123456789', '');
+VALUES ('user@gmail.com', 'user', 'user', 1, 20, '0123456789', '$2y$10$GTSVSDI2TFhxJnNFrS8tj.2GKKkbAfiZtvYbRxUvIP/Mp6dtcwC8u');
+INSERT INTO `USER` (email, fname, lname, gender, age, phone, password)
+VALUES ('admin@gmail.com', 'admin', 'admin', 0, 0, '0123456789', '$2y$10$GTSVSDI2TFhxJnNFrS8tj.2GKKkbAfiZtvYbRxUvIP/Mp6dtcwC8u');
+
 INSERT INTO `USER` (email, fname, lname, gender, age, phone, password)
 VALUES ('user@hcmut.edu.vn', 'Nguyen Van', 'B', 0, 30, '0123456789', '');
 
 
+INSERT INTO `PRODUCT` (name, price, description, content)
+VALUES ('Chè thập cẩm', 25000, 'Chè rất ngon', 'Đây là một món chè tươi ngon bổ dưỡng');
+INSERT INTO `PRODUCT` (name, price, description, content)
+VALUES ('Chè Huế', 25000, 'Chè rất ngon', 'Đây là một món chè đến từ Huế');
 
 INSERT INTO `NEWS` (status, date, title, description, content)
 VALUES (1, '2021-11-11', 'Ca nhiễm tăng, TP.HCM kiểm soát di biến động dân cư ra sao?',

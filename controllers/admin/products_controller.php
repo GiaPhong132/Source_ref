@@ -23,8 +23,10 @@ class ProductsController extends BaseController
         $name = $_POST['name'];
         $price = $_POST['price'];
         $description = $_POST['description'];
-        $content = $_POST['content'];
-        $target_dir = "public/img/products/";
+        $reviews = $_POST['reviews'];
+        // $img = $_POST['img'];
+        $rating = $_POST['rating'];
+        $target_dir = "public2/img/products/";
         $path = $_FILES['fileToUpload']['name'];
         $ext = pathinfo($path, PATHINFO_EXTENSION);
         $fileuploadname .= ".";
@@ -46,7 +48,7 @@ class ProductsController extends BaseController
             echo "Sorry, your file is too large.";
         }
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
-        Product::insert($name, $price, $description, $content, $target_file);
+        Product::insert($name, $price, $description, $reviews, $target_file, $rating);
         header('Location: index.php?page=admin&controller=products&action=index');
     }
     public function edit()
@@ -57,15 +59,16 @@ class ProductsController extends BaseController
         $name = $_POST['name'];
         $price = $_POST['price'];
         $description = $_POST['description'];
-        $content = $_POST['content'];
+        $reviews = $_POST['reviews'];
+        $rating = $_POST['rating'];
         $urlcurrent = Product::get((int)$id)->img;
         if (!isset($_FILES["fileToUpload"]) || $_FILES['fileToUpload']['tmp_name'][0] == "") {
-            Product::update($id, $name, $price, $description, $content, $urlcurrent);
+            Product::update($id, $name, $price, $description, $reviews, $urlcurrent, $rating);
             echo "Dữ liệu upload bị lỗi";
             header('Location: index.php?page=admin&controller=products&action=index');
             die;
         } else {
-            $target_dir = "public/img/products/";
+            $target_dir = "public2/img/products/";
             $path = $_FILES['fileToUpload']['name'];
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             $fileuploadname .= ".";
@@ -89,7 +92,7 @@ class ProductsController extends BaseController
             $file_pointer = $urlcurrent;
             unlink($file_pointer);
             move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
-            Product::update($id, $name, $price, $description, $content, $target_file);
+            Product::update($id, $name, $price, $description, $reviews, $target_file, $rating);
             header('Location: index.php?page=admin&controller=products&action=index');
         }
     }

@@ -70,7 +70,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
                                     $index = 1;
 
-                                    foreach ($products as $product) {
+                                    foreach ($product as $item) {
 
                                         echo
                                         "<tr class=\"text-center\">
@@ -78,23 +78,23 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                             . $index .
                                             "</td>
                                                     <td>
-                                                       " . $product->name . "
+                                                       " . $item->name . "
                                                     </td>
                                                     <td>
-                                                      " .  $product->price . "
+                                                      " .  $item->price . "
                                                     </td>
                                                     <td>
-                                                     " .  $product->description . "
+                                                     " .  $item->description . "
                                                     </td>
                                                     <td>
-                                                       " . $product->content . "
+                                                       " . $item->content . "
                                                     </td>
                                                     <td >
-                                                        <img style=\"width: 600px; height:350px;\" src='$product->img'>
+                                                        <img style=\"width: 600px; height:350px;\" src='$item->img'>
                                                     </td>
                                                     <td>
-                                                    <button class=\"btn-edit btn btn-primary btn-xs\" style=\"margin-right: 5px\" data-id='$product->id' data-name='$product->name' data-price='$product->price' data-description='$product->description' data-content='$product->content' data-img='$product->img'> <i style=\"font-size:17px;\" class=\"fas fa-edit\" ></i></button>
-                                                    <button class=\"btn-delete btn btn-danger btn-xs\" style=\"margin-right: 5px\" data-id='$product->id' ><i style=\"font-size:17px;\" class=\"fas fa-trash\"></i></button>
+                                                    <button class=\"btn-edit btn btn-primary btn-xs\" style=\"margin-right: 5px\" data-id='$item->id' data-name='$product->name' data-price='$product->price' data-description='$product->description' data-content='$product->content' data-img='$product->img'> <i style=\"font-size:17px;\" class=\"fas fa-edit\" ></i></button>
+                                                    <button class=\"btn-delete btn btn-danger btn-xs\" style=\"margin-right: 5px\" data-id='$item->id' ><i style=\"font-size:17px;\" class=\"fas fa-trash\"></i></button>
                                                   </td>
                                                 </tr>";
                                         $index++;
