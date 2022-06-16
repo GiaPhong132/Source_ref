@@ -44,7 +44,7 @@
                         <img class="img-circle elevation-2" src="/Source_code/public/dist/img/logo-library.png" alt="Library logo">
                     </div>
                     <div class="info">
-                        <a class="d-block" href="index.php">Web Company</a>
+                        <a class="d-block" href="index.php?page=main&controller=layouts&action=index">Web Company</a>
                     </div>
                 </div>
                 <!-- Sidebar Menu-->
