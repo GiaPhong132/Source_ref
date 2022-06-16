@@ -16,7 +16,6 @@ CREATE TABLE `product` (
   `img` varchar(255) DEFAULT NULL,
   `rating` int(6) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 --
 -- Dumping data for table `product`
 --
@@ -33,8 +32,6 @@ INSERT INTO `product` (`id`, `price`, `name`, `description`, `reviews`, `img`, `
 
 -- --------------------------------------------------------
 
-
-
 --
 -- Table structure for table `user`
 --
@@ -44,14 +41,13 @@ CREATE TABLE `user` (
   `profile_photo` varchar(255) DEFAULT NULL,
   `fname` varchar(255) DEFAULT NULL,
   `lname` varchar(255) DEFAULT NULL,
-  `gender` tinyint(1) DEFAULT NULL,
+   `gender` tinyint(1) DEFAULT NULL,
   `age` int(11) DEFAULT NULL,
   `phone` varchar(10) DEFAULT NULL,
   `createAt` datetime DEFAULT NULL,
   `updateAt` datetime DEFAULT NULL,
   `password` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
 
 INSERT INTO `user` (`email`, `profile_photo`, `fname`, `lname`, `gender`, `age`, `phone`, `createAt`, `updateAt`, `password`) VALUES
 ('admin@gmail.com', 'public/img/user/default.png', 'admin', 'admin', 1, 20, '123123', '2022-06-16 21:46:51', '2022-06-16 21:46:51', '$2y$10$GTSVSDI2TFhxJnNFrS8tj.2GKKkbAfiZtvYbRxUvIP/Mp6dtcwC8u'),
@@ -64,23 +60,7 @@ CREATE TABLE `ADMIN` (
   `password` varchar(255) DEFAULT NULL,
   `createAt` datetime DEFAULT NULL,
   `updateAt` datetime DEFAULT NULL,
-  primary key (username)
+   primary key (username)
 );
 INSERT INTO `ADMIN` (username, password) VALUES ('admin', '');
 INSERT INTO `ADMIN` (username, password) VALUES ('username', '');
-
-
-
-CREATE TABLE `COMPANY` (
-  `id` int AUTO_INCREMENT,
-	`name` varchar(255),
-  `address` varchar(1000) DEFAULT NULL,
-  `createAt` datetime DEFAULT NULL,
-  `updateAt` datetime DEFAULT NULL,
-  primary key(id)
-);
-
-INSERT INTO `COMPANY` (name, address)
-VALUES ('Chi nhánh TPHCM', '268 Lý Thường Kiệt, Phường 14, Quận 10, TPHCM');
-INSERT INTO `COMPANY` (name, address)
-VALUES ('Chi nhánh Hà Nội', 'Hà Nội');
