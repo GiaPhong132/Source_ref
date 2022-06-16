@@ -70,3 +70,17 @@ INSERT INTO `ADMIN` (username, password) VALUES ('admin', '');
 INSERT INTO `ADMIN` (username, password) VALUES ('username', '');
 
 
+
+CREATE TABLE `COMPANY` (
+  `id` int AUTO_INCREMENT,
+	`name` varchar(255),
+  `address` varchar(1000) DEFAULT NULL,
+  `createAt` datetime DEFAULT NULL,
+  `updateAt` datetime DEFAULT NULL,
+  primary key(id)
+);
+
+INSERT INTO `COMPANY` (name, address)
+VALUES ('Chi nhánh TPHCM', '268 Lý Thường Kiệt, Phường 14, Quận 10, TPHCM');
+INSERT INTO `COMPANY` (name, address)
+VALUES ('Chi nhánh Hà Nội', 'Hà Nội');
