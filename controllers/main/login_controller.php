@@ -15,7 +15,7 @@ class LoginController extends BaseController
         if (isset($_SESSION["guest"])) {
             header('Location: index.php?page=main&controller=layouts&action=index');
         } else if (isset($_POST['submit-btn'])) {
-            $username = $_POST['email'];
+            $username = $_POST['username'];
             $password = $_POST['password'];
 
             unset($_POST);
