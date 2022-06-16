@@ -16,19 +16,18 @@
                 </div>
 
                 <div class="col-lg-2 col-md-6 footer-links">
-                    <h4>Các liên kết khác</h4>
+                    <h4>JOIN US</h4>
                     <ul>
                         <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Facebook</a></li>
                         <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Youtube</a></li>
                     </ul>
                 </div>
 
-                <div class="col-lg-3 col-md-6 footer-links">
+                <div class="col-lg-2 col-md-6 footer-links">
                     <h4>JOIN US</h4>
                     <ul>
-                        <li><i class="fa-solid fa-chevrons-right"> </i><a href="index.php?page=main&controller=login&action=index">Sign In</a></li>
-                        <li><i class="fa-solid fa-chevrons-right"> </i><a href="index.php?page=main&controller=register&action=index">Sign Up</a></li>
-                        <li><i class="fa-solid fa-chevrons-right"></i><a href="#">Profile</a></li>
+                        <li><i class="fa-solid fa-chevrons-right"></i> <a href="index.php?page=main&controller=register&action=index">Join us</a></li>
+                        <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Join us</a></li>
                     </ul>
                 </div>
 

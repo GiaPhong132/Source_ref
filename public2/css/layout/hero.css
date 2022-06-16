@@ -357,6 +357,13 @@ a:focus, a:hover {
     padding: 13px 50px;
 }
 
+.btn-rounded-icon:hover{
+    transform: scale(1.1);
+    color:#2e7eed;
+    border: 2px solid #fff;
+}
+
+
 .main-nav {
     background: #fff;
     z-index: 1;
@@ -2131,4 +2138,7 @@ a:focus, a:hover {
 }
 .card2 .content2{
     color: black;
+}
+.fa-star{
+    color: yellow;
 }
