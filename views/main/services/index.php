@@ -42,10 +42,13 @@
                     </div>
                     <div class='mt-3 mt-lg-0 ml-lg-3 text-center'>
                             <h3 class='mb-0 font-weight-semibold'>$" .$row->price ."/year</h3>
-                            <div>
-                                " .$row->rating ." stars
+                            <div>" ;
+        for($i = 0; $i < $row->rating; $i++){
+            echo " <i class='fa fa-star'></i>" ;
+        }        
+        echo" 
                             </div>
-                            <div class='text-muted'>" . $row->rating ." reviews</div>
+                            <div class='text-muted'>" . $row->reviews ." reviews</div>
                             <button type='button' class='btn btn-warning mt-4 text-white'><i class='icon-cart-add mr-2'></i> Download Now</button>
                         </div>
                 </div>
