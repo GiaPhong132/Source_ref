@@ -106,8 +106,6 @@ if (isset($_SESSION['guest'])) {
                     ';
                 ?>
 
-                <span id="username"></span>
-
             </div>
 
         </div>
