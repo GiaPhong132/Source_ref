@@ -1,4 +1,27 @@
 <?php require_once("/xampp/htdocs/Source_code/views/main/navbar.php"); ?>
+   
+<?php  require_once("/xampp/htdocs/Source_code/models/product.php");
+    foreach($products as $row ) {
+        print_r($row->img);
+    }
+?>
+
+<?php 
+    foreach($products as $row ) {
+    echo"
+    <div class='container d-flex justify-content-center mt-50 mb-50'>
+        <div class='col-md-12'>
+            <div class='card card-body'>
+                <div class='mr-2 mb-3 mb-lg-0'>
+                    <img src='/Source_code/public2/images/"  .$row->img ."'width='150' height='150'>
+                </div>
+            </div>
+        </div>
+    </div> 
+    ";
+    }
+?>
+
 <section id="home-slider">
     <div id="slider" class="sl-slider-wrapper">
 
@@ -18,7 +41,6 @@
 
 </section>
 
-<!-- 128 GB ROM | 15.49 cm (6.1 inch) Display 12MP Rear Camera | 7MP Front Camera A12 Bionic Chip Processor | Gorilla Glass with high quality display  -->
 <section class="section products">
     <div class="section-title">
         <h2>PRODUCTS FROM BKBLUE</h2>
@@ -301,5 +323,8 @@
     </div>
     </div>
 </section>
-</body>
+
+
+
+
 <?php include_once("/xampp/htdocs/Source_code/views/main/footer.php"); ?>
