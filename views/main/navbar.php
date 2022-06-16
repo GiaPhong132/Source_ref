@@ -78,8 +78,18 @@ if (isset($_SESSION['guest'])) {
                 <a href="index.php?page=main&controller=layouts&action=index" class="nav-item nav-link active">Home</a>
                 <a href="index.php?page=main&controller=about&action=index" class="nav-item nav-link">About</a>
                 <a href="index.php?page=main&controller=services&action=index" class="nav-item nav-link">Product</a>
-                <a href="index.php?page=main&controller=login&action=index" class="nav-item nav-link">Sign In</a>
-                <a href="index.php?page=main&controller=register&action=index" class="nav-item nav-link">Sign Up</a>
+
+                <?php
+                if (!isset($_SESSION['guest']))
+                    echo '
+                    <a href="index.php?page=main&controller=login&action=index" class="nav-item nav-link">Sign In</a>
+                    <a href="index.php?page=main&controller=register&action=index" class="nav-item nav-link">Sign Up</a>
+                    '
+
+                ?>
+
+
+
             </div>
             <form class="navbar-form form-inline">
                 <div class="input-group search-box">
