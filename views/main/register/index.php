@@ -80,7 +80,7 @@
                         <span id='msg1' style="color:red">
 
                         </span>
-                        <input onkeyup='check();' class="input100" type="password" id="password" placeholder="Type your password">
+                        <input onkeyup='check();' class="input100" type="password" name="password" placeholder="Type your password">
                         <span style="color: rgb(0, 0, 0);" class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
 
@@ -88,7 +88,7 @@
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <span class="label-input100">Retype Password</span>
                         <span id='message'></span>
-                        <input onkeyup='check();' class="input100" type="password" id="retype_password" placeholder="Retype your password">
+                        <input onkeyup='check();' class="input100" type="password" name="retype_password" placeholder="Retype your password">
                         <span class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
 
@@ -129,6 +129,12 @@
                     <div class="txt1 text-center p-t-54 p-b-20">
                         <span>
                             <a href="index.php?page=main&controller=login&action=index" style="color: grey;">Sign In</a>
+                        </span>
+                    </div>
+
+                    <div class="flex-col-c p-t-20">
+                        <span class="txt1 p-b-0">
+                            <a href="index.php?page=main&controller=layouts&action=index" style="color: grey;">Return Home</a>
                         </span>
                     </div>
 
