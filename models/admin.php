@@ -71,7 +71,7 @@ class Admin
     static function getAll()
     {
         $db = DB::getInstance();
-        $req = $db->query("SELECT * FROM admin");
+        $req = $db->query("SELECT * FROM user");
         $admins = [];
         foreach ($req->fetch_all(MYSQLI_ASSOC) as $admin) {
             $admins[] = new Admin(

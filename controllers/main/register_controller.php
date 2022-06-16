@@ -1,6 +1,6 @@
 <?php
-require_once('controllers/main/base_controller.php');
-require_once('models/user.php');
+require_once('/xampp/htdocs/Source_code/controllers/main/base_controller.php');
+require_once('/xampp/htdocs/Source_code/models/user.php');
 
 class RegisterController extends BaseController
 {
@@ -43,6 +43,8 @@ class RegisterController extends BaseController
         $lname = $_POST['lname'];
         $phone = $_POST['phone'];
         $urlcurrent = $_POST['img'];
+        $gender = $_POST['gender'];
+        $age = $_POST['age'];
         // Photo
         $target_dir = "public/img/user/";
         $path = $_FILES['fileToUpload']['name'];
