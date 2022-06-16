@@ -58,5 +58,15 @@ INSERT INTO `user` (`email`, `profile_photo`, `fname`, `lname`, `gender`, `age`,
 ('giaphong132@gmail.com', 'public/img/user/default.png', 'Bùi Đoàn', 'Phong', 1, 20, '+103971460', '2022-06-16 20:48:56', '2022-06-16 20:48:56', '$2y$10$NtrSaLnNsR29ouPqCuQF5ukGtuttVs70TYntJrdkyqWEC0YM417H.'),
 ('phong.bui132@hcmut.edu.vn', 'public/img/user/default.png', 'Phong', 'Phong', 1, 20, '0704701412', '2022-06-16 20:49:12', '2022-06-16 20:49:12', '$2y$10$CMNaGhePLvkl.U4DuIMRfesAGCn3uJohnSaBMyi1EK1pVSGk7OcQi');
 
---
+
+CREATE TABLE `ADMIN` (
+  `username` varchar(255),
+  `password` varchar(255) DEFAULT NULL,
+  `createAt` datetime DEFAULT NULL,
+  `updateAt` datetime DEFAULT NULL,
+  primary key (username)
+);
+INSERT INTO `ADMIN` (username, password) VALUES ('admin', '');
+INSERT INTO `ADMIN` (username, password) VALUES ('username', '');
+
 
