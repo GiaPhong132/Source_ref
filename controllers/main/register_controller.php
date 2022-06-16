@@ -41,8 +41,6 @@ class RegisterController extends BaseController
         $email = $_SESSION['guest'];
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
-        $gender = $_POST['gender'];
-        $age = $_POST['age'];
         $phone = $_POST['phone'];
         $urlcurrent = $_POST['img'];
         // Photo
