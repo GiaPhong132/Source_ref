@@ -77,9 +77,6 @@
 
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <span class="label-input100">Password</span>
-                        <span id='msg1' style="color:red">
-
-                        </span>
                         <input onkeyup='check();' class="input100" type="password" name="password" placeholder="Type your password">
                         <span style="color: rgb(0, 0, 0);" class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
@@ -149,8 +146,9 @@
 
     <script>
         var check = function() {
-            if (document.getElementById('password').value ==
-                document.getElementById('retype_password').value) {
+            let psw1 = document.getElementsByName("password");
+            let psw2 = document.getElementsByName("retype_password");
+            if (psw1[0].value === psw2[0].value) {
                 document.getElementById('message').style.color = 'green';
                 document.getElementById('message').innerHTML = 'Matching';
             } else {
