@@ -8,6 +8,7 @@ class ProfileController extends BaseController
         $this->folder = 'profile';
     }
 
+<<<<<<< HEAD
     public function index()
     {
         $this->render('index');
@@ -20,4 +21,10 @@ class ProfileController extends BaseController
         $phone = $_POST['phone_number'];
         $email = $_POST['email'];
     }
+=======
+	public function index()
+	{
+		$this->render('index');
+	}
+>>>>>>> bd1246df063a8e5305d519c36d90aff4c849d617
 }
