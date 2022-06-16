@@ -20,7 +20,7 @@ if (isset($_SESSION['guest'])) {
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
     <!-- icon -->
@@ -100,7 +100,7 @@ if (isset($_SESSION['guest'])) {
             <div class="navbar-nav ml-auto">
 
                 <?php
-                if (isset($_SESSION['guest']))
+                if (isset($_SESSION['guest'])) {
                     echo
                     // '
                     // <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> ' . $data->lname . '<b class="caret"></b></a><div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a><a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a><div class="dropdown-divider"></div><a href="index.php?page=main&controller=login&action=logout" class="dropdown-item"><class="fa-solid fa-arrow-right-from-bracket"></class=>Logout</a></a></div>
@@ -109,6 +109,11 @@ if (isset($_SESSION['guest'])) {
                     <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> ' . $data->lname . '<b class="caret"></b></a>
                     <div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
                         ';
+                } else if (isset($_SESSION['user'])) {
+                    echo  '
+                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Admin<b class="caret"></b></a><div class="dropdown-menu"></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
+                        ';
+                }
                 ?>
 
                 <?php
@@ -120,18 +125,20 @@ if (isset($_SESSION['guest'])) {
                 ?>.
 
                 <?php
-                if (isset($_SESSION['guest']))
+                if (isset($_SESSION['guest'])) {
                     echo '
                     <div class="dropdown-divider"></div><a href="index.php?page=main&controller=login&action=logout" class="dropdown-item"><class="fa-solid fa-arrow-right-from-bracket"></class=>Logout</a></a></div>
                     ';
+                } else if (isset($_SESSION['user'])) {
+                    echo '
+                    <div class="dropdown-divider"></div><a href="index.php?page=main&controller=login&action=logout" class="dropdown-item"><class="fa-solid fa-arrow-right-from-bracket"></class=>Logout</a></a></div>
+                    ';
+                }
                 ?>
             </div>
 
         </div>
         </div>
-
-
-
 
 
 
