@@ -122,7 +122,7 @@ if (isset($_SESSION['guest'])) {
                                 <a href="index.php?page=admin&controller=layouts&action=index" class="dropdown-item"><i class="fa fa-sliders"></i> Admin</a>
                                 ';
 
-                ?>.
+                ?>
 
                 <?php
                 if (isset($_SESSION['guest'])) {

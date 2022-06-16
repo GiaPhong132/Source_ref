@@ -1,5 +1,6 @@
 <?php
-require_once('connection.php');
+require_once('/xampp/htdocs/Source_code/models/connection.php');
+
 class News
 {
     public $id;
@@ -24,8 +25,7 @@ class News
         $db = DB::getInstance();
         $req = $db->query("SELECT * FROM news ORDER BY date DESC");
         $lnews = [];
-        foreach ($req->fetch_all(MYSQLI_ASSOC) as $news)
-        {
+        foreach ($req->fetch_all(MYSQLI_ASSOC) as $news) {
             $lnews[] = new News(
                 $news['id'],
                 $news['status'],
@@ -43,8 +43,7 @@ class News
         $db = DB::getInstance();
         $req = $db->query("SELECT * FROM news WHERE status=1 ORDER BY date DESC");
         $lnews = [];
-        foreach ($req->fetch_all(MYSQLI_ASSOC) as $news)
-        {
+        foreach ($req->fetch_all(MYSQLI_ASSOC) as $news) {
             $lnews[] = new News(
                 $news['id'],
                 $news['status'],
@@ -82,7 +81,8 @@ class News
             "
             INSERT INTO news (status, date, title, description, content)
             VALUES ($status, '$date', '$title', '$description', '$content')
-            ;");
+            ;"
+        );
         return $req;
     }
 
@@ -101,13 +101,12 @@ class News
     }
 
     static function hide($id)
-    {   
+    {
         $db = DB::getInstance();
         $statuscurrent = News::get($id)->status;
-        if ($statuscurrent == 1){
+        if ($statuscurrent == 1) {
             $req = $db->query("UPDATE news SET status = 0 WHERE id = $id;");
-        }
-        else{
+        } else {
             $req = $db->query("UPDATE news SET status = 1 WHERE id = $id;");
         }
         return $req;
@@ -125,8 +124,7 @@ class News
         $db = DB::getInstance();
         $req = $db->query("SELECT * FROM news ORDER BY date DESC LIMIT 5");
         $lnews = [];
-        foreach ($req->fetch_all(MYSQLI_ASSOC) as $news)
-        {
+        foreach ($req->fetch_all(MYSQLI_ASSOC) as $news) {
             $lnews[] = new News(
                 $news['id'],
                 $news['status'],
@@ -139,4 +137,3 @@ class News
         return $lnews;
     }
 }
-?>
