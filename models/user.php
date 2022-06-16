@@ -103,6 +103,7 @@ class User
         return $req;
     }
 
+    
     static function update($email, $profile_photo, $fname, $lname, $gender, $age, $phone)
     {
         $db = DB::getInstance();
@@ -115,6 +116,8 @@ class User
         );
         return $req;
     }
+
+    
 
     static function validation($email, $password)
     {
