@@ -45,7 +45,7 @@
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Email is required">
                         <span class="label-input100">Email</span>
-                        <input class="input100" type="text" name="email" placeholder="Type your email">
+                        <input class="input100" type="text" name="username" placeholder="Type your email">
                         <span class="focus-input100" data-symbol="&#xf206;"></span>
                     </div>
 
@@ -54,6 +54,14 @@
                         <input class="input100" type="password" name="password" placeholder="Type your password">
                         <span class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
+
+                    <?php
+
+                    if (isset($err)) {
+                        echo '<p class="login-box-msg" style="color: red">' . $err . '</p>';
+                        unset($err);
+                    }
+                    ?>
 
                     <div class="text-right -t-8 p-b-31">
                         <a href="#" style="color:grey">
@@ -72,7 +80,7 @@
 
                     <div class="flex-col-c p-t-70">
                         <span class="txt1 p-b-0">
-                            <a href="#" style="color: grey;">Sign Up</a>
+                            <a href="index.php?page=main&controller=register&action=index" style="color: grey;">Sign Up</a>
                         </span>
                     </div>
 
