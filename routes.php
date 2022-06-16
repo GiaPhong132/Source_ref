@@ -1,9 +1,9 @@
 <?php
 $pages = array(
     'error' => ['errors'],
-    'main' => ['layouts', 'about', 'services', 'blog', 'archive', 'contact', 'login', 'register'],
+    'main' => ['layouts', 'about', 'services', 'login', 'register', 'profile'],
     'admin' => ['layouts', 'members', 'products', 'news', 'comments']
-);
+);  
 $controllers = array(
     //Admin controller
     'errors' => ['index'],
@@ -19,12 +19,9 @@ $controllers = array(
 
     //Main controller
     'about' => ['index'],
-    'blog' => ['index'],
-    'archive' => ['index'],
-    'contact' => ['index'],
-    'blog' => ['index', 'comment', 'reply'],
     'services' => ['index'],
-    'register' => ['index', 'submit', 'editInfo']
+    'register' => ['index', 'submit', 'editInfo'],
+    'profile' => ['index']
     //'login' => ['index']
 ); // Các controllers trong hệ thống và các action có thể gọi ra từ controller đó.
 
