@@ -198,7 +198,7 @@
 
                             <!--====  End of  Facts  ====-->
 
-                          
+                                              
 
 <?php require_once("clients.php"); ?>
 
@@ -219,7 +219,8 @@
                                             <div class="block text-center">
                                                 <!-- Investor Image -->
                                                 <div class="image shadow hover-zoom">
-                                                    <img src="/Source_code/public2/images/visual.png" alt="investor">
+                                                  <a href="index.php?page=main&controller=services&action=index">  <img src="/Source_code/public2/images/visual.png" alt="investor">
+                                                  </a>
                                                 </div>
                                                 <!-- Company -->
                                                 <h3>Visual Studio</h3>
@@ -231,7 +232,8 @@
                                             <div class="block text-center">
                                                 <!-- Investor Image -->
                                                 <div class="image shadow hover-zoom">
-                                                    <img src="/Source_code/public2/images/dietvirus.jfif" alt="investor">
+                                                    <a href="index.php?page=main&controller=services&action=index"> <img src="/Source_code/public2/images/dietvirus.jfif" alt="investor"></a>
+                                                   
                                                 </div>
                                                 <!-- Company -->
                                                 <h3>Bảo mật</h3>
@@ -243,7 +245,7 @@
                                             <div class="block text-center">
                                                 <!-- Investor Image -->
                                                 <div class="image shadow hover-zoom">
-                                                    <img src="/Source_code/public2/images/cloud.jfif" alt="investor">
+                                                   <a href="index.php?page=main&controller=services&action=index"><img src="/Source_code/public2/images/cloud.jfif" alt="investor"></a>
                                                 </div>
                                                 <!-- Company -->
                                                 <h3>Lưu trữ đám mây</h3>

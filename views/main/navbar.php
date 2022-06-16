@@ -100,5 +100,5 @@ if (isset($_SESSION['guest'])) {
                 </div>
             </div>
         </div>
-    </nav>
 
+    </nav>
