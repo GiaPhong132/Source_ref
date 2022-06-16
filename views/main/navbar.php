@@ -94,7 +94,7 @@ if (isset($_SESSION['guest'])) {
                         <a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
                         <a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a>
                         <div class="dropdown-divider"></div>
-                        <a href="#" class="dropdown-item"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></a>
+                        <a href="index.php?page=main&controller=login&action=logout" class="dropdown-item"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></a>
                     </div>
                 </div>
             </div>

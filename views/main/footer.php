@@ -24,10 +24,10 @@
                 </div>
 
                 <div class="col-lg-2 col-md-6 footer-links">
-                    <h4>JOIN US</h4>
+                    <h4>CONTACT US</h4>
                     <ul>
-                        <li><i class="fa-solid fa-chevrons-right"></i> <a href="index.php?page=main&controller=register&action=index">Join us</a></li>
-                        <li><i class="fa-solid fa-chevrons-right"></i> <a href="">Join us</a></li>
+                        <li><i class="fa-solid fa-chevrons-right"></i> <a href="index.php?page=main&controller=register&action=index">123456789</a></li>
+                        <li><i class="fa-solid fa-chevrons-right"></i> <a href="">987654321</a></li>
                     </ul>
                 </div>
 
@@ -43,17 +43,17 @@
         </div>
     </div>
 
-<div class="container d-md-flex py-4">
+    <div class="container d-md-flex py-4">
 
-  <div class="me-md-auto text-center text-md-start">
-    <div class="copyright">
-      &copy; Copyright <strong><span>BKBLUE</span></strong>. All Rights Reserved
-    </div>
-    <div class="credits">
-      Designed by <a href="index.php?page=admin&controller=layouts&action=index">BKBLUE</a>
-    </div>
-    <!-- Back to top button -->
-    <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <div class="me-md-auto text-center text-md-start">
+            <div class="copyright">
+                &copy; Copyright <strong><span>BKBLUE</span></strong>. All Rights Reserved
+            </div>
+            <div class="credits">
+                Designed by <a href="index.php?page=admin&controller=layouts&action=index">BKBLUE</a>
+            </div>
+            <!-- Back to top button -->
+            <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
 
 
 </footer><!-- End Footer -->

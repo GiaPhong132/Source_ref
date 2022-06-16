@@ -78,9 +78,18 @@
                         </div>
                     </div>
 
+
+
                     <div class="flex-col-c p-t-70">
                         <span class="txt1 p-b-0">
                             <a href="index.php?page=main&controller=register&action=index" style="color: grey;">Sign Up</a>
+                        </span>
+                    </div>
+
+
+                    <div class="flex-col-c p-t-20">
+                        <span class="txt1 p-b-0">
+                            <a href="index.php?page=main&controller=layouts&action=index" style="color: grey;">Return Home</a>
                         </span>
                     </div>
 
