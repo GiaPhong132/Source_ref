@@ -21,7 +21,12 @@ class LoginController extends BaseController
             unset($_POST);
             $check = User::validation($username, $password);
             if ($check == 1) {
-                $_SESSION["guest"] = $username;
+
+                if ($username == "admin@gmail.com")
+                    $_SESSION['user'] = $username;
+                else
+                    $_SESSION["guest"] = $username;
+
                 header('Location: index.php?page=main&controller=layouts&action=index');
             } else {
                 $err = "Sai tài khoản hoặc mật khẩu";

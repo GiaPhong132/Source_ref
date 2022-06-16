@@ -29,6 +29,7 @@ class RegisterController extends BaseController
         } else {
             session_start();
             $_SESSION['guest'] = $email;
+
             User::insert($email, 'public/img/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
             header('Location: index.php?page=main&controller=layouts&action=index');
         }
