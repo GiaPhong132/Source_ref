@@ -91,7 +91,7 @@ if (isset($_SESSION['guest'])) {
                 <div class="nav-item dropdown">
                     <a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Gia Phong <b class="caret"></b></a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a>
+                        <a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a>
                         <a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
                         <a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a>
                         <div class="dropdown-divider"></div>
