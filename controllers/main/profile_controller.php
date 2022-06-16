@@ -12,12 +12,4 @@ class ProfileController extends BaseController
 	{
 		$this->render('index');
 	}
-
-	public function editProfile()
-	{
-		$fname = $_POST['first_name'];
-        $lname = $_POST['last_name'];
-        $phone = $_POST['phone_number'];
-        $email = $_POST['email'];
-	}
 }
