@@ -17,16 +17,15 @@ class ProfileController extends BaseController
     public function editInfo()
     {
         session_start();
-        $email = $_SESSION['guest'];
+        $current_email = $_SESSION['guest'];
+        $new_email = $_POST['email'];
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
-        $gender = $_POST['gender'];
-        $age = $_POST['age'];
         $phone = $_POST['phone'];
         $urlcurrent = $_POST['img'];
         // Photo
         $target_dir = "public/img/user/";
-        $path = $_FILES['fileToUpload']['name'];
+        $path = $_FILES['profile_photo']['name'];
         $ext = pathinfo($path, PATHINFO_EXTENSION);
         $id = (string)date("Y_m_d_h_i_sa");
         $fileuploadname = (string)$id;
@@ -52,7 +51,7 @@ class ProfileController extends BaseController
         unlink($file_pointer);
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
         // Update
-        $change_info = User::update($email, $target_file, $fname, $lname, $gender, $age, $phone);
+        $change_info = User::update($new_email, $target_file, $fname, $lname, $phone);
         header('Location: index.php?page=main&controller=layouts&action=index');
     }
 }

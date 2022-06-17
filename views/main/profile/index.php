@@ -59,7 +59,7 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
                 <input name="profile_photo" type="file" onchange="loadFile(event)" />
 
 
-                <span class="font-weight-bold"><?php echo $data->fname . ' ' . $data->lname ?></span>
+                <span class="font-weight-bold"><?php echo $data->fname . ' ' . $data->lname; ?></span>
                 <span class="text-black-50"><?php echo $data->email ?></span>
             </div>
 
@@ -72,18 +72,18 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
                 </div>
 
                 <div class="row mt-2">
-                    <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" name='fname' value="<?php echo $data->fname ?>"></div>
-                    <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" value="<?php echo $data->lname ?>" name='lname'></div>
+                    <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" name='fname' value="<?php echo $data->fname; ?>"></div>
+                    <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" value="<?php echo $data->lname; ?>" name='lname'></div>
                 </div>
 
                 <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Phone Number</label><input type="text" class="form-control" name='phone' value="<?php echo $data->phone ?>"></div>
-                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="enter email id" name='email' value="<?php echo $data->email ?>"></div>
+                    <div class="col-md-12"><label class="labels">Phone Number</label><input type="text" class="form-control" name='phone' value="<?php echo $data->phone; ?>"></div>
+                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" name='email' value="<?php echo $data->email; ?>"></div>
                 </div>
 
                 <div class="row mt-3">
 
-                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button" href="index.php?page=main&controller=register&action=index">Save Profile</button></div>
+                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button" href="index.php?page=main&controller=register&action=editInfo">Save Profile</button></div>
                 </div>
 
             </div>
