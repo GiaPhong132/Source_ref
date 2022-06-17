@@ -61,7 +61,7 @@ INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) V
 INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
 (11, 7000, 'IntelliJ', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/intellij.png');
 INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
-(12, 6000, 'IntelliJ', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/visualstudio.png');
+(12, 6000, 'Visual Studio', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/visualstudio.png');
 
 
 -- --------------------------------------------------------
