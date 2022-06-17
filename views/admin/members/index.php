@@ -55,15 +55,39 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                             <h5 class="modal-title">Thêm mới</h5>
                                             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         </div>
-                                        <form action="index.php?page=admin&controller=members&action=getAll" method="post">
+                                        <form action="index.php?page=admin&controller=members&action=addUser" method="post">
                                             <div class="modal-body">
                                                 <div class="form-group">
                                                     <label>Email</label>
-                                                    <input class="form-control" type="text" placeholder="Tên đăng nhập" name="username" />
+                                                    <input class="form-control" type="text" name="email" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>First name</label>
+                                                    <input class="form-control" type="text" name="fname" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Last name</label>
+                                                    <input class="form-control" type="text" name="lname" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Age</label>
+                                                    <input class="form-control" type="number" name="age" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Phone number</label>
+                                                    <input class="form-control" type="text" name="phone_number" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Gender</label>
+                                                    <input type="radio" name="gender" value="1">
+                                                    <label class="form-check-label">Male</label>
+
+                                                    <input type="radio" name="gender" value="0">
+                                                    <label class="form-check-label">Female</label>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Password</label>
-                                                    <input class="form-control" type="password" placeholder="Mật khẩu" name="password" />
+                                                    <input class="form-control" type="password" name="password" />
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
@@ -105,11 +129,10 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         echo "<td>" . $x->phone . "</td>";
                                         echo "<td>" . $x->updateAt . "</td>";
                                         echo "<td>
-											<btn class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$x->email' data-password='$x->password'> <i class='fas fa-edit'></i></btn>
-											<btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-trash'></i></btn>
-											</td>";
+                                            <btn class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$x->email' data-password='$x->password'> <i class='fas fa-edit'></i></btn>
+                                            <btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-trash'></i></btn>
+                                            </td>";
                                         echo "</tr>";
-                                    }
                                     ?>
                                 </tbody>
                             </table>
@@ -130,8 +153,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Password</label>
-                                                    <input class="form-control" type="password" 
-                                                     name="new-password" />
+                                                    <input class="form-control" type="password" name="new-password" />
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
@@ -163,6 +185,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                     </div>
                                 </div>
                             </div>
+                            <?php } ?>
                         </div>
                     </div>
                 </div>
@@ -172,7 +195,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
     </section>
 </div>
-</div
+</div>
 
 <?php
 require_once('/xampp/htdocs/Source_code/views/admin/footer.php'); ?>
