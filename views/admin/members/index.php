@@ -104,7 +104,6 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         else echo "Female</td>";
                                         echo "<td>" . $x->phone . "</td>";
                                         echo "<td>" . $x->updateAt . "</td>";
-
                                         echo "<td>
 											<btn class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$x->email' data-password='$x->password'> <i class='fas fa-edit'></i></btn>
 											<btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-trash'></i></btn>
@@ -126,17 +125,18 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                             <div class="modal-body">
                                                 <input type="hidden" name="id" />
                                                 <div class="form-group">
-                                                    <label>Username</label>
-                                                    <input class="form-control" type="text" placeholder="Username" name="username" readonly />
+                                                    <label>Email</label>
+                                                    <input class="form-control" type="text" name="new-email" />
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>New password</label>
-                                                    <input class="form-control" type="password" placeholder="Please enter your new password" name="new-password" />
+                                                    <label>Password</label>
+                                                    <input class="form-control" type="password" 
+                                                     name="new-password" />
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
                                                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
-                                                <button class="btn btn-primary" type="submit">Cập nhật</button>
+                                                <button class="btn btn-primary" type="submit" href="index.php?page=admin&controllers=members&action=changePassword">Cập nhật</button>
                                             </div>
                                         </form>
                                     </div>

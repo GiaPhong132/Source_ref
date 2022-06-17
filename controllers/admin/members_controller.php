@@ -18,4 +18,18 @@ class MembersController extends BaseController
         $data = User::getAll();
         return $data;
     }
+
+    public function changePassword()
+    {
+        $email = trim($_POST['new-email']);
+        $newpassword = trim($_POST['new-password']);
+        $password = password_hash($newpassword, PASSWORD_DEFAULT);
+        $db = DB::getInstance();
+        $req = $db->query(
+            "UPDATE user
+            SET password = '$password', updateAt = NOW()
+            WHERE email = '$email';"
+        );
+        return $req;
+    }
 }
