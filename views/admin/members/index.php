@@ -6,7 +6,7 @@ if (!isset($_SESSION["user"])) {
 ?>
 <?php
 require_once('/xampp/htdocs/Source_code/views/admin/header.php');
-require_once('/xampp/htdocs/Source_code/models/user.php'); 
+require_once('/xampp/htdocs/Source_code/models/user.php');
 $data = User::getAll();
 ?>
 
@@ -30,7 +30,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                 </div>
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.php?page=main&controller=layouts&action=index">Home</a></li>
                         <li class="breadcrumb-item active">Quản lý Thành viên</li>
                     </ol>
                 </div>
@@ -100,7 +100,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         echo "<td>" . $x->lname . "</td>";
                                         echo "<td>" . $x->age . "</td>";
                                         echo "<td>";
-                                        if($x->gender == 1) echo "Male</td>";
+                                        if ($x->gender == 1) echo "Male</td>";
                                         else echo "Female</td>";
                                         echo "<td>" . $x->phone . "</td>";
                                         echo "<td>" . $x->updateAt . "</td>";
@@ -172,12 +172,8 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
     </section>
 </div>
-</div
-
-<?php
-require_once('/xampp/htdocs/Source_code/views/admin/footer.php'); ?>
-
-<!-- Add Javascripts -->
+</div <?php
+        require_once('/xampp/htdocs/Source_code/views/admin/footer.php'); ?> <!-- Add Javascripts -->
 <script src="/Source_code/public/js/admin/index.js"></script>
 <script type="text/javascript" src="/Source_code/public2/js/admin.js"></script>
 </body>

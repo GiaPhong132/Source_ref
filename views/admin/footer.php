@@ -1,6 +1,6 @@
 <footer class="main-footer">
-    <strong>Copyright &copy; 2021 Khoa KHOA HỌC VÀ KỸ THUẬT MÁY TÍNH.</strong> <br>
-    <em>Designed and Developed by Lam Nhat Tan - Bui Nguyen Gia Huy - Bui Doan Gia Phong - Bui Khanh Vinh</em> <br>
+    <strong>Copyright &copy; 2022 Khoa Khoa học và Kỹ thuật Máy tính.</strong> <br>
+    <em>Designed and Developed by Lâm Nhật Tân - Bùi Nguyễn Gia Huy - Bùi Đoàn Gia Phong - Bùi Khánh Vĩnh</em> <br>
     <em>Instructor: Nguyen Huu Hieu</em>
 
 </footer>
