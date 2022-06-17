@@ -62,14 +62,13 @@ if (isset($_SESSION['guest'])) {
     <!-- <link href="/Source_code/public2/css/layout/services.css" rel="stylesheet">
     <link href="/Source_code/public2/css/layout/info.css" rel="stylesheet">-->
     <!-- <link href="/Source_code/public2/css/layout/timeline.css" rel="stylesheet"> -->
-    <style>
+    <!-- <style>
         img {
             border-radius: 50%;
             width: 200px;
             height: 200px;
-
         }
-    </style>
+    </style> -->
 
 </head>
 
@@ -121,6 +120,10 @@ if (isset($_SESSION['guest'])) {
                     <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Admin<b class="caret"></b></a><div class="dropdown-menu"></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
                         ';
                 }
+                ?>
+
+                <?php
+                echo "<img src='$data->profile_photo' class="avatar">";
                 ?>
 
                 <?php
