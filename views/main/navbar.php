@@ -63,13 +63,7 @@ if (isset($_SESSION['guest'])) {
     <link href="/Source_code/public2/css/layout/info.css" rel="stylesheet">-->
     <!-- <link href="/Source_code/public2/css/layout/timeline.css" rel="stylesheet"> -->
 
-    <!-- <style>
-        img {
-            border-radius: 50%;
-            width: 200px;
-            height: 200px;
-        }
-    </style> -->
+
 
 </head>
 
@@ -112,9 +106,9 @@ if (isset($_SESSION['guest'])) {
                     '
                     <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">';
 
-                    echo '
-                    <img src="$data->profile_photo" class="avatar" alt="Avatar">
-                    ';
+                    // <img src="$data->profile_photo" class="avatar" alt="Avatar">
+                    echo "<img src='$data->profile_photo' >";
+
 
                     echo '
                      ' . $data->lname . '<b class="caret"></b></a>
