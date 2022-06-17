@@ -21,7 +21,7 @@ $controllers = array(
     'about' => ['index'],
     'services' => ['index'],
     'register' => ['index', 'submit', 'editInfo'],
-    'profile' => ['index']
+    'profile' => ['index', 'editInfo']
     //'login' => ['index']
 ); // Các controllers trong hệ thống và các action có thể gọi ra từ controller đó.
 

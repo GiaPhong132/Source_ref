@@ -62,7 +62,14 @@ if (isset($_SESSION['guest'])) {
     <!-- <link href="/Source_code/public2/css/layout/services.css" rel="stylesheet">
     <link href="/Source_code/public2/css/layout/info.css" rel="stylesheet">-->
     <!-- <link href="/Source_code/public2/css/layout/timeline.css" rel="stylesheet"> -->
+    <style>
+        img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
 
+        }
+    </style>
 
 </head>
 
@@ -106,7 +113,7 @@ if (isset($_SESSION['guest'])) {
                     // <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> ' . $data->lname . '<b class="caret"></b></a><div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a><a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a><div class="dropdown-divider"></div><a href="index.php?page=main&controller=login&action=logout" class="dropdown-item"><class="fa-solid fa-arrow-right-from-bracket"></class=>Logout</a></a></div>
                     // ';
                     '
-                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> ' . $data->lname . '<b class="caret"></b></a>
+                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="$data->profile_photo" class="avatar" alt="Avatar"> ' . $data->lname . '<b class="caret"></b></a>
                     <div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
                         ';
                 } else if (isset($_SESSION['user'])) {

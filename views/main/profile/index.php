@@ -4,93 +4,143 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
 
 ?>
 
-<!-- <script>
-    var loadFile = function(event) {
-        var image = document.getElementById("output");
-        image.src = URL.createObjectURL(event.target.files[0]);
-    };
-</script>
-
-<div class="container rounded bg-white mt-5 mb-5">
-    <div class="row">
-        <div class="col-md-3 border-right">
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5">
-                <img class="rounded-circle mt-5" width="150px" src="/Source_code/public/img/user/default.png" alt="avatar">
-
-                <input name="profile_photo" type="file" onchange="loadFile(event)" />
-
-
-                <span class="font-weight-bold"><?php echo $data->fname . ' ' . $data->lname ?></span>
-                <span class="text-black-50"><?php echo $data->email ?></span>
-            </div>
-        </div>
-        <div class="col-md-5 border-right">
-            <div class="p-3 py-5">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h4 class="text-right">Profile Settings</h4>
-                </div>
-                <div class="row mt-2">
-                    <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" name='fname' value="<?php echo $data->fname ?>"></div>
-                    <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" value="<?php echo $data->lname ?>" name='lname'></div>
-                </div>
-                <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Phone Number</label><input type="text" class="form-control" name='phone' value="<?php echo $data->phone ?>"></div>
-                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" placeholder="enter email id" name='email' value="<?php echo $data->email ?>"></div>
-                </div>
-                <div class="row mt-3">
-
-                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button" href="index.php?page=main&controller=register&action=index">Save Profile</button></div>
-                </div>
-            </div>
-
-        </div>
-    </div>
-</div>
-</div> -->
 
 
 
 <div class="container rounded bg-white mt-5 mb-5">
-    <div class="row">
-        <div class="col-md-3 border-right">
-            <div class="d-flex flex-column align-items-center text-center p-3 py-5">
-                <img class="rounded-circle mt-5" width="150px" src="/Source_code/public/img/user/default.png" alt="avatar">
+    <form action="index.php?page=main&controller=profile&action=editInfo" enctype="multipart/form-data" method="POST">
 
-                <input name="profile_photo" type="file" onchange="loadFile(event)" />
+        <div class="row">
+            <div class="col-md-3 border-right">
+                <div class="d-flex flex-column align-items-center text-center p-3 py-5">
 
 
-                <span class="font-weight-bold"><?php echo $data->fname . ' ' . $data->lname; ?></span>
-                <span class="text-black-50"><?php echo $data->email ?></span>
-            </div>
+                    <?php
+                    echo "<img src='$data->profile_photo' >";
+                    ?>
+                    <!-- <img class="rounded-circle mt-5" width="150px" src="$data->profile_photo" alt="avatar"> -->
 
-        </div>
+                    <input type="file" name="fileToUpload" id="fileToUpload">
 
-        <div class="col-md-5 border-right">
-            <div class="p-3 py-5">
-                <div class="d-flex justify-content-between align-items-center mb-3">
-                    <h4 class="text-right">Profile Settings</h4>
-                </div>
 
-                <div class="row mt-2">
-                    <div class="col-md-6"><label class="labels">First Name</label><input type="text" class="form-control" name='fname' value="<?php echo $data->fname; ?>"></div>
-                    <div class="col-md-6"><label class="labels">Last Name</label><input type="text" class="form-control" value="<?php echo $data->lname; ?>" name='lname'></div>
-                </div>
-
-                <div class="row mt-3">
-                    <div class="col-md-12"><label class="labels">Phone Number</label><input type="text" class="form-control" name='phone' value="<?php echo $data->phone; ?>"></div>
-                    <div class="col-md-12"><label class="labels">Email</label><input type="text" class="form-control" name='email' value="<?php echo $data->email; ?>"></div>
-                </div>
-
-                <div class="row mt-3">
-
-                    <div class="mt-5 text-center"><button class="btn btn-primary profile-button" type="button" href="index.php?page=main&controller=register&action=editInfo">Save Profile</button></div>
+                    <span class="font-weight-bold"><?php echo $data->fname . ' ' . $data->lname; ?></span>
+                    <span class="text-black-50"><?php echo $data->email ?></span>
                 </div>
 
             </div>
 
+            <div class="col-md-5 border-right">
+                <div class="p-3 py-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4 class="text-right">Profile Settings</h4>
+                    </div>
+
+                    <div class="row mt-2">
+                        <div class="col-md-6">
+                            <label class="labels">First Name</label>
+                            <input type="text" class="form-control" name='fname' value="<?php echo $data->fname; ?>">
+                        </div>
+
+                        <div class="col-md-6">
+                            <label class="labels">Last Name</label>
+                            <input type="text" class="form-control" value="<?php echo $data->lname; ?>" name='lname'>
+                        </div>
+                    </div>
+
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <label class="labels">Phone Number</label>
+                            <input type="text" class="form-control" name='phone' value="<?php echo $data->phone; ?>">
+                        </div>
+
+                        <div class="col-md-12">
+                            <label class="labels">Age</label>
+                            <input type="number" class="form-control" name='age' value="<?php echo $data->age; ?>">
+                        </div>
+
+                        <div class="col-md-12">
+                            <label class="labels">Email</label>
+                            <input type="text" class="form-control" name='email' readonly value="<?php echo $data->email; ?>">
+                        </div>
+                    </div>
+
+                    <div class="form-check" style="padding-left: 0;">
+                        <div class="row">
+                            <label class="col-md-3 col-form-label">Gender:</label>
+                        </div>
+                    </div>
+
+                    <?php
+                    if ($data->gender == 1) {
+                        echo '
+                        <div class="form-check form-check-inline" style="padding-left: 1cm;">
+                        <input class="form-check-input" type="radio" name="gender" value="1" checked>
+                        <label class="form-check-label">Male</label>
+                    </div>
+
+                    <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
+                        <input class="form-check-input" type="radio" name="gender" value="0">
+                        <label class="form-check-label">Female</label>
+                    </div>
+
+                    <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
+                        <input class="form-check-input" type="radio" name="gender" value="-1">
+                        <label class="form-check-label">Other</label>
+                    </div>
+                        ';
+                    } else if ($data->gender == 0) {
+                        echo '
+                        <div class="form-check form-check-inline" style="padding-left: 1cm;">
+                        <input class="form-check-input" type="radio" name="gender" value="1" >
+                        <label class="form-check-label">Male</label>
+                    </div>
+
+                    <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
+                        <input class="form-check-input" type="radio" name="gender" value="0" checked>
+                        <label class="form-check-label">Female</label>
+                    </div>
+
+                    <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
+                        <input class="form-check-input" type="radio" name="gender" value="-1">
+                        <label class="form-check-label">Other</label>
+                    </div>
+                        ';
+                    } else {
+                        echo '
+                        <div class="form-check form-check-inline" style="padding-left: 1cm;">
+                        <input class="form-check-input" type="radio" name="gender" value="1" >
+                        <label class="form-check-label">Male</label>
+                    </div>
+
+                    <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
+                        <input class="form-check-input" type="radio" name="gender" value="0" checked>
+                        <label class="form-check-label">Female</label>
+                    </div>
+
+                    <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
+                        <input class="form-check-input" type="radio" name="gender" value="-1">
+                        <label class="form-check-label">Other</label>
+                    </div>
+                        ';
+                    }
+
+                    ?>
+
+                    <div class="row mt-3">
+                        <div class="mt-5 text-center">
+                            <button class="btn btn-primary profile-button" type="submit">Save Profile</button>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
         </div>
 
-    </div>
+    </form>
 
 </div>
 
