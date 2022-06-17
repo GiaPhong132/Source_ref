@@ -72,7 +72,7 @@ if (isset($_SESSION['guest'])) {
 
 <body>
     <nav class="navbar navbar-expand-xl navbar-light bg-light">
-        <a href="#" class="navbar-brand"><i class="fa fa-cube"></i>BK<b style="color:deepskyblue">BLUE</b></a>
+        <a href="index.php?page=main&controller=layouts&action=index" class="navbar-brand"><i class="fa fa-cube"></i>BK<b style="color:deepskyblue">BLUE</b></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -95,12 +95,7 @@ if (isset($_SESSION['guest'])) {
 
 
             </div>
-            <form class="navbar-form form-inline">
-                <div class="input-group search-box">
-                    <input type="text" id="search" class="form-control" placeholder="Search ">
-                    <span class="input-group-addon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                </div>
-            </form>
+
             <div class="navbar-nav ml-auto">
 
                 <?php
