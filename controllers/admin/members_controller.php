@@ -12,4 +12,10 @@ class MembersController extends BaseController
     {
         $this->render('index');
     }
+
+    public function getAll()
+    {
+        $data = User::getAll();
+        return $data;
+    }
 }

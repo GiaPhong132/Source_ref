@@ -44,12 +44,12 @@ class ProfileController extends BaseController
             echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
             $upload_ok = 0;
         }
-        if ($_FILES["fileToUpload"]["size"] > 500000) {
+        if ($_FILES["profile_photo"]["size"] > 500000) {
             echo "Sorry, your file is too large.";
         }
         $file_pointer = $urlcurrent;
         unlink($file_pointer);
-        move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+        move_uploaded_file($_FILES["profile_photo"]["tmp_name"], $target_file);
         // Update
         $change_info = User::update($new_email, $target_file, $fname, $lname, $phone);
         header('Location: index.php?page=main&controller=layouts&action=index');
