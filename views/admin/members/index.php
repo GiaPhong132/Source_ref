@@ -55,15 +55,39 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                             <h5 class="modal-title">Thêm mới</h5>
                                             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         </div>
-                                        <form action="index.php?page=admin&controller=members&action=getAll" method="post">
+                                        <form action="index.php?page=admin&controller=members&action=addUser" method="post">
                                             <div class="modal-body">
                                                 <div class="form-group">
                                                     <label>Email</label>
-                                                    <input class="form-control" type="text" placeholder="Tên đăng nhập" name="username" />
+                                                    <input class="form-control" type="text" name="email" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>First name</label>
+                                                    <input class="form-control" type="text" name="fname" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Last name</label>
+                                                    <input class="form-control" type="text" name="lname" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Age</label>
+                                                    <input class="form-control" type="number" name="age" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Phone number</label>
+                                                    <input class="form-control" type="text" name="phone_number" />
+                                                </div>
+                                                <div class="form-group">
+                                                    <label>Gender</label>
+                                                    <input type="radio" name="gender" value="1">
+                                                    <label class="form-check-label">Male</label>
+
+                                                    <input type="radio" name="gender" value="0">
+                                                    <label class="form-check-label">Female</label>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Password</label>
-                                                    <input class="form-control" type="password" placeholder="Mật khẩu" name="password" />
+                                                    <input class="form-control" type="password" name="password" />
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
@@ -104,13 +128,11 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         else echo "Female</td>";
                                         echo "<td>" . $x->phone . "</td>";
                                         echo "<td>" . $x->updateAt . "</td>";
-
                                         echo "<td>
-											<btn class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$x->email' data-password='$x->password'> <i class='fas fa-edit'></i></btn>
-											<btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-trash'></i></btn>
-											</td>";
+                                            <btn class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$x->email' data-password='$x->password'> <i class='fas fa-edit'></i></btn>
+                                            <btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-trash'></i></btn>
+                                            </td>";
                                         echo "</tr>";
-                                    }
                                     ?>
                                 </tbody>
                             </table>
@@ -126,17 +148,17 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                             <div class="modal-body">
                                                 <input type="hidden" name="id" />
                                                 <div class="form-group">
-                                                    <label>Username</label>
-                                                    <input class="form-control" type="text" placeholder="Username" name="username" readonly />
+                                                    <label>Email</label>
+                                                    <input class="form-control" type="text" name="new-email" />
                                                 </div>
                                                 <div class="form-group">
-                                                    <label>New password</label>
-                                                    <input class="form-control" type="password" placeholder="Please enter your new password" name="new-password" />
+                                                    <label>Password</label>
+                                                    <input class="form-control" type="password" name="new-password" />
                                                 </div>
                                             </div>
                                             <div class="modal-footer">
                                                 <button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
-                                                <button class="btn btn-primary" type="submit">Cập nhật</button>
+                                                <button class="btn btn-primary" type="submit" href="index.php?page=admin&controllers=members&action=changePassword">Cập nhật</button>
                                             </div>
                                         </form>
                                     </div>
@@ -163,6 +185,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                     </div>
                                 </div>
                             </div>
+                        <?php } ?>
                         </div>
                     </div>
                 </div>
@@ -172,8 +195,12 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
     </section>
 </div>
-</div <?php
-        require_once('/xampp/htdocs/Source_code/views/admin/footer.php'); ?> <!-- Add Javascripts -->
+</div>
+
+<?php
+require_once('/xampp/htdocs/Source_code/views/admin/footer.php'); ?>
+
+<!-- Add Javascripts -->
 <script src="/Source_code/public/js/admin/index.js"></script>
 <script type="text/javascript" src="/Source_code/public2/js/admin.js"></script>
 </body>
