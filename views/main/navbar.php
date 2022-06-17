@@ -2,10 +2,8 @@
 session_start();
 if (isset($_SESSION['guest'])) {
     require_once('/xampp/htdocs/Source_code/models/user.php');
-    require_once('/xampp/htdocs/Source_code/models/product.php');
 
     $data = User::get($_SESSION['guest']);
-    $product = Product::getAll();
 }
 ?>
 

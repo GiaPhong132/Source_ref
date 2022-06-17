@@ -1,34 +1,68 @@
-DROP database IF EXISTS webb;
-CREATE DATABASE webb;
-USE webb;
+DROP database IF EXISTS ass_web;
+CREATE DATABASE ass_web;
+USE ass_web;
 
 
 --
 -- Table structure for table `product`
 --
 
+CREATE TABLE `comment` (
+  `id` int(11) NOT NULL,
+  `date` datetime DEFAULT NULL,
+  `approved` tinyint(1) DEFAULT NULL,
+  `content` varchar(10000) DEFAULT NULL,
+  `news_id` int(11) DEFAULT NULL,
+  `user_id` varchar(255) DEFAULT NULL,
+  `parent` int(11) DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+-- --------------------------------------------------------
+
+-- --------------------------------------------------------
+-- --------------------------------------------------------
+--
+-- Table structure for table `product`
+--
+
 CREATE TABLE `product` (
   `id` int(11) NOT NULL,
-  `price` float DEFAULT NULL,
+  `price` int(11) DEFAULT NULL,
   `name` varchar(255) DEFAULT NULL,
   `description` varchar(1000) DEFAULT NULL,
-  `reviews` varchar(10000) DEFAULT NULL,
-  `img` varchar(255) DEFAULT NULL,
-  `rating` int(6) NOT NULL
+  `content` varchar(10000) DEFAULT NULL,
+  `img` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Dumping data for table `product`
 --
 
-INSERT INTO `product` (`id`, `price`, `name`, `description`, `reviews`, `img`, `rating`) VALUES
-(1, 20, 'CLion (C++ IDE 128 GB)', 'CLion is a smart IDE for developing in C or C++ on Windows, Linux, and macOS.\r\n                            It\'s packed with an in-depth code analyzer, a range of code generation options,\r\n                            and the ability to navigate to anywhere in your code in one click. CLion understands\r\n                            modern C++ standards and provides preprocessor support. It also integrates with GDB/LLDB\r\n                            and a set of unit testing frameworks.', '1985', 'clion.png', 5),
-(2, 14.99, 'PHP STORM', 'PhpStorm is an Integrated Development Environment for PHP developers built on top of the IntelliJ IDEA platform. JetBrains PhpStorm is an innovative and cross-platform IDE that become popular over the last couple of year. It is perfect for working with Drupal, Symfony, Laravel, WordPress, Zend Framework, Joomla, CakePHP, and other frameworks. ', '1985', 'phpstorm.png', 5),
-(3, 29.99, 'Visual Studio Code (128 GB)', 'Visual Studio Code is a lightweight but powerful source code editor which runs on your desktop and is available for Windows, macOS and Linux. It comes with built-in support for JavaScript, TypeScript and Node.js and has a rich ecosystem of extensions for other languages (such as C++, C#, Java, Python, PHP, Go) and runtimes (such as .NET and Unity).', '1985', 'visual.png', 5),
-(4, 14.99, 'Visual Studio 2022 ', 'Visual Studio 2022 is the best Visual Studio ever. Our first 64-bit IDE makes it easier to work with even bigger projects and more complex workloads. The stuff you do every day—like typing code and switching branches—feels more fluid more responsive. ', '2000', 'visual2.png', 4),
-(5, 21.99, 'Vim (IDE 128 GB) ', 'Vim is a highly configurable text editor built to make creating and changing any kind of text very efficient. It is included as \"vi\" with most UNIX systems and with Apple OS X. Vim is rock stable and is continuously being developed to become even better. ', '1500', 'vim.png', 4),
-(6, 29.99, 'Python Compiler', 'This IDE is the most popular IDE used for Python scripting language. It offers some of the best features to its users and developers in the following aspects − Code completion and inspection, Advanced debugging, Support for web programming and frameworks such as Django and Flask.', '3999', 'python.png', 5),
-(7, 19.99, 'Eclipse (Java IDE)', 'Eclipse is an integrated development environment (IDE) for Java and other programming languages like C, C++, PHP, and Ruby etc. Development environment provided by Eclipse includes the Eclipse Java development tools (JDT) for Java, Eclipse CDT for C/C++, and Eclipse PDT for PHP, among others.', '1999', 'eclipse.png', 5),
-(8, 25.99, 'Jupyter Notebook', 'The Jupyter Notebook is an open source web application that you can use to create and share documents that contain live code, equations, visualizations, and text. Jupyter Notebook is maintained by the people at Project Jupyter.', '2988', 'jupyter.png', 5);
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(1, 2900, 'Visual Studio Code', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/visual_studio_code.png');
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(2, 5900, 'Docker', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/docker.png');
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(3, 3300, 'PhpStorm', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/phpstorm.png');
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(4, 4800, 'Jupyter', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/jupyter.png');
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(5, 2100, 'Vim', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/vim.png');
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(6, 7200, 'Eclipse', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/eclipse.jpg');
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(7, 4000, 'Sublime', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/sublime.png');
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(8, 1000, 'Atom', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/atom.png');
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(9, 4000, 'PyCharm', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/pycharm.png');
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(10, 8000, 'Android-Studio', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/androidstudio.png');
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(11, 7000, 'IntelliJ', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/intellij.png');
+INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
+(12, 6000, 'IntelliJ', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/visualstudio.png');
+
 
 -- --------------------------------------------------------
 
@@ -41,7 +75,7 @@ CREATE TABLE `user` (
   `profile_photo` varchar(255) DEFAULT NULL,
   `fname` varchar(255) DEFAULT NULL,
   `lname` varchar(255) DEFAULT NULL,
-   `gender` tinyint(1) DEFAULT NULL,
+  `gender` tinyint(1) DEFAULT NULL,
   `age` int(11) DEFAULT NULL,
   `phone` varchar(10) DEFAULT NULL,
   `createAt` datetime DEFAULT NULL,
@@ -49,18 +83,75 @@ CREATE TABLE `user` (
   `password` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `user`
+--
+
 INSERT INTO `user` (`email`, `profile_photo`, `fname`, `lname`, `gender`, `age`, `phone`, `createAt`, `updateAt`, `password`) VALUES
 ('admin@gmail.com', 'public/img/user/default.png', 'admin', 'admin', 1, 20, '123123', '2022-06-16 21:46:51', '2022-06-16 21:46:51', '$2y$10$GTSVSDI2TFhxJnNFrS8tj.2GKKkbAfiZtvYbRxUvIP/Mp6dtcwC8u'),
-('giaphong132@gmail.com', 'public/img/user/default.png', 'Bùi Đoàn', 'Phong', 1, 20, '+103971460', '2022-06-16 20:48:56', '2022-06-16 20:48:56', '$2y$10$NtrSaLnNsR29ouPqCuQF5ukGtuttVs70TYntJrdkyqWEC0YM417H.'),
+('giaphong132@gmail.com', 'public2/images/user/2022_06_17_12_42_04pm.png', 'Bùi Đoàn', 'Phong', 1, 20, '1', '2022-06-16 20:48:56', '2022-06-17 17:42:04', '$2y$10$NtrSaLnNsR29ouPqCuQF5ukGtuttVs70TYntJrdkyqWEC0YM417H.'),
 ('phong.bui132@hcmut.edu.vn', 'public/img/user/default.png', 'Phong', 'Phong', 1, 20, '0704701412', '2022-06-16 20:49:12', '2022-06-16 20:49:12', '$2y$10$CMNaGhePLvkl.U4DuIMRfesAGCn3uJohnSaBMyi1EK1pVSGk7OcQi');
 
+--
+-- Indexes for dumped tables
+--
 
-CREATE TABLE `ADMIN` (
-  `username` varchar(255),
-  `password` varchar(255) DEFAULT NULL,
-  `createAt` datetime DEFAULT NULL,
-  `updateAt` datetime DEFAULT NULL,
-   primary key (username)
-);
-INSERT INTO `ADMIN` (username, password) VALUES ('admin', '');
-INSERT INTO `ADMIN` (username, password) VALUES ('username', '');
+--
+-- Indexes for table `comment`
+--
+ALTER TABLE `comment`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `news_id` (`news_id`),
+  ADD KEY `user_id` (`user_id`),
+  ADD KEY `parent` (`parent`);
+
+--
+-- Indexes for table `company`
+--
+
+-- Indexes for table `news`
+--
+-- Indexes for table `product`
+--
+ALTER TABLE `product`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `user`
+--
+ALTER TABLE `user`
+  ADD PRIMARY KEY (`email`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `comment`
+--
+ALTER TABLE `comment`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `company`
+--
+
+-- AUTO_INCREMENT for table `news`
+--
+-- AUTO_INCREMENT for table `product`
+--
+ALTER TABLE `product`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- Constraints for dumped tables
+--
+
+--
+-- Constraints for table `comment`
+--
+ALTER TABLE `comment`
+  ADD CONSTRAINT `comment_ibfk_1` FOREIGN KEY (`news_id`) REFERENCES `news` (`id`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `comment_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`email`) ON DELETE CASCADE ON UPDATE CASCADE,
+  ADD CONSTRAINT `comment_ibfk_3` FOREIGN KEY (`parent`) REFERENCES `comment` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
+COMMIT;
