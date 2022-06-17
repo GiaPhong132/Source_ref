@@ -8,7 +8,7 @@ $controllers = array(
     //Admin controller
     'errors' => ['index'],
     'layouts' => ['index'], // Bổ sung thêm các hàm trong controllers
-    'members' => ['index'],
+    'members' => ['index', 'addUser','changePassword', 'getAll'],
     'products' => ['index', 'add', 'edit', 'delete'],
     'news' => ['index', 'add', 'edit', 'delete', 'hide'],
     'comments' => ['index', 'hide', 'add', 'edit', 'delete'],

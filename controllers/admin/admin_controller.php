@@ -26,10 +26,10 @@ class AdminController extends BaseController
 
     public function edit()
     {
-        $username = $_POST['username'];
+        $username = $_POST['new-email'];
         $newPassword = $_POST['new-password'];
         $change_pass = Admin::changePassword_($username, $newPassword);
-        header('Location: index.php?page=admin&controller=admin&action=index');
+        //header('Location: index.php?page=admin&controller=admin&action=index');
     }
 
     public function delete()
