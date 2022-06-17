@@ -53,7 +53,7 @@ class ProfileController extends BaseController
         $user = User::get($email);
         $file_pointer = $user->profile_photo;
         unlink($file_pointer);
-        move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
+        move_uploaded_file($_FILES["profile_photo"]["tmp_name"], $target_file);
         // Update
         User::update($email, $target_file, $fname, $lname, $gender, $age, $phone);
         header('Location: index.php?page=main&controller=layouts&action=index');
