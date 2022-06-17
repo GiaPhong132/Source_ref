@@ -20,7 +20,10 @@ if (isset($_SESSION['guest'])) {
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+    <!-- Nếu ko chạy đc drop down thì đặt hoặc bỏ comment cái này -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
     <!-- icon -->
@@ -64,11 +67,12 @@ if (isset($_SESSION['guest'])) {
     <!-- <link href="/Source_code/public2/css/layout/timeline.css" rel="stylesheet"> -->
 
 
+
 </head>
 
 <body>
     <nav class="navbar navbar-expand-xl navbar-light bg-light">
-        <a href="#" class="navbar-brand"><i class="fa fa-cube"></i>BK<b style="color:deepskyblue">BLUE</b></a>
+        <a href="index.php?page=main&controller=layouts&action=index" class="navbar-brand"><i class="fa fa-cube"></i>BK<b style="color:deepskyblue">BLUE</b></a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -91,22 +95,21 @@ if (isset($_SESSION['guest'])) {
 
 
             </div>
-            <form class="navbar-form form-inline">
-                <div class="input-group search-box">
-                    <input type="text" id="search" class="form-control" placeholder="Search ">
-                    <span class="input-group-addon"><i class="fa-solid fa-magnifying-glass"></i></span>
-                </div>
-            </form>
+
             <div class="navbar-nav ml-auto">
 
                 <?php
                 if (isset($_SESSION['guest'])) {
                     echo
-                    // '
-                    // <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> ' . $data->lname . '<b class="caret"></b></a><div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a><a href="#" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a></a><div class="dropdown-divider"></div><a href="index.php?page=main&controller=login&action=logout" class="dropdown-item"><class="fa-solid fa-arrow-right-from-bracket"></class=>Logout</a></a></div>
-                    // ';
                     '
-                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> ' . $data->lname . '<b class="caret"></b></a>
+                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">';
+
+                    // <img src="$data->profile_photo" class="avatar" alt="Avatar">
+                    echo "<img src='$data->profile_photo' >";
+
+
+                    echo '
+                     ' . $data->lname . '<b class="caret"></b></a>
                     <div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
                         ';
                 } else if (isset($_SESSION['user'])) {
@@ -121,7 +124,6 @@ if (isset($_SESSION['guest'])) {
                     echo '
                                 <a href="index.php?page=admin&controller=layouts&action=index" class="dropdown-item"><i class="fa fa-sliders"></i> Admin</a>
                                 ';
-
                 ?>
 
                 <?php

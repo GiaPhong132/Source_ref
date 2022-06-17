@@ -40,7 +40,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                 <div class="row invoice-info">
                     <div class="col-sm-6 invoice-col">
                         <ul style="list-style: none;">
-                            <li><a href="index.php?page=admin&controller=admin&action=index" class="fas fa-user-graduate"> Quản lý Thành viên</a></li>
+                            <li><a href="index.php?page=admin&controller=members&action=index" class="fas fa-user-graduate"> Quản lý Thành viên</a></li>
                             <li><a href="index.php?page=admin&controller=comments&action=index" class="fas fa-comments"> Bình luận đánh giá</a></li>
                             <li><a href="index.php?page=admin&controller=user&action=index" class="fas fa-users-cog"> Liên hệ khách hàng</a>
                         </ul>
