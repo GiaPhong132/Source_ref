@@ -43,6 +43,6 @@ class LoginController extends BaseController
         session_start();
         unset($_SESSION["guest"]);
         session_destroy();
-        header("Location: index.php?page=main&controller=login&action=index");
+        header("Location: index.php?page=main&controller=layouts&action=index");
     }
 }
