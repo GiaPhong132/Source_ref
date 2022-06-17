@@ -223,7 +223,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
             </div>
         </footer>
         <!-- End of Footer -->
-
+            
     </div>
     <!-- End of Content Wrapper -->
 
@@ -252,9 +252,12 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
             </div>
         </div>
     </div>
+
 </div>
 </div>
+
 <!-- Add Javascripts -->
+<script type="text/javascript" src="/Source_code/public2/js/admin.js"></script>
 <script src="/Source_code/public/js/company/index.js"></script>
 </body>
 
