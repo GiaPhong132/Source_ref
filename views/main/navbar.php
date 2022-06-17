@@ -122,9 +122,7 @@ if (isset($_SESSION['guest'])) {
                 }
                 ?>
 
-                <?php
-                echo "<img src='$data->profile_photo' class="avatar">";
-                ?>
+
 
                 <?php
                 if (isset($_SESSION['user']))
