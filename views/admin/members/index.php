@@ -19,7 +19,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
 <!-- Code -->
 
-<div class="content-wrapper">
+<div id="content-wrapper" class="d-flex flex-column">
     <!-- Add Content -->
     <!-- Content Header (Page header)-->
     <section class="content-header">
@@ -172,13 +172,14 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
     </section>
 </div>
-
+</div
 
 <?php
 require_once('/xampp/htdocs/Source_code/views/admin/footer.php'); ?>
 
 <!-- Add Javascripts -->
 <script src="/Source_code/public/js/admin/index.js"></script>
+<script type="text/javascript" src="/Source_code/public2/js/admin.js"></script>
 </body>
 
 </html>
