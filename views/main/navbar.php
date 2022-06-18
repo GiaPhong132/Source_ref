@@ -82,18 +82,13 @@ if (isset($_SESSION['guest'])) {
                 <a href="index.php?page=main&controller=layouts&action=index" class="nav-item nav-link active">Home</a>
                 <a href="index.php?page=main&controller=about&action=index" class="nav-item nav-link">About</a>
                 <a href="index.php?page=main&controller=services&action=index" class="nav-item nav-link">Product</a>
-
                 <?php
                 if (!isset($_SESSION['guest']) && !isset($_SESSION['user']))
                     echo '
                     <a href="index.php?page=main&controller=login&action=index" class="nav-item nav-link">Sign In</a>
                     <a href="index.php?page=main&controller=register&action=index" class="nav-item nav-link">Sign Up</a>
                     '
-
                 ?>
-
-
-
             </div>
 
             <div class="navbar-nav ml-auto">
