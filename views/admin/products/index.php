@@ -6,7 +6,10 @@ if (!isset($_SESSION["user"])) {
 ?>
 
 <?php
-require_once('/xampp/htdocs/Source_code/views/admin/header.php'); ?>
+require_once('/xampp/htdocs/Source_code/views/admin/header.php'); 
+require_once("/XAMPP/htdocs/Source_code/models/product.php");
+// $data = Product::getAll();
+?>
 
 <!-- Add CSS -->
 
@@ -70,7 +73,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
                                     $index = 1;
 
-                                    foreach ($product as $item) {
+                                    foreach ($products as $item) {
 
                                         echo
                                         "<tr class=\"text-center\">
@@ -90,10 +93,10 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                        " . $item->content . "
                                                     </td>
                                                     <td >
-                                                        <img style=\"width: 600px; height:350px;\" src='$item->img'>
+                                                        <img style=\"width: 200px; height:300px;\" src='$item->img'>
                                                     </td>
                                                     <td>
-                                                    <button class=\"btn-edit btn btn-primary btn-xs\" style=\"margin-right: 5px\" data-id='$item->id' data-name='$product->name' data-price='$product->price' data-description='$product->description' data-content='$product->content' data-img='$product->img'> <i style=\"font-size:17px;\" class=\"fas fa-edit\" ></i></button>
+                                                    <button class=\"btn-edit btn btn-primary btn-xs\" style=\"margin-right: 5px\" data-id='$item->id' data-name='$item->name' data-price='$item->price' data-description='$item->description' data-content='$item->content' data-img='$item->img'> <i style=\"font-size:17px;\" class=\"fas fa-edit\" ></i></button>
                                                     <button class=\"btn-delete btn btn-danger btn-xs\" style=\"margin-right: 5px\" data-id='$item->id' ><i style=\"font-size:17px;\" class=\"fas fa-trash\"></i></button>
                                                   </td>
                                                 </tr>";
@@ -222,3 +225,5 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 <!-- Sidebar Message -->
 </ul>
 <!-- End of Sidebar -->
+
+<script type="text/javascript" src="/Source_code/public2/js/admin.js"></script>

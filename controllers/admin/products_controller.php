@@ -16,6 +16,25 @@ class ProductsController extends BaseController
         $data = array('products' => $products);
         $this->render('index', $data);
     }
+
+    public function getAll()
+    {
+        $db = DB::getInstance();
+        $req = $db->query("SELECT * FROM product");
+        $data = [];
+        foreach ($req->fetch_all(MYSQLI_ASSOC) as $x) {
+            $data[] = new Admin(
+                $x['id'],
+                $x['price'],
+                $x['name'],
+                $x['description'],
+                $x['review'],
+                $x['img'],
+                $x['rating']
+            );
+        }
+        return $data;
+    }
     public function add()
     {
         $id = (string)date("Y_m_d_h_i_sa");
