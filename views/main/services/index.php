@@ -54,7 +54,7 @@
                     // }
                     echo "
                             </div>
-                            <div class='text-muted'>" . $row->content . "</div>
+                            <div class='text-muted'></div>
                             <button type='button' class='btn btn-warning mt-4 text-white'><i class='icon-cart-add mr-2'></i> Download Now</button>
                         </div>
                 </div>
