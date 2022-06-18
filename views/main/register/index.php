@@ -51,7 +51,7 @@
                         <span class="focus-input100" data-symbol="&#9993;"></span>
                     </div>
 
-                    <div class="wrap-input100 validate-input m-b-23" data-validate="First is required">
+                    <div class="wrap-input100 validate-input m-b-23" data-validate="First name is required">
                         <span class="label-input100">First Name</span>
                         <input class="input100" type="text" name="first_name" placeholder="Type your first name">
                         <span class="focus-input100" data-symbol="&#xf206;"></span>
@@ -82,7 +82,7 @@
                     </div>
 
                     <!--Remember to Check password with retype password is match with password -->
-                    <div class="wrap-input100 validate-input" data-validate="Password is required">
+                    <div class="wrap-input100 validate-input" data-validate="Retype password is required">
                         <span class="label-input100">Retype Password</span>
                         <span id='message'></span>
                         <input onkeyup='check();' class="input100" type="password" name="retype_password" placeholder="Retype your password">
@@ -162,11 +162,10 @@
             }
         }
 
-        function checkInput()
-        {
+        function checkInput() {
             var $fname = document.getElementsByName('fname');
-            if($fname[0] == '') alert('First name cant be empty!');
-            
+            if ($fname[0] == '') alert('First name cant be empty!');
+
         }
     </script>
 
