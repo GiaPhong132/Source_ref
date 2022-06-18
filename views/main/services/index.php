@@ -44,10 +44,6 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
             <div class="container">
                 <br>
                 <div>
-                    <h1> Pagination in PHP </h1>
-
-
-
                     <div class="section-title">
                         <h2>PRODUCTS FROM BKBLUE</h2>
                         </>
