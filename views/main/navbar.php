@@ -109,7 +109,7 @@ if (isset($_SESSION['guest'])) {
                         ';
                 } else if (isset($_SESSION['user'])) {
                     echo  '
-                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Admin<b class="caret"></b></a><div class="dropdown-menu"></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
+                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Admin<b class="caret"></b></a><div class="dropdown-menu"></a></a>
                         ';
                 }
                 ?>

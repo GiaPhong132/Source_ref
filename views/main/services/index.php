@@ -1,4 +1,6 @@
-<?php require_once("/xampp/htdocs/Source_code/views/main/navbar.php"); ?>
+<?php
+require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
+?>
 
 
 <section id="home-slider">
