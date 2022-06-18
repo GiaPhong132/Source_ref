@@ -49,9 +49,8 @@ class RegisterController extends BaseController
     public function delete()
     {
         $email = $_POST['email'];
-        $urlcurrent = $_POST['img'];
-        unlink($urlcurrent);
-        $delete_user = User::delete($email);
+        $createAt = $_POST['createAt'];
+        $delete_user = User::delete($email, $createAt);
         header('Location: index.php?page=admin&controller=user&action=index');
     }
 }

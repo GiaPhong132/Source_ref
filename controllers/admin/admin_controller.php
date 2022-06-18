@@ -40,4 +40,6 @@ class AdminController extends BaseController
         $x = Admin::delete($username);
         header('Location: index.php?page=admin&controller=members&action=index');
     }
+
+    
 }

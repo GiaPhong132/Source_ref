@@ -129,16 +129,72 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         echo "<td>" . $x->phone . "</td>";
                                         echo "<td>" . $x->updateAt . "</td>";
                                         echo "<td>
-                                            <btn class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$x->email' data-password='$x->password'> <i class='fas fa-edit'></i></btn>
-                                            <btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-trash'></i></btn>
-                                            </td>";
+											<button type='button' data-toggle='modal' data-target='#EditAdminModal$index' class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-edit'></i></button>";
+										echo '
+                                        <div class="modal fade" id="EditAdminModal'.$index.'" tabindex="-1" role="dialog" aria-labelledby="EditAdminModal'.$index.'" aria-hidden="true">
+                                        <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                                <div class="modal-header">
+                                                    <h5 class="modal-title">Chỉnh sửa</h5>
+                                                    <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                                </div>
+                                                <form action="index.php?page=admin&controller=user&action=editPass" method="post">
+                                                    <div class="modal-body">
+                                                        <div class="form-group">
+                                                            <label>Email</label>
+                                                            <input class="form-control" type="text" name="new-email" value='.$x->email.' />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Password</label>
+                                                            <input class="form-control" type="password" name="new-password" />
+                                                        </div>
+                                                    </div>
+                                                    <div class="modal-footer">
+                                                        <button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
+                                                        <button class="btn btn-primary" type="submit" href="index.php?page=admin&controllers=members&action=changePassword">Cập nhật</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        ';
+                                        
+                                        echo "<button type='button' data-toggle='modal' data-target='#DeleteAdminModal$index' class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-trash'></i></button>
+                                        </td>
+                                        <div class='modal fade' id='DeleteAdminModal$index' tabindex='-1' role='dialog' aria-labelledby='DeleteAdminModal$index' aria-hidden='true'>
+                                        <div class='modal-dialog' role='document'>
+                                            <div class='modal-content bg-danger'>
+                                                <div class='modal-header'>
+                                                    <h5 class='modal-title'>Xóa</h5>
+                                                    <button class='close' type='button' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+                                                </div>
+                                                <form action='index.php?page=admin&controller=user&action=delete' method='post'>
+                                                    <div class='modal-body'>
+                                                    <input type='hidden' name='email' value='$x->email'>
+                                                    <input type='hidden' name='createAt' value='$x->createAt'>
+
+                                                        <p>Chuẩn bị xoá tài khoản '$x->email'.</p>
+                                                        <p>Bạn chắc chưa ?</p>
+                                                    </div>
+                                                    <div class='modal-footer'>
+                                                        <button class='btn btn-danger btn-outline-light' type='button' data-dismiss='modal'>Đóng lại</button>
+                                                        <button class='btn btn-danger btn-outline-light' type='submit'>Xác nhận</button>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                        ";
+                                        echo "
+                                        
+                                        ";
                                         echo "</tr>";
                                     }
                                     ?>
                                 </tbody>
                             </table>
-
-                            <div class="modal fade" id="EditAdminModal" tabindex="-1" role="dialog" aria-labelledby="EditAdminModal" aria-hidden="true">
+                            <!-- Edit Button -->
+                            <!-- <div class="modal fade" id="EditAdminModal" tabindex="-1" role="dialog" aria-labelledby="EditAdminModal" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content">
                                         <div class="modal-header">
@@ -147,7 +203,6 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         </div>
                                         <form action="index.php?page=admin&controller=admin&action=edit" method="post">
                                             <div class="modal-body">
-                                                <input type="hidden" name="id" />
                                                 <div class="form-group">
                                                     <label>Email</label>
                                                     <input class="form-control" type="text" name="new-email" />
@@ -164,9 +219,9 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         </form>
                                     </div>
                                 </div>
-                            </div>
-
-                            <div class="modal fade" id="DeleteAdminModal" tabindex="-1" role="dialog" aria-labelledby="DeleteAdminModal" aria-hidden="true">
+                            </div> -->
+                            <!-- Delete Button  -->
+                            <!-- <div class="modal fade" id="DeleteAdminModal" tabindex="-1" role="dialog" aria-labelledby="DeleteAdminModal" aria-hidden="true">
                                 <div class="modal-dialog" role="document">
                                     <div class="modal-content bg-danger">
                                         <div class="modal-header">
@@ -185,7 +240,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         </form>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         
                         </div>
                     </div>

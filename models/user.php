@@ -96,10 +96,10 @@ class User
         return $req;
     }
 
-    static function delete($email)
+    static function delete($email, $createAt)
     {
         $db = DB::getInstance();
-        $req = $db->query("DELETE FROM user WHERE email = '$email';");
+        $req = $db->query("DELETE FROM user WHERE email = '$email' AND createAt = '$createAt';");
         return $req;
     }
 

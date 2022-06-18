@@ -100,20 +100,18 @@ class UserController extends BaseController
 
     public function editPass()
     {
-        $email = $_POST['email'];
+        $email = $_POST['new-email'];
         $newpassword = $_POST['new-password'];
-        echo $email . " " . $newpassword .  "\n";
         $change_pass = User::changePassword_($email, $newpassword);
-        echo "change_pass";
-        header('Location: index.php?page=admin&controller=user&action=index');
+        header('Location: index.php?page=admin&controller=members&action=index');
+
     }
 
     public function delete()
     {
         $email = $_POST['email'];
-        $urlcurrent = $_POST['img'];
-        unlink($urlcurrent);
-        $delete_user = User::delete($email);
-        header('Location: index.php?page=admin&controller=user&action=index');
+        $createAt = $_POST['createAt'];
+        $delete_user = User::delete($email, $createAt);
+        header('Location: index.php?page=admin&controller=members&action=index');
     }
 }
