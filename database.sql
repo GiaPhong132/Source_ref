@@ -84,7 +84,9 @@ which helps developers to keep track of changes.', 'public2/images/product/subli
 
 
 INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
-(8, 1000, 'Atom', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/atom.png');
+(8, 1000, 'Atom', 'Powerful', 'Atom is a free and open-source text and source code editor for macOS, 
+Linux, and Microsoft Windows[8] with support for plug-ins written in JavaScript, and embedded Git Control. 
+Developed by BKBLUE, Atom is a desktop application built using web technologies.', 'public2/images/product/atom.png');
 
 
 INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
