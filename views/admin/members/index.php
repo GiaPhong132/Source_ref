@@ -138,27 +138,27 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                     <h5 class="modal-title">Chỉnh sửa</h5>
                                                     <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form action="index.php?page=admin&controller=user&action=editPass" method="post">
+                                                <form action="index.php?page=admin&controller=members&action=edit" method="POST">
                                                     <div class="modal-body">
                                                         <div class="form-group">
                                                             <label>Email</label>
-                                                            <input class="form-control" type="text" name="new-email" value=' . $x->email . ' />
+                                                            <input class="form-control" type="text" name="email" value=' . $x->email . ' />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>First name</label>
-                                                            <input class="form-control" type="text" name="new-fname" value="' . $x->fname . '" />
+                                                            <input class="form-control" type="text" name="fname" value="' . $x->fname . '" />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Last name</label>
-                                                            <input class="form-control" type="text" name="new-lname" value="' . $x->lname . '" />
+                                                            <input class="form-control" type="text" name="lname" value="' . $x->lname . '" />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Age</label>
-                                                            <input class="form-control" type="text" name="new-age" value="' . $x->age . '"/>
+                                                            <input class="form-control" type="text" name="age" value="' . $x->age . '"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Phone number</label>
-                                                            <input class="form-control" type="number" name="new-age" value="' . $x->phone . '"/>
+                                                            <input class="form-control" type="number" name="phone" value="' . $x->phone . '"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Gender</label>
@@ -170,12 +170,12 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Password</label>
-                                                            <input class="form-control" type="password" name="new-password" />
+                                                            <input class="form-control" type="password" name="password" />
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
-                                                        <button class="btn btn-primary" type="submit" href="index.php?page=admin&controllers=members&action=edit">Cập nhật</button>
+                                                        <button class="btn btn-primary" type="submit" >Cập nhật</button>
                                                     </div>
                                                 </form>
                                             </div>
@@ -287,5 +287,5 @@ require_once('/xampp/htdocs/Source_code/views/admin/footer.php'); ?>
 
 </html>
 
-    <!-- Add Content -->
-    <!-- Content Header (Page header)-->
+<!-- Add Content -->
+<!-- Content Header (Page header)-->

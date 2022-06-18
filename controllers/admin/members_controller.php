@@ -59,6 +59,7 @@ class MembersController extends BaseController
         $data = User::get($email);
 
         User::update($email, $data->profile_photo, $fname, $lname, $gender, $age, $phone);
+        header('Location: index.php?page=admin&controller=members&action=index');
 
         // Photo
         // $target_dir = "public2/images/user/";
