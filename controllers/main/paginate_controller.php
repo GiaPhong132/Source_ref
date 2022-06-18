@@ -1,5 +1,5 @@
 <?php
-require_once('controllers/main/base_controller.php');
+require_once('/xampp/htdocs/Source_code/controllers/main/base_controller.php');
 // require_once('/xampp/htdocs/Source_code/models/paginate.php');
 
 class PaginateController extends BaseController

@@ -77,7 +77,7 @@ if (isset($_SESSION['guest'])) {
             <div class="navbar-nav">
                 <a href="index.php?page=main&controller=layouts&action=index" class="nav-item nav-link active m-auto">Home</a>
                 <a href="index.php?page=main&controller=about&action=index" class="nav-item nav-link m-auto">About</a>
-                <a href="index.php?page=main&controller=services&action=index" class="nav-item nav-link m-auto">Product</a>
+                <a href="index.php?page=main&controller=paginate&action=index" class="nav-item nav-link m-auto">Product</a>
             </div>
             <div class="navbar-nav ml-auto">
                 <?php

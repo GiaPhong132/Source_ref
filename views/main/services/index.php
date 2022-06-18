@@ -8,7 +8,13 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BKBLUE</title>
+
+
+
+
+
+
 </head>
 
 <body>
@@ -117,7 +123,7 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
 
                     <input id="page" type="number" min="1" max="<?php echo $total_pages ?>" placeholder="<?php echo $page_number . "/" . $total_pages; ?>" required>
 
-                    <button onClick="go2Page();">Go</button>
+                    <button onClick="go2Page();" style="color: green;">Go</button>
 
                 </div>
 
