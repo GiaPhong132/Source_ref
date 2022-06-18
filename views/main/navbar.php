@@ -2,6 +2,7 @@
 session_start();
 if (isset($_SESSION['guest'])) {
     require_once('/xampp/htdocs/Source_code/models/user.php');
+
     $data = User::get($_SESSION['guest']);
 }
 ?>
@@ -110,7 +111,7 @@ if (isset($_SESSION['guest'])) {
 
                     echo '
                      ' . $data->lname . '<b class="caret"></b></a>
-                    <div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
+                    <div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a></a>
                         ';
                 } else if (isset($_SESSION['user'])) {
                     echo  '
@@ -122,7 +123,7 @@ if (isset($_SESSION['guest'])) {
                 <?php
                 if (isset($_SESSION['user']))
                     echo '
-                                <a href="index.php?page=admin&controller=layouts&action=index" class="dropdown-item"><i class="fa fa-sliders"></i> Admin</a>
+                                <a href="index.php?page=admin&controller=members&action=index" class="dropdown-item"><i class="fa fa-sliders"></i> Admin</a>
                                 ';
                 ?>
 
