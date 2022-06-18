@@ -26,16 +26,15 @@ class Product
         $db = DB::getInstance();
         $req = $db->query("SELECT * FROM product");
         $products = [];
-        foreach ($req->fetch_all(MYSQLI_ASSOC) as $product)
-        {
+        foreach ($req->fetch_all(MYSQLI_ASSOC) as $product) {
             $products[] = new Product(
-                $product['id'],
-                $product['name'],
-                $product['price'],
-                $product['description'],
-                $product['reviews'],
-                $product['img'],
-                $product['rating']
+                @$product['id'],
+                @$product['name'],
+                @$product['price'],
+                @$product['description'],
+                @$product['reviews'],
+                @$product['img'],
+                @$product['rating']
             );
         }
         return $products;
@@ -63,7 +62,8 @@ class Product
         $db = DB::getInstance();
         $req = $db->query(
             "INSERT INTO product (name, price, description, reviews, img, rating)
-            VALUES ('$name', $price, '$description', '$reviews', '$img', '$rating');");
+            VALUES ('$name', $price, '$description', '$reviews', '$img', '$rating');"
+        );
         return $req;
     }
 
@@ -82,7 +82,7 @@ class Product
                 UPDATE product
                 SET name = '$name', price = $price, description = '$description', reviews = '$reviews', img = '$img' , rating = '$rating',
                 WHERE id = $id
-            ;");
+            ;"
+        );
     }
 }
-?>

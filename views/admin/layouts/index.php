@@ -25,7 +25,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                 </div>
                 <div class="col-sm-4">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item"><a href="index.php?page=main&controller=layouts&action=index">Home</a></li>
                         <li class="breadcrumb-item active">Widgets</li>
                     </ol>
                 </div>
@@ -57,7 +57,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                 </div>
                 <!-- /.row -->
             </div>
-                
+
         </div><!-- /.container-fluid -->
     </section>
     <!-- /.content -->
