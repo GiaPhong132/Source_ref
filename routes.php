@@ -19,8 +19,15 @@ $controllers = array(
     'about' => ['index'],
     'services' => ['index'],
     'register' => ['index', 'submit', 'editInfo'],
-    'profile' => ['index', 'editInfo']
+    'profile' => ['index', 'editInfo'],
+
+
+
+    'paginate' => ['index']
+
 );
+
+
 
 if (!array_key_exists($page, $pages) || !array_key_exists($controller, $controllers) || !in_array($action, $controllers[$controller])) {
     $page = 'error';
