@@ -145,6 +145,30 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                             <input class="form-control" type="text" name="new-email" value='.$x->email.' />
                                                         </div>
                                                         <div class="form-group">
+                                                            <label>First name</label>
+                                                            <input class="form-control" type="text" name="new-fname" value="'.$x->fname.'" />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Last name</label>
+                                                            <input class="form-control" type="text" name="new-lname" value="'.$x->lname.'" />
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Age</label>
+                                                            <input class="form-control" type="text" name="new-age" value="'.$x->age.'"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Phone number</label>
+                                                            <input class="form-control" type="number" name="new-age" value="'.$x->phone.'"/>
+                                                        </div>
+                                                        <div class="form-group">
+                                                            <label>Gender</label>
+                                                            <br>
+                                                            <input type="radio" id="Male" name="gender" checked value="1">
+                                                            <label>Male</label>
+                                                            &nbsp;&nbsp;&nbsp;<input type="radio" id="Female" name="gender" value="0">
+                                                            <label>Female</label>
+                                                        </div>
+                                                        <div class="form-group">
                                                             <label>Password</label>
                                                             <input class="form-control" type="password" name="new-password" />
                                                         </div>

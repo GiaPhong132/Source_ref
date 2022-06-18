@@ -47,37 +47,37 @@
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Email is required">
                         <span class="label-input100">Email</span>
-                        <input class="input100" type="text" name="email" placeholder="Type your email">
+                        <input class="input100" required type="text" name="email" placeholder="Type your email">
                         <span class="focus-input100" data-symbol="&#9993;"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="First is required">
                         <span class="label-input100">First Name</span>
-                        <input class="input100" type="text" name="first_name" placeholder="Type your first name">
+                        <input class="input100" required type="text" name="first_name" placeholder="Type your first name">
                         <span class="focus-input100" data-symbol="&#xf206;"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Last name is required">
                         <span class="label-input100">Last name</span>
-                        <input class="input100" type="text" name="last_name" placeholder="Type your last name">
+                        <input class="input100"  required type="text" name="last_name" placeholder="Type your last name">
                         <span class="focus-input100" data-symbol="&#xf206;"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Age is required">
                         <span class="label-input100">Age</span>
-                        <input class="input100" type="text" name="age" placeholder="Type your age">
+                        <input class="input100" required type="text" name="age" placeholder="Type your age">
                         <span class="focus-input100" data-symbol="&#9881;"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Phone number is required">
                         <span class="label-input100">Phone number</span>
-                        <input class="input100" type="text" name="phone_number" placeholder="Type your phone number">
+                        <input class="input100" required type="text" name="phone_number" placeholder="Type your phone number">
                         <span class="focus-input100" data-symbol="&#9742;"></span>
                     </div>
 
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <span class="label-input100">Password</span>
-                        <input onkeyup='check();' class="input100" type="password" name="password" placeholder="Type your password">
+                        <input onkeyup='check();' required class="input100" type="password" name="password" placeholder="Type your password">
                         <span style="color: rgb(0, 0, 0);" class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
 
@@ -85,7 +85,7 @@
                     <div class="wrap-input100 validate-input" data-validate="Password is required">
                         <span class="label-input100">Retype Password</span>
                         <span id='message'></span>
-                        <input onkeyup='check();' class="input100" type="password" name="retype_password" placeholder="Retype your password">
+                        <input onkeyup='check();' required class="input100" type="password" name="retype_password" placeholder="Retype your password">
                         <span class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
 
@@ -103,11 +103,6 @@
                     <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
                         <input class="form-check-input" type="radio" name="gender" value="0">
                         <label class="form-check-label">Female</label>
-                    </div>
-
-                    <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
-                        <input class="form-check-input" type="radio" name="gender" value="1">
-                        <label class="form-check-label">Other</label>
                     </div>
 
                     <div class="text-right p-t-8 p-b-31">
