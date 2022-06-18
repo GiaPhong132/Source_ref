@@ -24,6 +24,14 @@ class RegisterController extends BaseController
         $email = $_POST['email'];
         $password = $_POST['password'];
         $retype_pass = $_POST['retype_password'];
+
+        // $check_account_appear = User::get($email);
+
+        // if ($check_account_appear != NULL) {
+
+        // }
+
+
         if ($password != $retype_pass) {
             header('Location: index.php?page=main&controller=register&action=index');
         } else {
