@@ -125,64 +125,93 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         echo "<td>" . $x->age . "</td>";
                                         echo "<td>";
                                         if ($x->gender == 1) echo "Male</td>";
-                                        else echo "Female</td>";
+                                        else if ($x->gender == 0) echo "Female</td>";
+                                        else echo "Other</td>";
                                         echo "<td>" . $x->phone . "</td>";
                                         echo "<td>" . $x->updateAt . "</td>";
                                         echo "<td>
 											<button type='button' data-toggle='modal' data-target='#EditAdminModal$index' class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-edit'></i></button>";
-										echo '
-                                        <div class="modal fade" id="EditAdminModal'.$index.'" tabindex="-1" role="dialog" aria-labelledby="EditAdminModal'.$index.'" aria-hidden="true">
+                                        echo '
+                                        <div class="modal fade" id="EditAdminModal' . $index . '" tabindex="-1" role="dialog" aria-labelledby="EditAdminModal' . $index . '" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
                                                     <h5 class="modal-title">Chỉnh sửa</h5>
                                                     <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form action="index.php?page=admin&controller=user&action=editPass" method="post">
+                                                <form action="index.php?page=admin&controller=members&action=edit" method="POST">
                                                     <div class="modal-body">
                                                         <div class="form-group">
                                                             <label>Email</label>
-                                                            <input class="form-control" type="text" name="new-email" value='.$x->email.' />
+                                                            <input class="form-control" type="text" readonly name="email" value=' . $x->email . ' />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>First name</label>
-                                                            <input class="form-control" type="text" name="new-fname" value="'.$x->fname.'" />
+                                                            <input class="form-control" type="text" name="fname" value="' . $x->fname . '" />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Last name</label>
-                                                            <input class="form-control" type="text" name="new-lname" value="'.$x->lname.'" />
+                                                            <input class="form-control" type="text" name="lname" value="' . $x->lname . '" />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Age</label>
-                                                            <input class="form-control" type="text" name="new-age" value="'.$x->age.'"/>
+                                                            <input class="form-control" type="text" name="age" value="' . $x->age . '"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Phone number</label>
-                                                            <input class="form-control" type="number" name="new-age" value="'.$x->phone.'"/>
+                                                            <input class="form-control" type="number" name="phone" value="' . $x->phone . '"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Gender</label>
                                                             <br>
+                                                            ';
+                                        if ($x->gender == 1) {
+                                            echo '
                                                             <input type="radio" id="Male" name="gender" checked value="1">
                                                             <label>Male</label>
                                                             &nbsp;&nbsp;&nbsp;<input type="radio" id="Female" name="gender" value="0">
                                                             <label>Female</label>
+                                                            <input type="radio" id="Other" name="gender"  value="-1">
+                                                            <label>Other</label>
+
+                                                            ';
+                                        } else if ($x->gender == 0) {
+                                            echo '
+                                            <input type="radio" id="Male" name="gender"  value="1">
+                                                            <label>Male</label>
+                                                            &nbsp;&nbsp;&nbsp;<input type="radio" id="Female" checked name="gender" value="0">
+                                                            <label>Female</label>
+                                                            <input type="radio" id="Other" name="gender"  value="-1">
+                                                            <label>Other</label>
+                                      ';
+                                        } else {
+                                            echo '
+                                            <input type="radio" id="Male" name="gender"  value="1">
+                                                            <label>Male</label>
+                                                            &nbsp;&nbsp;&nbsp;<input type="radio" id="Female"  name="gender" value="0">
+                                                            <label>Female</label>
+                                                            <input type="radio" id="Other" name="gender" checked value="-1">
+                                                            <label>Other</label>
+                                      ';
+                                        }
+
+                                        echo '
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Password</label>
-                                                            <input class="form-control" type="password" name="new-password" />
+                                                            <input class="form-control" type="password" name="password" />
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
-                                                        <button class="btn btn-primary" type="submit" href="index.php?page=admin&controllers=members&action=changePassword">Cập nhật</button>
+                                                        <button class="btn btn-primary" type="submit" >Cập nhật</button>
                                                     </div>
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
                                         ';
-                                        
+
                                         echo "<button type='button' data-toggle='modal' data-target='#DeleteAdminModal$index' class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-trash'></i></button>
                                         </td>
                                         <div class='modal fade' id='DeleteAdminModal$index' tabindex='-1' role='dialog' aria-labelledby='DeleteAdminModal$index' aria-hidden='true'>
@@ -210,7 +239,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                     </div>
                                         ";
                                         echo "
-                                        
+
                                         ";
                                         echo "</tr>";
                                     }
@@ -265,7 +294,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                     </div>
                                 </div>
                             </div> -->
-                        
+
                         </div>
                     </div>
                 </div>

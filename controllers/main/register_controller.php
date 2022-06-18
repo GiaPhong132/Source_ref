@@ -28,11 +28,16 @@ class RegisterController extends BaseController
         $phone = $_POST['phone_number'];
         $email = $_POST['email'];
         $password = $_POST['password'];
+        $retype_password = $_POST['password'];
 
-        session_start();
-        $_SESSION['guest'] = $email;
-        User::insert($email, 'public2/images/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
-        header('Location: index.php?page=main&controller=layouts&action=index');
+        if ($password != $retype_password) {
+            header('Location: index.php?page=main&controller=register&action=index');
+        } else {
+            session_start();
+            $_SESSION['guest'] = $email;
+            User::insert($email, 'public2/images/user/defau.png', $fname, $lname, $gender, $age, $phone, $password);
+            header('Location: index.php?page=main&controller=layouts&action=index');
+        }
     }
 
 
