@@ -142,7 +142,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                     <div class="modal-body">
                                                         <div class="form-group">
                                                             <label>Email</label>
-                                                            <input class="form-control" type="text" name="email" value=' . $x->email . ' />
+                                                            <input class="form-control" type="text" readonly name="email" value=' . $x->email . ' />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>First name</label>

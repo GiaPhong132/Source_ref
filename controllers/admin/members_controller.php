@@ -23,7 +23,7 @@ class MembersController extends BaseController
         $phone = $_POST['phone_number'];
         $email = $_POST['email'];
         $password = $_POST['password'];
-        User::insert($email, 'public/img/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
+        User::insert($email, 'public2/images/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
         header('Location: index.php?page=admin&controller=members&action=index');
     }
     public function getAll()
