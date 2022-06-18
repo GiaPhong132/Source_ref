@@ -49,7 +49,7 @@ INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) V
 INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
 (5, 2100, 'Vim', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/vim.png');
 INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
-(6, 7200, 'Eclipse', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/eclipse.jpg');
+(6, 7200, 'Eclipse', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/eclipse.png');
 INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
 (7, 4000, 'Sublime', 'Powerful', 'Đây là một sản phẩm đến từ BKBLUE', 'public2/images/product/sublime.png');
 INSERT INTO `product` (`id`, `price`, `name`, `description`, `content`, `img`) VALUES
