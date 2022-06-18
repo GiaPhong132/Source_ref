@@ -133,6 +133,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                             <btn class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-trash'></i></btn>
                                             </td>";
                                         echo "</tr>";
+                                    }
                                     ?>
                                 </tbody>
                             </table>
@@ -185,7 +186,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                     </div>
                                 </div>
                             </div>
-                        <?php } ?>
+                        
                         </div>
                     </div>
                 </div>
