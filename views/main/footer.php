@@ -53,11 +53,27 @@
                 Designed by <a href="index.php?page=admin&controller=layouts&action=index">BKBLUE</a>
             </div>
             <!-- Back to top button -->
-            <a href="#" class="btn back-to-top"><i class="fa fa-chevron-up"></i></a>
+            <!-- <a href="#" class="btn back-to-top"></a> -->
+<script>
+    window.onscroll = function() {
+        scrollFunction()};
 
+    function scrollFunction() {
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+            document.getElementById("src-top").style.display = "block";
+        } else {
+            document.getElementById("src-top").style.display = "none";
+        }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+        $('html, body').animate({scrollTop:0}, '400');
+}
+</script>
 
 </footer><!-- End Footer -->
-
+<button onclick="topFunction()" id="src-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -70,16 +86,16 @@
 <script type="text/javascript" src="/Source_code/public2/js/custom.js"></script>
 
 <!-- JAVASCRIPTS -->
-<!-- <script src="plugins/jquery/jquery.js"></script>
-  <script src="plugins/popper/popper.min.js"></script>
-  <script src="plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="plugins/owl-carousel/owl.carousel.min.js"></script>
-  <script src="plugins/fancybox/jquery.fancybox.min.js"></script>
-  <script src="plugins/syotimer/jquery.syotimer.min.js"></script>
-  <script src="plugins/aos/aos.js"></script>
+<script src="/Source_code/public2/plugins/jquery/jquery.js"></script>
+  <script src="/Source_code/public2/plugins/popper/popper.min.js"></script>
+  <script src="/Source_code/public2/plugins/bootstrap/bootstrap.min.js"></script>
+  <script src="/Source_code/public2/plugins/owl-carousel/owl.carousel.min.js"></script>
+
+  <script src="/Source_code/public2/plugins/syotimer/jquery.syotimer.min.js"></script>
+  <script src="/Source_code/public2/plugins/aos/aos.js"></script>
 
 
-  <script src="js/custom.js"></script> -->
+  <script src="/Source_code/public2/js/custom.js"></script>
 
 
 </body>

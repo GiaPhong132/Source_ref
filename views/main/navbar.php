@@ -19,12 +19,14 @@ if (isset($_SESSION['guest'])) {
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <!-- <script type="text/javascript" src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>    -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 
 
     <!-- Nếu ko chạy đc drop down thì đặt hoặc bỏ comment cái này -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
 
 
     <!-- icon -->
@@ -36,7 +38,7 @@ if (isset($_SESSION['guest'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap -->
-    <link href="/Source_code/public2/plugins/bootstrap/bootstrap.min.css" rel="stylesheet">
+    <!-- <link href="/Source_code/public2/plugins/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
     <!-- themify icon -->
     <link rel="stylesheet" href="/Source_code/public2/plugins/themify-icons/themify-icons.css">
     <!-- Owl Carousel -->
@@ -52,20 +54,13 @@ if (isset($_SESSION['guest'])) {
     <link href="/Source_code/public2/css/layout/navbar.css" rel="stylesheet">
     <link href="/Source_code/public2/css/layout/footer.css" rel="stylesheet">
     <link href="/Source_code/public2/css/layout/hero.css" rel="stylesheet">
-    <link href="/Source_code/views/main/about/css/style.css" rel="stylesheet">
     <link href="/Source_code/public2/css/layout/product.css" rel="stylesheet">
-    <!-- <link href="/Source_code/views/main/about/css/style.css" rel="stylesheet"> -->
     <link href="/Source_code/public2/css/layout/timeline.css" rel="stylesheet">
     <link href="/Source_code/public2/css/layout/profile.css" rel="stylesheet">
     <!-- <link href="/Source_code/public2/css/layout/stlye.css" rel="stylesheet"> -->
     <!-- <link href="/Source_code/public2/css/layout/main.css" rel="stylesheet"> -->
     <!-- <link href="/Source_code/public2/css/layout/about.css" rel="stylesheet">  -->
-    <!--
-    <link href="/Source_code/public2/css/layout/wedo.css" rel="stylesheet"> -->
-    <!-- <link href="/Source_code/public2/css/layout/responsive.css" rel="stylesheet"> -->
-    <!-- <link href="/Source_code/public2/css/layout/services.css" rel="stylesheet">
-    <link href="/Source_code/public2/css/layout/info.css" rel="stylesheet">-->
-    <!-- <link href="/Source_code/public2/css/layout/timeline.css" rel="stylesheet"> -->
+
 
 
 

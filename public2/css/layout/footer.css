@@ -147,10 +147,27 @@
     z-index: 9;
   }
   
-   .back-to-top i {
-    color: #ffffff;
-  }
-  
-   .back-to-top:hover i {
-    color: #414141;
-  }
+  #src-top {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    right: 43px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    background-color: rgb(65, 134, 157);
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+    height: 45px;
+    align-items: center;
+    opacity: 50%;
+}
+
+#src-top:hover {
+  background-color: deepskyblue;
+  transform: scale(1.1);
+  opacity: 100;
+}
