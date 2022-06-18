@@ -34,7 +34,7 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
     <form action="index.php?page=main&controller=profile&action=editInfo" enctype="multipart/form-data" method="POST">
 
         <div class="row">
-            <div class="col-md-3 border-right">
+            <div class="col-md-4 border-right">
                 <div class="d-flex flex-column align-items-center text-center p-3 py-5">
 
 
@@ -44,8 +44,8 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
                     <!-- <img class="rounded-circle mt-5" width="150px" src="$data->profile_photo" alt="avatar"> -->
 
                     <br>
-                    <span class="font-weight-bold"><?php echo $data->fname . ' ' . $data->lname; ?></span>
-                    <span class="text-black-50"><?php echo $data->email ?></span>
+                    <span class="font-weight-bold"><?php echo  $data->lname; ?></span>
+                    <!-- <span class="text-black-50"><?php echo $data->email ?></span> -->
                 </div>
 
             </div>
@@ -134,12 +134,12 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
                     </div>
 
                     <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
-                        <input class="form-check-input" type="radio" name="gender" value="0" checked>
+                        <input class="form-check-input" type="radio" name="gender" value="0" >
                         <label class="form-check-label">Female</label>
                     </div>
 
                     <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
-                        <input class="form-check-input" type="radio" name="gender" value="-1">
+                        <input class="form-check-input" type="radio" name="gender" checked value="-1">
                         <label class="form-check-label">Other</label>
                     </div>
                         ';

@@ -48,18 +48,17 @@ class Product
             $result['price'],
             $result['description'],
             $result['content'],
-            $result['img'],
-            $result['rating']
+            $result['img']
         );
         return $product;
     }
 
-    static function insert($name, $price, $description, $content, $img, $rating)
+    static function insert($name, $price, $description, $content, $img)
     {
         $db = DB::getInstance();
         $req = $db->query(
-            "INSERT INTO product (name, price, description, content, img, rating)
-            VALUES ('$name', $price, '$description', '$content', '$img', '$rating');"
+            "INSERT INTO product (name, price, description, content, img)
+            VALUES ('$name', $price, '$description', '$content', '$img');"
         );
         return $req;
     }
@@ -71,15 +70,13 @@ class Product
         return $req;
     }
 
-    static function update($id, $name, $price, $description, $content, $img, $rating)
+    static function update($id, $name, $price, $description, $content, $img)
     {
         $db = DB::getInstance();
         $req = $db->query(
-            "
-                UPDATE product
-                SET name = '$name', price = $price, description = '$description', content = '$content', img = '$img' , rating = '$rating',
-                WHERE id = $id
-            ;"
+            "  UPDATE product
+                SET name = '$name', price = $price, description = '$description', content = '$content', img = '$img'
+                WHERE id = $id;"
         );
     }
 }

@@ -54,26 +54,29 @@
             </div>
             <!-- Back to top button -->
             <!-- <a href="#" class="btn back-to-top"></a> -->
-<script>
-    window.onscroll = function() {
-        scrollFunction()};
+            <script>
+                window.onscroll = function() {
+                    scrollFunction()
+                };
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-            document.getElementById("src-top").style.display = "block";
-        } else {
-            document.getElementById("src-top").style.display = "none";
-        }
-    }
+                function scrollFunction() {
+                    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+                        document.getElementById("src-top").style.display = "block";
+                    } else {
+                        document.getElementById("src-top").style.display = "none";
+                    }
+                }
 
-    // When the user clicks on the button, scroll to the top of the document
-    function topFunction() {
-        $('html, body').animate({scrollTop:0}, '400');
-}
-</script>
+                // When the user clicks on the button, scroll to the top of the document
+                function topFunction() {
+                    $('html, body').animate({
+                        scrollTop: 0
+                    }, '400');
+                }
+            </script>
 
 </footer><!-- End Footer -->
-<button onclick="topFunction()" id="src-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
+<!-- <button onclick="topFunction()" id="src-top" title="Go to top"><i class="fa fa-chevron-up"></i></button> -->
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
@@ -87,15 +90,15 @@
 
 <!-- JAVASCRIPTS -->
 <script src="/Source_code/public2/plugins/jquery/jquery.js"></script>
-  <script src="/Source_code/public2/plugins/popper/popper.min.js"></script>
-  <script src="/Source_code/public2/plugins/bootstrap/bootstrap.min.js"></script>
-  <script src="/Source_code/public2/plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="/Source_code/public2/plugins/popper/popper.min.js"></script>
+<script src="/Source_code/public2/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="/Source_code/public2/plugins/owl-carousel/owl.carousel.min.js"></script>
 
-  <script src="/Source_code/public2/plugins/syotimer/jquery.syotimer.min.js"></script>
-  <script src="/Source_code/public2/plugins/aos/aos.js"></script>
+<script src="/Source_code/public2/plugins/syotimer/jquery.syotimer.min.js"></script>
+<script src="/Source_code/public2/plugins/aos/aos.js"></script>
 
 
-  <script src="/Source_code/public2/js/custom.js"></script>
+<script src="/Source_code/public2/js/custom.js"></script>
 
 
 </body>

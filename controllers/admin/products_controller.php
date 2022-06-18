@@ -29,8 +29,7 @@ class ProductsController extends BaseController
                 $x['name'],
                 $x['description'],
                 $x['review'],
-                $x['img'],
-                $x['rating']
+                $x['img']
             );
         }
         return $data;
@@ -44,8 +43,7 @@ class ProductsController extends BaseController
         $description = $_POST['description'];
         $content = $_POST['content'];
         // $img = $_POST['img'];
-        $rating = 0;
-        $target_dir = "public2/img/products/";
+        $target_dir = "public2/images/product/";
         $path = $_FILES['fileToUpload']['name'];
         $ext = pathinfo($path, PATHINFO_EXTENSION);
         $fileuploadname .= ".";
@@ -77,17 +75,18 @@ class ProductsController extends BaseController
         $fileuploadname = (string)$code;
         $name = $_POST['name'];
         $price = $_POST['price'];
+        $content = $_POST['content'];
         $description = $_POST['description'];
-        $reviews = $_POST['reviews'];
-        $rating = $_POST['rating'];
+
+
         $urlcurrent = Product::get((int)$id)->img;
         if (!isset($_FILES["fileToUpload"]) || $_FILES['fileToUpload']['tmp_name'][0] == "") {
-            Product::update($id, $name, $price, $description, $reviews, $urlcurrent, $rating);
+            Product::update($id, $name, $price, $description, $content, $urlcurrent);
             echo "Dữ liệu upload bị lỗi";
             header('Location: index.php?page=admin&controller=products&action=index');
             die;
         } else {
-            $target_dir = "public2/img/products/";
+            $target_dir = "public2/images/product/";
             $path = $_FILES['fileToUpload']['name'];
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             $fileuploadname .= ".";
@@ -105,16 +104,17 @@ class ProductsController extends BaseController
                 echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
                 $upload_ok = 0;
             }
-            if ($_FILES["fileToUpload"]["size"] > 500000) {
+            if ($_FILES["fileToUpload"]["size"] > 5000000) {
                 echo "Sorry, your file is too large.";
             }
             $file_pointer = $urlcurrent;
-            unlink($file_pointer);
+            @unlink($file_pointer);
             move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
-            Product::update($id, $name, $price, $description, $reviews, $target_file, $rating);
+            Product::update($id, $name, $price, $description, $content, $target_file);
             header('Location: index.php?page=admin&controller=products&action=index');
         }
     }
+
     public function delete()
     {
         $id = $_POST['id'];

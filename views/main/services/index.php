@@ -61,7 +61,7 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
                     <h6 class='media-title font-weight-semibold'>
                         <a href='#' data-abc='true'>" . $row['name'] . "</a>
                     </h6>
-                    <p class='mb-3'>" . $row['description'] . "</p>";
+                    <p class='mb-3'></p>";
 
                                     echo '
             <p>' . $row['content'] . '</p>

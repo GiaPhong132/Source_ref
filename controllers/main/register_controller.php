@@ -32,7 +32,7 @@ class RegisterController extends BaseController
         $retype_password = $_POST['retype_password'];
 
         if ($password != $retype_password) {
-            $err = "Sai tài khoản hoặc mật khẩu";
+            $err = "Mật khẩu được nhập lại không khớp";
             $data = array('err' => $err);
             $this->render('index', $data);
         } else {

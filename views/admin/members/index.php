@@ -84,6 +84,9 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
                                                     <input type="radio" name="gender" value="0">
                                                     <label class="form-check-label">Female</label>
+
+                                                    <input type="radio" name="gender" value="-1">
+                                                    <label class="form-check-label">Other</label>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Password</label>
