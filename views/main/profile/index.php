@@ -43,9 +43,7 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
                     ?>
                     <!-- <img class="rounded-circle mt-5" width="150px" src="$data->profile_photo" alt="avatar"> -->
 
-                    <input type="file" name="fileToUpload" id="fileToUpload">
-
-
+                    <br>
                     <span class="font-weight-bold"><?php echo $data->fname . ' ' . $data->lname; ?></span>
                     <span class="text-black-50"><?php echo $data->email ?></span>
                 </div>
@@ -148,7 +146,9 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
                     }
 
                     ?>
-
+                    <div class="row mt-4">
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+                </div>
                     <div class="row mt-3">
                         <div class="mt-5 text-center">
                             <button class="btn btn-primary profile-button" type="submit">Save Profile</button>
