@@ -23,7 +23,14 @@
             <div class="col-md-6 order-2 order-md-1 text-center text-md-left">
                 <h1 class="text-white font-weight-bold mb-4">Beautiful And Powerful Environment Development</h1>
                 <p class="text-white mb-5">A wide range of tools and integrations for any team</p>
-                <a href="index.php?page=main&controller=register&action=index" class="btn btn-main">get started</a>
+                <?php if(!isset($_SESSION['guest'])){ 
+                    echo "<a href='index.php?page=main&controller=register&action=index' class='btn btn-main'>get started</a>";
+                }
+                else{
+                    echo "<a href='index.php?page=main&controller=services&action=index' class='btn btn-main'>Buy now</a>";
+              
+                }
+                  ?>
             </div>
             <div class="col-md-6 text-center order-1 order-md-2">
                 <img class="img-fluid" src="/Source_code/public2/images/visual.png" alt="screenshot">

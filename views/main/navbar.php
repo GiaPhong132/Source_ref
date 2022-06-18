@@ -75,16 +75,16 @@ if (isset($_SESSION['guest'])) {
         <!-- Collection of nav links, forms, and other content for toggling -->
         <div id="navbarCollapse" class="collapse navbar-collapse justify-content-start">
             <div class="navbar-nav">
-                <a href="index.php?page=main&controller=layouts&action=index" class="nav-item nav-link active">Home</a>
-                <a href="index.php?page=main&controller=about&action=index" class="nav-item nav-link">About</a>
-                <a href="index.php?page=main&controller=services&action=index" class="nav-item nav-link">Product</a>
+                <a href="index.php?page=main&controller=layouts&action=index" class="nav-item nav-link active m-auto">Home</a>
+                <a href="index.php?page=main&controller=about&action=index" class="nav-item nav-link m-auto">About</a>
+                <a href="index.php?page=main&controller=services&action=index" class="nav-item nav-link m-auto">Product</a>
             </div>
             <div class="navbar-nav ml-auto">
                 <?php
                 if (!isset($_SESSION['guest']) && !isset($_SESSION['user']))
                     echo '
-                    <a href="index.php?page=main&controller=login&action=index" class="nav-item nav-link ">Sign In</a>
-                    <a href="index.php?page=main&controller=register&action=index" class="nav-item nav-link">Sign Up</a>
+                    <a href="index.php?page=main&controller=login&action=index" class="nav-item nav-link m-auto">Sign In</a>
+                    <a href="index.php?page=main&controller=register&action=index" class="nav-item nav-link m-auto">Sign Up</a>
                     '
                 ?>
 
@@ -92,7 +92,7 @@ if (isset($_SESSION['guest'])) {
                 if (isset($_SESSION['guest'])) {
                     echo
                     '
-                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">';
+                    <div class="nav-item dropdown m-auto"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action">';
 
                     // <img src="$data->profile_photo" class="avatar" alt="Avatar">
                     echo "<img src='$data->profile_photo' >";
@@ -100,11 +100,11 @@ if (isset($_SESSION['guest'])) {
 
                     echo '
                      ' . $data->lname . '<b class="caret"></b></a>
-                    <div class="dropdown-menu"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a></a>
+                    <div class="dropdown-menu m-auto"><a href="index.php?page=main&controller=profile&acion=index" class="dropdown-item"><i class="fa-solid fa-user"></i> Profile</a></a></a>
                         ';
                 } else if (isset($_SESSION['user'])) {
                     echo  '
-                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Admin<b class="caret"></b></a><div class="dropdown-menu"></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
+                    <div class="nav-item dropdown m-auto"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Admin<b class="caret"></b></a><div class="dropdown-menu"></a><a href="#" class="dropdown-item"><i class="fa-solid fa-calendar"></i> Calendar</a></a>
                         ';
                 }
                 ?>
