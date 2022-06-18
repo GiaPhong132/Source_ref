@@ -218,7 +218,3 @@ require_once('/xampp/htdocs/Source_code/views/admin/footer.php'); ?>
 </body>
 
 </html>
-
-    <!-- Add Content -->
-    <!-- Content Header (Page header)-->
-pt" src="/Source_code/public2/js/admin.js"></script>
