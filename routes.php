@@ -7,8 +7,9 @@ $pages = array(
 $controllers = array(
     'errors' => ['index'],
     'layouts' => ['index'],
-    'members' => ['index', 'addUser', 'changePassword', 'getAll'],
-    'products' => ['index', 'add', 'edit', 'delete','getAll'],
+
+    'members' => ['index', 'addUser', 'edit', 'getAll'],
+    'products' => ['index', 'add', 'edit', 'delete', 'getAll'],
     'news' => ['index', 'add', 'edit', 'delete', 'hide'],
     'comments' => ['index', 'hide', 'add', 'edit', 'delete'],
     'admin' => ['index', 'add', 'edit', 'delete'],

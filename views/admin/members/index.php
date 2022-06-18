@@ -130,8 +130,8 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         echo "<td>" . $x->updateAt . "</td>";
                                         echo "<td>
 											<button type='button' data-toggle='modal' data-target='#EditAdminModal$index' class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-edit'></i></button>";
-										echo '
-                                        <div class="modal fade" id="EditAdminModal'.$index.'" tabindex="-1" role="dialog" aria-labelledby="EditAdminModal'.$index.'" aria-hidden="true">
+                                        echo '
+                                        <div class="modal fade" id="EditAdminModal' . $index . '" tabindex="-1" role="dialog" aria-labelledby="EditAdminModal' . $index . '" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
                                             <div class="modal-content">
                                                 <div class="modal-header">
@@ -142,23 +142,23 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                     <div class="modal-body">
                                                         <div class="form-group">
                                                             <label>Email</label>
-                                                            <input class="form-control" type="text" name="new-email" value='.$x->email.' />
+                                                            <input class="form-control" type="text" name="new-email" value=' . $x->email . ' />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>First name</label>
-                                                            <input class="form-control" type="text" name="new-fname" value="'.$x->fname.'" />
+                                                            <input class="form-control" type="text" name="new-fname" value="' . $x->fname . '" />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Last name</label>
-                                                            <input class="form-control" type="text" name="new-lname" value="'.$x->lname.'" />
+                                                            <input class="form-control" type="text" name="new-lname" value="' . $x->lname . '" />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Age</label>
-                                                            <input class="form-control" type="text" name="new-age" value="'.$x->age.'"/>
+                                                            <input class="form-control" type="text" name="new-age" value="' . $x->age . '"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Phone number</label>
-                                                            <input class="form-control" type="number" name="new-age" value="'.$x->phone.'"/>
+                                                            <input class="form-control" type="number" name="new-age" value="' . $x->phone . '"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Gender</label>
@@ -175,14 +175,14 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                     </div>
                                                     <div class="modal-footer">
                                                         <button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng lại</button>
-                                                        <button class="btn btn-primary" type="submit" href="index.php?page=admin&controllers=members&action=changePassword">Cập nhật</button>
+                                                        <button class="btn btn-primary" type="submit" href="index.php?page=admin&controllers=members&action=edit">Cập nhật</button>
                                                     </div>
                                                 </form>
                                             </div>
                                         </div>
                                     </div>
                                         ';
-                                        
+
                                         echo "<button type='button' data-toggle='modal' data-target='#DeleteAdminModal$index' class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-trash'></i></button>
                                         </td>
                                         <div class='modal fade' id='DeleteAdminModal$index' tabindex='-1' role='dialog' aria-labelledby='DeleteAdminModal$index' aria-hidden='true'>
@@ -210,7 +210,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                     </div>
                                         ";
                                         echo "
-                                        
+
                                         ";
                                         echo "</tr>";
                                     }
@@ -265,7 +265,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                     </div>
                                 </div>
                             </div> -->
-                        
+
                         </div>
                     </div>
                 </div>
