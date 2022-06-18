@@ -116,6 +116,7 @@ body {
 .navbar .active a, .navbar .active a:hover, .navbar .active a:focus {
   background: transparent !important;
 }
+
 @media (min-width: 1200px){
   .form-inline .input-group {
       width: 300px;

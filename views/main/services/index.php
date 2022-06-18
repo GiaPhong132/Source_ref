@@ -37,7 +37,7 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
                         <img src='/Source_code/"  . $row->img . "'width='150' height='150'>
                     </div>
                     <div class='media-body'>
-                            <h6 class='media-title font-weight-semibold'>
+                            <h6 class='media-title '>
                                 <a href='#' data-abc='true'>" . $row->name . "</a>
                             </h6>
                             <p class='mb-3'>" . $row->description . "</p>";
