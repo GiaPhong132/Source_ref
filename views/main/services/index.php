@@ -38,17 +38,23 @@
                             <h6 class='media-title font-weight-semibold'>
                                 <a href='#' data-abc='true'>" . $row->name . "</a>
                             </h6>
-                            <p class='mb-3'>" . $row->description . "</p>
-                    </div>
+                            <p class='mb-3'>" . $row->description . "</p>";
+
+                    echo '
+                    <p>' . $row->content . '</p>
+                    ';
+
+                    echo "
+                            </div>
                     <div class='mt-3 mt-lg-0 ml-lg-3 text-center'>
                             <h3 class='mb-0 font-weight-semibold'>$" . $row->price . "/year</h3>
                             <div>";
-                    for ($i = 0; $i < $row->rating; $i++) {
-                        echo " <i class='fa fa-star'></i>";
-                    }
+                    // for ($i = 0; $i < $row->rating; $i++) {
+                    //     echo " <i class='fa fa-star'></i>";
+                    // }
                     echo "
                             </div>
-                            <div class='text-muted'>" . $row->reviews . " reviews</div>
+                            <div class='text-muted'>" . $row->content . "</div>
                             <button type='button' class='btn btn-warning mt-4 text-white'><i class='icon-cart-add mr-2'></i> Download Now</button>
                         </div>
                 </div>
