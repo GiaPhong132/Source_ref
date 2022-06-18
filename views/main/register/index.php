@@ -96,7 +96,7 @@
                     </div>
 
                     <div class="form-check form-check-inline" style="padding-left: 1cm;">
-                        <input class="form-check-input" type="radio" name="gender" value="1">
+                        <input class="form-check-input" type="radio" name="gender" value="1" checked>
                         <label class="form-check-label">Male</label>
                     </div>
 
@@ -160,6 +160,13 @@
                 document.getElementById('message').style.color = 'red';
                 document.getElementById('message').innerHTML = 'Not matching';
             }
+        }
+
+        function checkInput()
+        {
+            var $fname = document.getElementsByName('fname');
+            if($fname[0] == '') alert('First name cant be empty!');
+            
         }
     </script>
 
