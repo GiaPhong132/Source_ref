@@ -47,7 +47,8 @@
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Email is required">
                         <span class="label-input100">Email</span>
-                        <input class="input100" required type="text" name="email" placeholder="Type your email">
+                        <span id='email_warning'></span>
+                        <input onkeyup='ValidateEmail(this);' class="input100" required type="text" name="email" placeholder="Type your email">
                         <span class="focus-input100" data-symbol="&#9993;"></span>
                     </div>
 
@@ -65,7 +66,8 @@
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Age is required">
                         <span class="label-input100">Age</span>
-                        <input class="input100" required type="text" name="age" placeholder="Type your age">
+                        <span id='age_warning'></span>
+                        <input onkeyup="ValidateAge(this)" class="input100" required type="number" name="age" placeholder="Type your age">
                         <span class="focus-input100" data-symbol="&#9881;"></span>
                     </div>
 
@@ -157,11 +159,30 @@
             }
         }
 
-        function checkInput() {
-            var $fname = document.getElementsByName('fname');
-            if ($fname[0] == '') alert('First name cant be empty!');
-
+        function ValidateEmail(inputText) 
+        {
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(inputText.value.match(mailformat))
+            {
+                document.getElementById('email_warning').style.color = 'green';
+                document.getElementById('email_warning').innerHTML = 'Valid';
+            }
+            else
+            {
+                document.getElementById('email_warning').style.color = 'red';
+                document.getElementById('email_warning').innerHTML = 'Not valid';
+            }
         }
+
+        function ValidateAge(age)
+        {
+            document.getElementById('age_warning').innerHTML = '';
+            if( (age.value <= 0 || age.value > 200)) {
+                document.getElementById('age_warning').style.color = 'red';
+                document.getElementById('age_warning').innerHTML = 'Not valid';                
+            }
+        }
+
     </script>
 
 </body>
