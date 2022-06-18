@@ -209,8 +209,6 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 </div>
 </div>
 
-<?php
-require_once('/xampp/htdocs/Source_code/views/admin/footer.php'); ?>
 
 <!-- Add Javascripts -->
 <script src="/Source_code/public/js/admin/index.js"></script>

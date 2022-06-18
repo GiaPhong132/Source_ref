@@ -1,5 +1,5 @@
 </head>
-<div id="wrapper" style="max-height: 800px">
+<div id="wrapper" style="max-height: 700px">
 
     <!-- Sidebar -->
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
