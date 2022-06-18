@@ -125,7 +125,8 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         echo "<td>" . $x->age . "</td>";
                                         echo "<td>";
                                         if ($x->gender == 1) echo "Male</td>";
-                                        else echo "Female</td>";
+                                        else if ($x->gender == 0) echo "Female</td>";
+                                        else echo "Other</td>";
                                         echo "<td>" . $x->phone . "</td>";
                                         echo "<td>" . $x->updateAt . "</td>";
                                         echo "<td>
@@ -163,10 +164,38 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                         <div class="form-group">
                                                             <label>Gender</label>
                                                             <br>
+                                                            ';
+                                        if ($x->gender == 1) {
+                                            echo '
                                                             <input type="radio" id="Male" name="gender" checked value="1">
                                                             <label>Male</label>
                                                             &nbsp;&nbsp;&nbsp;<input type="radio" id="Female" name="gender" value="0">
                                                             <label>Female</label>
+                                                            <input type="radio" id="Other" name="gender"  value="-1">
+                                                            <label>Other</label>
+
+                                                            ';
+                                        } else if ($x->gender == 0) {
+                                            echo '
+                                            <input type="radio" id="Male" name="gender"  value="1">
+                                                            <label>Male</label>
+                                                            &nbsp;&nbsp;&nbsp;<input type="radio" id="Female" checked name="gender" value="0">
+                                                            <label>Female</label>
+                                                            <input type="radio" id="Other" name="gender"  value="-1">
+                                                            <label>Other</label>
+                                      ';
+                                        } else {
+                                            echo '
+                                            <input type="radio" id="Male" name="gender"  value="1">
+                                                            <label>Male</label>
+                                                            &nbsp;&nbsp;&nbsp;<input type="radio" id="Female"  name="gender" value="0">
+                                                            <label>Female</label>
+                                                            <input type="radio" id="Other" name="gender" checked value="-1">
+                                                            <label>Other</label>
+                                      ';
+                                        }
+
+                                        echo '
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Password</label>
