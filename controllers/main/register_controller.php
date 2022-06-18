@@ -19,6 +19,7 @@ class RegisterController extends BaseController
         if (isset($x) && !empty($x)) return true;
         return false;
     }
+
     public function submit()
     {
         $fname = $_POST['first_name'];
@@ -28,10 +29,12 @@ class RegisterController extends BaseController
         $phone = $_POST['phone_number'];
         $email = $_POST['email'];
         $password = $_POST['password'];
-        $retype_password = $_POST['password'];
+        $retype_password = $_POST['retype_password'];
 
         if ($password != $retype_password) {
-            header('Location: index.php?page=main&controller=register&action=index');
+            $err = "Sai tài khoản hoặc mật khẩu";
+            $data = array('err' => $err);
+            $this->render('index', $data);
         } else {
             session_start();
             $_SESSION['guest'] = $email;
