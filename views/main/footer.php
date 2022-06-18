@@ -81,7 +81,7 @@
     AOS.init();
 </script>
 
-<script type="text/javascript" src="/Source_code/public2/js/slick.js"></script>
+
 <script type="text/javascript" src="/Source_code/public2/js/main.js"></script>
 <script type="text/javascript" src="/Source_code/public2/js/custom.js"></script>
 
