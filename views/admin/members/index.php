@@ -127,8 +127,8 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         echo "<td>" . $x['lname'] . "</td>";
                                         echo "<td>" . $x['age'] . "</td>";
                                         echo "<td>";
-                                        if ($x->gender == 1) echo "Male</td>";
-                                        else if ($x->gender == 0) echo "Female</td>";
+                                        if ($x['gender'] == 1) echo "Male</td>";
+                                        else if ($x['gender'] == 0) echo "Female</td>";
                                         else echo "Other</td>";
                                         echo "<td>" . $x['phone'] . "</td>";
                                         echo "<td>" . $x['updateAt'] . "</td>";
@@ -295,43 +295,43 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                 </div>
                             </div> -->
 
-                            
-                            
+
+
                         </div>
                     </div>
                     <?php
-                                $total_pages = ceil($total_rows / $limit);
-            
-                                $pageURL = "";
-            
-                                if ($page_number >= 2) {
-            
-                                    echo "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . ($page_number - 1) . "'> Prev </a>";
-                                }
-            
-                                for ($i = 1; $i <= $total_pages; $i++) {
-                                    if ($i == $page_number) {
-                                        $pageURL .= "<a class = 'active' href='index.php?page=admin&controller=paginate&action=index&pg=" . $i . "'>" . $i . " </a>";
-                                    } else {
-                                        $pageURL .= "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . $i . "'>
-            
+                    $total_pages = ceil($total_rows / $limit);
+
+                    $pageURL = "";
+
+                    if ($page_number >= 2) {
+
+                        echo "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . ($page_number - 1) . "'> Prev </a>";
+                    }
+
+                    for ($i = 1; $i <= $total_pages; $i++) {
+                        if ($i == $page_number) {
+                            $pageURL .= "<a class = 'active' href='index.php?page=admin&controller=paginate&action=index&pg=" . $i . "'>" . $i . " </a>";
+                        } else {
+                            $pageURL .= "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . $i . "'>
+
                                                     " . $i . " </a>";
-                                    }
-                                };
-                                echo $pageURL;
-                                if ($page_number < $total_pages) {
-                                    echo "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . ($page_number + 1) . "'>  Next </a>";
-                                } 
-                            ?>
-                            <div class="inline">
-            
-                                <input id="page" type="number" min="1" max="<?php echo $total_pages ?>" placeholder="<?php echo $page_number . "/" . $total_pages; ?>" required>
-            
-                                <button onClick="go2Page();" style="color: green;">Go</button>
-            
-                            </div>  
+                        }
+                    };
+                    echo $pageURL;
+                    if ($page_number < $total_pages) {
+                        echo "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . ($page_number + 1) . "'>  Next </a>";
+                    }
+                    ?>
+                    <div class="inline">
+
+                        <input id="page" type="number" min="1" max="<?php echo $total_pages ?>" placeholder="<?php echo $page_number . "/" . $total_pages; ?>" required>
+
+                        <button onClick="go2Page();" style="color: green;">Go</button>
+
+                    </div>
                 </div>
-                
+
             </div>
         </div>
     </section>
