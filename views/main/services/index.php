@@ -23,7 +23,9 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
 
             <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
 
-                <div class="bg-img bg-img-1"></div>
+                <div class="bg-img bg-img-1">
+                    <img src="/Source_code/public/images/banner.jpg">
+                </div>
 
                 <div class="slide-caption">
                     <div class="caption-content">
