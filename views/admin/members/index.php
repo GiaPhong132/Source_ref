@@ -75,7 +75,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Phone number</label>
-                                                    <input class="form-control" type="text" name="phone_number" />
+                                                    <input class="form-control" type="number" name="phone_number" />
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Gender</label>

@@ -72,7 +72,7 @@
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Phone number is required">
                         <span class="label-input100">Phone number</span>
-                        <input class="input100" required type="text" name="phone_number" placeholder="Type your phone number">
+                        <input class="input100" required type="number" name="phone_number" placeholder="Type your phone number">
                         <span class="focus-input100" data-symbol="&#9742;"></span>
                     </div>
 
