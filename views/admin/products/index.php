@@ -50,7 +50,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         <div class="modal-header">
                                             <h5 class="modal-title">Thêm mới sản phẩm</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         </div>
-                                        <form id="form-add-student" action="index.php?page=admin&controller=products&action=add&pg=$page_number" enctype="multipart/form-data" method="post">
+                                        <form id="form-add-student" action="index.php?page=admin&controller=products&action=add&pg=<?php echo $page_number; ?>" enctype="multipart/form-data" method="post">
                                             <div class="modal-body">
                                                 <div class="row">
                                                     <div class="col-6"><label>Tên sản phẩm</label><input class="form-control" type="text" placeholder="Tên sản phẩm" name="name" /></div>
