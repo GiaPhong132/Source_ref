@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php error_reporting(E_ALL ^ E_WARNING);  ?>
 
 <head>
     <meta charset="utf-8">
@@ -59,7 +60,7 @@
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Last name is required">
                         <span class="label-input100">Last name</span>
-                        <input class="input100" required type="text" name="last_name" placeholder="Type your last name">
+                        <input class="input100"  required type="text" name="last_name" placeholder="Type your last name">
                         <span class="focus-input100" data-symbol="&#xf206;"></span>
                     </div>
 
@@ -89,13 +90,6 @@
                         <input onkeyup='check();' required class="input100" type="password" name="retype_password" placeholder="Retype your password">
                         <span class="focus-input100" data-symbol="&#xf190;"></span>
                     </div>
-
-                    <?php
-                    if (isset($err)) {
-                        echo '<p class="login-box-msg" style="color: red">' . $err . '</p>';
-                        unset($err);
-                    }
-                    ?>
 
                     <div class="form-check" style="padding-left: 0;">
                         <div class="row">
@@ -170,24 +164,30 @@
             }
         }
 
-        function ValidateEmail(inputText) {
+        function ValidateEmail(inputText) 
+        {
             var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            if (inputText.value.match(mailformat)) {
+            if(inputText.value.match(mailformat))
+            {
                 document.getElementById('email_warning').style.color = 'green';
                 document.getElementById('email_warning').innerHTML = 'Valid';
-            } else {
+            }
+            else
+            {
                 document.getElementById('email_warning').style.color = 'red';
                 document.getElementById('email_warning').innerHTML = 'Not valid';
             }
         }
 
-        function ValidateAge(age) {
+        function ValidateAge(age)
+        {
             document.getElementById('age_warning').innerHTML = '';
-            if ((age.value <= 0 || age.value > 200)) {
+            if( (age.value <= 0 || age.value > 200)) {
                 document.getElementById('age_warning').style.color = 'red';
-                document.getElementById('age_warning').innerHTML = 'Not valid';
+                document.getElementById('age_warning').innerHTML = 'Not valid';                
             }
         }
+
     </script>
 
 </body>
