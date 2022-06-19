@@ -7,7 +7,7 @@ if (!isset($_SESSION["user"])) {
 
 <?php
 require_once('/xampp/htdocs/Source_code/views/admin/header.php');
-require_once("/XAMPP/htdocs/Source_code/models/product.php");
+// require_once("/XAMPP/htdocs/Source_code/models/product.php");
 // $data = Product::getAll();
 ?>
 
@@ -88,30 +88,32 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
                                     // $index = 1;
 
-                                    foreach ($products as $item) {
+                                    foreach ($result as $item) {
 
                                         echo
-                                        "<tr class=\"text-center\">
-                                <td>"
-                                            . $item->id .
+                                        '
+                                        <tr class=\"text-center\">
+                                <td>'
+                                            . $item['id'] .
                                             "</td>
                                 <td>
-                                    " . $item->name . "
+                                    " . $item['name'] . "
                                 </td>
                                 <td>
-                                    " .  $item->price . "
+                                    " .  $item['price'] . "
                                 </td>
                                 <td>
-                                    " .  $item->description . "
+                                    " .  $item['description'] . "
                                 </td>
                                 <td>
-                                    " . $item->content . "
+                                    " . $item['content'] . "
                                 </td>
                                 <td >
-                                    <img style=\"width: 100px; height:100px;\" src='$item->img'>
+                                    <img style=\"width: 100px; height:100px;\" src='$item['img']'>
                                 </td>
+                                ';
                                 <td>
-                                    <button data-toggle='modal' data-target='#EditStudentModal$item->id' type='button' data class=\"btn-edit btn btn-primary btn-xs\" style=\"margin-right: 5px\" data-id='$item->id' data-name='$item->name' data-price='$item->price' data-description='$item->description' data-content='$item->content' data-img='$item->img'> <i style=\"font-size:17px;\" class=\"fas fa-edit\" ></i></button>";
+                                    <button data-toggle='modal' data-target='#EditStudentModal$item['id']' type='button' data class=\"btn-edit btn btn-primary btn-xs\" style=\"margin-right: 5px\" data-id='$item->id' data-name='$item->name' data-price='$item->price' data-description='$item->description' data-content='$item->content' data-img='$item->img'> <i style=\"font-size:17px;\" class=\"fas fa-edit\" ></i></button>";
                                         echo "
                                     <div class='modal fade' id='EditStudentModal$item->id' tabindex='-1' role='dialog' aria-labelledby='EditStudentModal$item->id' aria-hidden='true'>
                                         <div class='modal-dialog modal-xl' role='document'>
@@ -161,7 +163,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
                                     ";
                                         echo "</td>
-                                </tr>";
+                                </tr>';
                                         // $index++;
                                     }
                                     ?>
