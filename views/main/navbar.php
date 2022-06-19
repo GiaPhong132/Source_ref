@@ -112,7 +112,7 @@ if (isset($_SESSION['guest'])) {
                 <?php
                 if (isset($_SESSION['user']))
                     echo '
-                                <a href="index.php?page=admin&controller=members&action=index" class="dropdown-item"><i class="fa fa-sliders"></i> Admin</a>
+                                <a href="index.php?page=admin&controller=paginateuser&action=index" class="dropdown-item"><i class="fa fa-sliders"></i> Admin</a>
                                 ';
                 ?>
 
