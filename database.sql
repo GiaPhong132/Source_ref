@@ -7,24 +7,6 @@ USE ass_web;
 -- Table structure for table `product`
 --
 
-CREATE TABLE `comment` (
-  `id` int(11) NOT NULL,
-  `date` datetime DEFAULT NULL,
-  `approved` tinyint(1) DEFAULT NULL,
-  `content` varchar(10000) DEFAULT NULL,
-  `news_id` int(11) DEFAULT NULL,
-  `user_id` varchar(255) DEFAULT NULL,
-  `parent` int(11) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
--- --------------------------------------------------------
-
--- --------------------------------------------------------
--- --------------------------------------------------------
---
--- Table structure for table `product`
---
-
 CREATE TABLE `product` (
   `id` int(11) NOT NULL,
   `price` int(11) DEFAULT NULL,
@@ -150,21 +132,6 @@ INSERT INTO `user` (`email`, `profile_photo`, `fname`, `lname`, `gender`, `age`,
 --
 -- Indexes for dumped tables
 --
-
---
--- Indexes for table `comment`
---
-ALTER TABLE `comment`
-  ADD PRIMARY KEY (`id`),
-  ADD KEY `news_id` (`news_id`),
-  ADD KEY `user_id` (`user_id`),
-  ADD KEY `parent` (`parent`);
-
---
--- Indexes for table `company`
---
-
--- Indexes for table `news`
 --
 -- Indexes for table `product`
 --
