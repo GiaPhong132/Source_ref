@@ -55,7 +55,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                             <h5 class="modal-title">Thêm mới</h5>
                                             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         </div>
-                                        <form action="index.php?page=admin&controller=members&action=addUser" method="post">
+                                        <form action="index.php?page=admin&controller=members&action=addUser&pg=<?php echo $page_number; ?> " method="post">
                                             <div class="modal-body">
                                                 <div class="form-group">
                                                     <label>Email</label>
@@ -118,7 +118,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $index = 1;
+                                    $index = ($page_number - 1) * 5 + 1;
                                     foreach ($result as $x) {
                                         echo "<tr class='text-center'>";
                                         echo "<td>" . $index++ . "</td>";
@@ -142,7 +142,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                     <h5 class="modal-title">Chỉnh sửa</h5>
                                                     <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form action="index.php?page=admin&controller=members&action=edit" method="POST">
+                                                <form action="index.php?page=admin&controller=members&action=edit&pg=' . $page_number . '" method="POST">
                                                     <div class="modal-body">
                                                         <div class="form-group">
                                                             <label>Email</label>
@@ -168,7 +168,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                             <label>Gender</label>
                                                             <br>
                                                             ';
-                                        if ($x->gender == 1) {
+                                        if ($x['gender'] == 1) {
                                             echo '
                                                             <input type="radio" id="Male" name="gender" checked value="1">
                                                             <label>Male</label>
@@ -178,7 +178,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                             <label>Other</label>
 
                                                             ';
-                                        } else if ($x->gender == 0) {
+                                        } else if ($x['gender'] == 0) {
                                             echo '
                                             <input type="radio" id="Male" name="gender"  value="1">
                                                             <label>Male</label>
@@ -224,7 +224,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                     <h5 class='modal-title'>Xóa</h5>
                                                     <button class='close' type='button' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
                                                 </div>
-                                                <form action='index.php?page=admin&controller=user&action=delete' method='post'>
+                                                <form action='index.php?page=admin&controller=user&action=delete&pg=" . $page_number . "' method='post'>
                                                     <div class='modal-body'>
                                                     <input type='hidden' name='email' value='" . $x['email'] . "'>
                                                     <input type='hidden' name='createAt' value='" . $x['createAt'] . "'>
@@ -306,21 +306,21 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
                     if ($page_number >= 2) {
 
-                        echo "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . ($page_number - 1) . "'> Prev </a>";
+                        echo "<a href='index.php?page=admin&controller=paginateuser&action=index&pg=" . ($page_number - 1) . "'> Prev </a>";
                     }
 
                     for ($i = 1; $i <= $total_pages; $i++) {
                         if ($i == $page_number) {
-                            $pageURL .= "<a class = 'active' href='index.php?page=admin&controller=paginate&action=index&pg=" . $i . "'>" . $i . " </a>";
+                            $pageURL .= "<a class = 'active' href='index.php?page=admin&controller=paginateuser&action=index&pg=" . $i . "'>" . $i . " </a>";
                         } else {
-                            $pageURL .= "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . $i . "'>
+                            $pageURL .= "<a href='index.php?page=admin&controller=paginateuser&action=index&pg=" . $i . "'>
 
                                                     " . $i . " </a>";
                         }
                     };
                     echo $pageURL;
                     if ($page_number < $total_pages) {
-                        echo "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . ($page_number + 1) . "'>  Next </a>";
+                        echo "<a href='index.php?page=admin&controller=paginateuser&action=index&pg=" . ($page_number + 1) . "'>  Next </a>";
                     }
                     ?>
                     <div class="inline">
@@ -346,7 +346,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
     function go2Page() {
         var page = document.getElementById("page").value;
         page = ((page > <?php echo $total_pages; ?>) ? <?php echo $total_pages; ?> : ((page < 1) ? 1 : page));
-        window.location.href = 'index.php?page=admin&controller=paginate&action=index&pg=' + page;
+        window.location.href = 'index.php?page=admin&controller=paginateuser&action=index&pg=' + page;
     }
 </script>
 </body>
