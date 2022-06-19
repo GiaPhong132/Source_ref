@@ -36,6 +36,9 @@ class ProductsController extends BaseController
     }
     public function add()
     {
+        $page_number = $_GET['pg'];
+
+
         $id = (string)date("Y_m_d_h_i_sa");
         $fileuploadname = (string)$id;
         $name = $_POST['name'];
@@ -66,7 +69,9 @@ class ProductsController extends BaseController
         }
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
         Product::insert($name, $price, $description, $content, $target_file);
-        header('Location: index.php?page=admin&controller=products&action=index');
+        $tmp = "Location: index.php?page=admin&controller=paginate&action=index&pg=$page_number";
+        header($tmp);
+        // header('Location: index.php?page=admin&controller=products&action=index');
     }
     public function edit()
     {
@@ -77,13 +82,15 @@ class ProductsController extends BaseController
         $price = $_POST['price'];
         $content = $_POST['content'];
         $description = $_POST['description'];
+        $page_number = $_GET['pg'];
 
 
         $urlcurrent = Product::get((int)$id)->img;
         if (!isset($_FILES["fileToUpload"]) || $_FILES['fileToUpload']['tmp_name'][0] == "") {
             Product::update($id, $name, $price, $description, $content, $urlcurrent);
             echo "Dữ liệu upload bị lỗi";
-            header('Location: index.php?page=admin&controller=products&action=index');
+            $tmp = "Location: index.php?page=admin&controller=paginate&action=index&pg=$page_number";
+            header($tmp);
             die;
         } else {
             $target_dir = "public2/images/product/";
@@ -111,16 +118,23 @@ class ProductsController extends BaseController
             @unlink($file_pointer);
             move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
             Product::update($id, $name, $price, $description, $content, $target_file);
-            header('Location: index.php?page=admin&controller=products&action=index');
+            $tmp = "Location: index.php?page=admin&controller=paginate&action=index&pg=$page_number";
+            header($tmp);
+            // header('Location: index.php?page=admin&controller=paginate&action=index');
         }
     }
 
     public function delete()
     {
         $id = $_POST['id'];
+        $page_number = $_GET['pg'];
+
         $urlcurrent = Product::get((int)$id)->img;
         unlink($urlcurrent);
         Product::delete($id);
-        header('Location: index.php?page=admin&controller=products&action=index');
+
+        $tmp = "Location: index.php?page=admin&controller=paginate&action=index&pg=$page_number";
+        header($tmp);
+        // header('Location: index.php?page=admin&controller=products&action=index');
     }
 }
