@@ -202,6 +202,13 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                         echo "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . ($page_number + 1) . "'>  Next </a>";
                     } ?>
                 </div>
+                <div class="inline">
+
+                        <input id="page" type="number" min="1" max="<?php echo $total_pages ?>" placeholder="<?php echo $page_number . "/" . $total_pages; ?>" required>
+
+                        <button onClick="go2Page();" style="color: green;">Go</button>
+
+                    </div>
             </div>
         </div>
     </section>
