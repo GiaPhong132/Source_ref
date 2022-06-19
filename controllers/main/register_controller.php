@@ -44,17 +44,6 @@ class RegisterController extends BaseController
     }
 
 
-
-    public function editPass()
-    {
-        $email = $_POST['email'];
-        $newpassword = $_POST['new-password'];
-        echo $email . " " . $newpassword .  "\n";
-        $change_pass = User::changePassword_($email, $newpassword);
-        echo "change_pass";
-        header('Location: index.php?page=admin&controller=user&action=index');
-    }
-
     public function delete()
     {
         $email = $_POST['email'];

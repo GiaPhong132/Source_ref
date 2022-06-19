@@ -128,32 +128,4 @@ class User
         else
             return false;
     }
-
-    static function changePassword($email, $oldpassword, $newpassword)
-    {
-        if (User::validation($email, $oldpassword)) {
-            $password = password_hash($newpassword, PASSWORD_DEFAULT);
-            $db = DB::getInstance();
-            $req = $db->query(
-                "UPDATE user
-                SET password = '$password', updateAt = NOW()
-                WHERE email = '$email';"
-            );
-            return $req;
-        } else {
-            return false;
-        }
-    }
-
-    static function changePassword_($email, $newpassword)
-    {
-        $password = password_hash($newpassword, PASSWORD_DEFAULT);
-        $db = DB::getInstance();
-        $req = $db->query(
-            "UPDATE user
-            SET password = '$password', updateAt = NOW()
-            WHERE email = '$email';"
-        );
-        return $req;
-    }
 }

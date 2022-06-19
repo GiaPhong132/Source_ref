@@ -40,34 +40,6 @@ class Admin
             return false;
     }
 
-    static function changePassword($username, $oldpassword, $newpassword)
-    {
-        if (Admin::validation($username, $oldpassword)) {
-            $password = password_hash($newpassword, PASSWORD_DEFAULT);
-            $db = DB::getInstance();
-            $req = $db->query(
-                "UPDATE admin
-                SET password = '$password', updateAt = NOW()
-                WHERE username = '$username';"
-            );
-            return $req;
-        } else {
-            return false;
-        }
-    }
-
-    static function changePassword_($username, $newpassword)
-    {
-        $password = password_hash($newpassword, PASSWORD_DEFAULT);
-        $db = DB::getInstance();
-        $req = $db->query(
-            "UPDATE admin
-            SET password = '$password', updateAt = NOW()
-            WHERE username = '$username';"
-        );
-        return $req;
-    }
-
     static function getAll()
     {
         $db = DB::getInstance();
