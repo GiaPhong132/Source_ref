@@ -24,7 +24,9 @@ $controllers = array(
 
 
 
-    'paginate' => ['index']
+    'paginate' => ['index'],
+    'paginateuser' => ['index']
+
 
 );
 

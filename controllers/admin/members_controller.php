@@ -11,11 +11,15 @@ class MembersController extends BaseController
 
     public function index()
     {
-        $this->render('index');
+        $x = User::getAll();
+        $data = array('members' => $x);
+        $this->render('index', $data);
     }
 
     public function addUser()
     {
+        $page_number = $_GET['pg'];
+
         $fname = $_POST['fname'];
         $lname = $_POST['lname'];
         $age = $_POST['age'];
@@ -23,8 +27,11 @@ class MembersController extends BaseController
         $phone = $_POST['phone_number'];
         $email = $_POST['email'];
         $password = $_POST['password'];
-        User::insert($email, 'public2/images/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
-        header('Location: index.php?page=admin&controller=members&action=index');
+        User::insert($email, 'public2/images/user/defau.png', $fname, $lname, $gender, $age, $phone, $password);
+
+        $tmp = "Location: index.php?page=admin&controller=paginateuser&action=index&pg=$page_number";
+        header($tmp);
+        // header('Location: index.php?page=admin&controller=members&action=index');
     }
     public function getAll()
     {
@@ -56,10 +63,15 @@ class MembersController extends BaseController
         $gender = $_POST['gender'];
         $age = $_POST['age'];
 
+        $page_number = $_GET['pg'];
+
+
         $data = User::get($email);
 
         User::update($email, $data->profile_photo, $fname, $lname, $gender, $age, $phone);
-        header('Location: index.php?page=admin&controller=members&action=index');
+        $tmp = "Location: index.php?page=admin&controller=paginateuser&action=index&pg=$page_number";
+        header($tmp);
+        // header('Location: index.php?page=admin&controller=members&action=index');
 
         // Photo
         // $target_dir = "public2/images/user/";

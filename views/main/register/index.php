@@ -73,7 +73,7 @@
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Phone number is required">
                         <span class="label-input100">Phone number</span>
-                        <input class="input100" required type="text" name="phone_number" placeholder="Type your phone number">
+                        <input class="input100" required type="number" name="phone_number" placeholder="Type your phone number">
                         <span class="focus-input100" data-symbol="&#9742;"></span>
                     </div>
 
@@ -98,13 +98,18 @@
                     </div>
 
                     <div class="form-check form-check-inline" style="padding-left: 1cm;">
-                        <input class="form-check-input" type="radio" name="gender" value="1" checked>
+                        <input class="form-check-input" type="radio" name="gender" value="1">
                         <label class="form-check-label">Male</label>
                     </div>
 
                     <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
                         <input class="form-check-input" type="radio" name="gender" value="0">
                         <label class="form-check-label">Female</label>
+                    </div>
+
+                    <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
+                        <input class="form-check-input" type="radio" name="gender" value="-1">
+                        <label class="form-check-label">Other</label>
                     </div>
 
                     <div class="text-right p-t-8 p-b-31">

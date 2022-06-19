@@ -71,7 +71,7 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
                     <div class="row mt-3">
                         <div class="col-md-12">
                             <label class="labels">Phone Number</label>
-                            <input type="text" class="form-control" name='phone' value="<?php echo $data->phone; ?>">
+                            <input type="number" class="form-control" name='phone' value="<?php echo $data->phone; ?>">
                         </div>
 
                         <div class="col-md-12">

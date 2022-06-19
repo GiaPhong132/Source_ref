@@ -48,7 +48,6 @@ class ProfileController extends BaseController
             && $fileType != "gif"
         ) {
             echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-            $upload_ok = 0;
         }
         if ($_FILES["fileToUpload"]["size"] > 5000000) {
             echo "Sorry, your file is too large.";

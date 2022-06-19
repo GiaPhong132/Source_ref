@@ -7,7 +7,7 @@ if (!isset($_SESSION["user"])) {
 
 <?php
 require_once('/xampp/htdocs/Source_code/views/admin/header.php');
-require_once("/XAMPP/htdocs/Source_code/models/product.php");
+// require_once("/XAMPP/htdocs/Source_code/models/product.php");
 // $data = Product::getAll();
 ?>
 
@@ -50,7 +50,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         <div class="modal-header">
                                             <h5 class="modal-title">Thêm mới sản phẩm</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         </div>
-                                        <form id="form-add-student" action="index.php?page=admin&controller=products&action=add" enctype="multipart/form-data" method="post">
+                                        <form id="form-add-student" action="index.php?page=admin&controller=products&action=add&pg=<?php echo $page_number; ?>" enctype="multipart/form-data" method="post">
                                             <div class="modal-body">
                                                 <div class="row">
                                                     <div class="col-6"><label>Tên sản phẩm</label><input class="form-control" type="text" placeholder="Tên sản phẩm" name="name" /></div>
@@ -88,69 +88,74 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
                                     // $index = 1;
 
-                                    foreach ($products as $item) {
+                                    foreach ($result as $item) {
 
-                                        echo
-                                        "<tr class=\"text-center\">
-                                <td>"
-                                            . $item->id .
-                                            "</td>
-                                <td>
-                                    " . $item->name . "
-                                </td>
-                                <td>
-                                    " .  $item->price . "
-                                </td>
-                                <td>
-                                    " .  $item->description . "
-                                </td>
-                                <td>
-                                    " . $item->content . "
-                                </td>
-                                <td >
-                                    <img style=\"width: 100px; height:100px;\" src='$item->img'>
-                                </td>
-                                <td>
-                                    <button data-toggle='modal' data-target='#EditStudentModal$item->id' type='button' data class=\"btn-edit btn btn-primary btn-xs\" style=\"margin-right: 5px\" data-id='$item->id' data-name='$item->name' data-price='$item->price' data-description='$item->description' data-content='$item->content' data-img='$item->img'> <i style=\"font-size:17px;\" class=\"fas fa-edit\" ></i></button>";
                                         echo "
-                                    <div class='modal fade' id='EditStudentModal$item->id' tabindex='-1' role='dialog' aria-labelledby='EditStudentModal$item->id' aria-hidden='true'>
-                                        <div class='modal-dialog modal-xl' role='document'>
-                                            <div class='modal-content'>
-                                                <div class='modal-header'>
-                                                    <h5 class='modal-title'>Chỉnh sửa</h5><button class='close' type='button' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
-                                                </div>
-                                                <form id='form-edit-student' action='index.php?page=admin&controller=products&action=edit' enctype='multipart/form-data' method='POST'>
-                                                    <div class='modal-body'>
-                                                        <div class='col-12'><label>ID</label> <input class='form-control' type='text' value='$item->id' name='id' readonly /></div>
-                                                        <div class='row'>
-                                                            <div class='col-6'><label>Tên sản phẩm</label><input class='form-control' type='text' value='$item->name' name='name' /></div>
-                                                            <div class='col-6'><label>Giá</label><input class='form-control' type='number' value='$item->price' name='price' /></div>
-                                                        </div>
+                                        <tr class=\"text-center\">
+                                        <td>" .
+                                            $item['id']
+                                            . "</td>
+                                        <td>
+                                            " . $item['name'] . "
+                                        </td>
+                                        <td>
+                                            " .  $item['price'] . "
+                                        </td>
+                                        <td>
+                                            " .  $item['description'] . "
+                                        </td>
+                                        <td>
+                                            " . $item['content'] . "
+                                        </td>
+                                        <td >
+                                            <img style='width: 100px; height:100px;' src='" . $item['img'] . "'>
+                                        </td>
+                                        ";
 
-                                                        <div class='form-group'> <label>Mô tả</label> <textarea class='form-control' name='description' rows='5'>$item->description</textarea></div>
-                                                        <div class='form-group'> <label>Nội dung</label> <textarea class='form-control' name='content' rows='10'>$item->content</textarea></div>
-                                                        <div class='form-group'><label>Url Hình ảnh </label><input class='form-control' type='text' name='imggg' readonly /></div>
-                                                        <div class='form-group'> <label> Hình ảnh </label>&nbsp <input type='file' name='fileToUpload' id='fileToUpload' /></div>
-                                                    </div>
-                                                    <div class='modal-footer'><button class='btn btn-secondary' type='button' data-dismiss='modal'>Đóng</button><button class='btn btn-primary formedit' type='submit'>Chỉnh sửa</button></div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    ";
-
-
-
-                                        echo "<button data-toggle='modal' data-target='#DeleteStudentModal$item->id' type='button' class=\"btn-delete btn btn-danger btn-xs\" style=\"margin-right: 5px\" data-id='$item->id' ><i style=\"font-size:17px;\" class=\"fas fa-trash\"></i></button>";
                                         echo "
-                                    <div class='modal fade' id='DeleteStudentModal$item->id' tabindex='-1' role='dialog' aria-labelledby='DeleteStudentModal$item->id' aria-hidden='true'>
+                                       <td>
+                                       <button data-toggle='modal' data-target='#EditStudentModal" . $item['id'] . "' type='button' data class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-id='" . $item['id'] . "' data-name='" . $item['name'] . "' data-price='" . $item['price'] . "' data-description='" . $item['description'] . "' data-content='" . $item['content'] . "' data-img='" . $item['img'] . "'> <i style='font-size:17px;' class='fas fa-edit' ></i></button>";
+                                        echo "
+                                       <div class='modal fade' id='EditStudentModal" . $item['id'] . "' tabindex='-1' role='dialog' aria-labelledby='EditStudentModal" . $item['id'] . "' aria-hidden='true'>
+                                           <div class='modal-dialog modal-xl' role='document'>
+                                               <div class='modal-content'>
+                                                   <div class='modal-header'>
+                                                       <h5 class='modal-title'>Chỉnh sửa</h5><button class='close' type='button' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
+                                                   </div>
+                                                   <form id='form-edit-student' action='index.php?page=admin&controller=products&action=edit&pg=$page_number' enctype='multipart/form-data' method='POST'>
+                                                       <div class='modal-body'>
+                                                           <div class='col-12'><label>ID</label> <input class='form-control' type='text' value='" . $item['id'] . "' name='id' readonly /></div>
+                                                           <div class='row'>
+                                                               <div class='col-6'><label>Tên sản phẩm</label><input class='form-control' type='text' value='" . $item['name'] . "' name='name' /></div>
+                                                               <div class='col-6'><label>Giá</label><input class='form-control' type='number' value='" . $item['price'] . "' name='price' /></div>
+                                                           </div>
+
+                                                           <div class='form-group'> <label>Mô tả</label> <textarea class='form-control' name='description' rows='5'>" . $item['description'] . "</textarea></div>
+                                                           <div class='form-group'> <label>Nội dung</label> <textarea class='form-control' name='content' rows='10'>" . $item['content'] . "</textarea></div>
+                                                           <div class='form-group'><label>Url Hình ảnh </label><input class='form-control' type='text' name='imggg' readonly /></div>
+                                                           <div class='form-group'> <label> Hình ảnh </label>&nbsp <input type='file' name='fileToUpload' id='fileToUpload' /></div>
+                                                       </div>
+                                                       <div class='modal-footer'><button class='btn btn-secondary' type='button' data-dismiss='modal'>Đóng</button><button class='btn btn-primary formedit' type='submit'>Chỉnh sửa</button></div>
+                                                   </form>
+                                               </div>
+                                           </div>
+                                       </div>
+                                       ";
+
+
+
+
+
+                                        echo "<button data-toggle='modal' data-target='#DeleteStudentModal" . $item['id'] . "' type='button' class=\"btn-delete btn btn-danger btn-xs\" style=\"margin-right: 5px\" data-id='" . $item['id'] . "' ><i style=\"font-size:17px;\" class=\"fas fa-trash\"></i></button>";
+                                        echo "
+                                    <div class='modal fade' id='DeleteStudentModal" . $item['id'] . "' tabindex='-1' role='dialog' aria-labelledby='DeleteStudentModal" . $item['id'] . "' aria-hidden='true'>
                                         <div class='modal-dialog' role='document'>
                                             <div class='modal-content bg-danger'>
                                                 <div class='modal-header'>
                                                     <h5 class='modal-title'>Xóa</h5><button class='close' type='button' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
                                                 </div>
-                                                <form action='index.php?page=admin&controller=products&action=delete' method='post'>
-                                                    <div class='modal-body'><input type='hidden' name='id' value='$item->id' />
+                                                <form action='index.php?page=admin&controller=products&action=delete&pg=$page_number' method='post'>
+                                                    <div class='modal-body'><input type='hidden' name='id' value='" . $item['id'] . "' />
                                                         <p>Bạn có chắc chắn muốn xóa sản phẩm này?</p>
                                                     </div>
                                                     <div class='modal-footer'><button class='btn btn-danger btn-outline-light' type='button' data-dismiss='modal'>Đóng</button><button class='btn btn-danger btn-outline-light' type='submit'>Xóa</button></div>
@@ -166,49 +171,44 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                     }
                                     ?>
                                 </tbody>
-                                <!-- <div class="modal fade" id="EditStudentModal" tabindex="-1" role="dialog" aria-labelledby="EditStudentModal" aria-hidden="true">
-                                    <div class="modal-dialog modal-xl" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title">Chỉnh sửa</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            </div>
-                                            <form id="form-edit-student" action="index.php?page=admin&controller=products&action=edit" enctype="multipart/form-data" method="post">
-                                                <div class="modal-body">
-                                                    <div class="col-12"><label>ID</label> <input class="form-control" type="text" placeholder="Name" name="id" readonly /></div>
-                                                    <div class="row">
-                                                        <div class="col-6"><label>Tên sản phẩm</label><input class="form-control" type="text" placeholder="Tên sản phẩm" name="name" /></div>
-                                                        <div class="col-6"><label>Giá</label><input class="form-control" type="number" placeholder="Giá" name="price" /></div>
-                                                    </div>
 
-                                                    <div class="form-group"> <label>Mô tả</label> <textarea class="form-control" name="description" rows="5"></textarea></div>
-                                                    <div class="form-group"> <label>Nội dung</label> <textarea class="form-control" name="content" rows="10"></textarea></div>
-                                                    <div class="form-group"><label>Url Hình ảnh </label><input class="form-control" type="text" name="imggg" readonly /></div>
-                                                    <div class="form-group"> <label> Hình ảnh </label>&nbsp <input type="file" name="fileToUpload" id="fileToUpload" /></div>
-                                                </div>
-                                                <div class="modal-footer"><button class="btn btn-secondary" type="button" data-dismiss="modal">Đóng</button><button class="btn btn-primary formedit" type="submit">Chỉnh sửa</button></div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="modal fade" id="DeleteStudentModal" tabindex="-1" role="dialog" aria-labelledby="DeleteStudentModal" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content bg-danger">
-                                            <div class="modal-header">
-                                                <h5 class="modal-title">Xóa</h5><button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                                            </div>
-                                            <form action="index.php?page=admin&controller=products&action=delete" method="post">
-                                                <div class="modal-body"><input type="hidden" name="id" />
-                                                    <p>Bạn có chắc chắn muốn xóa sản phẩm này?</p>
-                                                </div>
-                                                <div class="modal-footer"><button class="btn btn-danger btn-outline-light" type="button" data-dismiss="modal">Đóng</button><button class="btn btn-danger btn-outline-light" type="submit">Xóa</button></div>
-                                            </form>
-                                        </div>
-                                    </div>
-                                </div> -->
+
+
                             </table>
                         </div>
+
                     </div>
+                    <?php
+                    $total_pages = ceil($total_rows / $limit);
+
+                    $pageURL = "";
+
+                    if ($page_number >= 2) {
+
+                        echo "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . ($page_number - 1) . "'> Prev </a>";
+                    }
+
+                    for ($i = 1; $i <= $total_pages; $i++) {
+                        if ($i == $page_number) {
+                            $pageURL .= "<a class = 'active' href='index.php?page=admin&controller=paginate&action=index&pg=" . $i . "'>" . $i . " </a>";
+                        } else {
+                            $pageURL .= "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . $i . "'>
+
+                                        " . $i . " </a>";
+                        }
+                    };
+                    echo $pageURL;
+                    if ($page_number < $total_pages) {
+                        echo "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . ($page_number + 1) . "'>  Next </a>";
+                    } ?>
                 </div>
+                <div class="inline">
+
+                        <input id="page" type="number" min="1" max="<?php echo $total_pages ?>" placeholder="<?php echo $page_number . "/" . $total_pages; ?>" required>
+
+                        <button onClick="go2Page();" style="color: green;">Go</button>
+
+                    </div>
             </div>
         </div>
     </section>
@@ -219,6 +219,13 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 <!-- Add Javascripts -->
 <script src="/Source_code/public/js/admin/index.js"></script>
 <script type="text/javascript" src="/Source_code/public2/js/admin.js"></script>
+<script>
+    function go2Page() {
+        var page = document.getElementById("page").value;
+        page = ((page > <?php echo $total_pages; ?>) ? <?php echo $total_pages; ?> : ((page < 1) ? 1 : page));
+        window.location.href = 'index.php?page=admin&controller=paginate&action=index&pg=' + page;
+    }
+</script>
 </body>
 
 </html>

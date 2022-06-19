@@ -7,7 +7,7 @@ if (!isset($_SESSION["user"])) {
 <?php
 require_once('/xampp/htdocs/Source_code/views/admin/header.php');
 require_once('/xampp/htdocs/Source_code/models/user.php');
-$data = User::getAll();
+// $data = User::getAll();
 ?>
 
 <!-- Add CSS -->
@@ -55,7 +55,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                             <h5 class="modal-title">Thêm mới</h5>
                                             <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                         </div>
-                                        <form action="index.php?page=admin&controller=members&action=addUser" method="post">
+                                        <form action="index.php?page=admin&controller=members&action=addUser&pg=<?php echo $page_number; ?> " method="post">
                                             <div class="modal-body">
                                                 <div class="form-group">
                                                     <label>Email</label>
@@ -75,7 +75,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Phone number</label>
-                                                    <input class="form-control" type="text" name="phone_number" />
+                                                    <input class="form-control" type="number" name="phone_number" />
                                                 </div>
                                                 <div class="form-group">
                                                     <label>Gender</label>
@@ -118,22 +118,22 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                 </thead>
                                 <tbody>
                                     <?php
-                                    $index = 1;
-                                    foreach ($data as $x) {
+                                    $index = ($page_number - 1) * 5 + 1;
+                                    foreach ($result as $x) {
                                         echo "<tr class='text-center'>";
                                         echo "<td>" . $index++ . "</td>";
-                                        echo "<td>" . $x->email . "</td>";
-                                        echo "<td>" . $x->fname . "</td>";
-                                        echo "<td>" . $x->lname . "</td>";
-                                        echo "<td>" . $x->age . "</td>";
+                                        echo "<td>" . $x['email'] . "</td>";
+                                        echo "<td>" . $x['fname'] . "</td>";
+                                        echo "<td>" . $x['lname'] . "</td>";
+                                        echo "<td>" . $x['age'] . "</td>";
                                         echo "<td>";
-                                        if ($x->gender == 1) echo "Male</td>";
-                                        else if ($x->gender == 0) echo "Female</td>";
+                                        if ($x['gender'] == 1) echo "Male</td>";
+                                        else if ($x['gender'] == 0) echo "Female</td>";
                                         else echo "Other</td>";
-                                        echo "<td>" . $x->phone . "</td>";
-                                        echo "<td>" . $x->updateAt . "</td>";
+                                        echo "<td>" . $x['phone'] . "</td>";
+                                        echo "<td>" . $x['updateAt'] . "</td>";
                                         echo "<td>
-											<button type='button' data-toggle='modal' data-target='#EditAdminModal$index' class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-edit'></i></button>";
+											<button type='button' data-toggle='modal' data-target='#EditAdminModal$index' class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='" . $x['email'] . "'> <i class='fas fa-edit'></i></button>";
                                         echo '
                                         <div class="modal fade" id="EditAdminModal' . $index . '" tabindex="-1" role="dialog" aria-labelledby="EditAdminModal' . $index . '" aria-hidden="true">
                                         <div class="modal-dialog" role="document">
@@ -142,33 +142,33 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                     <h5 class="modal-title">Chỉnh sửa</h5>
                                                     <button class="close" type="button" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                                                 </div>
-                                                <form action="index.php?page=admin&controller=members&action=edit" method="POST">
+                                                <form action="index.php?page=admin&controller=members&action=edit&pg=' . $page_number . '" method="POST">
                                                     <div class="modal-body">
                                                         <div class="form-group">
                                                             <label>Email</label>
-                                                            <input class="form-control" type="text" readonly name="email" value=' . $x->email . ' />
+                                                            <input class="form-control" type="text" readonly name="email" value=' . $x['email'] . ' />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>First name</label>
-                                                            <input class="form-control" type="text" name="fname" value="' . $x->fname . '" />
+                                                            <input class="form-control" type="text" name="fname" value="' . $x['fname'] . '" />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Last name</label>
-                                                            <input class="form-control" type="text" name="lname" value="' . $x->lname . '" />
+                                                            <input class="form-control" type="text" name="lname" value="' . $x['lname'] . '" />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Age</label>
-                                                            <input class="form-control" type="text" name="age" value="' . $x->age . '"/>
+                                                            <input class="form-control" type="text" name="age" value="' . $x['age'] . '"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Phone number</label>
-                                                            <input class="form-control" type="number" name="phone" value="' . $x->phone . '"/>
+                                                            <input class="form-control" type="number" name="phone" value="' . $x['phone'] . '"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Gender</label>
                                                             <br>
                                                             ';
-                                        if ($x->gender == 1) {
+                                        if ($x['gender'] == 1) {
                                             echo '
                                                             <input type="radio" id="Male" name="gender" checked value="1">
                                                             <label>Male</label>
@@ -178,7 +178,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                             <label>Other</label>
 
                                                             ';
-                                        } else if ($x->gender == 0) {
+                                        } else if ($x['gender'] == 0) {
                                             echo '
                                             <input type="radio" id="Male" name="gender"  value="1">
                                                             <label>Male</label>
@@ -202,7 +202,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Password</label>
-                                                            <input class="form-control" type="password" name="password" />
+                                                            <input class="form-control" type="password" readonly name="password" />
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">
@@ -215,7 +215,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                     </div>
                                         ';
 
-                                        echo "<button type='button' data-toggle='modal' data-target='#DeleteAdminModal$index' class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-trash'></i></button>
+                                        echo "<button type='button' data-toggle='modal' data-target='#DeleteAdminModal$index' class='btn-delete btn btn-danger btn-xs' style='margin-right: 5px' data-username='" . $x['email'] . "'> <i class='fas fa-trash'></i></button>
                                         </td>
                                         <div class='modal fade' id='DeleteAdminModal$index' tabindex='-1' role='dialog' aria-labelledby='DeleteAdminModal$index' aria-hidden='true'>
                                         <div class='modal-dialog' role='document'>
@@ -224,12 +224,12 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                     <h5 class='modal-title'>Xóa</h5>
                                                     <button class='close' type='button' data-dismiss='modal' aria-label='Close'><span aria-hidden='true'>&times;</span></button>
                                                 </div>
-                                                <form action='index.php?page=admin&controller=user&action=delete' method='post'>
+                                                <form action='index.php?page=admin&controller=user&action=delete&pg=" . $page_number . "' method='post'>
                                                     <div class='modal-body'>
-                                                    <input type='hidden' name='email' value='$x->email'>
-                                                    <input type='hidden' name='createAt' value='$x->createAt'>
+                                                    <input type='hidden' name='email' value='" . $x['email'] . "'>
+                                                    <input type='hidden' name='createAt' value='" . $x['createAt'] . "'>
 
-                                                        <p>Chuẩn bị xoá tài khoản '$x->email'.</p>
+                                                        <p>Chuẩn bị xoá tài khoản " . $x['email'] . ".</p>
                                                         <p>Bạn chắc chưa ?</p>
                                                     </div>
                                                     <div class='modal-footer'>
@@ -240,9 +240,6 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                             </div>
                                         </div>
                                     </div>
-                                        ";
-                                        echo "
-
                                         ";
                                         echo "</tr>";
                                     }
@@ -298,13 +295,45 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                 </div>
                             </div> -->
 
+
+
                         </div>
                     </div>
+                    <?php
+                    $total_pages = ceil($total_rows / $limit);
+
+                    $pageURL = "";
+
+                    if ($page_number >= 2) {
+
+                        echo "<a href='index.php?page=admin&controller=paginateuser&action=index&pg=" . ($page_number - 1) . "'> Prev </a>";
+                    }
+
+                    for ($i = 1; $i <= $total_pages; $i++) {
+                        if ($i == $page_number) {
+                            $pageURL .= "<a class = 'active' href='index.php?page=admin&controller=paginateuser&action=index&pg=" . $i . "'>" . $i . " </a>";
+                        } else {
+                            $pageURL .= "<a href='index.php?page=admin&controller=paginateuser&action=index&pg=" . $i . "'>
+
+                                                    " . $i . " </a>";
+                        }
+                    };
+                    echo $pageURL;
+                    if ($page_number < $total_pages) {
+                        echo "<a href='index.php?page=admin&controller=paginateuser&action=index&pg=" . ($page_number + 1) . "'>  Next </a>";
+                    }
+                    ?>
+                    <div class="inline">
+
+                        <input id="page" type="number" min="1" max="<?php echo $total_pages ?>" placeholder="<?php echo $page_number . "/" . $total_pages; ?>" required>
+
+                        <button onClick="go2Page();" style="color: green;">Go</button>
+
+                    </div>
                 </div>
+
             </div>
         </div>
-
-
     </section>
 </div>
 </div>
@@ -313,6 +342,13 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 <!-- Add Javascripts -->
 <script src="/Source_code/public/js/admin/index.js"></script>
 <script type="text/javascript" src="/Source_code/public2/js/admin.js"></script>
+<script>
+    function go2Page() {
+        var page = document.getElementById("page").value;
+        page = ((page > <?php echo $total_pages; ?>) ? <?php echo $total_pages; ?> : ((page < 1) ? 1 : page));
+        window.location.href = 'index.php?page=admin&controller=paginateuser&action=index&pg=' + page;
+    }
+</script>
 </body>
 
 </html>

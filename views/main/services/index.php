@@ -28,7 +28,7 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
                 <div class="slide-caption">
                     <div class="caption-content">
                         <h2 class="animated fadeInDown">IMPROVE YOUR POWER</h2>
-                        <span class="animated fadeInDown">Beautiful and Powerful environment developmentgit</span>
+                        <span class="animated fadeInDown">Beautiful and Powerful environment development</span>
                     </div>
                 </div>
 
