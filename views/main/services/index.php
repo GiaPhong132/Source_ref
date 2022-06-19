@@ -10,11 +10,6 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BKBLUE</title>
 
-
-
-
-
-
 </head>
 
 <body>
