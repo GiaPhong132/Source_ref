@@ -98,14 +98,6 @@ class UserController extends BaseController
         header('Location: index.php?page=admin&controller=user&action=index');
     }
 
-    public function editPass()
-    {
-        $email = $_POST['new-email'];
-        $newpassword = $_POST['new-password'];
-        $change_pass = User::changePassword_($email, $newpassword);
-        header('Location: index.php?page=admin&controller=members&action=index');
-    }
-
     public function delete()
     {
         $page_number = $_GET['pg'];
