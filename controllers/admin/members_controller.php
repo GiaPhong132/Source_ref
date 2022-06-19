@@ -11,7 +11,9 @@ class MembersController extends BaseController
 
     public function index()
     {
-        $this->render('index');
+        $x = User::getAll();
+        $data = array('members' => $x);
+        $this->render('index',$data);
     }
 
     public function addUser()
