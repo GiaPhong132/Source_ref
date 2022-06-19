@@ -27,7 +27,7 @@ class MembersController extends BaseController
         $phone = $_POST['phone_number'];
         $email = $_POST['email'];
         $password = $_POST['password'];
-        User::insert($email, 'public2/images/user/default.png', $fname, $lname, $gender, $age, $phone, $password);
+        User::insert($email, 'public2/images/user/defau.png', $fname, $lname, $gender, $age, $phone, $password);
 
         $tmp = "Location: index.php?page=admin&controller=paginateuser&action=index&pg=$page_number";
         header($tmp);

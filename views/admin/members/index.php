@@ -202,7 +202,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Password</label>
-                                                            <input class="form-control" type="password" name="password" />
+                                                            <input class="form-control" type="password" readonly name="password" />
                                                         </div>
                                                     </div>
                                                     <div class="modal-footer">

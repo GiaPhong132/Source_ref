@@ -104,13 +104,18 @@
                     </div>
 
                     <div class="form-check form-check-inline" style="padding-left: 1cm;">
-                        <input class="form-check-input" type="radio" name="gender" value="1" checked>
+                        <input class="form-check-input" type="radio" name="gender" value="1">
                         <label class="form-check-label">Male</label>
                     </div>
 
                     <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
                         <input class="form-check-input" type="radio" name="gender" value="0">
                         <label class="form-check-label">Female</label>
+                    </div>
+
+                    <div class="form-check form-check-inline" style="padding-left: 0.5cm;">
+                        <input class="form-check-input" type="radio" name="gender" value="-1">
+                        <label class="form-check-label">Other</label>
                     </div>
 
                     <div class="text-right p-t-8 p-b-31">
