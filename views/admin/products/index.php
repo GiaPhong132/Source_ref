@@ -176,7 +176,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
                             </table>
                         </div>
-                    
+
                     </div>
                     <?php
                     $total_pages = ceil($total_rows / $limit);
@@ -185,21 +185,21 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
                     if ($page_number >= 2) {
 
-                        echo "<a href='index.php?page=main&controller=paginate&action=index&pg=" . ($page_number - 1) . "'> Prev </a>";
+                        echo "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . ($page_number - 1) . "'> Prev </a>";
                     }
 
                     for ($i = 1; $i <= $total_pages; $i++) {
                         if ($i == $page_number) {
-                            $pageURL .= "<a class = 'active' href='index.php?page=main&controller=paginate&action=index&pg=" . $i . "'>" . $i . " </a>";
+                            $pageURL .= "<a class = 'active' href='index.php?page=admin&controller=paginate&action=index&pg=" . $i . "'>" . $i . " </a>";
                         } else {
-                            $pageURL .= "<a href='index.php?page=main&controller=paginate&action=index&pg=" . $i . "'>
+                            $pageURL .= "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . $i . "'>
 
                                         " . $i . " </a>";
                         }
                     };
                     echo $pageURL;
                     if ($page_number < $total_pages) {
-                        echo "<a href='index.php?page=main&controller=paginate&action=index&pg=" . ($page_number + 1) . "'>  Next </a>";
+                        echo "<a href='index.php?page=admin&controller=paginate&action=index&pg=" . ($page_number + 1) . "'>  Next </a>";
                     } ?>
                 </div>
             </div>
@@ -213,12 +213,12 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 <script src="/Source_code/public/js/admin/index.js"></script>
 <script type="text/javascript" src="/Source_code/public2/js/admin.js"></script>
 <script>
-            function go2Page() {
-                var page = document.getElementById("page").value;
-                page = ((page > <?php echo $total_pages; ?>) ? <?php echo $total_pages; ?> : ((page < 1) ? 1 : page));
-                window.location.href = 'index.php?page=main&controller=paginate&action=index&pg=' + page;
-            }
-        </script>
+    function go2Page() {
+        var page = document.getElementById("page").value;
+        page = ((page > <?php echo $total_pages; ?>) ? <?php echo $total_pages; ?> : ((page < 1) ? 1 : page));
+        window.location.href = 'index.php?page=admin&controller=paginate&action=index&pg=' + page;
+    }
+</script>
 </body>
 
 </html>
