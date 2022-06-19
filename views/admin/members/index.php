@@ -119,7 +119,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                 <tbody>
                                     <?php
                                     $index = 1;
-                                    foreach ($data as $x) {
+                                    foreach ($result as $x) {
                                         echo "<tr class='text-center'>";
                                         echo "<td>" . $index++ . "</td>";
                                         echo "<td>" . $x->email . "</td>";
@@ -130,8 +130,8 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                         if ($x->gender == 1) echo "Male</td>";
                                         else if ($x->gender == 0) echo "Female</td>";
                                         else echo "Other</td>";
-                                        echo "<td>" . $x->phone . "</td>";
-                                        echo "<td>" . $x->updateAt . "</td>";
+                                        echo "<td>" . $x['phone'] . "</td>";
+                                        echo "<td>" . $x[''] . "</td>";
                                         echo "<td>
 											<button type='button' data-toggle='modal' data-target='#EditAdminModal$index' class='btn-edit btn btn-primary btn-xs' style='margin-right: 5px' data-username='$x->email'> <i class='fas fa-edit'></i></button>";
                                         echo '
@@ -146,23 +146,23 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                                                     <div class="modal-body">
                                                         <div class="form-group">
                                                             <label>Email</label>
-                                                            <input class="form-control" type="text" readonly name="email" value=' . $x->email . ' />
+                                                            <input class="form-control" type="text" readonly name="email" value=' . $x['email'] . ' />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>First name</label>
-                                                            <input class="form-control" type="text" name="fname" value="' . $x->fname . '" />
+                                                            <input class="form-control" type="text" name="fname" value="' . $x['fname'] . '" />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Last name</label>
-                                                            <input class="form-control" type="text" name="lname" value="' . $x->lname . '" />
+                                                            <input class="form-control" type="text" name="lname" value="' . $x['lname'] . '" />
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Age</label>
-                                                            <input class="form-control" type="text" name="age" value="' . $x->age . '"/>
+                                                            <input class="form-control" type="text" name="age" value="' . $x['age'] . '"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Phone number</label>
-                                                            <input class="form-control" type="number" name="phone" value="' . $x->phone . '"/>
+                                                            <input class="form-control" type="number" name="phone" value="' . $x['phone'] . '"/>
                                                         </div>
                                                         <div class="form-group">
                                                             <label>Gender</label>

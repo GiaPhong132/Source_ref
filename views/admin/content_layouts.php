@@ -5,7 +5,7 @@
     <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
 
         <!-- Sidebar - Brand -->
-        <a class="sidebar-brand d-flex  justify-content-left" href="index.php?page=admin&controller=members&action=index">
+        <a class="sidebar-brand d-flex  justify-content-left" href="index.php?page=admin&controller=paginateuser&action=index">
             <div class="sidebar-brand-text mx-3">Admin</div>
         </a>
 
@@ -14,7 +14,7 @@
 
         <!-- Nav Item - Dashboard -->
         <li class="nav-item active">
-            <a class="nav-link" href="index.php?page=admin&controller=members&action=index">
+            <a class="nav-link" href="index.php?page=admin&controller=paginateuser&action=index">
                 <i class="fas fa-fw fa-tachometer-alt"></i>
                 <span>Quản Lý Thành Viên</span></a>
         </li>
