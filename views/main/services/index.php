@@ -146,11 +146,3 @@ require_once("/xampp/htdocs/Source_code/views/main/navbar.php");
 
 
 <?php include_once("/xampp/htdocs/Source_code/views/main/footer.php"); ?>
-
-<!-- <div class="blog-pagination">
-    <ul class="justify-content-center">
-        <li><a href="index.php?page=main&controller=paginate&action=index&pg=1">1</a></li>
-        <li><a href="index.php?page=main&controller=paginate&action=index&pg=2">2</a></li>
-        <li><a href="index.php?page=main&controller=paginate&action=index&pg=3">3</a></li>
-    </ul>
-</div> -->

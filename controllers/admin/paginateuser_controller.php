@@ -1,6 +1,5 @@
 <?php
 require_once('/xampp/htdocs/Source_code/controllers/admin/base_controller.php');
-// require_once('/xampp/htdocs/Source_code/models/paginate.php');
 
 class PaginateuserController extends BaseController
 {

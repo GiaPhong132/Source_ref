@@ -341,7 +341,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
 <!-- Add Javascripts -->
 <script src="/Source_code/public/js/admin/index.js"></script>
-<script type="text/javascript" src="/Source_code/public2/js/admin.js"></script>
+<script type="text/javascript" src="/Source_code/public/js/admin.js"></script>
 <script>
     function go2Page() {
         var page = document.getElementById("page").value;

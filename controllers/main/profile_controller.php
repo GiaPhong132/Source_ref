@@ -30,7 +30,7 @@ class ProfileController extends BaseController
 
 
         // Photo
-        $target_dir = "public2/images/user/";
+        $target_dir = "public/images/user/";
         $path = $_FILES['fileToUpload']['name'];
         $ext = pathinfo($path, PATHINFO_EXTENSION);
         $id = (string)date("Y_m_d_h_i_sa");

@@ -4,7 +4,7 @@
             <div class="col-lg-6 ml-auto justify-content-center">
                 <!-- Feature Mockup -->
                 <div class="image-content" data-aos="fade-right">
-                    <img class="img-fluid" src="/Source_code/public2/images/phpstorm.png" alt="iphone">
+                    <img class="img-fluid" src="/Source_code/public/images/phpstorm.png" alt="iphone">
                 </div>
             </div>
             <div class="col-lg-6 mr-auto align-self-center">

@@ -11,32 +11,32 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link rel="icon" type="image/png" href="/Source_code/public2/images/icons/favicon.ico" />
+    <link rel="icon" type="image/png" href="/Source_code/public/images/icons/favicon.ico" />
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Source_code/public2/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/Source_code/public/vendor/bootstrap/css/bootstrap.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Source_code/public2/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="/Source_code/public/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Source_code/public2/fonts/iconic/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" type="text/css" href="/Source_code/public/fonts/iconic/css/material-design-iconic-font.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Source_code/public2/vendor/animate/animate.css">
+    <link rel="stylesheet" type="text/css" href="/Source_code/public/vendor/animate/animate.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Source_code/public2/vendor/css-hamburgers/hamburgers.min.css">
+    <link rel="stylesheet" type="text/css" href="/Source_code/public/vendor/css-hamburgers/hamburgers.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Source_code/public2/vendor/animsition/css/animsition.min.css">
+    <link rel="stylesheet" type="text/css" href="/Source_code/public/vendor/animsition/css/animsition.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Source_code/public2/vendor/select2/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="/Source_code/public/vendor/select2/select2.min.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Source_code/public2/vendor/daterangepicker/daterangepicker.css">
+    <link rel="stylesheet" type="text/css" href="/Source_code/public/vendor/daterangepicker/daterangepicker.css">
     <!--===============================================================================================-->
-    <link rel="stylesheet" type="text/css" href="/Source_code/public2/css/util.css">
-    <link rel="stylesheet" type="text/css" href="/Source_code/public2/css/main.css">
+    <link rel="stylesheet" type="text/css" href="/Source_code/public/css/util.css">
+    <link rel="stylesheet" type="text/css" href="/Source_code/public/css/main.css">
 
 </head>
 
 <body>
     <div class="limiter">
-        <div class="container-login100" style="background-image: url('/Source_code/public2/images/tech-blocks.jpeg');">
+        <div class="container-login100" style="background-image: url('/Source_code/public/images/tech-blocks.jpeg');">
             <div class="wrap-login100 p-l-55 p-r-55 p-t-65 p-b-54">
 
                 <form action="index.php?page=main&controller=register&action=submit" method="POST" class="login100-form validate-form">
@@ -60,7 +60,7 @@
 
                     <div class="wrap-input100 validate-input m-b-23" data-validate="Last name is required">
                         <span class="label-input100">Last name</span>
-                        <input class="input100"  required type="text" name="last_name" placeholder="Type your last name">
+                        <input class="input100" required type="text" name="last_name" placeholder="Type your last name">
                         <span class="focus-input100" data-symbol="&#xf206;"></span>
                     </div>
 
@@ -144,7 +144,7 @@
 
                 </form>
 
-                <div class="login100-more" style="background-image: url('/Source_code/public2/assets/img/slide/VNG Campus 31.jpg');">
+                <div class="login100-more" style="background-image: url('/Source_code/public/assets/img/slide/VNG Campus 31.jpg');">
                 </div>
             </div>
 
@@ -164,30 +164,24 @@
             }
         }
 
-        function ValidateEmail(inputText) 
-        {
+        function ValidateEmail(inputText) {
             var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-            if(inputText.value.match(mailformat))
-            {
+            if (inputText.value.match(mailformat)) {
                 document.getElementById('email_warning').style.color = 'green';
                 document.getElementById('email_warning').innerHTML = 'Valid';
-            }
-            else
-            {
+            } else {
                 document.getElementById('email_warning').style.color = 'red';
                 document.getElementById('email_warning').innerHTML = 'Not valid';
             }
         }
 
-        function ValidateAge(age)
-        {
+        function ValidateAge(age) {
             document.getElementById('age_warning').innerHTML = '';
-            if( (age.value <= 0 || age.value > 200)) {
+            if ((age.value <= 0 || age.value > 200)) {
                 document.getElementById('age_warning').style.color = 'red';
-                document.getElementById('age_warning').innerHTML = 'Not valid';                
+                document.getElementById('age_warning').innerHTML = 'Not valid';
             }
         }
-
     </script>
 
 </body>

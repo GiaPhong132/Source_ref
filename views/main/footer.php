@@ -85,20 +85,20 @@
 </script>
 
 
-<script type="text/javascript" src="/Source_code/public2/js/main.js"></script>
-<script type="text/javascript" src="/Source_code/public2/js/custom.js"></script>
+<script type="text/javascript" src="/Source_code/public/js/main.js"></script>
+<script type="text/javascript" src="/Source_code/public/js/custom.js"></script>
 
 <!-- JAVASCRIPTS -->
-<script src="/Source_code/public2/plugins/jquery/jquery.js"></script>
-<script src="/Source_code/public2/plugins/popper/popper.min.js"></script>
-<script src="/Source_code/public2/plugins/bootstrap/bootstrap.min.js"></script>
-<script src="/Source_code/public2/plugins/owl-carousel/owl.carousel.min.js"></script>
+<script src="/Source_code/public/plugins/jquery/jquery.js"></script>
+<script src="/Source_code/public/plugins/popper/popper.min.js"></script>
+<script src="/Source_code/public/plugins/bootstrap/bootstrap.min.js"></script>
+<script src="/Source_code/public/plugins/owl-carousel/owl.carousel.min.js"></script>
 
-<script src="/Source_code/public2/plugins/syotimer/jquery.syotimer.min.js"></script>
-<script src="/Source_code/public2/plugins/aos/aos.js"></script>
+<script src="/Source_code/public/plugins/syotimer/jquery.syotimer.min.js"></script>
+<script src="/Source_code/public/plugins/aos/aos.js"></script>
 
 
-<script src="/Source_code/public2/js/custom.js"></script>
+<script src="/Source_code/public/js/custom.js"></script>
 
 
 </body>

@@ -38,28 +38,28 @@ if (isset($_SESSION['guest'])) {
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY9QnKE0Wqag9y38OIgEvb88cA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Bootstrap -->
-    <!-- <link href="/Source_code/public2/plugins/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
+    <!-- <link href="/Source_code/public/plugins/bootstrap/bootstrap.min.css" rel="stylesheet"> -->
     <!-- themify icon -->
-    <link rel="stylesheet" href="/Source_code/public2/plugins/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="/Source_code/public/plugins/themify-icons/themify-icons.css">
     <!-- Owl Carousel -->
-    <link href="/Source_code/public2/plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
+    <link href="/Source_code/public/plugins/owl-carousel/assets/owl.carousel.min.css" rel="stylesheet" media="screen">
     <!-- Owl Carousel Theme -->
-    <link href="/Source_code/public2/plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
+    <link href="/Source_code/public/plugins/owl-carousel/assets/owl.theme.green.min.css" rel="stylesheet" media="screen">
     <!-- Fancy Box -->
-    <link href="/Source_code/public2/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
+    <link href="/Source_code/public/plugins/fancybox/jquery.fancybox.min.css" rel="stylesheet">
     <!-- AOS -->
-    <link rel="stylesheet" href="/Source_code/public2/plugins/aos/aos.css">
+    <link rel="stylesheet" href="/Source_code/public/plugins/aos/aos.css">
 
     <!-- CSS -->
-    <link href="/Source_code/public2/css/layout/navbar.css" rel="stylesheet">
-    <link href="/Source_code/public2/css/layout/footer.css" rel="stylesheet">
-    <link href="/Source_code/public2/css/layout/hero.css" rel="stylesheet">
-    <link href="/Source_code/public2/css/layout/product.css" rel="stylesheet">
-    <link href="/Source_code/public2/css/layout/timeline.css" rel="stylesheet">
-    <link href="/Source_code/public2/css/layout/profile.css" rel="stylesheet">
-    <!-- <link href="/Source_code/public2/css/layout/stlye.css" rel="stylesheet"> -->
-    <!-- <link href="/Source_code/public2/css/layout/main.css" rel="stylesheet"> -->
-    <!-- <link href="/Source_code/public2/css/layout/about.css" rel="stylesheet">  -->
+    <link href="/Source_code/public/css/layout/navbar.css" rel="stylesheet">
+    <link href="/Source_code/public/css/layout/footer.css" rel="stylesheet">
+    <link href="/Source_code/public/css/layout/hero.css" rel="stylesheet">
+    <link href="/Source_code/public/css/layout/product.css" rel="stylesheet">
+    <link href="/Source_code/public/css/layout/timeline.css" rel="stylesheet">
+    <link href="/Source_code/public/css/layout/profile.css" rel="stylesheet">
+    <!-- <link href="/Source_code/public/css/layout/stlye.css" rel="stylesheet"> -->
+    <!-- <link href="/Source_code/public/css/layout/main.css" rel="stylesheet"> -->
+    <!-- <link href="/Source_code/public/css/layout/about.css" rel="stylesheet">  -->
 
 
 
@@ -104,7 +104,7 @@ if (isset($_SESSION['guest'])) {
                         ';
                 } else if (isset($_SESSION['user'])) {
                     echo  '
-                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public2/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Admin<b class="caret"></b></a><div class="dropdown-menu"></a></a>
+                    <div class="nav-item dropdown"><a href="#" data-toggle="dropdown" class="nav-link dropdown-toggle user-action"><img src="/Source_code/public/images/HCMUT-BachKhoa-Logo.png" class="avatar" alt="Avatar"> Admin<b class="caret"></b></a><div class="dropdown-menu"></a></a>
                         ';
                 }
                 ?>

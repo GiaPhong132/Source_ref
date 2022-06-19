@@ -204,11 +204,11 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
                 </div>
                 <div class="inline">
 
-                        <input id="page" type="number" min="1" max="<?php echo $total_pages ?>" placeholder="<?php echo $page_number . "/" . $total_pages; ?>" required>
+                    <input id="page" type="number" min="1" max="<?php echo $total_pages ?>" placeholder="<?php echo $page_number . "/" . $total_pages; ?>" required>
 
-                        <button onClick="go2Page();" style="color: green;">Go</button>
+                    <button onClick="go2Page();" style="color: green;">Go</button>
 
-                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -218,7 +218,7 @@ require_once('/xampp/htdocs/Source_code/views/admin/content_layouts.php'); ?>
 
 <!-- Add Javascripts -->
 <script src="/Source_code/public/js/admin/index.js"></script>
-<script type="text/javascript" src="/Source_code/public2/js/admin.js"></script>
+<script type="text/javascript" src="/Source_code/public/js/admin.js"></script>
 <script>
     function go2Page() {
         var page = document.getElementById("page").value;

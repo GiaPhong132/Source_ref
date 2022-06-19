@@ -45,8 +45,8 @@ class ProductsController extends BaseController
         $price = $_POST['price'];
         $description = $_POST['description'];
         $content = $_POST['content'];
-        // $img = $_POST['img'];
-        $target_dir = "public2/images/product/";
+
+        $target_dir = "public/images/product/";
         $path = $_FILES['fileToUpload']['name'];
         $ext = pathinfo($path, PATHINFO_EXTENSION);
         $fileuploadname .= ".";
@@ -56,13 +56,11 @@ class ProductsController extends BaseController
             echo "Sorry, file already exists.";
         }
         $fileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-        // Allow certain file formats
         if (
             $fileType != "jpg" && $fileType != "png" && $fileType != "jpeg"
             && $fileType != "gif"
         ) {
             echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
-            $upload_ok = 0;
         }
         if ($_FILES["fileToUpload"]["size"] > 500000) {
             echo "Sorry, your file is too large.";
@@ -71,7 +69,6 @@ class ProductsController extends BaseController
         Product::insert($name, $price, $description, $content, $target_file);
         $tmp = "Location: index.php?page=admin&controller=paginate&action=index&pg=$page_number";
         header($tmp);
-        // header('Location: index.php?page=admin&controller=products&action=index');
     }
     public function edit()
     {
@@ -93,7 +90,7 @@ class ProductsController extends BaseController
             header($tmp);
             die;
         } else {
-            $target_dir = "public2/images/product/";
+            $target_dir = "public/images/product/";
             $path = $_FILES['fileToUpload']['name'];
             $ext = pathinfo($path, PATHINFO_EXTENSION);
             $fileuploadname .= ".";
@@ -103,7 +100,6 @@ class ProductsController extends BaseController
                 echo "Sorry, file already exists.";
             }
             $fileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
-            // Allow certain file formats
             if (
                 $fileType != "jpg" && $fileType != "png" && $fileType != "jpeg"
                 && $fileType != "gif"
@@ -120,7 +116,6 @@ class ProductsController extends BaseController
             Product::update($id, $name, $price, $description, $content, $target_file);
             $tmp = "Location: index.php?page=admin&controller=paginate&action=index&pg=$page_number";
             header($tmp);
-            // header('Location: index.php?page=admin&controller=paginate&action=index');
         }
     }
 
@@ -135,6 +130,5 @@ class ProductsController extends BaseController
 
         $tmp = "Location: index.php?page=admin&controller=paginate&action=index&pg=$page_number";
         header($tmp);
-        // header('Location: index.php?page=admin&controller=products&action=index');
     }
 }

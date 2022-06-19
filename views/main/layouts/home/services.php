@@ -12,7 +12,7 @@
             <div class="col-lg-6 align-self-center">
                 <!-- Feature Image -->
                 <div class="service-thumb left" data-aos="fade-right">
-                    <img class="img-fluid" src="/Source_code/public2/images/interface.png" alt="iphone-ipad">
+                    <img class="img-fluid" src="/Source_code/public/images/interface.png" alt="iphone-ipad">
                 </div>
             </div>
             <div class="col-lg-5 mr-auto align-self-center">
