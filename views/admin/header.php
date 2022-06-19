@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="/Source_code/public2/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
     <link href="/Source_code/public2/vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
     <!-- Theme style-->
-    <link rel="stylesheet" href="/Source_code/public/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="/Source_code/public2/dist/css/adminlte.min.css">
     <link rel="stylesheet" href="/Source_code/public2/css/admin.css">
     <script type="text/javascript" src="/Source_code/public2/css/admin.js"></script>
     <script type="text/javascript" src="/Source_code/public2/vendor/jquery/jquery.js"></script>
