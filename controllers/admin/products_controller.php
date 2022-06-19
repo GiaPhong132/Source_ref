@@ -65,7 +65,7 @@ class ProductsController extends BaseController
             echo "Sorry, your file is too large.";
         }
         move_uploaded_file($_FILES["fileToUpload"]["tmp_name"], $target_file);
-        Product::insert($name, $price, $description, $content, $target_file, $rating);
+        Product::insert($name, $price, $description, $content, $target_file);
         header('Location: index.php?page=admin&controller=products&action=index');
     }
     public function edit()
