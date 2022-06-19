@@ -76,7 +76,7 @@
             </script>
 
 </footer><!-- End Footer -->
-<!-- <button onclick="topFunction()" id="src-top" title="Go to top"><i class="fa fa-chevron-up"></i></button> -->
+<button onclick="topFunction()" id="src-top" title="Go to top"><i class="fa fa-chevron-up"></i></button>
 
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
