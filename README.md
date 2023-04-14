@@ -18,7 +18,7 @@ All back-end setups (MySQL and PHP) can be finished by installing XAMPP technica
 
 Note:
 
-When setting up XAMPP, you should set everything by default. If you change something like the password of phpadmin, you cannot connect to phpadmin to get the database. If you have your password has been changed, you can find the way to handle it with this project in here "https://github.com/GiaPhong132/Demo-Database-Cinema#readme".
+When setting up XAMPP, you should set everything by default. If you change something like the password of phpadmin, you cannot connect to phpadmin to get the database. If you have your password has been changed, you can find the way to handle it with this project in here "https://github.com/GiaPhong132/PHP-MySQL-For_Task-Management#readme".
 
 Run:
 
