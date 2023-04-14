@@ -20,7 +20,7 @@ All back-end set up (MySQL and PHP) can be finished by installing XAMPP technica
 Once you finished setting up for XAMPP, you should upload database.sql into phpadmin or something similar in different in platform or IDE.
 
 Note:
-- When setting up XAMPP, you should let everything at default. If you change something like password of phpadmin, you cannot connect to phpadmin to get database. If you have password been changed, you can find the way to handle it with this project in here "https://github.com/GiaPhong132/Demo-Database-Cinema/blob/main/README.md".
+- When setting up XAMPP, you should let everything at default. If you change something like password of phpadmin, you cannot connect to phpadmin to get database. If you have password been changed, you can find the way to handle it with this project in here "https://github.com/GiaPhong132/Demo-Database-Cinema#readme".
 
 Run:
 - After all, copy this "localhost/Source_code/" and past into URL bar in your browser to get the result.
