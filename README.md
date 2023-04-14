@@ -7,7 +7,7 @@ This is our project from our Web Programming class. The main concept in this pro
 Main topic:
 - In this project, we build a application for 2 main actor, user and admin:
   + In this context, users can do some actions like many actions in e-commerce webs application(login, buy(download) product, edit profile - include name, gender,... and upload avatar).
-  + Admins can do some actions that user can do. In addition, admin can manage user account - edit some users information fields, create, delete user account, can manage product - edit, create, delete products. Also, we have implemented pagination for user and product in admin sites. we can search according to the user's information or product's information provided.
+  + Admins can do some actions that user can do, except editing profie. In addition, admin can manage user account - edit some users information fields, create, delete user account, can manage product - edit, create, delete products. Also, we have implemented pagination for user and product in admin sites. we can search according to the user's information or product's information provided.
 
 According MVC architectural pattern, we use:
 
